@@ -5,10 +5,15 @@ using UnityEngine;
 public class Enemy : Npc
 {
     public CrossObjectEventWithData enterBattle;
+    public EnemySO enemySO;
 
-    public override void Die() {
+    void Awake() {
+        SetStats(enemySO.health, enemySO.attack, enemySO.defence, enemySO.speed);    
+    }
 
-        base.Die();
+    public override void Attack(List<Npc> opponentList) {
+        broadCastActionEvent.TriggerEvent(this, "The enemy attacked player");
+        base.Attack(opponentList);
     }
 
     void OnTriggerEnter2D(Collider2D collider2D) {

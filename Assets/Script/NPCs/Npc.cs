@@ -9,17 +9,27 @@ public abstract class Npc : MonoBehaviour
     private int defence;
     private int speed;
     private int currSpeed;
+    public CrossObjectEventWithData broadCastActionEvent;
+    public CrossObjectEventWithData characterDied;
+    private SpawnDamageText spawnDamageTextScript;
 
-    void Start() {
-        currSpeed = speed;
+    protected void SetStats(int health, int attack, int defence, int speed) {
+        this.health = health;
+        this.attack = attack;   
+        this.defence = defence; 
+        this.speed = speed;
+        this.currSpeed = -speed;
+        spawnDamageTextScript = GetComponent<SpawnDamageText>();
+        Debug.Log(spawnDamageTextScript);
     }
 
-    public virtual bool GetAttacked(int damage) {
+    public virtual void GetAttacked(int damage) {
+        spawnDamageTextScript.SpawnText(damage);
         health -= damage;
         if (health <= 0) {
-            return true;
+            characterDied.TriggerEvent(this, this);
+            Die();
         }
-        return false;
     }
 
     public virtual void Die() {
@@ -31,14 +41,15 @@ public abstract class Npc : MonoBehaviour
     }
 
     public virtual void DecreaseSpeed() {
-        currSpeed = Mathf.Max(0, currSpeed - 1);
-        if (currSpeed == 0) {
-            currSpeed = speed;
+        currSpeed = currSpeed + Random.Range(0, 3);
+        if (currSpeed >= 0) {
+            currSpeed = currSpeed - speed;
         }
     }
 
     public virtual void Attack(List<Npc> opponentList) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         bool isDead = target.GetAttacked(attack);
         if (isDead) {
@@ -50,5 +61,11 @@ public abstract class Npc : MonoBehaviour
             broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
 >>>>>>> Stashed changes
         }
+=======
+        target.GetAttacked(attack);
+        broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
+>>>>>>> V3-Added-more-assets-to-cooking-menu
     }
+
+    public virtual void Attack(List<Npc> opponentList, int attackType) {}
 }
