@@ -20,7 +20,6 @@ public abstract class Npc : MonoBehaviour
         this.speed = speed;
         this.currSpeed = -speed;
         spawnDamageTextScript = GetComponent<SpawnDamageText>();
-        Debug.Log(spawnDamageTextScript);
     }
 
     public virtual void GetAttacked(int damage) {
@@ -49,22 +48,11 @@ public abstract class Npc : MonoBehaviour
 
     public virtual void Attack(List<Npc> opponentList) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-        bool isDead = target.GetAttacked(attack);
-        if (isDead) {
-            opponentList.Remove(target);
-            target.Die();
-=======
+        target.GetAttacked(attack);
         if (target != null) {
             target.GetAttacked(attack);
             broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
->>>>>>> Stashed changes
         }
-=======
-        target.GetAttacked(attack);
-        broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
->>>>>>> V3-Added-more-assets-to-cooking-menu
     }
 
     public virtual void Attack(List<Npc> opponentList, int attackType) {}

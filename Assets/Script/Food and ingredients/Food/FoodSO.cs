@@ -23,12 +23,8 @@ public class FoodSO : ScriptableObject
     public SerializedDictionary<IngredientSO, int> ingredientsNeeded;
     
     [Header("Stats change")]
-<<<<<<< HEAD
     public int currentHealthChange;
     public int maxHealthChange;
-=======
-    public int healthRecover;
->>>>>>> V3-Added-more-assets-to-cooking-menu
     public int attackChange;
     public int defenceChange;
     public int speedChange;
