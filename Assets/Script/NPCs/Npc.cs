@@ -39,10 +39,16 @@ public abstract class Npc : MonoBehaviour
 
     public virtual void Attack(List<Npc> opponentList) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
+<<<<<<< Updated upstream
         bool isDead = target.GetAttacked(attack);
         if (isDead) {
             opponentList.Remove(target);
             target.Die();
+=======
+        if (target != null) {
+            target.GetAttacked(attack);
+            broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
+>>>>>>> Stashed changes
         }
     }
 }
