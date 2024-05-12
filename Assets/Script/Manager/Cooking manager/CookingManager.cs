@@ -6,6 +6,7 @@ public class CookingManager : MonoBehaviour
 {
     public CrossObjectEventWithData goToCookingPot;
     private FoodSO foodSO;
+    public PlayerSO playerSO;
     
     public void StoreFoodSO(Component component, object obj) {
         object[] temp = (object[]) obj;
@@ -14,5 +15,13 @@ public class CookingManager : MonoBehaviour
 
     public void GoToCookingPot() {
         goToCookingPot.TriggerEvent(this, foodSO);
+    }
+
+    public void AddFoodToInventory() {
+        if (playerSO.allFood.ContainsKey(foodSO)) {
+            playerSO.allFood[foodSO] += 1;
+        } else {
+            playerSO.allFood[foodSO] = 1;
+        }
     }
 }

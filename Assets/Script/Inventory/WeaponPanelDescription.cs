@@ -8,6 +8,7 @@ public class WeaponPanelDescription : InventoryDescriptionPanels
     public override void PopulateUI(Component component, object obj) {
         object[] temp = (object[]) obj;
         this.weaponSO = (WeaponSO) temp[0];
+        int qty = (int) temp[1];
         icon.sprite = weaponSO.weaponIconWithoutFrame;
         name.text = weaponSO.weaponName;
         description.text = weaponSO.weaponDescription;
@@ -17,5 +18,6 @@ public class WeaponPanelDescription : InventoryDescriptionPanels
         defenceChange.text = weaponSO.defenceChange.ToString();
         speedChange.text = weaponSO.speedChange.ToString();
         effectsDescription.text = weaponSO.effectsDescription;
+        quantityText.text = qty.ToString();
     }
 }

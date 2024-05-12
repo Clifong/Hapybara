@@ -16,6 +16,7 @@ public abstract class InventoryDescriptionPanels : MonoBehaviour
     public TextMeshProUGUI defenceChange;
     public TextMeshProUGUI speedChange;
     public TextMeshProUGUI effectsDescription;
+    public TextMeshProUGUI quantityText;
 
     public virtual void PopulateUI(Component component, object obj) {}
 }

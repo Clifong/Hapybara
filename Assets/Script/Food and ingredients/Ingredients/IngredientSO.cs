@@ -13,3 +13,4 @@ public class IngredientSO : ScriptableObject
     [TextAreaAttribute]
     public string ingredientDescription;
 }
+

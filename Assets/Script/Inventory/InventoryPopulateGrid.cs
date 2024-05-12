@@ -26,7 +26,7 @@ public class InventoryPopulateGrid : MonoBehaviour
         foreach (WeaponSO weaponSO in allWeapons)
         {
             GameObject instantiatedWeaponIcon = Instantiate(weaponIcon, content);
-            instantiatedWeaponIcon.GetComponent<WeaponIcon>().SetInfo(weaponSO);
+            instantiatedWeaponIcon.GetComponent<WeaponIcon>().SetInfo(weaponSO, playerSO.allWeapons[weaponSO]);
             allSpawnedWeaponIcons.Add(instantiatedWeaponIcon);
         }
     }
@@ -46,7 +46,7 @@ public class InventoryPopulateGrid : MonoBehaviour
         foreach (FoodSO foodSO in allFood)
         {
             GameObject instantiatedFoodIcon = Instantiate(foodIcon, content);
-            instantiatedFoodIcon.GetComponent<FoodIconInventory>().SetInfo(foodSO);
+            instantiatedFoodIcon.GetComponent<FoodIconInventory>().SetInfo(foodSO, playerSO.allFood[foodSO]);
             allSpawnedFoodIcons.Add(instantiatedFoodIcon);
         }
     }
