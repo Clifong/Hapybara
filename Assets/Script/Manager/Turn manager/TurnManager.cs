@@ -38,6 +38,11 @@ public class TurnManager : MonoBehaviour
         ChangeTurn();
     }
 
+    public void ExitBattle() {
+        allEnemies.Clear();
+        allPlayers.Clear();
+    }
+
     public void ChangeTurn() {
         if (allEnemies.Count == 0) {
             playerWon.TriggerEvent(this, new List<int>());

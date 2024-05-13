@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2348717998158377033}
   - component: {fileID: 2348717998158377032}
   - component: {fileID: 2348717998158377035}
+  - component: {fileID: 2129856963}
+  - component: {fileID: 2129856964}
   m_Layer: 0
   m_Name: Faceless slime parent
   m_TagString: Untagged
@@ -69,8 +71,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadCastActionEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
   characterDied: {fileID: 11400000, guid: b390c1704b2c0cb4ebb4151c1ab72f70, type: 2}
+  exitBattle: {fileID: 11400000, guid: b575677f31c898d41a219f818d425f59, type: 2}
   enterBattle: {fileID: 11400000, guid: 6ef7578bbd1e93340a3ef097074c90e6, type: 2}
   enemySO: {fileID: 11400000, guid: 4291d8716f5203244926748185bf5d51, type: 2}
+--- !u!58 &2129856963
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348717998158377014}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.58530474, y: -0.3508048}
+  serializedVersion: 2
+  m_Radius: 4.3953366
+--- !u!114 &2129856964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348717998158377014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297608dafd3d19a43aefe7b9e8281352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageText: {fileID: 735815415513158350, guid: af6d086151f9f6946a02b55a019e7f33, type: 3}
+  spawnZone: {fileID: 2348717998158377033}
 --- !u!1 &2348717998554302323
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2348717998554302323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1830385, y: -0.33200347, z: -0.0066932854}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0066932854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -154,4 +187,4 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1

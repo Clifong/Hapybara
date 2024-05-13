@@ -133,6 +133,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5418696584088667820}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &656762703596430647
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +793,8 @@ GameObject:
   - component: {fileID: 5418696582845810792}
   - component: {fileID: 5418696582845810793}
   - component: {fileID: 8145139534809173658}
-  - component: {fileID: 6223346177925261782}
+  - component: {fileID: 5170032235452552329}
+  - component: {fileID: 5584342285075808717}
   m_Layer: 0
   m_Name: Select weapon to equip manager
   m_TagString: Untagged
@@ -848,6 +861,18 @@ MonoBehaviour:
       - m_Target: {fileID: 8145139534809173658}
         m_TargetAssemblyTypeName: TrackWhichPlayerItIs, Assembly-CSharp
         m_MethodName: SetWeaponLookingAt
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1063167621456678969}
+        m_TargetAssemblyTypeName: EquipButton, Assembly-CSharp
+        m_MethodName: CheckIfEquipped
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -925,7 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4af17d94429fd43b8c2f16c154d227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6223346177925261782
+--- !u!114 &5170032235452552329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -937,13 +962,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 41233ba37da4d2c459a65c6dae615257, type: 2}
+  gameEvent: {fileID: 11400000, guid: 06863588c3bf8684097dfacfdcd87d95, type: 2}
   responseOnTrigger:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8145139534809173658}
         m_TargetAssemblyTypeName: TrackWhichPlayerItIs, Assembly-CSharp
         m_MethodName: EquipWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5418696584088667820}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1742788690}
+        m_TargetAssemblyTypeName: CharacterViewerManager, Assembly-CSharp
+        m_MethodName: RefreshData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5584342285075808717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381420528480476351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b72f7d27219eb304ba360776b1d7c320, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8145139534809173658}
+        m_TargetAssemblyTypeName: TrackWhichPlayerItIs, Assembly-CSharp
+        m_MethodName: UnequipWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5418696584088667820}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1742788690}
+        m_TargetAssemblyTypeName: CharacterViewerManager, Assembly-CSharp
+        m_MethodName: RefreshData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1916,7 +2017,6 @@ GameObject:
   - component: {fileID: 7897597502378407168}
   - component: {fileID: 3689281793893517813}
   - component: {fileID: 7258547147943868694}
-  - component: {fileID: 4403736558392526376}
   m_Layer: 0
   m_Name: Character viewer manager
   m_TagString: Untagged
@@ -1955,6 +2055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPartySO: {fileID: 11400000, guid: 119324bce9f7d9c4284548edf5b403f6, type: 2}
   partyMemberIcon: {fileID: 5854565582303495022, guid: c735cef00af402542a805a6e4fb4c4b7, type: 3}
+  updatePlayerStats: {fileID: 11400000, guid: cb0c758289652604da580170db1bae8a, type: 2}
   content: {fileID: 134145971041173232}
   healthText: {fileID: 849304989868073823}
   attackText: {fileID: 8704344659142094676}
@@ -2089,34 +2190,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &4403736558392526376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2971726549652276955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 41233ba37da4d2c459a65c6dae615257, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1742788690}
-        m_TargetAssemblyTypeName: CharacterViewerManager, Assembly-CSharp
-        m_MethodName: RefreshData
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3460,7 +3533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.06751, y: -318.57776}
+  m_AnchoredPosition: {x: 115.06751, y: -288.2943}
   m_SizeDelta: {x: 127.8528, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696582367273526
@@ -3859,7 +3932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.06751, y: -186.78888}
+  m_AnchoredPosition: {x: 115.06751, y: -171.64716}
   m_SizeDelta: {x: 127.8528, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696582499712392
@@ -3995,7 +4068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.06751, y: -450.36664}
+  m_AnchoredPosition: {x: 115.06751, y: -404.94147}
   m_SizeDelta: {x: 127.8528, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696582527972000
@@ -4738,7 +4811,7 @@ RectTransform:
   m_Father: {fileID: 5418696584011491619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3333333}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4856,7 +4929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 301.7249, y: -788.9444}
+  m_AnchoredPosition: {x: 301.7249, y: -713.2358}
   m_SizeDelta: {x: 335.2499, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696582989138373
@@ -5564,7 +5637,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5418696582498397934
 MonoBehaviour:
@@ -5937,8 +6010,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -45.42511}
+  m_SizeDelta: {x: 0, y: -90.8502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5418696583590331923
 MonoBehaviour:
@@ -6110,7 +6183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180, y: -582.1555}
+  m_AnchoredPosition: {x: 180, y: -521.5886}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696583850447830
@@ -6520,8 +6593,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5418696582769743836}
   m_HandleRect: {fileID: 5418696582769743835}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6666667
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6544,7 +6617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5418696584088667821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7526,6 +7599,7 @@ GameObject:
   - component: {fileID: 8806815246096645188}
   - component: {fileID: 534434164004671485}
   - component: {fileID: 6910812105620341467}
+  - component: {fileID: 1063167621456678969}
   m_Layer: 5
   m_Name: Equip button
   m_TagString: Untagged
@@ -7636,9 +7710,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 41233ba37da4d2c459a65c6dae615257, type: 2}
-        m_TargetAssemblyTypeName: CrossObjectEvent, Assembly-CSharp
-        m_MethodName: TriggerEvent
+      - m_Target: {fileID: 1063167621456678969}
+        m_TargetAssemblyTypeName: EquipButton, Assembly-CSharp
+        m_MethodName: EquipOrUnequipWeapon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7648,6 +7722,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1063167621456678969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482200924196309476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491373208d766284aae21f5493ec9658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 6910812105620341467}
+  equipWeaponImage: {fileID: 21300000, guid: b10b37fc382a14348af0db4e99b1e9a6, type: 3}
+  unequipWeaponImage: {fileID: 21300000, guid: ba2c6d121a5c0e8449cb370d8abb3b59, type: 3}
+  text: {fileID: 8228656651568859422}
+  equipWeapon: {fileID: 11400000, guid: 06863588c3bf8684097dfacfdcd87d95, type: 2}
+  unequipWeapon: {fileID: 11400000, guid: b72f7d27219eb304ba360776b1d7c320, type: 2}
 --- !u!1 &7585515690608298595
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,8 +8044,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -20.3, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -33.4243, y: 0}
+  m_SizeDelta: {x: 106.2485, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7279017348012635533
 CanvasRenderer:

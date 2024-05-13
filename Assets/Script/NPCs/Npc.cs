@@ -4,28 +4,35 @@ using UnityEngine;
 
 public abstract class Npc : MonoBehaviour
 {
-    private int health;
+    private int currHealth;
+    private int currAttack;
+    private int currDefence;
+    private int currSpeed;
+    private int maxHealth;
     private int attack;
     private int defence;
     private int speed;
-    private int currSpeed;
     public CrossObjectEventWithData broadCastActionEvent;
     public CrossObjectEventWithData characterDied;
     private SpawnDamageText spawnDamageTextScript;
 
     protected void SetStats(int health, int attack, int defence, int speed) {
-        this.health = health;
+        this.maxHealth = health;
         this.attack = attack;   
         this.defence = defence; 
         this.speed = speed;
+
+        this.currHealth = maxHealth;
+        this.currAttack = attack;
+        this.currDefence = defence;
         this.currSpeed = -speed;
         spawnDamageTextScript = GetComponent<SpawnDamageText>();
     }
 
     public virtual void GetAttacked(int damage) {
         spawnDamageTextScript.SpawnText(damage);
-        health -= damage;
-        if (health <= 0) {
+        currHealth -= damage;
+        if (currHealth <= 0) {
             characterDied.TriggerEvent(this, this);
             Die();
         }
@@ -44,6 +51,17 @@ public abstract class Npc : MonoBehaviour
         if (currSpeed >= 0) {
             currSpeed = currSpeed - speed;
         }
+    }
+
+    public void UpdateStats(Component component, object obj) {
+        object[] temp = (object[])obj;
+        PlayerSO playerSO = (PlayerSO)temp[0];
+        maxHealth = playerSO.health;
+        attack = playerSO.attack;
+        defence = playerSO.defence;
+        speed = playerSO.speed;
+
+        this.currHealth = Mathf.Min(this.currHealth, maxHealth);
     }
 
     public virtual void Attack(List<Npc> opponentList) {

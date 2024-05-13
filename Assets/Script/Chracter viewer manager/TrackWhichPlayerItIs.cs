@@ -18,6 +18,10 @@ public class TrackWhichPlayerItIs : MonoBehaviour
     }
 
     public void EquipWeapon() {
-        selectedPlayer.weaponEquipped = weaponSO;
+        selectedPlayer.EquipWeapon(weaponSO);
+    }
+
+    public void UnequipWeapon() {
+        selectedPlayer.UnequipWeapon();
     }
 }

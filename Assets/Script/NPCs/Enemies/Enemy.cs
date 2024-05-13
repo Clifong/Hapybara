@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : Npc
 {
+    public CrossObjectEvent exitBattle;
     public CrossObjectEventWithData enterBattle;
     public EnemySO enemySO;
 
@@ -23,6 +24,13 @@ public class Enemy : Npc
             list.Add(player);
             list.Add(this);
             enterBattle.TriggerEvent(this, list);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider2D) {
+        Player player = collider2D.GetComponent<Player>();
+        if (player != null) {   
+            exitBattle.TriggerEvent();
         }
     }
 }

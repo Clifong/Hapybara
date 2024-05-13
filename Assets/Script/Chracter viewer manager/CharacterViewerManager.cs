@@ -8,6 +8,7 @@ public class CharacterViewerManager : MonoBehaviour
 {
     public PlayerPartySO playerPartySO;
     public GameObject partyMemberIcon;
+    public CrossObjectEventWithData updatePlayerStats;
     public Transform content;
     private List<GameObject> allPlayerMemberInstantiatedIcons = new List<GameObject>();
 
@@ -59,7 +60,8 @@ public class CharacterViewerManager : MonoBehaviour
     }
 
     public void RefreshData() {
+        Debug.Log("?");
         SetStats(playerSO);
-        SetStats(playerSO);
+        updatePlayerStats.TriggerEvent(this, playerSO);
     }
 }

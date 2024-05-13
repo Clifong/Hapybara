@@ -31,6 +31,24 @@ public class PlayerSO : ScriptableObject
         }
     }
 
+    public void EquipWeapon(WeaponSO weaponSO) {
+        weaponEquipped = weaponSO;
+        health += weaponEquipped.maxHealthChange;
+        attack += weaponEquipped.attackChange;
+        defence += weaponEquipped.defenceChange;
+        speed += weaponEquipped.speedChange;
+        weaponSO.equipped = true;
+    }
+
+    public void UnequipWeapon() {
+        health -= weaponEquipped.maxHealthChange;
+        attack -= weaponEquipped.attackChange;
+        defence -= weaponEquipped.defenceChange;
+        speed -= weaponEquipped.speedChange;
+        weaponEquipped.equipped = false;
+        weaponEquipped = null;
+    }
+
     [Header("Inventory stuff")]
     [SerializedDictionary("All weapons", "quantity")]
     public SerializedDictionary<WeaponSO, int> allWeapons;
@@ -40,4 +58,20 @@ public class PlayerSO : ScriptableObject
 
     [Header("UI stuff")]
     public Sprite playerIcon;
+
+    public void AddWeapon(WeaponSO weaponSO) {
+        if (allWeapons.ContainsKey(weaponSO)) {
+            allWeapons[weaponSO] += 1;
+        } else {
+            allWeapons[weaponSO] = 1;
+        }
+    }
+
+    public void AddFood(FoodSO foodSO) {
+        if (allFood.ContainsKey(foodSO)) {
+            allFood[foodSO] += 1;
+        } else {
+            allFood[foodSO] = 1;
+        }
+    }
 }
