@@ -5,8 +5,13 @@ using UnityEngine;
 public class Shopkeeper : InteractableNPC
 {
     public ShopkeeperSO shopkeeperSO; 
-    public CrossObjectEventWithData showAllItemsOnSale;
+    private ShopManager shopManager;
+
+    void Start() {
+        shopManager = GetComponentInChildren<ShopManager>();
+    }
+
     public override void Interact() {
-        showAllItemsOnSale.TriggerEvent(this, shopkeeperSO);
+        shopManager.DisplayAllWeaponOnSale(shopkeeperSO);
     }
 }

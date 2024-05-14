@@ -14,7 +14,7 @@ public class ChangeButtonAppearance : MonoBehaviour
     public UnityEvent buttonPressedEvent;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         buttonImage.sprite = before;
         pressed = false;

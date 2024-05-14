@@ -12,16 +12,10 @@ public class FoodPanelDescription : InventoryDescriptionPanels
         object[] temp = (object[]) obj;
         this.foodSO = (FoodSO) temp[0];
         int qty = (int) temp[1];
-        icon.sprite = foodSO.foodIconWithoutFrame;
-        name.text = foodSO.foodName;
+        foodSO.SetUIInfoWithoutFrame(icon, name);
         description.text = foodSO.foodDescription;
 
-        currentHealthChange.text = foodSO.currentHealthChange.ToString();
-        maxHealthChange.text = foodSO.maxHealthChange.ToString();
-        attackChange.text = foodSO.attackChange.ToString();
-        defenceChange.text = foodSO.defenceChange.ToString();
-        speedChange.text = foodSO.speedChange.ToString();
-        effectsDescription.text = foodSO.effectsDescription;
+        foodSO.FillUpDefaultInfo(currentHealthChange, maxHealthChange, attackChange, defenceChange, speedChange, effectsDescription);
         quantityText.text = qty.ToString();
     }
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AYellowpaper.SerializedCollections;
+using UnityEngine.UI;
+using TMPro;   
 
 [CreateAssetMenu(fileName = "FoodSO", menuName = "Food SO", order = 1)]
 public class FoodSO : ScriptableObject
@@ -28,4 +30,23 @@ public class FoodSO : ScriptableObject
     public int attackChange;
     public int defenceChange;
     public int speedChange;
+
+    public void SetUIInfoWithFrame(Image icon, TextMeshProUGUI text) {
+        icon.sprite = foodIconWithFrame;
+        text.text = foodName;
+    }
+
+    public void SetUIInfoWithoutFrame(Image icon, TextMeshProUGUI text) {
+        icon.sprite = foodIconWithoutFrame;
+        text.text = foodName;
+    }
+
+    public void FillUpDefaultInfo(TextMeshProUGUI currentHealthChangeText, TextMeshProUGUI maxHealthChangeText, TextMeshProUGUI attackChangeText, TextMeshProUGUI defenceChangeText, TextMeshProUGUI speedChangeText, TextMeshProUGUI effectsDescriptionText) {
+        currentHealthChangeText.text = currentHealthChange.ToString();
+        maxHealthChangeText.text = maxHealthChange.ToString();
+        attackChangeText.text = attackChange.ToString();
+        defenceChangeText.text = defenceChange.ToString();
+        speedChangeText.text = speedChange.ToString();
+        effectsDescriptionText.text = effectsDescription;
+    }
 }

@@ -13,8 +13,7 @@ public class DishPanel : MonoBehaviour
 
     public void SetFoodSO(FoodSO foodSO) {
         this.foodSO = foodSO;
-        foodIcon.sprite = foodSO.foodIconWithFrame;
-        foodName.text = foodSO.foodName;
+        foodSO.SetUIInfoWithFrame(foodIcon, foodName);
     }
 
     public void BroadcastFoodSOInfo() {

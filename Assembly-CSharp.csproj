@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjectEvent.cs" />
+     <Compile Include="Assets\Script\Shop\FoodOnSalePanel.cs" />
      <Compile Include="Assets\Script\Chracter viewer manager\TrackWhichPlayerItIs.cs" />
      <Compile Include="Assets\Script\Interactables\Interactables.cs" />
      <Compile Include="Assets\Script\NPCs\Player\Player.cs" />
@@ -46,8 +47,11 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Script\Animation helper\AnimationHelper.cs" />
      <Compile Include="Assets\Script\Inventory\InventoryDescriptionPanels.cs" />
+     <Compile Include="Assets\Script\Shop\ShopPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\Script\Shop\WeaponOnSalePanel.cs" />
      <Compile Include="Assets\Script\NPCs\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Script\Stairs\Stairs.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Script\Cooking\InstantiateAllFoodIcon.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -68,17 +72,21 @@
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjecEventListenerWithData.cs" />
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjectEventListener.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\Script\Shop\FoodShopInfoPanel.cs" />
      <Compile Include="Assets\Script\Manager\Turn manager\TurnManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Script\Chracter viewer manager\PartyMemberIcon.cs" />
      <Compile Include="Assets\Script\Inventory\InventoryIcon.cs" />
+     <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\ShopkeeperSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Script\NPCs\Enemies\EnemySO.cs" />
      <Compile Include="Assets\Script\Button modifier\ChangeButtonAppearance.cs" />
      <Compile Include="Assets\Script\Cooking\IngredientIcon.cs" />
      <Compile Include="Assets\Script\Animation helper\DestroyObject.cs" />
+     <Compile Include="Assets\Script\NPCs\Interactable NPC\InteractableNPC.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\Script\Shop\ShopManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\Script\Inventory\FoodPanelDescription.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -88,6 +96,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Script\Level changer\LevelChangerHelper.cs" />
+     <Compile Include="Assets\Script\Inventory\AddToInventoryManager.cs" />
      <Compile Include="Assets\Script\Cooking\DishPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Script\Food and ingredients\Ingredients\IngredientObject.cs" />
@@ -100,6 +109,7 @@
      <Compile Include="Assets\Script\Level changer\LevelChanger.cs" />
      <Compile Include="Assets\Script\NPCs\Player\PlayerSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\Script\Shop\WeaponShopInfoPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjectEventWithData.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
@@ -111,17 +121,15 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\Script\Chest\Chest.cs" />
+     <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\Shopkeeper.cs" />
      <Compile Include="Assets\Script\Manager\Cooking manager\CookingManager.cs" />
+     <Compile Include="Assets\Script\Shop\ShopInfoPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Script\Food and ingredients\Food\FoodSO.cs" />
      <Compile Include="Assets\Script\Manager\Action manager\ActionManager.cs" />
+     <Compile Include="Assets\Script\Shop\MultiPurchaseManager.cs" />
      <Compile Include="Assets\Script\Inventory\FoodIconInventory.cs" />
-     <Compile Include="Assets\Script\Chest\Chest.cs" />
-     <Compile Include="Assets\Script\Inventory\AddToInventoryManager.cs" />
-     <Compile Include="Assets\Script\Stairs\Stairs.cs" />
-     <Compile Include="Assets\Script\NPCs\Interactable NPC\InteractableNPC.cs" />
-     <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\Shopkeeper.cs" />
-     <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\ShopkeeperSO.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

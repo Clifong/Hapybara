@@ -59,6 +59,9 @@ public class PlayerSO : ScriptableObject
     [Header("UI stuff")]
     public Sprite playerIcon;
 
+    [Header("Money")]
+    public int money;
+
     public void AddWeapon(WeaponSO weaponSO) {
         if (allWeapons.ContainsKey(weaponSO)) {
             allWeapons[weaponSO] += 1;
@@ -73,5 +76,9 @@ public class PlayerSO : ScriptableObject
         } else {
             allFood[foodSO] = 1;
         }
+    }
+
+    public void MinusMoney(int money) {
+        this.money -= money;
     }
 }
