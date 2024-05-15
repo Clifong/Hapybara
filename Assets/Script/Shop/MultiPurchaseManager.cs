@@ -15,6 +15,7 @@ public class MultiPurchaseManager : MonoBehaviour
     private int moneyIHave;
     private int costOfOneItem;
     public CrossObjectEventWithData minusMoney;
+    public Button buyButton;
 
     void Start() {
         shopManager = GetComponent<ShopManager>();

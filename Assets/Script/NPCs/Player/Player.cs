@@ -7,7 +7,6 @@ public class Player : Npc
     public PlayerSO playerSO;
     private bool interact = false;
     private Interactables interactable = null;
-    public CrossObjectEventWithData broadcastMoney;
 
     void Awake() {
         SetStats(playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);    
@@ -40,14 +39,5 @@ public class Player : Npc
 
     public void OnTriggerExit2D(Collider2D other) {
         interactable = null;
-    }
-
-    public void BroadcastMoney() {
-        broadcastMoney.TriggerEvent(this, playerSO.money);
-    }
-
-    public void MinusMoney(Component component, object obj) {
-        object[] temp = (object[])obj;
-        playerSO.MinusMoney((int)temp[0]);
     }
 }

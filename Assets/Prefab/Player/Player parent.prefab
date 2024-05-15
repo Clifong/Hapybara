@@ -19,9 +19,6 @@ GameObject:
   - component: {fileID: 1237877634}
   - component: {fileID: 1237877633}
   - component: {fileID: 1056129710}
-  - component: {fileID: 1485678419}
-  - component: {fileID: 608956514432983069}
-  - component: {fileID: 1485678430}
   m_Layer: 0
   m_Name: Player parent
   m_TagString: Untagged
@@ -177,7 +174,6 @@ MonoBehaviour:
   broadCastActionEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
   characterDied: {fileID: 11400000, guid: 6be4ce6d473fd5248a7d9d935a622fee, type: 2}
   playerSO: {fileID: 11400000, guid: 3b83d6a98caca404090ac612be52a230, type: 2}
-  broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
 --- !u!114 &1237877634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,90 +249,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1237877632}
         m_TargetAssemblyTypeName: Npc, Assembly-CSharp
         m_MethodName: UpdateStats
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1485678419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157412163679220467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: ec5bb1799014c8e47887d986126b24e6, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1237877632}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: BroadcastMoney
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &608956514432983069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157412163679220467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: ec5bb1799014c8e47887d986126b24e6, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1237877632}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: BroadcastMoney
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1485678430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157412163679220467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 72cf1fc143056894287a6ba4b028ac0c, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1237877632}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: MinusMoney
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
