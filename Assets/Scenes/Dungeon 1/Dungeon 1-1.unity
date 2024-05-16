@@ -277,52 +277,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &70232126 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1409663814559460267, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
-  m_PrefabInstance: {fileID: 5442873613054177341}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &70232134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70232126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: a181ca8c257f9774a86d0315f77688d0, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 70232135}
-        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
-        m_MethodName: AddToInventory
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &70232135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70232126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a54b6f8855f3f4db626ed1454ba423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSO: {fileID: 11400000, guid: 3b83d6a98caca404090ac612be52a230, type: 2}
 --- !u!1 &433641223
 GameObject:
   m_ObjectHideFlags: 0
@@ -8098,6 +8052,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1600753143359923392, guid: c5a5e2b54b947c1418be4849ecfad730, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600753143359923392, guid: c5a5e2b54b947c1418be4849ecfad730, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2348717998158377014, guid: c5a5e2b54b947c1418be4849ecfad730, type: 3}
       propertyPath: m_Name
       value: Faceless slime parent
@@ -8374,7 +8336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050685488554939289, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.7186341
+      value: -0.11234665
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
@@ -8442,6 +8404,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 752146629, guid: 80173fba8bf5f34438d0f2f609b93eaa, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 752146629, guid: 80173fba8bf5f34438d0f2f609b93eaa, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8157412163679220466, guid: 80173fba8bf5f34438d0f2f609b93eaa, type: 3}
       propertyPath: m_RootOrder
       value: 4

@@ -7,9 +7,26 @@ public class Player : Npc
     public PlayerSO playerSO;
     private bool interact = false;
     private Interactables interactable = null;
+    private UpdateHealthBar updateHealthBar;
 
     void Awake() {
-        SetStats(playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);    
+        updateHealthBar = GetComponentInChildren<UpdateHealthBar>();
+        SetStats(playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);  
+        AlertHealthChange();  
+    }
+
+    public void AlertHealthChange() {
+        updateHealthBar.UpdateHealthBarInfo(GetHealthInfo()[0], GetHealthInfo()[1]);
+    }
+
+    public override void GetAttacked(int damage) {
+        base.GetAttacked(damage);
+        AlertHealthChange();
+    }
+
+    public override void UpdateStats(Component component, object obj) {
+        base.UpdateStats(component, obj);
+        AlertHealthChange();
     }
 
     public override void Attack(List<Npc> opponentList) {

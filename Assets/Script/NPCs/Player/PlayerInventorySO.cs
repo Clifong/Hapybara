@@ -12,6 +12,8 @@ public class PlayerInventorySO : ScriptableObject
    
     [SerializedDictionary("All food", "quantity")]
     public SerializedDictionary<FoodSO, int> allFood;
+    [SerializedDictionary("All ingredients", "quantity")]
+    public SerializedDictionary<IngredientSO, int> allIngredints;
 
     [Header("Money")]
     public int money;
@@ -32,6 +34,14 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void AddIngredient(IngredientSO ingredientSO) {
+        if (allIngredints.ContainsKey(ingredientSO)) {
+            allIngredints[ingredientSO] += 1;
+        } else {
+            allIngredints[ingredientSO] = 1;
+        }
+    }
+
     public void ReduceFood(FoodSO foodSO, int quantity) {
         if (allFood.ContainsKey(foodSO)) {
             allFood[foodSO] -= quantity;
@@ -41,11 +51,24 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void ReduceIngredient(IngredientSO ingredientSO, int quantity) {
+        if (allIngredints.ContainsKey(ingredientSO)) {
+            allIngredints[ingredientSO] -= quantity;
+            if (allIngredints[ingredientSO] <= 0) {
+                allIngredints.Remove(ingredientSO);
+            }
+        }
+    }
+
     public int GetFoodQty(FoodSO foodSO) {
         if (allFood.ContainsKey(foodSO)) {
             return allFood[foodSO];
         }
         return -1;
+    }
+
+    public void AddMoney(int money) {
+        this.money += money;
     }
 
     public void MinusMoney(int money) {

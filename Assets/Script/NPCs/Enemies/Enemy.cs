@@ -7,9 +7,35 @@ public class Enemy : Npc
     public CrossObjectEvent exitBattle;
     public CrossObjectEventWithData enterBattle;
     public EnemySO enemySO;
+    private UpdateHealthBar updateHealthBar;
+    public CrossObjectEventWithData dropLoot;
+    public GameObject battleZone;
 
     void Awake() {
+        updateHealthBar = GetComponentInChildren<UpdateHealthBar>();
         SetStats(enemySO.health, enemySO.attack, enemySO.defence, enemySO.speed);    
+        AlertHealthChange();         
+    }
+
+    public override void Die() {
+        List<object> loot = enemySO.ReturnLoot();
+        dropLoot.TriggerEvent(this, (int) loot[0], (List<WeaponSO>) loot[1], (List<FoodSO>) loot[2], (List<IngredientSO>) loot[3]);
+        Destroy(this.gameObject);
+    }
+
+
+    public void AlertHealthChange() {
+        updateHealthBar.UpdateHealthBarInfo(GetHealthInfo()[0], GetHealthInfo()[1]);
+    }
+
+    public override void GetAttacked(int damage) {
+        base.GetAttacked(damage);
+        AlertHealthChange();
+    }
+
+    public override void UpdateStats(Component component, object obj) {
+        base.UpdateStats(component, obj);
+        AlertHealthChange();
     }
 
     public override void Attack(List<Npc> opponentList) {
@@ -20,6 +46,7 @@ public class Enemy : Npc
     void OnTriggerEnter2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {
+            battleZone.SetActive(true);
             List<Npc> list = new List<Npc>();
             list.Add(player);
             list.Add(this);
@@ -30,6 +57,7 @@ public class Enemy : Npc
     void OnTriggerExit2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {   
+            battleZone.SetActive(false);
             exitBattle.TriggerEvent();
         }
     }

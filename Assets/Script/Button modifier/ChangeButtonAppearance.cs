@@ -31,4 +31,9 @@ public class ChangeButtonAppearance : MonoBehaviour
         }
     }
 
+    public void Reset() {
+        pressed = false;
+        buttonImage.sprite = before;
+    }
+
 }

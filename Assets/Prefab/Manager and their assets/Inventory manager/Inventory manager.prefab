@@ -6419,7 +6419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 22.256409, y: -21.9292}
+  m_AnchoredPosition: {x: 22.256592, y: -21.929077}
   m_SizeDelta: {x: 44.5128, y: 43.8584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9067579438367505019
@@ -7146,6 +7146,7 @@ GameObject:
   - component: {fileID: 3557472988643529228}
   - component: {fileID: 7069315025032216019}
   - component: {fileID: 6295449926155150522}
+  - component: {fileID: 2810082626394737492}
   m_Layer: 0
   m_Name: Inventory manager
   m_TagString: Untagged
@@ -7209,10 +7210,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1974072249}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 730927632}
         m_TargetAssemblyTypeName: WeaponPanelDescription, Assembly-CSharp
         m_MethodName: PopulateUI
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 610127483}
+        m_TargetAssemblyTypeName: ChangeButtonAppearance, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7401,6 +7426,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4360395286113875682}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8508123881196624602}
+        m_TargetAssemblyTypeName: ChangeButtonAppearance, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &7284782965752800297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7577,8 +7626,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a54b6f8855f3f4db626ed1454ba423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventorySO: {fileID: 0}
-  broadcastMoney: {fileID: 0}
+  playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
+  broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
+--- !u!114 &2810082626394737492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348062765242484767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 064fde2fd66b1944cb02c0cff726d099, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6295449926155150522}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: AddLootFromEnemy
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6348062765500671109
 GameObject:
   m_ObjectHideFlags: 0
@@ -9209,8 +9286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 1
-  m_VerticalFit: 1
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
 --- !u!1 &9031007284805883788
 GameObject:
   m_ObjectHideFlags: 0

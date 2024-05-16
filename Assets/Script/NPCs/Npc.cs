@@ -53,7 +53,7 @@ public abstract class Npc : MonoBehaviour
         }
     }
 
-    public void UpdateStats(Component component, object obj) {
+    public virtual void UpdateStats(Component component, object obj) {
         object[] temp = (object[])obj;
         PlayerSO playerSO = (PlayerSO)temp[0];
         maxHealth = playerSO.health;
@@ -71,6 +71,10 @@ public abstract class Npc : MonoBehaviour
             target.GetAttacked(attack);
             broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
         }
+    }
+
+    protected List<int> GetHealthInfo() {
+        return new List<int>{currHealth, maxHealth};
     }
 
     public virtual void Attack(List<Npc> opponentList, int attackType) {}

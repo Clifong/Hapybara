@@ -50,6 +50,27 @@ public class AddToInventoryManager : MonoBehaviour
         }
     }
 
+    public void AddLootFromEnemy(Component component, object obj) {
+        object[] temp = (object[])obj;
+        int money = (int) temp[0];
+        List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)temp[1];
+        List<FoodSO> allFoodToAdd = (List<FoodSO>)temp[2];
+        List<IngredientSO> allIngredientToAdd = (List<IngredientSO>)temp[3];
+        playerInventorySO.AddMoney(money);
+        foreach (WeaponSO weapon in allWeaponToAdd)
+        {
+            playerInventorySO.AddWeapon(weapon);
+        }
+        foreach (FoodSO foodSO in allFoodToAdd)
+        {
+            playerInventorySO.AddFood(foodSO);
+        }
+        foreach (IngredientSO ingredientSO in allIngredientToAdd)
+        {
+            playerInventorySO.AddIngredient(ingredientSO);
+        }
+    }
+
     public void BroadcastMoney() {
         broadcastMoney.TriggerEvent(this, playerInventorySO.money);
     }
