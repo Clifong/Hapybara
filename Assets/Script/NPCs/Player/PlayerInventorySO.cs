@@ -32,6 +32,22 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void ReduceFood(FoodSO foodSO, int quantity) {
+        if (allFood.ContainsKey(foodSO)) {
+            allFood[foodSO] -= quantity;
+            if (allFood[foodSO] <= 0) {
+                allFood.Remove(foodSO);
+            }
+        }
+    }
+
+    public int GetFoodQty(FoodSO foodSO) {
+        if (allFood.ContainsKey(foodSO)) {
+            return allFood[foodSO];
+        }
+        return -1;
+    }
+
     public void MinusMoney(int money) {
         this.money -= money;
     }

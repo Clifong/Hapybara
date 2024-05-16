@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gardener : InteractableNPC
+public class Gardener : InteractableNPCWithRequest
 {
-    public override void Interact() {
-    }
+
 }

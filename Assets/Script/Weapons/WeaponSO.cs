@@ -19,7 +19,7 @@ public class WeaponSO : ScriptableObject
     public int defenceChange;
     
     public int speedChange;
-    public bool equipped;
+    public PlayerSO owner;
     [Header("Effects")]
     [TextAreaAttribute]
     public string effectsDescription;

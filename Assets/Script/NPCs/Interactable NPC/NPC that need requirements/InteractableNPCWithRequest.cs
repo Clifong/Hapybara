@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class InteractableNPCWithRequest : InteractableNPC
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public List<NPCRequestSO> allRequest;
+    [TextAreaAttribute]
+    public List<string> allDialogueText;
+    private int counter = 0;
+
+    public override void Interact() {
+        if (counter >= allRequest.Count) {
+            Destroy(this.gameObject);
+            return;
+        }
+        NPCRequestSO request = allRequest[counter];
+        if (request is NPCRequestFoodSO) {
+            ((NPCRequestFoodSO) request).Invoke(this);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SatisfyRequest() {
+        NPCRequestSO request = allRequest[counter];
+        if (request is NPCRequestFoodSO) {
+            ((NPCRequestFoodSO) request).SatisfyRequest(this);
+        }
+        counter += 1;
+        Interact();
     }
 }

@@ -60,7 +60,6 @@ public class CharacterViewerManager : MonoBehaviour
     }
 
     public void RefreshData() {
-        Debug.Log("?");
         SetStats(playerSO);
         updatePlayerStats.TriggerEvent(this, playerSO);
     }

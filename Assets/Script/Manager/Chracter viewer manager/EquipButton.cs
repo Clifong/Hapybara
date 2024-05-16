@@ -17,7 +17,7 @@ public class EquipButton : MonoBehaviour
     public void CheckIfEquipped(Component component, object obj) {
         object[] temp = (object[]) obj;
         weaponSO = (WeaponSO) temp[0];
-        if (weaponSO.equipped) {
+        if (weaponSO.owner != null) {
             button.image.sprite = unequipWeaponImage;
             text.text = "Unequip";
         } else {
@@ -27,7 +27,7 @@ public class EquipButton : MonoBehaviour
     }
 
     public void EquipOrUnequipWeapon() {
-        if (weaponSO.equipped) {
+        if (weaponSO.owner != null) {
             unequipWeapon.TriggerEvent();
             button.image.sprite = equipWeaponImage;
             text.text = "Equip";

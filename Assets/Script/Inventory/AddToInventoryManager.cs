@@ -40,6 +40,16 @@ public class AddToInventoryManager : MonoBehaviour
         }
     }
 
+    public void ReduceFoodOnlyInInventory(Component component, object obj) {
+        object[] temp = (object[])obj;
+        List<FoodSO> allFoodToChange = (List<FoodSO>)temp[0];
+        List<int> quantityToRemove = (List<int>)temp[1];
+        for (int i = 0; i < allFoodToChange.Count; i++)
+        {
+            playerInventorySO.ReduceFood(allFoodToChange[i], quantityToRemove[i]);
+        }
+    }
+
     public void BroadcastMoney() {
         broadcastMoney.TriggerEvent(this, playerInventorySO.money);
     }

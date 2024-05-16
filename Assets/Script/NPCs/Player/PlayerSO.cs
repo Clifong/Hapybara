@@ -36,7 +36,7 @@ public class PlayerSO : ScriptableObject
         attack += weaponEquipped.attackChange;
         defence += weaponEquipped.defenceChange;
         speed += weaponEquipped.speedChange;
-        weaponSO.equipped = true;
+        weaponSO.owner = this;
     }
 
     public void UnequipWeapon() {
@@ -44,7 +44,7 @@ public class PlayerSO : ScriptableObject
         attack -= weaponEquipped.attackChange;
         defence -= weaponEquipped.defenceChange;
         speed -= weaponEquipped.speedChange;
-        weaponEquipped.equipped = false;
+        weaponEquipped.owner = null;
         weaponEquipped = null;
     }
     [Header("UI stuff")]
