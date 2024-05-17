@@ -29,6 +29,8 @@ namespace AYellowpaper.SerializedCollections
 
         public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
         {
+
+
 #if UNITY_EDITOR
             foreach (var kvp in serializedDictionary._serializedList)
                 _serializedList.Add(new SerializedKeyValuePair<TKey, TValue>(kvp.Key, kvp.Value));
@@ -60,6 +62,20 @@ namespace AYellowpaper.SerializedCollections
         public SerializedDictionary(int capacity) : base(capacity) { }
         public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
         
+
+        public List<TKey> ReturnKeys() {
+            List<TKey> allKey = new List<TKey>();
+            foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
+            {
+                allKey.Add(pair.Key);
+            }
+            return allKey;
+        }
+
+        public TValue GetValueAtKey(TKey key) {
+            return base[key];   
+        }
+
         [Conditional("UNITY_EDITOR")]
         private void SyncDictionaryToBackingField_Editor()
         {
@@ -88,19 +104,6 @@ namespace AYellowpaper.SerializedCollections
                 if (!anyEntryWasFound)
                     _serializedList.Add(new SerializedKeyValuePair<TKey, TValue>(key, value));
             }
-        }
-
-        public new List<TKey> ReturnKeys() {
-            List<TKey> allKey = new List<TKey>();
-            foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
-            {
-                allKey.Add(pair.Key);
-            }
-            return allKey;
-        }
-
-        public new TValue GetValueAtKey(TKey key) {
-            return base[key];   
         }
         
         public new void Add(TKey key, TValue value)

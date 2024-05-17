@@ -6,7 +6,9 @@ using Utils;
 public class TurnManager : MonoBehaviour
 {
     private PriorityQueue<Npc, float> turnQueue = new PriorityQueue<Npc, float>();
+    [SerializeField]
     private List<Npc> allEnemies = new List<Npc>();
+    [SerializeField]
     private List<Npc> allPlayers = new List<Npc>();
     private Turn turn;
     public CrossObjectEvent showItIsEnemyTurn;

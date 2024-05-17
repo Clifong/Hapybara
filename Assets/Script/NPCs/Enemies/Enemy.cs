@@ -46,9 +46,13 @@ public class Enemy : Npc
     void OnTriggerEnter2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {
+            PlayerQueue playerQueue = player.GetComponentInParent<PlayerQueue>();
             battleZone.SetActive(true);
             List<Npc> list = new List<Npc>();
-            list.Add(player);
+            foreach (Player activePlayer in playerQueue.ReturnAllActivePlayer())
+            {
+                list.Add(activePlayer);
+            }
             list.Add(this);
             enterBattle.TriggerEvent(this, list);
         }

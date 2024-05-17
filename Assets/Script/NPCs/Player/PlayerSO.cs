@@ -13,6 +13,7 @@ public class PlayerSO : ScriptableObject
     public int defence;
     public int speed;
     public WeaponSO weaponEquipped;
+    public GameObject playerObject;
 
     void Awake() {
         CalculateExpNeededForNextLevel();

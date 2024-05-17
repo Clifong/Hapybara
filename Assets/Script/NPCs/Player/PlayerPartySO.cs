@@ -8,5 +8,9 @@ public class PlayerPartySO : ScriptableObject
     public List<PlayerSO> allActivePartyMembers;
     public List<PlayerSO> allPartyMembers;
 
+    public void AddPlayerToActiveParty(PlayerSO player, int slot) {
+        allActivePartyMembers[slot] = player;
+    }
+
     
 }

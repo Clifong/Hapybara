@@ -492,6 +492,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6952842122772055414, guid: 83dd905d407ee13469788ce5f5b57ca8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 22.256348
+      objectReference: {fileID: 0}
     - target: {fileID: 7595052163028493404, guid: 83dd905d407ee13469788ce5f5b57ca8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -873,34 +877,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
   broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
---- !u!114 &6185053818664043286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409663814559460267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 8b798d71a4dc7aa44a5735cd70a7390d, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 70232135}
-        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
-        m_MethodName: AddWeaponOnlyToInventory
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1164364930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +896,34 @@ MonoBehaviour:
       - m_Target: {fileID: 70232135}
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: ReduceFoodOnlyInInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6185053818664043286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409663814559460267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 8b798d71a4dc7aa44a5735cd70a7390d, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 70232135}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: AddWeaponOnlyToInventory
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1176,7 +1180,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3049475358309875848, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: -0.00032424927
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318091, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_IsActive
@@ -1184,7 +1188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Size
-      value: 0.9998722
+      value: 0.75896454
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Value

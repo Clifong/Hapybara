@@ -1,0 +1,604 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1715902296133025, "dur": 2498428, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902296133402, "dur": 6495, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902296139900, "dur": 40996, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902296180970, "dur": 1203597, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902297384569, "dur": 1246091, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902298630663, "dur": 790, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902298631935, "dur": 16, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1715902297142401, "dur": 225271, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297143701, "dur": 63035, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297340015, "dur": 5525, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297345544, "dur": 22116, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297346618, "dur": 19471, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297373493, "dur": 1755, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1715902297372601, "dur": 2679, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902298632087, "dur": 390, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1715902297435678, "dur":2035, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902297437719, "dur":125, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1715902297437892, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1715902297437911, "dur":470, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1715902297438402, "dur":695, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902297439097, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618114, "dur":290, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618404, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618417, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618420, "dur":26, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618446, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618451, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618465, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618468, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618476, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618478, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618485, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618487, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618496, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618498, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618505, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618507, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618515, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618518, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618527, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618529, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618538, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618540, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618549, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618551, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618559, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618561, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618567, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618570, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618578, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618580, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618586, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618589, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618597, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618658, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298618684, "dur":2193, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1715902297438814, "dur":321, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297439135, "dur":8160, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297447295, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1715902297447376, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297450881, "dur":32865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1715902297483777, "dur":9757, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297493537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297493541, "dur":958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297494517, "dur":8682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297503205, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297503214, "dur":1838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297505078, "dur":10473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297515554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297515576, "dur":3039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297518658, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297518798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297518803, "dur":2498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297521330, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297521484, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297521489, "dur":5383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297526903, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297527062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297527067, "dur":2959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297530054, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297530238, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297530243, "dur":2539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297532808, "dur":5319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297538212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297538218, "dur":1667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297539917, "dur":5973, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297545893, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297545899, "dur":1242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297547160, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297547304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297547309, "dur":1470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297548804, "dur":5302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297554109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297554114, "dur":1834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297555969, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297556088, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297556093, "dur":1745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297557981, "dur":332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297558315, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902297558320, "dur":2585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902297560931, "dur":874954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902298435889, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1715902298435896, "dur":1997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1715902298437920, "dur":179963, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297438507, "dur":611, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297439119, "dur":8494, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297447613, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1715902297447730, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297464543, "dur":14323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1715902297478899, "dur":6495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1715902297485398, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297485403, "dur":2785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1715902297488223, "dur":6766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297494993, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297494998, "dur":1648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297496681, "dur":9671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297506357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297506363, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297507348, "dur":11843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297519194, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297519198, "dur":2036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297521261, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297521532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297521537, "dur":1836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297523410, "dur":6772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297530185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297530190, "dur":2521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297532742, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297532969, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297532974, "dur":1039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297534036, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297534139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297534144, "dur":2144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297536309, "dur":298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297536699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297536703, "dur":3154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297539880, "dur":6481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297546364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297546369, "dur":11278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297557727, "dur":1159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297558890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902297558895, "dur":2927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902297561852, "dur":692765, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902298254620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1715902298254625, "dur":1258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1715902298255906, "dur":362067, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902297438774, "dur":353, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902297439127, "dur":8224, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902297447352, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1715902297447543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902297467750, "dur":11144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1715902297478918, "dur":741846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara.exe" }}
+,{ "pid":12345, "tid":3, "ts":1715902298220769, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298220776, "dur":1211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara.exe" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222010, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222032, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222066, "dur":852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222940, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222962, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298222965, "dur":1496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":3, "ts":1715902298224489, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1715902298224516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298224521, "dur":2149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1715902298226696, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1715902298226724, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298226728, "dur":1192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1715902298227947, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1715902298228038, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298228043, "dur":808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1715902298228878, "dur":17786, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1715902298246670, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1715902298246679, "dur":2429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1715902298249140, "dur":368881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297438845, "dur":310, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297439155, "dur":7997, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297447153, "dur":27437, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1715902297474594, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297474600, "dur":908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1715902297475532, "dur":2140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297477676, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297477846, "dur":1336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297479211, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1715902297479296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297479563, "dur":6820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1715902297486422, "dur":8687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297495113, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297495119, "dur":1489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297496635, "dur":6560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297503199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297503205, "dur":1695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297504943, "dur":11486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297516432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297516438, "dur":3523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297519992, "dur":7723, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297527717, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297527723, "dur":1790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297529594, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297529777, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297529792, "dur":13080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297542912, "dur":1238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297544155, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297544218, "dur":1333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297545571, "dur":6021, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297551595, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297551601, "dur":865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297552486, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297552634, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297552638, "dur":733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297553391, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297553528, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297553531, "dur":2116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297555674, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297555778, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297555783, "dur":1722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297557965, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297558201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902297558206, "dur":6208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902297564456, "dur":679857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902298244316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1715902298244322, "dur":907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1715902298245256, "dur":372768, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902297438886, "dur":279, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902297439165, "dur":7708, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902297446874, "dur":116419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1715902297563295, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902297563302, "dur":971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1715902297564307, "dur":452092, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298016404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902298016410, "dur":1117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298017556, "dur":934, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298018494, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902298018518, "dur":1287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298019831, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298019979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902298019984, "dur":706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298020707, "dur":313040, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298333754, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1715902298333764, "dur":1710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1715902298335512, "dur":282372, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297438904, "dur":274, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297439178, "dur":7634, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297446812, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1715902297446972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297468908, "dur":10918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1715902297479854, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297480000, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297480139, "dur":718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297480882, "dur":7565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297488449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297488453, "dur":1689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297490168, "dur":9976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297500148, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297500176, "dur":1752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297501955, "dur":9350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297511310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297511317, "dur":13869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297525209, "dur":7027, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297532240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297532245, "dur":1445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297533716, "dur":6245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297539964, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297539970, "dur":670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297540657, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297540768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297540784, "dur":661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297541464, "dur":4716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297546183, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297546246, "dur":2186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297548465, "dur":5744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297554212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297554217, "dur":2122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297556371, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297556734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297556739, "dur":2098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297558862, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297558974, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902297558978, "dur":2899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902297561907, "dur":677771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902298239755, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1715902298239762, "dur":1371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1715902298241161, "dur":376942, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297438937, "dur":247, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297439184, "dur":7479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297446664, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1715902297446819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297467261, "dur":50541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1715902297517885, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297518047, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297518052, "dur":2935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297521017, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297521137, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297521142, "dur":3637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297524805, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297524916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297524921, "dur":2914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297527862, "dur":8104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297535972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297535981, "dur":1086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297537102, "dur":7487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297544594, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297544603, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297545722, "dur":5923, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297551649, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297551657, "dur":1274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297552987, "dur":548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297553556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297553562, "dur":2072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297555665, "dur":541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297556208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297556212, "dur":2600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297558842, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297558935, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902297558939, "dur":2586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902297561555, "dur":692282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902298253846, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1715902298253854, "dur":1465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1715902298255346, "dur":362655, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902297438967, "dur":222, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902297439190, "dur":7458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902297446648, "dur":91291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1715902297537942, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902297537949, "dur":24111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1715902297562090, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902297562194, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902297562201, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902297563183, "dur":630917, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298194105, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298194112, "dur":5843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298199990, "dur":693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298200687, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298200695, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298201969, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/AYellowpaper.SerializedCollections.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298202071, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298202076, "dur":908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/AYellowpaper.SerializedCollections.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298203008, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298203185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298203190, "dur":841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298204056, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298204148, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298204153, "dur":669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298204846, "dur":49487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298254338, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1715902298254762, "dur":1126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1715902298255918, "dur":361984, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297439004, "dur":190, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297439194, "dur":7350, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297446545, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1715902297446629, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297467210, "dur":15920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1715902297483163, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297483334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297483401, "dur":1013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297484439, "dur":8494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297492936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297492941, "dur":1309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297494269, "dur":8896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297503168, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297503175, "dur":1594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297504799, "dur":10652, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297515458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297515464, "dur":3294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297518788, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297519071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297519076, "dur":2307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297521412, "dur":5128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297526544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297526566, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297527565, "dur":7114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297534682, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297534686, "dur":670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297535381, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297535499, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297535504, "dur":637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297536163, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297536268, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297536271, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297538822, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297538943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297538949, "dur":1293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297540268, "dur":7718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297547991, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297547998, "dur":1551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297549576, "dur":6650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297556230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297556235, "dur":2002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297558263, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297558365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902297558370, "dur":1840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902297560240, "dur":701327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902298261570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1715902298261575, "dur":759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1715902298262352, "dur":355497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297439066, "dur":134, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297439200, "dur":7254, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297446455, "dur":26994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1715902297473457, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297473557, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1715902297474584, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1715902297474670, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297474674, "dur":30259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1715902297504964, "dur":11766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297516734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297516740, "dur":1983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297518751, "dur":1080, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297519835, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297519840, "dur":2785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297522653, "dur":5056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297527712, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297527718, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297529292, "dur":8123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297537421, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297537429, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297538959, "dur":8430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297547391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297547396, "dur":1728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297549147, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297549355, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297549360, "dur":861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297550247, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297550372, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297550377, "dur":656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297551051, "dur":4869, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297555922, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297555927, "dur":1462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297557418, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297557508, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297557514, "dur":2304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297559853, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297559974, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902297559979, "dur":2219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902297562251, "dur":690577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902298252833, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1715902298252842, "dur":1209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":10, "ts":1715902298254079, "dur":363932, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297439094, "dur":6, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297439101, "dur":7253, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297446366, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1715902297446375, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297447415, "dur":2042, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1715902297449462, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1715902297449509, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297451002, "dur":3243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/app.info" }}
+,{ "pid":12345, "tid":11, "ts":1715902297454248, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1715902297454393, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297455802, "dur":97113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1715902297552948, "dur":334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297553285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297553291, "dur":1230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297554545, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297554632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297554637, "dur":2030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297556697, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297557311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297557316, "dur":1927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297559269, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297559392, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902297559396, "dur":2661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902297562091, "dur":696925, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902298259020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1715902298259026, "dur":840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1715902298259884, "dur":358007, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1715902297439121, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1715902297439121, "dur":8471, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1715902297447592, "dur":115689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1715902297563285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1715902297563291, "dur":1148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1715902297564470, "dur":739419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1715902298303894, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1715902298303902, "dur":1242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1715902298305174, "dur":312677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297439163, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297439163, "dur":7865, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297447028, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1715902297447101, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297455622, "dur":21714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":13, "ts":1715902297477365, "dur":26994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297504363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297504424, "dur":5074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297509534, "dur":7321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297516858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297516864, "dur":3131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297520024, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297520162, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297520167, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297522730, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297522887, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297522892, "dur":1425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297524344, "dur":5018, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297529366, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297529376, "dur":1739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297531138, "dur":4924, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297536065, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297536071, "dur":1056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297537154, "dur":7931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297545089, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297545095, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297546212, "dur":5739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297551954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297551958, "dur":1141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297553138, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297553297, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297553302, "dur":1107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297554435, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297554797, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297554802, "dur":1702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297556529, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297556625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297556630, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297558570, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297558758, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902297558762, "dur":2686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902297561483, "dur":505339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298066829, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902298066839, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298068581, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298068782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902298068790, "dur":1299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298070148, "dur":5194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298075346, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902298075353, "dur":4248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298079635, "dur":536441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298616083, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1715902298616272, "dur":1486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":13, "ts":1715902298617797, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":13, "ts":1715902298617801, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902297439229, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902297439230, "dur":7126, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902297446366, "dur":775530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":14, "ts":1715902298221901, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298222080, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":14, "ts":1715902298222905, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298222937, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298222941, "dur":2485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298225452, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298225489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298225494, "dur":881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298226401, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298226429, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298226433, "dur":2604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298229062, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298229088, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298229092, "dur":1361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298230479, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/resources.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298230506, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298230510, "dur":1757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/resources.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298232301, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/level2" }}
+,{ "pid":12345, "tid":14, "ts":1715902298232331, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298232335, "dur":906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/level2" }}
+,{ "pid":12345, "tid":14, "ts":1715902298233268, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/level1" }}
+,{ "pid":12345, "tid":14, "ts":1715902298233294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298233298, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/level1" }}
+,{ "pid":12345, "tid":14, "ts":1715902298234180, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1715902298234211, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298234216, "dur":819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1715902298235065, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298235095, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298235099, "dur":2432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1715902298237563, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298237592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298237596, "dur":1326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":14, "ts":1715902298238950, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":14, "ts":1715902298238991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298238996, "dur":1106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":14, "ts":1715902298240128, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1715902298240233, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1715902298240237, "dur":943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1715902298241207, "dur":376882, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902297439255, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902297439256, "dur":7102, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902297446366, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1715902297446516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902297467222, "dur":10168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1715902297477438, "dur":156677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":15, "ts":1715902297634119, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902297634125, "dur":11492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":15, "ts":1715902297645648, "dur":597379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":15, "ts":1715902298243031, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1715902298243038, "dur":1133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":15, "ts":1715902298244200, "dur":373882, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297439276, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297439277, "dur":8483, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297447760, "dur":26562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":16, "ts":1715902297474326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297474378, "dur":995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":16, "ts":1715902297475402, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":16, "ts":1715902297475487, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297475492, "dur":88970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":16, "ts":1715902297564497, "dur":2153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":16, "ts":1715902297566654, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902297566676, "dur":3829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":16, "ts":1715902297570533, "dur":687741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Build/Hapybara_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":16, "ts":1715902298258277, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1715902298258282, "dur":1412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Build/Hapybara_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":16, "ts":1715902298259715, "dur":358177, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1715902298622513, "dur":2497, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1715902298632555, "dur": 8560, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1715902298631920, "dur": 9236, "ph": "X", "name": "Write chrome-trace events", "args": {} },

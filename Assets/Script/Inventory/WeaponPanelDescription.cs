@@ -11,6 +11,7 @@ public class WeaponPanelDescription : InventoryDescriptionPanels
         int qty = (int) temp[1];
         weaponSO.SetUIInfoWithoutFrame(icon, name);
         description.text = weaponSO.weaponDescription;
+        quantityText.text = qty.ToString();
 
         weaponSO.FillUpDefaultInfo(maxHealthChange, attackChange, defenceChange, speedChange, effectsDescription);
     }
