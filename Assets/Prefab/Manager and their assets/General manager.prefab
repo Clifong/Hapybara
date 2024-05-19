@@ -414,6 +414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5442873613758232999}
     m_Modifications:
+    - target: {fileID: 1181399146094771826, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00011108071
+      objectReference: {fileID: 0}
     - target: {fileID: 4939162799268806368, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -462,6 +466,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Party manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6426616963515513307, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426616963515513307, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303211512796000944, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: resetParty
+      value: 
+      objectReference: {fileID: 11400000, guid: c6c76dd1d080990499926ee0716562fe, type: 2}
+    - target: {fileID: 7689757210927754565, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689757210927754565, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689757210927754565, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
 --- !u!4 &5442873612475275810 stripped
@@ -469,6 +497,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4939162799268806368, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
   m_PrefabInstance: {fileID: 1081874169266840770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5442873612475275811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4939162799268806369, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+  m_PrefabInstance: {fileID: 1081874169266840770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &223495713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442873612475275811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 38499d274f397724da790b430d4415ab, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7663348648728434290}
+        m_TargetAssemblyTypeName: PartyManager, Assembly-CSharp
+        m_MethodName: AddNewPlayerToParty
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7663348648728434290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7303211512796000944, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+  m_PrefabInstance: {fileID: 1081874169266840770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442873612475275811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724d9ed9f6f1b7f41ae084a7c3e1ab67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1456934644301042841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,8 +1251,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 5442873613758232999}
     m_Modifications:
     - target: {fileID: 3049475358309875848, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.714233
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049475358309875848, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00032424927
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318091, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_IsActive
@@ -1188,11 +1264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Size
-      value: 0.75896454
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047575944446276737, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.7919922
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944664990905, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1319,6 +1399,14 @@ PrefabInstance:
     - target: {fileID: 2113207709718830638, guid: 119485a1d8e23cb4180e5940539c7e60, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549562486701746644, guid: 119485a1d8e23cb4180e5940539c7e60, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549562486701746644, guid: 119485a1d8e23cb4180e5940539c7e60, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2971726549226335855, guid: 119485a1d8e23cb4180e5940539c7e60, type: 3}
       propertyPath: m_IsActive

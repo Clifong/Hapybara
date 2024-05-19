@@ -7,7 +7,7 @@ public class InteractableNPCWithRequest : InteractableNPC
     public List<NPCRequestSO> allRequest;
     [TextAreaAttribute]
     public List<string> allDialogueText;
-    private int counter = 0;
+    protected int counter = 0;
 
     public override void Interact() {
         if (counter >= allRequest.Count) {

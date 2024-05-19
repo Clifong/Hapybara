@@ -12,5 +12,21 @@ public class PlayerPartySO : ScriptableObject
         allActivePartyMembers[slot] = player;
     }
 
+    public void AddPlayerToActiveParty(PlayerSO player) {
+        if (!allPartyMembers.Contains(player)) {
+            allPartyMembers.Add(player);
+        } else {
+            return;
+        }
+        if (!allActivePartyMembers.Contains(player)) {
+            for (int i = 0; i < allActivePartyMembers.Count; i++) {
+                if (allActivePartyMembers[i] == null) {
+                    allActivePartyMembers[i] = player;
+                    return;
+                }
+            }
+        }
+    }
+
     
 }

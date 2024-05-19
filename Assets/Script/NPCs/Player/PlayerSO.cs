@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [CreateAssetMenu(fileName = "Player SO", menuName = "All player SO/PlayerSO", order = 1)]
 public class PlayerSO : ScriptableObject
 {
+    public string name;
     public int level = 1;
     public int currentExp = 0;
     public int expNeededForNextLevel = 0;
@@ -48,7 +50,17 @@ public class PlayerSO : ScriptableObject
         weaponEquipped.owner = null;
         weaponEquipped = null;
     }
+
+    public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {
+        healthText.text = health.ToString();
+        attackText.text = attack.ToString();
+        defenceText.text = defence.ToString();
+        speedText.text = speed.ToString();
+    }
+    
     [Header("UI stuff")]
     public Sprite playerIcon;
     public Sprite playerAppearance;
+    [Header("Skills")]
+    public List<SkillsSO> allSkills;
 }

@@ -12,7 +12,7 @@ public class CharacterViewerManager : MonoBehaviour
     public Transform content;
     private List<GameObject> allPlayerMemberInstantiatedIcons = new List<GameObject>();
 
-    [Header("Bottom section stuff")]
+    [Header("Bottom section stuff/Main page")]
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI attackText;
     public TextMeshProUGUI defenceText;
@@ -23,6 +23,10 @@ public class CharacterViewerManager : MonoBehaviour
     public Sprite noEquipmentEquippedDefault;
     public Slider expSlider;
     private PlayerSO playerSO;
+    [Header("Bottom section stuff/Skills page")]
+    public GameObject skillPanel;
+    public Transform skillContent;
+    private List<GameObject> allSpawnedSkillsPanel = new List<GameObject>();
 
     public void InstantiatePartyMemberIcons() {
         foreach (GameObject icon in allPlayerMemberInstantiatedIcons)
@@ -56,6 +60,17 @@ public class CharacterViewerManager : MonoBehaviour
             weaponEquippedIcon.sprite = playerSO.weaponEquipped.weaponIconWithoutFrame;
         } else {
             weaponEquippedIcon.sprite = noEquipmentEquippedDefault;
+        }
+        foreach (GameObject spawnedSkillPanel in allSpawnedSkillsPanel)
+        {
+            Destroy(spawnedSkillPanel);
+        }
+        allSpawnedSkillsPanel.Clear();
+        foreach (SkillsSO skillsSO in playerSO.allSkills)
+        {
+            GameObject spawnedSkillPanel = Instantiate(skillPanel, skillContent);
+            allSpawnedSkillsPanel.Add(spawnedSkillPanel);
+            spawnedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillsSO);
         }
     }
 
