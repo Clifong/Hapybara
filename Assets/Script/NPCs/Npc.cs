@@ -15,8 +15,9 @@ public abstract class Npc : MonoBehaviour
     public CrossObjectEventWithData broadCastActionEvent;
     public CrossObjectEventWithData characterDied;
     private SpawnDamageText spawnDamageTextScript;
-    private int poisonForHowLong = 0;
-    private int burnForHowLong = 0;
+    protected int poisonForHowLong = 0;
+    protected int burnForHowLong = 0;
+    protected UpdateStatusAlinmentIcon updateStatusAlinmentIcon;
 
 
     protected void SetStats(int health, int attack, int defence, int speed) {
@@ -30,6 +31,7 @@ public abstract class Npc : MonoBehaviour
         this.currDefence = defence;
         this.currSpeed = -speed;
         spawnDamageTextScript = GetComponent<SpawnDamageText>();
+        updateStatusAlinmentIcon = GetComponentInChildren<UpdateStatusAlinmentIcon>();
     }
 
     public virtual void GetAttacked(int damage) {
@@ -39,6 +41,22 @@ public abstract class Npc : MonoBehaviour
             characterDied.TriggerEvent(this, this);
             Die();
         }
+    }
+
+    public virtual void GetAttacked(int damage, SkillsSO skillSO) {
+        if (skillSO is PoisonSkillsSO) {
+            poisonForHowLong = ((PoisonSkillsSO) skillSO).GetPosioned();
+            if (poisonForHowLong > 0) {
+                updateStatusAlinmentIcon.SpawnSomeIcon((PoisonSkillsSO) skillSO);
+            }
+        }
+        if (skillSO is BurningSkillsSO) {
+            burnForHowLong = ((BurningSkillsSO) skillSO).GetBurnt();
+            if (burnForHowLong > 0) {
+                updateStatusAlinmentIcon.SpawnSomeIcon((BurningSkillsSO) skillSO);
+            }
+        }     
+        GetAttacked(damage);
     }
 
     public virtual void Die() {
@@ -77,7 +95,7 @@ public abstract class Npc : MonoBehaviour
     public void AttackWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
         if (target != null) {
-            target.GetAttacked(attack + skillSO.damage);
+            target.GetAttacked(attack + skillSO.damage, skillSO);
         }
     }
 

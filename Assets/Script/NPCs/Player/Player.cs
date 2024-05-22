@@ -34,6 +34,20 @@ public class Player : Npc
         base.Attack(opponentList);
     }
 
+    public override void EnqueueIntoSpeedQueue(Utils.PriorityQueue<Npc, float> pq) {
+        if (poisonForHowLong > 0) {
+            GetAttacked(1);
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " was hurt by poison");
+            poisonForHowLong -= 1;
+        } 
+        if (burnForHowLong > 0) {
+            GetAttacked(1);
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " was hurt by burn");
+            burnForHowLong -= 1;
+        }
+        base.EnqueueIntoSpeedQueue(pq);
+    }
+
     public override void Attack(List<Npc> opponentList, int attackType) {
         if (attackType == -1 || playerSO.allSkills.Count == 0) {
             Debug.Log("Basic attack");
