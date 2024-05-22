@@ -48,6 +48,21 @@ public class PlayerSO : ScriptableObject
         weaponEquipped.owner = null;
         weaponEquipped = null;
     }
+<<<<<<< Updated upstream
+=======
+
+    public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {
+        healthText.text = health.ToString();
+        attackText.text = attack.ToString();
+        defenceText.text = defence.ToString();
+        speedText.text = speed.ToString();
+    }
+
+    public void Feed(FoodSO foodSO) {
+        
+    }
+    
+>>>>>>> Stashed changes
     [Header("UI stuff")]
     public Sprite playerIcon;
     public Sprite playerAppearance;

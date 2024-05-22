@@ -16,4 +16,8 @@ public class PlayerAttack : MonoBehaviour
             typeOfAttack.TriggerEvent(this, value.Get<float>());
         }
     }
+
+    void OnSwitch(InputValue value) {
+        Debug.Log(value);
+    }
 }

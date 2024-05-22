@@ -10,6 +10,11 @@ public class InventoryPopulateGrid : MonoBehaviour
     public GameObject foodIcon;
     private List<GameObject> allSpawnedWeaponIcons = new List<GameObject>();
     private List<GameObject> allSpawnedFoodIcons = new List<GameObject>();
+    [Header("Menu when feeding")]
+    public PlayerPartySO playerPartySO;
+    public GameObject partyMemberIconWhenFeeding;
+    public Transform partyMemberContent;
+    private List<GameObject> allSpawnedPartyMemberIcons = new List<GameObject>(); 
 
     public void PopulateWeaponUI() {
         foreach (GameObject instantiatedWeaponIcon in allSpawnedWeaponIcons)
@@ -50,4 +55,17 @@ public class InventoryPopulateGrid : MonoBehaviour
             allSpawnedFoodIcons.Add(instantiatedFoodIcon);
         }
     }
+
+    public void PopulateAllCharacterIcon() {
+        foreach (GameObject instantiatedPartyMemberIcon in allSpawnedPartyMemberIcons)
+        {
+            Destroy(instantiatedPartyMemberIcon);
+        }
+        allSpawnedPartyMemberIcons.Clear();
+        foreach (PlayerSO playerSO in playerPartySO.allPartyMembers) {
+            GameObject instantiatedPartyMemberIcon = Instantiate(partyMemberIconWhenFeeding, partyMemberContent);
+            instantiatedPartyMemberIcon.GetComponent<PartyIconWhenFeeding>().SetPlayerInfo(playerSO);
+            allSpawnedPartyMemberIcons.Add(instantiatedPartyMemberIcon);
+        }
+    } 
 }
