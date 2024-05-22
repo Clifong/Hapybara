@@ -15,6 +15,9 @@ public abstract class Npc : MonoBehaviour
     public CrossObjectEventWithData broadCastActionEvent;
     public CrossObjectEventWithData characterDied;
     private SpawnDamageText spawnDamageTextScript;
+    private int poisonForHowLong = 0;
+    private int burnForHowLong = 0;
+
 
     protected void SetStats(int health, int attack, int defence, int speed) {
         this.maxHealth = health;
@@ -66,10 +69,15 @@ public abstract class Npc : MonoBehaviour
 
     public virtual void Attack(List<Npc> opponentList) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
-        target.GetAttacked(attack);
         if (target != null) {
             target.GetAttacked(attack);
-            broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
+        }
+    }
+
+    public void AttackWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
+        Npc target = opponentList[Random.Range(0, opponentList.Count)];
+        if (target != null) {
+            target.GetAttacked(attack + skillSO.damage);
         }
     }
 

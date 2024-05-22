@@ -15,7 +15,6 @@ public class ActionManager : MonoBehaviour
         actionTextSoFar.Add(spawnedActionText);
         spawnedActionText.GetComponent<TextMeshProUGUI>().text = (string) temp[0];
         spawnedActionText.GetComponent<RectTransform>().sizeDelta = new Vector2(500, 100);
-        Debug.Log(actionTextSoFar.Count);
         if (actionTextSoFar.Count >= 10) {
             for (int i = 0; i < 5; i++) {
                 Destroy(actionTextSoFar[0]);

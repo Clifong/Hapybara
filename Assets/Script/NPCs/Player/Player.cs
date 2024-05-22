@@ -30,17 +30,19 @@ public class Player : Npc
     }
 
     public override void Attack(List<Npc> opponentList) {
-        broadCastActionEvent.TriggerEvent(this, "The player attacked enemy");
+        broadCastActionEvent.TriggerEvent(this, playerSO.name + " attacked enemy");
         base.Attack(opponentList);
     }
 
     public override void Attack(List<Npc> opponentList, int attackType) {
-        if (attackType == -1) {
+        if (attackType == -1 || playerSO.allSkills.Count == 0) {
             Debug.Log("Basic attack");
             Attack(opponentList);
         } else if (attackType == 1) {
             Debug.Log("Special attack! (To implement)");
-            Attack(opponentList);
+            int randomNumber = Random.Range(0, playerSO.allSkills.Count);
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " used " + playerSO.allSkills[randomNumber].name);
+            AttackWithSkill(opponentList, playerSO.allSkills[randomNumber]);
         }
     }
 

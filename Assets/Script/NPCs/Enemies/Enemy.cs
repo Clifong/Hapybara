@@ -39,8 +39,17 @@ public class Enemy : Npc
     }
 
     public override void Attack(List<Npc> opponentList) {
-        broadCastActionEvent.TriggerEvent(this, "The enemy attacked player");
-        base.Attack(opponentList);
+        int randomNumber = Random.Range(0, 2);
+        if (randomNumber == 0) {
+            broadCastActionEvent.TriggerEvent(this, enemySO.name + " attacked player");
+            base.Attack(opponentList);
+        } else {
+            int randomNumberForSkills = Random.Range(0, enemySO.allSkills.Count - 1);
+            float chance = Random.Range(0, 100f);
+            SkillsSO rngSkill = enemySO.ReturnASkill(chance);
+            broadCastActionEvent.TriggerEvent(this, enemySO.name + " used " + rngSkill.name);
+            AttackWithSkill(opponentList, rngSkill);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider2D) {

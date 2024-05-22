@@ -26,6 +26,7 @@ public class PlayerQueue : MonoBehaviour
         {
             Destroy(spawnedPlayer);
         }
+        spawnedPlayers.Clear();
         List<PlayerSO> filteredOutPlayer = new List<PlayerSO>();
         foreach (PlayerSO playerSO in playerPartySO.allActivePartyMembers)
         {

@@ -6,6 +6,7 @@ using AYellowpaper.SerializedCollections;
 [CreateAssetMenu(fileName = "Enemy SO", menuName = "Scriptable objects/EnemySO", order = 1)]
 public class EnemySO : ScriptableObject
 {
+    public string name;
     public int health;
     public int attack;
     public int defence;
@@ -21,6 +22,37 @@ public class EnemySO : ScriptableObject
     public SerializedDictionary<FoodSO, SerializedDictionary<int, float>> allFood;
     [SerializedDictionary("Ingredient", "Quantity/chance")]
     public SerializedDictionary<IngredientSO, SerializedDictionary<int, float>> allIngredients;
+    [Header("Skills")]
+    [SerializedDictionary("Skill", "Chance")]
+    public SerializedDictionary<SkillsSO, float> allSkills;
+
+    public SkillsSO ReturnASkill(float chance) {
+        List<SkillsSO> skillList = allSkills.ReturnKeys();
+        Dictionary<float, List<SkillsSO>> temp = new Dictionary<float, List<SkillsSO>>();
+        List<float> chances = new List<float>();
+        foreach (SkillsSO skill in skillList)
+        {
+            float prob = 100f- allSkills[skill]; 
+            chances.Add(prob);
+            if (temp.ContainsKey(prob)) {
+                temp[prob].Add(skill);
+            } else {
+                temp[prob] = new List<SkillsSO>();
+                temp[prob].Add(skill);
+            }
+        }
+        chances.Sort();
+        float key = 0;
+        for (int i = chances.Count - 1; i >= 0; i--)
+        {
+            if (chance >= chances[i]) {
+                key = chances[i];
+                break;
+            }
+        } 
+        int randomNumber = Random.Range(0, temp[key].Count);
+        return temp[key][randomNumber];
+    }
 
     public List<object> ReturnLoot() {
         List<object> loot = new List<object>();

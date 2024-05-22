@@ -14,6 +14,7 @@ public class PartyManager : MonoBehaviour
     public Sprite inParty;
     private int slotLookingAt;
     private List<GameObject> allInstantiatedPartyMemberIcons = new List<GameObject>();
+    public CrossObjectEvent resetParty;
 
     public void PopulateUI() {
         foreach (GameObject instantiatedPartyMemberIcon in allInstantiatedPartyMemberIcons)
@@ -60,11 +61,17 @@ public class PartyManager : MonoBehaviour
         playerPartySO.AddPlayerToActiveParty(player, slotLookingAt);
     }
 
+    public void AddNewPlayerToParty(Component component, object obj) {
+        object[] temp = (object[])obj;
+        PlayerSO player = (PlayerSO) temp[0];
+        playerPartySO.AddPlayerToActiveParty(player);
+        resetParty.TriggerEvent();
+    }
+
     public void SetPlayerSlotLookingAt(Component component, object obj) {
         object[] temp = (object[])obj;
         int slot = (int) temp[0];
         this.slotLookingAt = slot;
-        Debug.Log(slotLookingAt);
     }
     
 }

@@ -19,7 +19,8 @@ public class IngredientIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         this.ingredientSO = ingredientSO;
         ingredientIcon.sprite = ingredientSO.ingredientIconWithFrame;
         this.quantityNeeded.text = "X " + quantityNeeded.ToString();
-
+        enlargedIngredientIcon.sprite = ingredientSO.ingredientIconWithoutFrame;
+        ingredientName.text = ingredientSO.ingredientName;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -35,8 +36,6 @@ public class IngredientIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     void Update() {
         if (mouse_over) {
             enlargedPopup.SetActive(true);
-            enlargedIngredientIcon.sprite = ingredientSO.ingredientIconWithoutFrame;
-            ingredientName.text = ingredientSO.ingredientName;
         } else {
             enlargedPopup.SetActive(false);
         }
