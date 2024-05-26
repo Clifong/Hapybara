@@ -38,6 +38,26 @@ public class Enemy : Npc
         AlertHealthChange();
     }
 
+    public override void EnqueueIntoSpeedQueue(Utils.PriorityQueue<Npc, float> pq) {
+        if (poisonForHowLong > 0) {
+            GetAttacked(1);
+            broadCastActionEvent.TriggerEvent(this, enemySO.name + " was hurt by poison");
+            poisonForHowLong -= 1;
+            if (poisonForHowLong == 0) {
+                updateStatusAlinmentIcon.NoMorePoison();
+            }
+        } 
+        if (burnForHowLong > 0) {
+            GetAttacked(1);
+            broadCastActionEvent.TriggerEvent(this, enemySO.name + " was hurt by burn");
+            burnForHowLong -= 1;
+            if (burnForHowLong == 0) {
+                updateStatusAlinmentIcon.NoMoreBurn();
+            }
+        }
+        base.EnqueueIntoSpeedQueue(pq);
+    }
+
     public override void Attack(List<Npc> opponentList) {
         int randomNumber = Random.Range(0, 2);
         if (randomNumber == 0) {
