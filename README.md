@@ -24,7 +24,7 @@
 ## Installation Instructions
 
 ### Windows, macOS, and Linux
-1. Download the ZIP file from [this link]((https://drive.google.com/file/d/1tqCiefuCOIAp0g793QYZqFtqVaKJMFeC/view?usp=drive_link)).
+1. Download the ZIP file from [this link](https://drive.google.com/file/d/1tqCiefuCOIAp0g793QYZqFtqVaKJMFeC/view?usp=drive_link).
 2. Unzip the file to your desired location.
 3. Launch `Hapybara.exe`.
 
