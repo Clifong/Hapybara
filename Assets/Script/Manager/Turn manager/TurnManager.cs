@@ -14,6 +14,7 @@ public class TurnManager : MonoBehaviour
     public CrossObjectEvent showItIsEnemyTurn;
     public CrossObjectEvent showItIsPlayerTurn;
     public CrossObjectEventWithData playerWon;
+    public CrossObjectEventWithData checkDungeonBuffs;
     public CrossObjectEvent playerLoss;
     private Npc currentActionTaker;
 
@@ -37,10 +38,19 @@ public class TurnManager : MonoBehaviour
             }
             npc.EnqueueIntoSpeedQueue(turnQueue);
         }
+        checkDungeonBuffs.TriggerEvent(this, allPlayers, allEnemies);
         ChangeTurn();
     }
 
     public void ExitBattle() {
+        foreach (Npc npc in allPlayers)
+        {
+            npc.ResetAlinment();
+        }
+        foreach (Npc npc in allEnemies)
+        {
+            npc.ResetAlinment();
+        }
         allEnemies.Clear();
         allPlayers.Clear();
     }

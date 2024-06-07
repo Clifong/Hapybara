@@ -42,4 +42,11 @@ public class UpdateStatusAlinmentIcon : MonoBehaviour
         Destroy(spawnedIcon);
         spawnedIcons[icon] = null;
     }
+
+    public void Reset() {
+        foreach (Sprite sprite in spawnedIcons.Keys) {
+            Destroy(spawnedIcons[sprite]);
+            spawnedIcons[sprite] = null;
+        }
+    }
 }

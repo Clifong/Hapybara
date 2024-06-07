@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using AYellowpaper.SerializedCollections;
 
 [CreateAssetMenu(fileName = "LanternSO", menuName = "Lantern SO", order = 1)]
 public class LanternSO : ScriptableObject
@@ -13,6 +14,10 @@ public class LanternSO : ScriptableObject
     public List<int> levelCost;
     private int counter = 0;
     private bool maxLevel = false;
+
+    [SerializedDictionary("Weapons", "Quantity/chance")]
+    public SerializedDictionary<int, DungeonBuffSO> levelAndBuffs;
+   
 
     public void LevelUp() {
         while (counter < levelCost.Count && currentDeposit >= levelCost[counter]) {
@@ -30,8 +35,12 @@ public class LanternSO : ScriptableObject
         costLevel.text = "Current: " + currentDeposit.ToString() + "/" + levelCost[counter].ToString();
     }
 
+    public void Deposit(int memory) {
+        currentDeposit += memory;
+    }
+
     public void CheckIfCanLevelUp(Button levelUpButton) {
-        if (counter >= levelCost.Count || currentDeposit < levelCost[counter]) {
+        if (counter >= levelCost.Count) {
             levelUpButton.gameObject.SetActive(false);
         } else {
             levelUpButton.gameObject.SetActive(true);

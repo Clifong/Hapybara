@@ -6,6 +6,7 @@ using AYellowpaper.SerializedCollections;
 [CreateAssetMenu(fileName = "Enemy SO", menuName = "Scriptable objects/EnemySO", order = 1)]
 public class EnemySO : ScriptableObject
 {
+    public int level;
     public string name;
     public int health;
     public int attack;
@@ -15,6 +16,8 @@ public class EnemySO : ScriptableObject
     [Header("Loot")]
     public int moneyDroppedMin;
     public int moneyDroppedMax;
+    public int memoryDroppedMin;
+    public int memoryDroppedMax;
     [SerializedDictionary("Weapons", "Quantity/chance")]
     public SerializedDictionary<WeaponSO, SerializedDictionary<int, float>> allWeapons;
    
@@ -57,6 +60,7 @@ public class EnemySO : ScriptableObject
     public List<object> ReturnLoot() {
         List<object> loot = new List<object>();
         loot.Add(Random.Range(moneyDroppedMin, moneyDroppedMax));
+        loot.Add(Random.Range(memoryDroppedMin, memoryDroppedMax));
 
         float randomNumber = 100f - Random.Range(0.01f, 100f);
         List<WeaponSO> weapons = new List<WeaponSO>();

@@ -43,6 +43,7 @@
      <Compile Include="Assets\Script\Manager\Chracter viewer manager\TrackWhichPlayerItIs.cs" />
      <Compile Include="Assets\Script\Manager\Recruitment manager\TavernSpotlight.cs" />
      <Compile Include="Assets\Script\Interactables\Interactables.cs" />
+     <Compile Include="Assets\Script\Interactables\Lantern\Lantern.cs" />
      <Compile Include="Assets\Script\NPCs\Player\Player.cs" />
      <Compile Include="Assets\Script\NPCs\Player\PlayerPartySO.cs" />
      <Compile Include="Assets\Script\Weapons\WeaponSO.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Script\NPCs\Enemies\Enemy.cs" />
      <Compile Include="Assets\Script\Manager\Title screen manager\TitleScreenManager.cs" />
      <Compile Include="Assets\Script\Inventory\WeaponPanelDescription.cs" />
+     <Compile Include="Assets\Script\Manager\Dungeon buff manager\DungeonBuffContainerSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Script\Inventory\InventoryPopulateGrid.cs" />
      <Compile Include="Assets\Script\Damage text spawn helper\SpawnDamageText.cs" />
@@ -89,6 +91,7 @@
      <Compile Include="Assets\Script\Manager\Turn manager\TurnManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Script\Manager\Chracter viewer manager\PartyMemberIcon.cs" />
+     <Compile Include="Assets\Script\Interactables\Lantern\Dungeon buffs\InstaKillSO.cs" />
      <Compile Include="Assets\Script\Inventory\InventoryIcon.cs" />
      <Compile Include="Assets\Script\Puzzle\PyramidBox.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\ShopkeeperSO.cs" />
@@ -134,9 +137,11 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\NPC that need requirements\NPC request\NPCRequestSO.cs" />
      <Compile Include="Assets\Script\Shop\WeaponShopInfoPanel.cs" />
+     <Compile Include="Assets\Script\Interactables\Lantern\UnlockedBuffCard.cs" />
      <Compile Include="Assets\Script\Skills\Poison skills\PoisonSkillsSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjectEventWithData.cs" />
+     <Compile Include="Assets\Script\Interactables\Lantern\LanternSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Script\Interactables\Cooking bonfire\CookingBonfire.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -154,9 +159,11 @@
      <Compile Include="Assets\Script\NPCs\AlinmentIcon.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\Bartender\Bartender.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\Script\Interactables\Lantern\Dungeon buffs\DungeonBuffSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Script\Chest\Chest.cs" />
      <Compile Include="Assets\Script\Manager\Party manager\PartyManager.cs" />
+     <Compile Include="Assets\Script\Manager\Dungeon buff manager\DungeonBuffManager.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\Gentleman shopkeeper\Shopkeeper.cs" />
      <Compile Include="Assets\Script\Manager\Cooking manager\CookingManager.cs" />
      <Compile Include="Assets\Script\Manager\Main menu manager\AchievementPanel.cs" />
@@ -167,8 +174,12 @@
      <Compile Include="Assets\Script\Manager\Action manager\ActionManager.cs" />
      <Compile Include="Assets\Script\Shop\MultiPurchaseManager.cs" />
      <Compile Include="Assets\Script\Inventory\FoodIconInventory.cs" />
-     <Compile Include="Assets\Script\Interactables\Lantern\Lantern.cs" />
-     <Compile Include="Assets\Script\Interactables\Lantern\LanternSO.cs" />
+     <Compile Include="Assets\Script\Buildable\Models\BuildableSO.cs" />
+     <Compile Include="Assets\Script\Buildable\TilemapLayer.cs" />
+     <Compile Include="Assets\Script\Buildable\ConstructionLayer.cs" />
+     <Compile Include="Assets\Script\Buildable\ConstructionMouse.cs" />
+     <Compile Include="Assets\Script\Buildable\BuildingPlacer.cs" />
+     <Compile Include="Assets\Script\Buildable\Models\Buildable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

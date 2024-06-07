@@ -7,6 +7,7 @@ public class AddToInventoryManager : MonoBehaviour
     public PlayerInventorySO playerInventorySO;
     
     public CrossObjectEventWithData broadcastMoney;
+    public CrossObjectEventWithData broadcastMemory;
 
     public void AddToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
@@ -53,10 +54,12 @@ public class AddToInventoryManager : MonoBehaviour
     public void AddLootFromEnemy(Component component, object obj) {
         object[] temp = (object[])obj;
         int money = (int) temp[0];
-        List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)temp[1];
-        List<FoodSO> allFoodToAdd = (List<FoodSO>)temp[2];
-        List<IngredientSO> allIngredientToAdd = (List<IngredientSO>)temp[3];
+        int memory = (int) temp[1];
+        List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)temp[2];
+        List<FoodSO> allFoodToAdd = (List<FoodSO>)temp[3];
+        List<IngredientSO> allIngredientToAdd = (List<IngredientSO>)temp[4];
         playerInventorySO.AddMoney(money);
+        playerInventorySO.AddMemory(memory);
         foreach (WeaponSO weapon in allWeaponToAdd)
         {
             playerInventorySO.AddWeapon(weapon);
@@ -78,5 +81,10 @@ public class AddToInventoryManager : MonoBehaviour
     public void MinusMoney(Component component, object obj) {
         object[] temp = (object[])obj;
         playerInventorySO.MinusMoney((int)temp[0]);
+    }
+
+    public void MinusMemory() {
+        broadcastMemory.TriggerEvent(this, playerInventorySO.memory);
+        playerInventorySO.MinusMemory(playerInventorySO.memory);
     }
 }

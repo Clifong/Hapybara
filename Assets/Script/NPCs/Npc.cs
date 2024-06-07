@@ -43,6 +43,12 @@ public abstract class Npc : MonoBehaviour
         }
     }
 
+    public virtual void ResetAlinment() {
+        poisonForHowLong = 0;
+        burnForHowLong = 0;
+        updateStatusAlinmentIcon.Reset();
+    }
+
     public virtual void GetAttacked(int damage, SkillsSO skillSO) {
         if (skillSO is PoisonSkillsSO) {
             poisonForHowLong = ((PoisonSkillsSO) skillSO).GetPosioned();

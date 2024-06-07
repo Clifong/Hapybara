@@ -17,6 +17,8 @@ public class PlayerInventorySO : ScriptableObject
 
     [Header("Money")]
     public int money;
+    [Header("Memory")]
+    public int memory;
 
     public void AddWeapon(WeaponSO weaponSO) {
         if (allWeapons.ContainsKey(weaponSO)) {
@@ -73,5 +75,13 @@ public class PlayerInventorySO : ScriptableObject
 
     public void MinusMoney(int money) {
         this.money -= money;
+    }
+
+    public void AddMemory(int memory) {
+        this.memory += memory;
+    }
+
+    public void MinusMemory(int memory) {
+        this.memory -= memory;
     }
 }
