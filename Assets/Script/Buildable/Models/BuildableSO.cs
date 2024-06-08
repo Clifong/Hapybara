@@ -9,4 +9,6 @@ public class BuildableSO : ScriptableObject
     public string name;
     public TileBase tile;
     public Vector3 tileOffset;
+    public Sprite previewSprite;
+    public GameObject gameObject;
 }

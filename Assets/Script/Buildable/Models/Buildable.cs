@@ -16,4 +16,11 @@ public class Buildable
         coordinates = coords;
         this.gameObject = gameObject;
     }
+
+    public void Destroy() {
+        if (gameObject != null) {
+            UnityEngine.Object.Destroy(gameObject);
+        }
+        parentTileMap.SetTile(coordinates, null);
+    }
 }
