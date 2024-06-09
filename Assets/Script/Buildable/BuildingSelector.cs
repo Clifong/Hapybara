@@ -6,24 +6,17 @@ using GameInput;
 
 public class BuildingSelector : MonoBehaviour
 {
-    [SerializeField]
-    private List<BuildableSO> buildables;
 
     [SerializeField]
     private BuildingPlacer buildingPlacer;
 
     private int activeBuildingIndex;
 
-    private void OnEnable() {
-        InputInHome.instance.Input.NextItem.performed += OnNextItemPerformed;
+    public void SetBuildable(Component component, object obj) {
+        object[] temp = (object[])obj;
+        BuildableSO furniture = (BuildableSO)temp[0];
+        int qty = (int)temp[1];
+        buildingPlacer.SetActiveBuildable(furniture, qty);
     }
 
-    private void OnNextItemPerformed(InputAction.CallbackContext ctx) {
-        NextItem();
-    }
-
-    private void NextItem() {
-        activeBuildingIndex = (activeBuildingIndex + 1) % buildables.Count;
-        buildingPlacer.SetActiveBuildable(buildables[activeBuildingIndex]);
-    }
 }

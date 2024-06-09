@@ -14,6 +14,8 @@ public class PlayerInventorySO : ScriptableObject
     public SerializedDictionary<FoodSO, int> allFood;
     [SerializedDictionary("All ingredients", "quantity")]
     public SerializedDictionary<IngredientSO, int> allIngredints;
+    [SerializedDictionary("All furnitures", "quantity")]
+    public SerializedDictionary<BuildableSO, int> allFurniture;
 
     [Header("Money")]
     public int money;
@@ -62,6 +64,23 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void AddFurniture(BuildableSO furniture, int qty) {
+        if (allFurniture.ContainsKey(furniture)) {
+            allFurniture[furniture] += qty;
+        } else {
+            allFurniture[furniture] = qty;
+        }
+    }
+
+    public void ReduceFurniture(BuildableSO furniture, int qty) {
+        if (allFurniture.ContainsKey(furniture)) {
+            allFurniture[furniture] -= qty;
+            if (allFurniture[furniture] <= 0) {
+                allFurniture.Remove(furniture);
+            }
+        }
+    }
+
     public int GetFoodQty(FoodSO foodSO) {
         if (allFood.ContainsKey(foodSO)) {
             return allFood[foodSO];
@@ -84,4 +103,5 @@ public class PlayerInventorySO : ScriptableObject
     public void MinusMemory(int memory) {
         this.memory -= memory;
     }
+
 }

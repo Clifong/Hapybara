@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BuildingPlacer : MonoBehaviour
 {
-    public BuildableSO activeBuildable;
-    private float maxBuildingDistance = 3f;
+    private BuildableSO activeBuildable;
+    private int qtyAllowed;
+    private float maxBuildingDistance = 5f;
 
     [SerializeField]
     private ConstructionLayer constructionLayer;
@@ -15,16 +16,20 @@ public class BuildingPlacer : MonoBehaviour
 
     [SerializeField]
     private ConstructionMouse constructionMouse;
+    public CrossObjectEventWithData changeBuildableQty;
 
     private void Update() {
 
-        if (!isMouseWithinBuildableRange()) previewLayer.ClearPreview();
+        if (!isMouseWithinBuildableRange() || qtyAllowed <= 0) {
+            previewLayer.ClearPreview();
+            return;
+        } 
 
         if (constructionLayer == null) return;
 
         var mousePos = constructionMouse.MousePositionInWorldPosition;
         if (constructionMouse.IsMouseButtonPressed(MouseButton.Right)) {
-            constructionLayer.Destroy(mousePos);
+            constructionLayer.Destroy(mousePos, changeBuildableQty);
         }
 
         if (activeBuildable == null) return;
@@ -33,15 +38,18 @@ public class BuildingPlacer : MonoBehaviour
 
         if (constructionMouse.IsMouseButtonPressed(MouseButton.Left) 
         && activeBuildable != null && constructionLayer.IsEmpty(mousePos)) {
+            changeBuildableQty.TriggerEvent(this, activeBuildable, -1);
             constructionLayer.Build(mousePos, activeBuildable);
+            qtyAllowed -= 1;
         }
     }
 
     private bool isMouseWithinBuildableRange() {
-        return Vector3.Distance(constructionMouse.MousePositionInWorldPosition, transform.position) <= maxBuildingDistance;
+        return Vector2.Distance(constructionMouse.MousePositionInWorldPosition, transform.position) <= maxBuildingDistance;
     }
 
-    public void SetActiveBuildable(BuildableSO activeFurniture) {
+    public void SetActiveBuildable(BuildableSO activeFurniture, int qty) {
         activeBuildable = activeFurniture;
+        qtyAllowed = qty;
     }
 }

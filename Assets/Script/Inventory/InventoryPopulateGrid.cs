@@ -8,51 +8,52 @@ public class InventoryPopulateGrid : MonoBehaviour
     public Transform content;
     public GameObject weaponIcon;
     public GameObject foodIcon;
-    private List<GameObject> allSpawnedWeaponIcons = new List<GameObject>();
-    private List<GameObject> allSpawnedFoodIcons = new List<GameObject>();
+    public GameObject furnitureIcon;
+    private List<GameObject> allSpawnedIcons = new List<GameObject>();
     [Header("Menu when feeding")]
     public PlayerPartySO playerPartySO;
     public GameObject partyMemberIconWhenFeeding;
     public Transform partyMemberContent;
     private List<GameObject> allSpawnedPartyMemberIcons = new List<GameObject>(); 
 
+    private void ClearGridIcons() {
+        foreach (GameObject instantiatedIcon in allSpawnedIcons)
+        {
+            Destroy(instantiatedIcon);
+        }
+        allSpawnedIcons.Clear();
+    }
+
     public void PopulateWeaponUI() {
-        foreach (GameObject instantiatedWeaponIcon in allSpawnedWeaponIcons)
-        {
-            Destroy(instantiatedWeaponIcon);
-        }
-        foreach (GameObject instantiatedFoodIcon in allSpawnedFoodIcons)
-        {
-            Destroy(instantiatedFoodIcon);
-        }
-        allSpawnedFoodIcons.Clear();
-        allSpawnedWeaponIcons.Clear();
+        ClearGridIcons();
         List<WeaponSO> allWeapons = playerInventorySO.allWeapons.ReturnKeys();
         foreach (WeaponSO weaponSO in allWeapons)
         {
             GameObject instantiatedWeaponIcon = Instantiate(weaponIcon, content);
             instantiatedWeaponIcon.GetComponent<WeaponIcon>().SetInfo(weaponSO, playerInventorySO.allWeapons[weaponSO]);
-            allSpawnedWeaponIcons.Add(instantiatedWeaponIcon);
+            allSpawnedIcons.Add(instantiatedWeaponIcon);
         }
     }
 
     public void PopulateFoodUI() {
-        foreach (GameObject instantiatedWeaponIcon in allSpawnedWeaponIcons)
-        {
-            Destroy(instantiatedWeaponIcon);
-        }
-        foreach (GameObject instantiatedFoodIcon in allSpawnedFoodIcons)
-        {
-            Destroy(instantiatedFoodIcon);
-        }
-        allSpawnedFoodIcons.Clear();
-        allSpawnedWeaponIcons.Clear();
+        ClearGridIcons();
         List<FoodSO> allFood = playerInventorySO.allFood.ReturnKeys();
         foreach (FoodSO foodSO in allFood)
         {
             GameObject instantiatedFoodIcon = Instantiate(foodIcon, content);
             instantiatedFoodIcon.GetComponent<FoodIconInventory>().SetInfo(foodSO, playerInventorySO.allFood[foodSO]);
-            allSpawnedFoodIcons.Add(instantiatedFoodIcon);
+            allSpawnedIcons.Add(instantiatedFoodIcon);
+        }
+    }
+
+    public void PopulateFurnitureUI() {
+        ClearGridIcons();
+        List<BuildableSO> allFurniture = playerInventorySO.allFurniture.ReturnKeys();
+        foreach (BuildableSO furnitureSO in allFurniture)
+        {
+            GameObject instantiatedFurnitureIcon = Instantiate(furnitureIcon, content);
+            instantiatedFurnitureIcon.GetComponent<FurnitureIconInventory>().SetInfo(furnitureSO, playerInventorySO.allFurniture[furnitureSO]);
+            allSpawnedIcons.Add(instantiatedFurnitureIcon);
         }
     }
 

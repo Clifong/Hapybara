@@ -74,6 +74,17 @@ public class AddToInventoryManager : MonoBehaviour
         }
     }
 
+    public void ChangeBuildableQty(Component component, object obj) {
+        object[] temp = (object[])obj;
+        BuildableSO furniture = (BuildableSO) temp[0];
+        int qty = (int) temp[1];
+        if (qty < 0) {
+            playerInventorySO.ReduceFurniture(furniture, -qty);
+        } else {
+            playerInventorySO.AddFurniture(furniture, qty);
+        }
+    }
+
     public void BroadcastMoney() {
         broadcastMoney.TriggerEvent(this, playerInventorySO.money);
     }
