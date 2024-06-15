@@ -2636,6 +2636,8 @@ GameObject:
   - component: {fileID: 1157480302076603170}
   - component: {fileID: 1157480302076603180}
   - component: {fileID: 1157480302076603181}
+  - component: {fileID: 8573080090308576690}
+  - component: {fileID: 3932089433565297055}
   m_Layer: 0
   m_Name: Cooking manager
   m_TagString: Untagged
@@ -2795,6 +2797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goToCookingPot: {fileID: 11400000, guid: 9d8f7dfa88d431240bce46564da9cb90, type: 2}
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
+  cookButton: {fileID: 1157480302999910516}
 --- !u!114 &1157480302076603181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,6 +2830,62 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8573080090308576690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157480302076603175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 87376d4a6c4309e4b941876c748858d1, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1157480302076603180}
+        m_TargetAssemblyTypeName: CookingManager, Assembly-CSharp
+        m_MethodName: AddFoodToInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3932089433565297055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157480302076603175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f27145711c309eb4ea620bd4a3b781bf, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1157480302076603180}
+        m_TargetAssemblyTypeName: CookingManager, Assembly-CSharp
+        m_MethodName: CheckIfCanCook
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

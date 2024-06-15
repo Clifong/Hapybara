@@ -8,14 +8,16 @@ public class PlayerInventorySO : ScriptableObject
 {
     [Header("Inventory stuff")]
     [SerializedDictionary("All weapons", "quantity")]
-    public SerializedDictionary<WeaponSO, int> allWeapons;
+    public SerializedDictionary<WeaponSO, int> allWeapons = new SerializedDictionary<WeaponSO, int>();
    
     [SerializedDictionary("All food", "quantity")]
-    public SerializedDictionary<FoodSO, int> allFood;
+    public SerializedDictionary<FoodSO, int> allFood = new SerializedDictionary<FoodSO, int>();
     [SerializedDictionary("All ingredients", "quantity")]
-    public SerializedDictionary<IngredientSO, int> allIngredints;
+    public SerializedDictionary<IngredientSO, int> allIngredints = new SerializedDictionary<IngredientSO, int>();
     [SerializedDictionary("All furnitures", "quantity")]
-    public SerializedDictionary<BuildableSO, int> allFurniture;
+    public SerializedDictionary<BuildableSO, int> allFurniture = new SerializedDictionary<BuildableSO, int>();
+    [SerializedDictionary("All materials", "quantity")]
+    public SerializedDictionary<MaterialSO, int> allMaterials = new SerializedDictionary<MaterialSO, int>();
 
     [Header("Money")]
     public int money;
@@ -81,6 +83,15 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void ReduceMaterial(MaterialSO materialSO, int quantity) {
+        if (allMaterials.ContainsKey(materialSO)) {
+            allMaterials[materialSO] -= quantity;
+            if (allMaterials[materialSO] <= 0) {
+                allMaterials.Remove(materialSO);
+            }
+        }
+    }
+
     public int GetFoodQty(FoodSO foodSO) {
         if (allFood.ContainsKey(foodSO)) {
             return allFood[foodSO];
@@ -102,6 +113,34 @@ public class PlayerInventorySO : ScriptableObject
 
     public void MinusMemory(int memory) {
         this.memory -= memory;
+    }
+
+    public bool CanCook(FoodSO foodSO) {
+        foreach (IngredientSO ingredient in foodSO.ingredientsNeeded.ReturnKeys()) 
+        {
+            if (!allIngredints.ContainsKey(ingredient)) {
+                return false;
+            } else {
+                if (allIngredints[ingredient] < foodSO.ingredientsNeeded[ingredient]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public bool CanCraft(BuildableSO furniture) {
+        foreach (MaterialSO material in furniture.materialsNeeded.ReturnKeys()) 
+        {
+            if (!allMaterials.ContainsKey(material)) {
+                return false;
+            } else {
+                if (allMaterials[material] < furniture.materialsNeeded[material]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 }

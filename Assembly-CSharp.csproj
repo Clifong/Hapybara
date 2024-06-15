@@ -41,6 +41,7 @@
      <Compile Include="Assets\Script\CrossObjectEvent\CrossObjectEvent.cs" />
      <Compile Include="Assets\Script\Shop\FoodOnSalePanel.cs" />
      <Compile Include="Assets\Script\Manager\Request manager\RequestPanel.cs" />
+     <Compile Include="Assets\Script\Manager\House editing manager\InviteManager.cs" />
      <Compile Include="Assets\Script\Manager\Chracter viewer manager\TrackWhichPlayerItIs.cs" />
      <Compile Include="Assets\Script\Buildable\TilemapLayer.cs" />
      <Compile Include="Assets\Script\Manager\House editing manager\HouseEditingManager.cs" />
@@ -81,6 +82,7 @@
      <Compile Include="Assets\Script\Buildable\Models\Buildable.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Script\NPCs\Enemies\Enemy.cs" />
+     <Compile Include="Assets\Script\Manager\House editing manager\CraftingManager.cs" />
      <Compile Include="Assets\Script\Manager\Title screen manager\TitleScreenManager.cs" />
      <Compile Include="Assets\Script\Inventory\WeaponPanelDescription.cs" />
      <Compile Include="Assets\Script\Manager\Dungeon buff manager\DungeonBuffContainerSO.cs" />
@@ -94,6 +96,7 @@
      <Compile Include="Assets\Script\Buildable\ConstructionLayer.cs" />
      <Compile Include="Assets\Script\Manager\Main menu manager\MainMenuManager.cs" />
      <Compile Include="Assets\Script\Manager\Main menu manager\BookPanel.cs" />
+     <Compile Include="Assets\Script\Manager\House editing manager\InvitePanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Script\Shop\FoodShopInfoPanel.cs" />
      <Compile Include="Assets\Script\Manager\Turn manager\TurnManager.cs" />
@@ -123,6 +126,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Script\Skills\Burning skills\BurningSkillsSO.cs" />
+     <Compile Include="Assets\Script\House editing\FurnitureCraftingPanel.cs" />
      <Compile Include="Assets\Script\Manager\Level changer\LevelChangerHelper.cs" />
      <Compile Include="Assets\Script\Buildable\BuildingPlacer.cs" />
      <Compile Include="Assets\Script\Collectibles\AchievementSO\AchievementSO.cs" />
@@ -149,6 +153,7 @@
      <Compile Include="Assets\Script\Buildable\InputInHome.ext.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Script\Buildable\Models\BuildableSO.cs" />
+     <Compile Include="Assets\Script\House editing\MaterialIcon.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\NPC that need requirements\NPC request\NPCRequestSO.cs" />
      <Compile Include="Assets\Script\Shop\WeaponShopInfoPanel.cs" />
      <Compile Include="Assets\Script\Interactables\Lantern\UnlockedBuffCard.cs" />
@@ -169,13 +174,16 @@
      <Compile Include="Assets\Script\NPCs\Interactable NPC\NPC that need requirements\Gardener\Gardener.cs" />
      <Compile Include="Assets\Script\Manager\Party manager\PartyMemberSlots.cs" />
      <Compile Include="Assets\Script\Buildable\InputInHome.cs" />
+     <Compile Include="Assets\Script\Manager\House editing manager\PopulateHouseCraftingPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Script\NPCs\Player\PlayerUnlockedFurnitureSO.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\NPC that need requirements\NPC request\NPCRequestFoodSO.cs" />
      <Compile Include="Assets\Script\NPCs\AlinmentIcon.cs" />
      <Compile Include="Assets\Script\NPCs\Interactable NPC\Bartender\Bartender.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Script\Interactables\Lantern\Dungeon buffs\DungeonBuffSO.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\Script\House editing\Material\MaterialSO.cs" />
      <Compile Include="Assets\Script\Chest\Chest.cs" />
      <Compile Include="Assets\Script\Manager\Party manager\PartyManager.cs" />
      <Compile Include="Assets\Script\Manager\Dungeon buff manager\DungeonBuffManager.cs" />
@@ -189,7 +197,8 @@
      <Compile Include="Assets\Script\Manager\Action manager\ActionManager.cs" />
      <Compile Include="Assets\Script\Shop\MultiPurchaseManager.cs" />
      <Compile Include="Assets\Script\Inventory\FoodIconInventory.cs" />
-     <Compile Include="Assets\Script\Manager\House editing manager\PopulateHouseCraftingPanel.cs" />
+     <Compile Include="Assets\Script\Manager\House editing manager\SpawnInvitedPlayerManager.cs" />
+     <Compile Include="Assets\Script\NPCs\Player\PlayerHome.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

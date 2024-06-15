@@ -49,4 +49,11 @@ public class FoodSO : ScriptableObject
         speedChangeText.text = speedChange.ToString();
         effectsDescriptionText.text = effectsDescription;
     }
+
+    public void ReduceIngredient(PlayerInventorySO playerInventory) {
+        foreach (IngredientSO ingredient in ingredientsNeeded.ReturnKeys())
+        {
+            playerInventory.ReduceIngredient(ingredient, ingredientsNeeded[ingredient]);
+        }
+    }
 }

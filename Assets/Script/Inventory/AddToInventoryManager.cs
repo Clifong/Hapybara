@@ -8,6 +8,8 @@ public class AddToInventoryManager : MonoBehaviour
     
     public CrossObjectEventWithData broadcastMoney;
     public CrossObjectEventWithData broadcastMemory;
+    [Header("Checker")]
+    public CrossObjectEventWithData checkIfCanCraft;
 
     public void AddToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
@@ -85,6 +87,16 @@ public class AddToInventoryManager : MonoBehaviour
         }
     }
 
+    public void CraftFurniture(Component component, object obj) {
+        object[] temp = (object[])obj;
+        BuildableSO furniture = (BuildableSO) temp[0];
+        int qty = (int) temp[1];
+        for (int i = 0; i < qty; i++)
+        {
+            furniture.ReduceMaterial(playerInventorySO);
+        }
+    }
+
     public void BroadcastMoney() {
         broadcastMoney.TriggerEvent(this, playerInventorySO.money);
     }
@@ -97,5 +109,12 @@ public class AddToInventoryManager : MonoBehaviour
     public void MinusMemory() {
         broadcastMemory.TriggerEvent(this, playerInventorySO.memory);
         playerInventorySO.MinusMemory(playerInventorySO.memory);
+    }
+
+    public void CheckIfCanCraft(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        BuildableSO furniture = (BuildableSO) temp[0];
+        bool canCraft = playerInventorySO.CanCraft(furniture);
+        checkIfCanCraft.TriggerEvent(this, canCraft);
     }
 }

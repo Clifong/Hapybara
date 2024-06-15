@@ -2838,47 +2838,42 @@ PrefabInstance:
       propertyPath: m_HorizontalFit
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1157480301668672215}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CheckIfCanCook
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CookingManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573080090308576690, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
---- !u!1 &1157480301668672213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1157480302076603175, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
-  m_PrefabInstance: {fileID: 1157480301668672212}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1157480301668672214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157480301668672213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 87376d4a6c4309e4b941876c748858d1, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1157480301668672215}
-        m_TargetAssemblyTypeName: CookingManager, Assembly-CSharp
-        m_MethodName: AddFoodToInventory
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1157480301668672215 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1157480302076603180, guid: 6c9559cfe81852e4baa3c39f0300755d, type: 3}
   m_PrefabInstance: {fileID: 1157480301668672212}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157480301668672213}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6827d2afa04cd349a12d4a400975b57, type: 3}

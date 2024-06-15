@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 [CreateAssetMenu(fileName = "Player SO", menuName = "All player SO/PlayerSO", order = 1)]
@@ -16,6 +17,8 @@ public class PlayerSO : ScriptableObject
     public int speed;
     public WeaponSO weaponEquipped;
     public GameObject playerObject;
+    public GameObject homePlayerObject;
+    public bool invited;
 
     void Awake() {
         CalculateExpNeededForNextLevel();
@@ -60,6 +63,11 @@ public class PlayerSO : ScriptableObject
 
     public void Feed(FoodSO foodSO) {
         
+    }
+
+    public void SetInfo(Image icon, TextMeshProUGUI nameText) {
+        icon.sprite = playerIcon;
+        nameText.text = name;
     }
     
     [Header("UI stuff")]
