@@ -20,6 +20,11 @@ public class QuestPanel : MonoBehaviour
     }
 
     public void SetInfo(QuestSO questSO) {
+        foreach (GameObject icon in rewardIconList)
+        {
+            Destroy(icon);
+        }
+        rewardIconList.Clear();
         this.questSO = questSO;
         questSO.SetInfo(name, description, rewardContent, rewardIcon, rewardIconList);
     }
