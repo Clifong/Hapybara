@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "IngredientSO", menuName = "Ingredient SO", order = 1)]
 public class IngredientSO : ScriptableObject
@@ -12,5 +13,9 @@ public class IngredientSO : ScriptableObject
     public string ingredientName;
     [TextAreaAttribute]
     public string ingredientDescription;
+
+    public void SetInfo(Image icon) {
+        icon.sprite = ingredientIconWithoutFrame;
+    }
 }
 

@@ -406,6 +406,7 @@ Transform:
   - {fileID: 9033967850165252293}
   - {fileID: 1625038275}
   - {fileID: 9215708749933233081}
+  - {fileID: 3522376708874346475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1114,6 +1115,35 @@ MonoBehaviour:
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
   broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
   broadcastMemory: {fileID: 11400000, guid: c61c6c4e1f11cdf4a8de5b419d2d6e0b, type: 2}
+  checkIfCanCraft: {fileID: 0}
+--- !u!114 &391877471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409663814559460267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 86c5f7cde66611f4095dda5a50139352, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 70232135}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: MinusMemory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1164364930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1162,34 +1192,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: AddWeaponOnlyToInventory
         m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &391877471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409663814559460267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 86c5f7cde66611f4095dda5a50139352, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 70232135}
-        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
-        m_MethodName: MinusMemory
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1549,6 +1551,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9047575945646524862, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
   m_PrefabInstance: {fileID: 5442873614457082641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6073203523881907193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5442873613758232999}
+    m_Modifications:
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253509655386729491, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+      propertyPath: m_Name
+      value: Quest manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+--- !u!4 &3522376708874346475 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7253509655386729490, guid: ee0251d1578101b498d52393221f58c9, type: 3}
+  m_PrefabInstance: {fileID: 6073203523881907193}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7112671707035163945
 PrefabInstance:

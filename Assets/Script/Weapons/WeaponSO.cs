@@ -24,6 +24,10 @@ public class WeaponSO : ScriptableObject
     [TextAreaAttribute]
     public string effectsDescription;
 
+    public void SetInfo(Image icon) {
+        icon.sprite = weaponIconWithoutFrame;
+    }
+
     public void SetUIInfoWithFrame(Image icon, TextMeshProUGUI text) {
         icon.sprite = weaponIconWithFrame;
         text.text = weaponName;

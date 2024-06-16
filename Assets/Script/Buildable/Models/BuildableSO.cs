@@ -18,6 +18,10 @@ public class BuildableSO : ScriptableObject
     [SerializedDictionary("Materials", "quantity")]
     public SerializedDictionary<MaterialSO, int> materialsNeeded;
 
+    public void SetInfo(Image icon) {
+        icon.sprite = previewSprite;
+    }
+
     public void SetUIInfo(Image icon, TextMeshProUGUI nameText) {
         icon.sprite = previewSprite;
         nameText.text = name;

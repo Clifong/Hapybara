@@ -31,6 +31,10 @@ public class FoodSO : ScriptableObject
     public int defenceChange;
     public int speedChange;
 
+    public void SetInfo(Image icon) {
+        icon.sprite = foodIconWithoutFrame;
+    }
+
     public void SetUIInfoWithFrame(Image icon, TextMeshProUGUI text) {
         icon.sprite = foodIconWithFrame;
         text.text = foodName;
