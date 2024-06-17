@@ -32,11 +32,27 @@ public class PlayerInventorySO : ScriptableObject
         }
     }
 
+    public void AddWeapon(WeaponSO weaponSO, int qty) {
+        if (allWeapons.ContainsKey(weaponSO)) {
+            allWeapons[weaponSO] += qty;
+        } else {
+            allWeapons[weaponSO] = qty;
+        }
+    }
+
     public void AddFood(FoodSO foodSO) {
         if (allFood.ContainsKey(foodSO)) {
             allFood[foodSO] += 1;
         } else {
             allFood[foodSO] = 1;
+        }
+    }
+
+    public void AddFood(FoodSO foodSO, int quantity) {
+        if (allFood.ContainsKey(foodSO)) {
+            allFood[foodSO] += quantity;
+        } else {
+            allFood[foodSO] = quantity;
         }
     }
 
@@ -47,6 +63,15 @@ public class PlayerInventorySO : ScriptableObject
             allIngredints[ingredientSO] = 1;
         }
     }
+
+    public void AddIngredient(IngredientSO ingredientSO, int quantity) {
+        if (allIngredints.ContainsKey(ingredientSO)) {
+            allIngredints[ingredientSO] += quantity;
+        } else {
+            allIngredints[ingredientSO] = quantity;
+        }
+    }
+
 
     public void ReduceFood(FoodSO foodSO, int quantity) {
         if (allFood.ContainsKey(foodSO)) {
@@ -80,6 +105,14 @@ public class PlayerInventorySO : ScriptableObject
             if (allFurniture[furniture] <= 0) {
                 allFurniture.Remove(furniture);
             }
+        }
+    }
+
+    public void AddMaterial(MaterialSO materialSO, int qty) {
+        if (allMaterials.ContainsKey(materialSO)) {
+            allMaterials[materialSO] += qty;
+        } else {
+            allMaterials[materialSO] = qty;
         }
     }
 
@@ -138,6 +171,34 @@ public class PlayerInventorySO : ScriptableObject
                 if (allMaterials[material] < furniture.materialsNeeded[material]) {
                     return false;
                 }
+            }
+        }
+        return true;
+    }
+
+    public bool CheckIfCanComplete(SerializedDictionary<FoodSO, int> foodNeeded, SerializedDictionary<IngredientSO, int> ingredientsNeeded, SerializedDictionary<MaterialSO, int> materialsNeeded) {
+        foreach (FoodSO foodSO in foodNeeded.ReturnKeys())
+        {
+            if (!allFood.ContainsKey(foodSO)) {
+                return false;
+            } else if (allFood[foodSO] < foodNeeded[foodSO]) {
+                return false;
+            }
+        }
+        foreach (IngredientSO ingredientSO in ingredientsNeeded.ReturnKeys())
+        {
+            if (!allIngredints.ContainsKey(ingredientSO)) {
+                return false;
+            } else if (allIngredints[ingredientSO] < ingredientsNeeded[ingredientSO]) {
+                return false;
+            }
+        }
+        foreach (MaterialSO materialSO in materialsNeeded.ReturnKeys())
+        {
+            if (!allMaterials.ContainsKey(materialSO)) {
+                return false;
+            } else if (allMaterials[materialSO] < materialsNeeded[materialSO]) {
+                return false;
             }
         }
         return true;

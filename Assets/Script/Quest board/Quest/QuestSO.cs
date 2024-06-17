@@ -21,6 +21,7 @@ public class QuestSO : ScriptableObject
     [SerializedDictionary("Materials", "quantity")]
     public SerializedDictionary<MaterialSO, int> materialsRewards = new SerializedDictionary<MaterialSO, int>();
     public int money;
+    public bool canComplete = false;
     
     public void SetInfo(TextMeshProUGUI nameText, TextMeshProUGUI descriptionText, Transform rewardContent, GameObject rewardIcon, List<GameObject> iconList) {
         nameText.text = questName;
@@ -56,4 +57,32 @@ public class QuestSO : ScriptableObject
             iconList.Add(instantiatedIcon);
         }
     }
+
+    public virtual void CompleteQuest() {}
+
+    public void CompleteQuest(PlayerInventorySO playerInventorySO) {
+        foreach (WeaponSO weaponSO in weaponRewards.ReturnKeys())
+        {
+            playerInventorySO.AddWeapon(weaponSO, weaponRewards[weaponSO]);
+        }
+        foreach (FoodSO foodSO in foodRewards.ReturnKeys())
+        {
+            playerInventorySO.AddFood(foodSO, foodRewards[foodSO]);
+        }
+        foreach (IngredientSO ingredientSO in ingredientsRewards.ReturnKeys())
+        {
+           playerInventorySO.AddIngredient(ingredientSO, ingredientsRewards[ingredientSO]);
+        }
+        foreach (BuildableSO buildableSO in furnituresRewards.ReturnKeys())
+        {
+            playerInventorySO.AddFurniture(buildableSO, furnituresRewards[buildableSO]);
+        }
+        foreach (MaterialSO materialSO in materialsRewards.ReturnKeys())
+        {
+            playerInventorySO.AddMaterial(materialSO, materialsRewards[materialSO]);
+        }
+        playerInventorySO.AddMoney(money);
+    }
+
+
 }

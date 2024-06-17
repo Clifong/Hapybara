@@ -117,4 +117,10 @@ public class AddToInventoryManager : MonoBehaviour
         bool canCraft = playerInventorySO.CanCraft(furniture);
         checkIfCanCraft.TriggerEvent(this, canCraft);
     }
+
+    public void CheckIfQuestCanBeComplete(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        RequestQuestSO requestQuestSO = (RequestQuestSO) temp[0];
+        requestQuestSO.CheckIfCanComplete(playerInventorySO);
+    }
 }

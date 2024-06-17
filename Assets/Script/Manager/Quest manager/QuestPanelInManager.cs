@@ -6,7 +6,7 @@ using TMPro;
 public class QuestPanelInManager : MonoBehaviour
 {
     public TextMeshProUGUI name;
-    private QuestSO questSO;
+    protected QuestSO questSO;
     public CrossObjectEventWithData broadcastQuest;
     public void SetInfo(QuestSO questSO) {
         this.questSO = questSO;

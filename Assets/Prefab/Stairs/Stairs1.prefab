@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f75ee712cde00a47bfce902da2c864a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Dungeon 1-2
+  sceneName: Dungeon 1-3
 --- !u!114 &994862335683187661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994862335683187655}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
   m_Name: 
@@ -133,19 +133,7 @@ MonoBehaviour:
   gameEvent: {fileID: 11400000, guid: 9d8b6895d4c2e6c4a8b2db021b3a521a, type: 2}
   responseOnTrigger:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 994862335683187651}
-        m_TargetAssemblyTypeName: LevelChangerHelper, Assembly-CSharp
-        m_MethodName: ChangeLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &994862335683187660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactPrompt: {fileID: 6235686985359290261}
   interactWithStairs: {fileID: 11400000, guid: 9d8b6895d4c2e6c4a8b2db021b3a521a, type: 2}
-  listener: {fileID: 994862335683187661}
+  levelChangeHelper: {fileID: 994862335683187651}
 --- !u!1001 &994862335137273752
 PrefabInstance:
   m_ObjectHideFlags: 0

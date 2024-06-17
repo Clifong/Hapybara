@@ -10,4 +10,9 @@ public class PlayerQuestSO : ScriptableObject
     public void AddQuest(QuestSO questSO) {
         acceptedQuest.Add(questSO);
     }
+
+    public void CompleteQuest(QuestSO questSO) {
+        questSO.CompleteQuest();
+        acceptedQuest.Remove(questSO);
+    }
 }
