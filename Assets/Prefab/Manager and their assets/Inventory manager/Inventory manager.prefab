@@ -8731,6 +8731,7 @@ GameObject:
   - component: {fileID: 489906215710335924}
   - component: {fileID: 6976469309436376801}
   - component: {fileID: 7249793054743001649}
+  - component: {fileID: 4789609418533783497}
   m_Layer: 0
   m_Name: Inventory manager
   m_TagString: Untagged
@@ -9317,6 +9318,7 @@ MonoBehaviour:
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
   broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
   broadcastMemory: {fileID: 11400000, guid: c61c6c4e1f11cdf4a8de5b419d2d6e0b, type: 2}
+  broadcastExpGained: {fileID: 0}
   checkIfCanCraft: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
 --- !u!114 &2810082626394737492
 MonoBehaviour:
@@ -9539,6 +9541,34 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: CheckIfCanCraft
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4789609418533783497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348062765242484767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d63b93d48681846a7640541b1cc968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b575677f31c898d41a219f818d425f59, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: BroadcastExpGained
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

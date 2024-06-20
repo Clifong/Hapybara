@@ -61,6 +61,7 @@ public class EnemySO : ScriptableObject
         List<object> loot = new List<object>();
         loot.Add(Random.Range(moneyDroppedMin, moneyDroppedMax));
         loot.Add(Random.Range(memoryDroppedMin, memoryDroppedMax));
+        loot.Add(level*100);
 
         float randomNumber = 100f - Random.Range(0.01f, 100f);
         List<WeaponSO> weapons = new List<WeaponSO>();

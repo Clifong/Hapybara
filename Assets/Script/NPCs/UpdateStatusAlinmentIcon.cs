@@ -44,7 +44,8 @@ public class UpdateStatusAlinmentIcon : MonoBehaviour
     }
 
     public void Reset() {
-        foreach (Sprite sprite in spawnedIcons.Keys) {
+        List<Sprite> spawnedSprites = new List<Sprite>(spawnedIcons.Keys);
+        foreach (Sprite sprite in spawnedSprites) {
             Destroy(spawnedIcons[sprite]);
             spawnedIcons[sprite] = null;
         }

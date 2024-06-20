@@ -18,8 +18,7 @@ public class Enemy : Npc
     }
 
     public override void Die() {
-        List<object> loot = enemySO.ReturnLoot();
-        dropLoot.TriggerEvent(this, (int) loot[0], (int) loot[1], (List<WeaponSO>) loot[2], (List<FoodSO>) loot[3], (List<IngredientSO>) loot[4]);
+        dropLoot.TriggerEvent(this, enemySO);
         Destroy(this.gameObject);
     }
 

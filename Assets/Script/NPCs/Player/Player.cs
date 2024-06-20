@@ -5,8 +5,6 @@ using UnityEngine;
 public class Player : Npc
 {
     public PlayerSO playerSO;
-    private bool interact = false;
-    private Interactables interactable = null;
     private UpdateHealthBar updateHealthBar;
 
     void Awake() {
@@ -60,17 +58,4 @@ public class Player : Npc
         }
     }
 
-    public void OnInteract() {
-        if (interactable != null) {
-            interactable.Interact();
-        }
-    }
-
-    public void OnTriggerEnter2D(Collider2D other) {
-        interactable = other.gameObject.GetComponent<Interactables>();
-    }
-
-    public void OnTriggerExit2D(Collider2D other) {
-        interactable = null;
-    }
 }

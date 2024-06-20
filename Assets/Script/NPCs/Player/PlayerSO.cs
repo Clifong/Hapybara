@@ -8,9 +8,15 @@ using TMPro;
 public class PlayerSO : ScriptableObject
 {
     public string name;
+    [Header("Battle level")]
     public int level = 1;
     public int currentExp = 0;
     public int expNeededForNextLevel = 0;
+    [Header("Relationship level")]
+    public int relationshipLevel = 1;
+    public int currentRelationshipExp = 0;
+    public int expNeededForNextRelationshipLevel = 0;
+    [Header("Battle stats")]
     public int health;
     public int attack;
     public int defence;
@@ -21,18 +27,37 @@ public class PlayerSO : ScriptableObject
     public bool invited;
 
     void Awake() {
-        CalculateExpNeededForNextLevel();
+        CalculateExpNeededForNextLevel(currentExp);
+        CalculateExpNeededForNextRelationshipLevel(currentExp);
     }
 
-    private void CalculateExpNeededForNextLevel() {
-        expNeededForNextLevel = (int)(level * 100 * 1.25);
+    private void CalculateExpNeededForNextLevel(int expGained) {
+        expNeededForNextLevel = (int)(level * 100 * 1.25 - expGained);
+    }
+
+    private void CalculateExpNeededForNextRelationshipLevel(int expGained) {
+        expNeededForNextRelationshipLevel = (int)(relationshipLevel * 100 - expGained);
+    }
+
+    public void GainExp(int exp) {
+        currentExp += exp;
+        CalculateExpNeededForNextLevel(currentExp);
+        LevelUp();
     }
 
     public void LevelUp() {
         while (currentExp > expNeededForNextLevel) {
             currentExp = Mathf.Max(0, currentExp - expNeededForNextLevel);
             level += 1;
-            CalculateExpNeededForNextLevel();
+            CalculateExpNeededForNextLevel(currentExp);
+        }
+    }
+
+    public void LevelUpRelationship() {
+        while (currentRelationshipExp > expNeededForNextRelationshipLevel) {
+            currentRelationshipExp = Mathf.Max(0, currentRelationshipExp - expNeededForNextRelationshipLevel);
+            relationshipLevel += 1;
+            CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
         }
     }
 

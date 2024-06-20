@@ -28,5 +28,23 @@ public class PlayerPartySO : ScriptableObject
         }
     }
 
+    public int GetNumberOfActivePartyMembers() {
+        int count = 0;
+        for (int i = 0; i < allActivePartyMembers.Count; i++) {
+                if (allActivePartyMembers[i] != null) {
+                    count += 1;
+                }
+            }
+        return count;
+    }
+
+    public void AddExpIndividually(int individualExp) {
+        for (int i = 0; i < allActivePartyMembers.Count; i++) {
+                if (allActivePartyMembers[i] != null) {
+                    allActivePartyMembers[i].GainExp(individualExp);
+                }
+            }
+    }
+
     
 }

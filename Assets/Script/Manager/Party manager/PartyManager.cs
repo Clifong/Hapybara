@@ -73,5 +73,13 @@ public class PartyManager : MonoBehaviour
         int slot = (int) temp[0];
         this.slotLookingAt = slot;
     }
+
+    public void AddExpToPartyMember(Component component, object obj) {
+        object[] temp = (object[])obj;
+        int expGained = (int) temp[0];
+        int individualExp = (int)Mathf.Round(((float)expGained/(float)playerPartySO.GetNumberOfActivePartyMembers()));
+        Debug.Log(individualExp);
+        playerPartySO.AddExpIndividually(individualExp);
+    }
     
 }

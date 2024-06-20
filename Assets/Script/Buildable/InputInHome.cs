@@ -73,6 +73,15 @@ namespace GameInput
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""e4a87c87-8f0b-46bd-99e3-128c9f172271"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -174,6 +183,17 @@ namespace GameInput
                     ""action"": ""NextItem"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""000f82e5-8148-40f9-8611-fb8eb72e4635"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -187,6 +207,7 @@ namespace GameInput
             m_Input_MousePosition = m_Input.FindAction("MousePosition", throwIfNotFound: true);
             m_Input_CancelAction = m_Input.FindAction("CancelAction", throwIfNotFound: true);
             m_Input_NextItem = m_Input.FindAction("NextItem", throwIfNotFound: true);
+            m_Input_Interact = m_Input.FindAction("Interact", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -253,6 +274,7 @@ namespace GameInput
         private readonly InputAction m_Input_MousePosition;
         private readonly InputAction m_Input_CancelAction;
         private readonly InputAction m_Input_NextItem;
+        private readonly InputAction m_Input_Interact;
         public struct InputActions
         {
             private @InputInHome m_Wrapper;
@@ -262,6 +284,7 @@ namespace GameInput
             public InputAction @MousePosition => m_Wrapper.m_Input_MousePosition;
             public InputAction @CancelAction => m_Wrapper.m_Input_CancelAction;
             public InputAction @NextItem => m_Wrapper.m_Input_NextItem;
+            public InputAction @Interact => m_Wrapper.m_Input_Interact;
             public InputActionMap Get() { return m_Wrapper.m_Input; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -286,6 +309,9 @@ namespace GameInput
                 @NextItem.started += instance.OnNextItem;
                 @NextItem.performed += instance.OnNextItem;
                 @NextItem.canceled += instance.OnNextItem;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
 
             private void UnregisterCallbacks(IInputActions instance)
@@ -305,6 +331,9 @@ namespace GameInput
                 @NextItem.started -= instance.OnNextItem;
                 @NextItem.performed -= instance.OnNextItem;
                 @NextItem.canceled -= instance.OnNextItem;
+                @Interact.started -= instance.OnInteract;
+                @Interact.performed -= instance.OnInteract;
+                @Interact.canceled -= instance.OnInteract;
             }
 
             public void RemoveCallbacks(IInputActions instance)
@@ -329,6 +358,7 @@ namespace GameInput
             void OnMousePosition(InputAction.CallbackContext context);
             void OnCancelAction(InputAction.CallbackContext context);
             void OnNextItem(InputAction.CallbackContext context);
+            void OnInteract(InputAction.CallbackContext context);
         }
     }
 }

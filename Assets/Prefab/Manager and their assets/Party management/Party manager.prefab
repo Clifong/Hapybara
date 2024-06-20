@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: 7303211512796000944}
   - component: {fileID: 5491093424291013239}
   - component: {fileID: 8489297640393870497}
+  - component: {fileID: 8623977899706514584}
   m_Layer: 0
   m_Name: Party manager
   m_TagString: Untagged
@@ -864,6 +865,7 @@ MonoBehaviour:
   partyMemberIcon: {fileID: 9125785435504650039, guid: 1070585ec6e271344882231e718a803d, type: 3}
   content: {fileID: 1181399146094771826}
   inParty: {fileID: 21300000, guid: 2c2903eaada6772458e9a6e09deee437, type: 3}
+  resetParty: {fileID: 0}
 --- !u!114 &5491093424291013239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +913,34 @@ MonoBehaviour:
       - m_Target: {fileID: 7303211512796000944}
         m_TargetAssemblyTypeName: PartyManager, Assembly-CSharp
         m_MethodName: SetPlayerSlotLookingAt
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8623977899706514584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939162799268806369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f46bf9a82fc31bd47be7d130f7f048c3, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7303211512796000944}
+        m_TargetAssemblyTypeName: PartyManager, Assembly-CSharp
+        m_MethodName: AddExpToPartyMember
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -18,10 +18,13 @@ public class CharacterViewerManager : MonoBehaviour
     public TextMeshProUGUI defenceText;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI levelText;
+    public Slider expSlider;
     public TextMeshProUGUI expneededText;
+    public TextMeshProUGUI relationshipLevelText;
+    public Slider relationshipExpSlider;
+    public TextMeshProUGUI relationshipExpNeededText;
     public Image weaponEquippedIcon;
     public Sprite noEquipmentEquippedDefault;
-    public Slider expSlider;
     private PlayerSO playerSO;
     [Header("Bottom section stuff/Skills page")]
     public GameObject skillPanel;
@@ -53,9 +56,15 @@ public class CharacterViewerManager : MonoBehaviour
         attackText.text = playerSO.attack.ToString();
         defenceText.text = playerSO.defence.ToString();
         speedText.text = playerSO.speed.ToString();
+        
         levelText.text = playerSO.level.ToString();
         expSlider.value = (float)playerSO.currentExp/(float)(playerSO.currentExp + playerSO.expNeededForNextLevel);
-        expneededText.text = playerSO.expNeededForNextLevel.ToString();
+        expneededText.text = "Require: " + playerSO.expNeededForNextLevel.ToString();
+        
+        relationshipLevelText.text = playerSO.relationshipLevel.ToString();
+        relationshipExpSlider.value = (float)playerSO.currentRelationshipExp/(float)(playerSO.currentRelationshipExp + playerSO.expNeededForNextRelationshipLevel);
+        relationshipExpNeededText.text = "Require: " + playerSO.expNeededForNextRelationshipLevel.ToString();
+        
         if (playerSO.weaponEquipped != null) {
             weaponEquippedIcon.sprite = playerSO.weaponEquipped.weaponIconWithoutFrame;
         } else {
