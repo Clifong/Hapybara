@@ -82,6 +82,7 @@ public class Enemy : Npc
                 list.Add(activePlayer);
             }
             list.Add(this);
+            Debug.Log("ENTER");
             enterBattle.TriggerEvent(this, list);
         }
     }
@@ -90,6 +91,7 @@ public class Enemy : Npc
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {   
             battleZone.SetActive(false);
+            Debug.Log("EXIT");
             exitBattle.TriggerEvent();
         }
     }

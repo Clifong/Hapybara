@@ -8,9 +8,15 @@ public class InteractableNPCWithRequest : InteractableNPC
     [TextAreaAttribute]
     public List<string> allDialogueText;
     protected int counter = 0;
+    public InteractableNPCSO interactableNPCSO;
+
+    public bool CheckIfFulfilled() {
+        return !interactableNPCSO.fulfilled;
+    }
 
     public override void Interact() {
         if (counter >= allRequest.Count) {
+            interactableNPCSO.Fulfill();
             Destroy(this.gameObject);
             return;
         }

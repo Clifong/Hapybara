@@ -7951,6 +7951,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3893233047851256220, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893233047851256220, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5442873613758232996, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_Name
       value: General manager
@@ -8007,8 +8015,57 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8686408099918979066, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 893116622}
+    m_RemovedComponents:
+    - {fileID: 8686408099918979066, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+--- !u!1 &893116615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409663814559460267, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+  m_PrefabInstance: {fileID: 893116614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893116622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 70232135, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+  m_PrefabInstance: {fileID: 893116614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893116615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a54b6f8855f3f4db626ed1454ba423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &893116640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893116615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b390c1704b2c0cb4ebb4151c1ab72f70, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 893116622}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: BroadcastExpGained
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &968014993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8497,7 +8554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936431268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.05, y: -0.67, z: 0}
+  m_LocalPosition: {x: -12.05, y: -4.46, z: 0}
   m_LocalScale: {x: 4.1038637, y: 4.1038637, z: 4.1038637}
   m_ConstrainProportionsScale: 0
   m_Children:

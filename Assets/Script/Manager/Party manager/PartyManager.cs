@@ -78,7 +78,6 @@ public class PartyManager : MonoBehaviour
         object[] temp = (object[])obj;
         int expGained = (int) temp[0];
         int individualExp = (int)Mathf.Round(((float)expGained/(float)playerPartySO.GetNumberOfActivePartyMembers()));
-        Debug.Log(individualExp);
         playerPartySO.AddExpIndividually(individualExp);
     }
     

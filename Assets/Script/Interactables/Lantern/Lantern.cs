@@ -39,10 +39,10 @@ public class Lantern : MonoBehaviour, Interactables
 
         List<DungeonBuffSO> unlockedBuff = new List<DungeonBuffSO>();
         for (int i = 0; i < lanternSO.level; i++) {
-            if (lanternSO.levelAndBuffs.ContainsKey(i)) {
-                unlockedBuff.Add(lanternSO.levelAndBuffs[i]);
+            if (lanternSO.levelAndBuffs.ContainsKey(i + 1)) {
+                unlockedBuff.Add(lanternSO.levelAndBuffs[i + 1]);
                 GameObject instantiatedUnlockedBuff = Instantiate(unlockedBuffCard, buffContent);
-                instantiatedUnlockedBuff.GetComponent<UnlockedBuffCard>().SetBuffSO(lanternSO.levelAndBuffs[i]);
+                instantiatedUnlockedBuff.GetComponent<UnlockedBuffCard>().SetBuffSO(lanternSO.levelAndBuffs[i + 1]);
                 unlockedBuffCardList.Add(instantiatedUnlockedBuff);
             }
         }

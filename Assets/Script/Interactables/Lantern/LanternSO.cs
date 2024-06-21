@@ -15,12 +15,12 @@ public class LanternSO : ScriptableObject
     private int counter = 0;
     private bool maxLevel = false;
 
-    [SerializedDictionary("Weapons", "Quantity/chance")]
+    [SerializedDictionary("Level", "Quantity/chance")]
     public SerializedDictionary<int, DungeonBuffSO> levelAndBuffs;
    
 
     public void LevelUp() {
-        while (counter < levelCost.Count && currentDeposit >= levelCost[counter]) {
+        while (counter < levelCost.Count - 1 && currentDeposit >= levelCost[counter]) {
             currentDeposit -= levelCost[counter];
             level++;
             counter++;
@@ -37,10 +37,11 @@ public class LanternSO : ScriptableObject
 
     public void Deposit(int memory) {
         currentDeposit += memory;
+        LevelUp();
     }
 
     public void CheckIfCanLevelUp(Button levelUpButton) {
-        if (counter >= levelCost.Count) {
+        if (counter >= levelCost.Count - 1) {
             levelUpButton.gameObject.SetActive(false);
         } else {
             levelUpButton.gameObject.SetActive(true);

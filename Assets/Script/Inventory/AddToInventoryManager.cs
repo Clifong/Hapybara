@@ -134,6 +134,5 @@ public class AddToInventoryManager : MonoBehaviour
 
     public void BroadcastExpGained() {
         broadcastExpGained.TriggerEvent(this, expGained);
-        expGained = 0;
     }
 }
