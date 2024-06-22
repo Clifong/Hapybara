@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class QuestBoard : MonoBehaviour, Interactables 
 {
@@ -44,6 +45,7 @@ public class QuestBoard : MonoBehaviour, Interactables
     public void RemoveQuest() {
         questBoardSO.RemoveQuest(currentQuestSO);
         currentQuestSO = null;
+        EditorUtility.SetDirty(questBoardSO);
     }
 
 

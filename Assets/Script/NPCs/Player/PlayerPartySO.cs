@@ -40,10 +40,18 @@ public class PlayerPartySO : ScriptableObject
 
     public void AddExpIndividually(int individualExp) {
         for (int i = 0; i < allActivePartyMembers.Count; i++) {
-                if (allActivePartyMembers[i] != null) {
-                    allActivePartyMembers[i].GainExp(individualExp);
-                }
+            if (allActivePartyMembers[i] != null) {
+                allActivePartyMembers[i].GainExp(individualExp);
             }
+        }
+    }
+
+    public void AddRelationshipExpIndividually(int individualExp) {
+        for (int i = 0; i < allActivePartyMembers.Count; i++) {
+            if (allActivePartyMembers[i] != null) {
+                allActivePartyMembers[i].GainRelationshipExp(individualExp);
+            }
+        }
     }
 
     

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public abstract class OneTimeObject : MonoBehaviour
 {
@@ -11,8 +12,9 @@ public abstract class OneTimeObject : MonoBehaviour
         onetimeObjectSO.CheckIfComplete(this, associatedObject);
     }
 
-    protected void SetComplete() {
-        Destroy(this.gameObject);
+    protected virtual void SetComplete() {
         onetimeObjectSO.SetComplete();
+        EditorUtility.SetDirty(onetimeObjectSO);
+        Destroy(this.gameObject);
     }
 }

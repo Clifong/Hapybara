@@ -8,10 +8,8 @@ public class AddToInventoryManager : MonoBehaviour
     
     public CrossObjectEventWithData broadcastMoney;
     public CrossObjectEventWithData broadcastMemory;
-    public CrossObjectEventWithData broadcastExpGained;
     [Header("Checker")]
     public CrossObjectEventWithData checkIfCanCraft;
-    private int expGained = 0;
 
     public void AddToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
@@ -25,6 +23,12 @@ public class AddToInventoryManager : MonoBehaviour
         {
             playerInventorySO.AddFood(foodSO);
         }
+    }
+
+    public void AddChestLootToInventory(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        ChestSO chestSO = (ChestSO) temp[0];
+        chestSO.AddChestItem(playerInventorySO);
     }
     
     public void AddWeaponOnlyToInventory(Component component, object obj) {
@@ -58,30 +62,7 @@ public class AddToInventoryManager : MonoBehaviour
     public void AddLootFromEnemy(Component component, object obj) {
         object[] temp = (object[])obj;
         EnemySO enemySO = (EnemySO) temp[0];
-        List<object> loot = enemySO.ReturnLoot();
-
-        int money = (int) loot[0];
-        int memory = (int) loot[1];
-        int exp = (int) loot[2];
-        expGained += exp;
-
-        List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)loot[3];
-        List<FoodSO> allFoodToAdd = (List<FoodSO>)loot[4];
-        List<IngredientSO> allIngredientToAdd = (List<IngredientSO>)loot[5];
-        playerInventorySO.AddMoney(money);
-        playerInventorySO.AddMemory(memory);
-        foreach (WeaponSO weapon in allWeaponToAdd)
-        {
-            playerInventorySO.AddWeapon(weapon);
-        }
-        foreach (FoodSO foodSO in allFoodToAdd)
-        {
-            playerInventorySO.AddFood(foodSO);
-        }
-        foreach (IngredientSO ingredientSO in allIngredientToAdd)
-        {
-            playerInventorySO.AddIngredient(ingredientSO);
-        }
+        enemySO.AddLoot(playerInventorySO);
     }
 
     public void ChangeBuildableQty(Component component, object obj) {
@@ -130,9 +111,5 @@ public class AddToInventoryManager : MonoBehaviour
         object[] temp = (object[]) obj;
         RequestQuestSO requestQuestSO = (RequestQuestSO) temp[0];
         requestQuestSO.CheckIfCanComplete(playerInventorySO);
-    }
-
-    public void BroadcastExpGained() {
-        broadcastExpGained.TriggerEvent(this, expGained);
     }
 }

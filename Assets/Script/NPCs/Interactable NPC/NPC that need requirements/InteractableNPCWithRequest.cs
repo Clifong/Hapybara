@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEditor;
 public class InteractableNPCWithRequest : InteractableNPC
 {
     public List<NPCRequestSO> allRequest;
@@ -17,6 +17,7 @@ public class InteractableNPCWithRequest : InteractableNPC
     public override void Interact() {
         if (counter >= allRequest.Count) {
             interactableNPCSO.Fulfill();
+            EditorUtility.SetDirty(interactableNPCSO);
             Destroy(this.gameObject);
             return;
         }

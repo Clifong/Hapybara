@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEditor;
 
 public class ConstructionLayer : TilemapLayer
 {
@@ -28,7 +29,7 @@ public class ConstructionLayer : TilemapLayer
         {
             houseStateSO.buildables[coord] = buildables[coord].buildableType;
         }
-        Debug.Log(houseStateSO.buildables.Keys.Count);
+        EditorUtility.SetDirty(houseStateSO);
     }
 
     public void Build(Vector3 worldCoord, BuildableSO furniture) {

@@ -45,6 +45,12 @@ public class PlayerSO : ScriptableObject
         LevelUp();
     }
 
+    public void GainRelationshipExp(int exp) {
+        currentRelationshipExp += exp;
+        CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
+        LevelUpRelationship();
+    }
+
     public void LevelUp() {
         while (currentExp > expNeededForNextLevel) {
             currentExp = Mathf.Max(0, currentExp - expNeededForNextLevel);

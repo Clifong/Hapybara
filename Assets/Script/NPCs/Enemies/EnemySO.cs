@@ -57,14 +57,13 @@ public class EnemySO : ScriptableObject
         return temp[key][randomNumber];
     }
 
-    public List<object> ReturnLoot() {
-        List<object> loot = new List<object>();
-        loot.Add(Random.Range(moneyDroppedMin, moneyDroppedMax));
-        loot.Add(Random.Range(memoryDroppedMin, memoryDroppedMax));
-        loot.Add(level*100);
+    public void AddLoot(PlayerInventorySO playerInventorySO) {
+        playerInventorySO.AddMoney(Random.Range(moneyDroppedMin, moneyDroppedMax));
+        playerInventorySO.AddMemory(Random.Range(memoryDroppedMin, memoryDroppedMax));
 
         float randomNumber = 100f - Random.Range(0.01f, 100f);
         List<WeaponSO> weapons = new List<WeaponSO>();
+
         foreach (WeaponSO weaponSO in allWeapons.ReturnKeys()) 
         {
             List<int> quantityList = allWeapons[weaponSO].ReturnKeys();
@@ -76,7 +75,7 @@ public class EnemySO : ScriptableObject
                 if (randomNumber <= chance) {
                     for (int i = 0; i < quantity; i++)
                     {
-                        weapons.Add(weaponSO);
+                        playerInventorySO.AddWeapon(weaponSO);
                     }
                     break;
                 } else {
@@ -98,7 +97,7 @@ public class EnemySO : ScriptableObject
                 if (randomNumber <= chance) {
                     for (int i = 0; i < quantity; i++)
                     {
-                        food.Add(foodSO);
+                        playerInventorySO.AddFood(foodSO);
                     }
                     break;
                 } else {
@@ -120,7 +119,7 @@ public class EnemySO : ScriptableObject
                 if (randomNumber <= chance) {
                     for (int i = 0; i < quantity; i++)
                     {
-                        ingredients.Add(ingredientSO);
+                        playerInventorySO.AddIngredient(ingredientSO);
                     }
                     break;
                 } else {
@@ -128,10 +127,5 @@ public class EnemySO : ScriptableObject
                 }
             }
         }
-
-        loot.Add(weapons);
-        loot.Add(food);
-        loot.Add(ingredients);
-        return loot;
     }
 }

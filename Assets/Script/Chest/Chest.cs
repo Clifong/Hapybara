@@ -1,40 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AYellowpaper.SerializedCollections;
+using UnityEditor;
 
-public class Chest : MonoBehaviour, Interactables 
+public class Chest : OneTimeObject, Interactables
 {
-    [SerializedDictionary("All Weapons", "quantity")]
-    public SerializedDictionary<WeaponSO, int> allWeapons;
-    [SerializedDictionary("All Food", "quantity")]
-    public SerializedDictionary<FoodSO, int> allFood;
-
+    public ChestSO chestSO;
     public GameObject interactPrompt;
     private bool canInteract = false;
     public CrossObjectEventWithData addChestItemToInventory;
     private Animator anime;
 
+    void Start() {
+        chestSO.CheckIfComplete(this, associatedObject);
+    }
+
     public void Interact() {
+        SetComplete();
         anime = GetComponentInChildren<Animator>();
         anime.SetTrigger("Open");
-        List<WeaponSO> tempWeaponList = new List<WeaponSO>();
-        List<FoodSO> tempFoodList = new List<FoodSO>();
-        foreach (WeaponSO weaponSO in allWeapons.ReturnKeys())
-        {
-            for (int i = allWeapons[weaponSO]; i > 0 ; i--)
-            {
-                tempWeaponList.Add(weaponSO);
-            }
-        }
-        foreach (FoodSO foodSO in allFood.ReturnKeys())
-        {
-            for (int i = allFood[foodSO]; i > 0 ; i--)
-            {
-                tempFoodList.Add(foodSO);
-            }
-        }
-        addChestItemToInventory.TriggerEvent(this, tempWeaponList, tempFoodList);
+        addChestItemToInventory.TriggerEvent(this, chestSO);
+    }
+
+    protected override void SetComplete() {
+        chestSO.SetComplete();
+        EditorUtility.SetDirty(chestSO);
     }
 
     void OnTriggerEnter2D(Collider2D other) {

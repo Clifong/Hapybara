@@ -493,6 +493,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8623977899706514584, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: gameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 064fde2fd66b1944cb02c0cff726d099, type: 2}
+    - target: {fileID: 8623977899706514584, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
+      propertyPath: responseOnTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddExpFromEnemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2553974e8bdb7954a8219ecb9d4931c5, type: 3}
 --- !u!4 &5442873612475275810 stripped
@@ -1065,6 +1073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6295449926155150522, guid: d61edbfc611b00549815980fd391c978, type: 3}
+    - {fileID: 3676250740422048846, guid: d61edbfc611b00549815980fd391c978, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d61edbfc611b00549815980fd391c978, type: 3}
 --- !u!4 &1409663814559460264 stripped
 Transform:
@@ -1094,7 +1103,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 70232135}
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
-        m_MethodName: AddToInventory
+        m_MethodName: AddChestLootToInventory
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1119,9 +1128,7 @@ MonoBehaviour:
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
   broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
   broadcastMemory: {fileID: 11400000, guid: c61c6c4e1f11cdf4a8de5b419d2d6e0b, type: 2}
-  broadcastExpGained: {fileID: 11400000, guid: f46bf9a82fc31bd47be7d130f7f048c3, type: 2}
   checkIfCanCraft: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
-  expGained: 0
 --- !u!114 &391877471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3049475358309875848, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000076293945
+      value: -0.00061035156
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318091, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_IsActive
@@ -1473,7 +1480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9047575944192318093, guid: 01effa7cf98971f44baf8dca5f5cbb89, type: 3}
       propertyPath: m_Value

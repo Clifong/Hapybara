@@ -52,6 +52,10 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    public void PopulateFriendshipUI() {
+        
+    }
+
     public void UnlockedAchievement(Component component, object obj) {
         object[] temp = (Object[]) obj;
         AchievementSO achievementSO = (AchievementSO) temp[0];

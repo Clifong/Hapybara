@@ -15,6 +15,7 @@ public class PartyManager : MonoBehaviour
     private int slotLookingAt;
     private List<GameObject> allInstantiatedPartyMemberIcons = new List<GameObject>();
     public CrossObjectEvent resetParty;
+    private int expGained = 0;
 
     public void PopulateUI() {
         foreach (GameObject instantiatedPartyMemberIcon in allInstantiatedPartyMemberIcons)
@@ -73,12 +74,15 @@ public class PartyManager : MonoBehaviour
         int slot = (int) temp[0];
         this.slotLookingAt = slot;
     }
-
-    public void AddExpToPartyMember(Component component, object obj) {
+    public void AddExpFromEnemy(Component component, object obj) {
         object[] temp = (object[])obj;
-        int expGained = (int) temp[0];
+        EnemySO enemySO = (EnemySO) temp[0];
+        int exp = enemySO.level * 100;
+        expGained += exp;
         int individualExp = (int)Mathf.Round(((float)expGained/(float)playerPartySO.GetNumberOfActivePartyMembers()));
         playerPartySO.AddExpIndividually(individualExp);
+        playerPartySO.AddRelationshipExpIndividually(5);
+        expGained = 0;
     }
     
 }
