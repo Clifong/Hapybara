@@ -18,6 +18,9 @@
 - Forging Friendships
 - Owning Houses
 
+### The designer's docs
+https://docs.google.com/document/d/1_J2m_wP_D14Fp7sngfHn4mr47cQcqZIzV7qUDQOZbwk/edit
+
 ## System Requirements
 *To be confirmed (TBC)*
 
