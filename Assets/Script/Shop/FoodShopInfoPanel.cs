@@ -13,7 +13,7 @@ public class FoodShopInfoPanel : ShopInfoPanel
         this.foodSO = (FoodSO) temp[0];
         int qty = (int) temp[1];
         int cost = (int) temp[2];
-        foodSO.SetUIInfoWithoutFrame(icon, name);
+        foodSO.SetUIInfo(icon, name);
         description.text = foodSO.foodDescription;
         costText.text = cost.ToString();
         qtyText.text = qty.ToString();

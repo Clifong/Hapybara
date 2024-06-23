@@ -15,7 +15,7 @@ public class WeaponIcon : InventoryIcon
 
     public void SetInfo(WeaponSO weaponSO, int quantity) {
         this.weaponSO = weaponSO;
-        icon.sprite = weaponSO.weaponIconWithFrame;
+        icon.sprite = weaponSO.weaponIcon;
         this.quantity = quantity;
         if (weaponSO.owner == null) {
             playerEquippedIcon.gameObject.SetActive(false);

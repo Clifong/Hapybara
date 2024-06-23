@@ -66,7 +66,7 @@ public class CharacterViewerManager : MonoBehaviour
         relationshipExpNeededText.text = "Require: " + playerSO.expNeededForNextRelationshipLevel.ToString();
         
         if (playerSO.weaponEquipped != null) {
-            weaponEquippedIcon.sprite = playerSO.weaponEquipped.weaponIconWithoutFrame;
+            weaponEquippedIcon.sprite = playerSO.weaponEquipped.weaponIcon;
         } else {
             weaponEquippedIcon.sprite = noEquipmentEquippedDefault;
         }

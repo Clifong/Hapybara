@@ -13,7 +13,7 @@ public class NewDishCookedPanel : MonoBehaviour
     public void PopulateUI(Component component, object obj) {
         object[] temp = (object[]) obj;
         this.foodSO = (FoodSO) temp[0];
-        foodImage.sprite = this.foodSO.foodIconWithoutFrame;
+        foodImage.sprite = this.foodSO.foodIcon;
         finishedText.text = "You have cooked 1 " + this.foodSO.foodName;
     }
 }

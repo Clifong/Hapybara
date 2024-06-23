@@ -14,7 +14,7 @@ public class WeaponOnSalePanel : ShopPanel
         this.weaponSO = weaponSO;
         this.qty = qty;
         this.cost = cost;   
-        weaponSO.SetUIInfoWithFrame(icon, name);
+        weaponSO.SetUIInfo(icon, name);
     }
 
     public void BroadcastSO() {

@@ -14,7 +14,7 @@ public class FoodOnSalePanel : ShopPanel
         this.foodSO = foodSO;
         this.qty = qty;
         this.cost = cost;
-        this.foodSO.SetUIInfoWithFrame(icon, name);
+        this.foodSO.SetUIInfo(icon, name);
     }
 
     public void BroadcastSO() {

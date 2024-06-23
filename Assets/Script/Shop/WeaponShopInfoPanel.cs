@@ -11,7 +11,7 @@ public class WeaponShopInfoPanel : ShopInfoPanel
         this.weaponSO = (WeaponSO) temp[0];
         int qty = (int) temp[1];
         int cost = (int) temp[2];
-        weaponSO.SetUIInfoWithoutFrame(icon, name);
+        weaponSO.SetUIInfo(icon, name);
         description.text = weaponSO.weaponDescription;
         costText.text = cost.ToString();
         qtyText.text = qty.ToString();

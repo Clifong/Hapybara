@@ -12,7 +12,7 @@ public class FoodIconInventory : InventoryIcon
 
     public void SetInfo(FoodSO foodSO, int quantity) {
         this.foodSO = foodSO;
-        icon.sprite = foodSO.foodIconWithFrame;
+        icon.sprite = foodSO.foodIcon;
         this.quantity = quantity;
     }
 }

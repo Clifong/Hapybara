@@ -9,8 +9,7 @@ using TMPro;
 public class FoodSO : ScriptableObject
 {
     [Header("Information")]
-    public Sprite foodIconWithFrame;
-    public Sprite foodIconWithoutFrame;
+    public Sprite foodIcon;
     public string foodName;
     public bool unlocked;
     [TextAreaAttribute]
@@ -32,16 +31,11 @@ public class FoodSO : ScriptableObject
     public int speedChange;
 
     public void SetInfo(Image icon) {
-        icon.sprite = foodIconWithoutFrame;
+        icon.sprite = foodIcon;
     }
 
-    public void SetUIInfoWithFrame(Image icon, TextMeshProUGUI text) {
-        icon.sprite = foodIconWithFrame;
-        text.text = foodName;
-    }
-
-    public void SetUIInfoWithoutFrame(Image icon, TextMeshProUGUI text) {
-        icon.sprite = foodIconWithoutFrame;
+    public void SetUIInfo(Image icon, TextMeshProUGUI text) {
+        icon.sprite = foodIcon;
         text.text = foodName;
     }
 
