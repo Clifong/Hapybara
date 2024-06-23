@@ -9,7 +9,7 @@ public class WeaponPanelDescription : InventoryDescriptionPanels
         object[] temp = (object[]) obj;
         this.weaponSO = (WeaponSO) temp[0];
         int qty = (int) temp[1];
-        weaponSO.SetUIInfoWithoutFrame(icon, name);
+        weaponSO.SetUIInfo(icon, name);
         description.text = weaponSO.weaponDescription;
         quantityText.text = qty.ToString();
 

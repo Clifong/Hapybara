@@ -14,6 +14,6 @@ public class RequestPanel : MonoBehaviour
     public void SetFoodSO(FoodSO foodSO, int qty) {
         this.foodSO = foodSO;
         quantityText.text = qty.ToString();
-        this.foodSO.SetUIInfoWithFrame(icon, nameText);
+        this.foodSO.SetUIInfo(icon, nameText);
     }
 }

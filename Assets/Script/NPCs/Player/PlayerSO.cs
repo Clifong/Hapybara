@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 
 [CreateAssetMenu(fileName = "Player SO", menuName = "All player SO/PlayerSO", order = 1)]
 public class PlayerSO : ScriptableObject
@@ -25,7 +26,20 @@ public class PlayerSO : ScriptableObject
     public GameObject playerObject;
     public GameObject homePlayerObject;
     public bool invited;
-
+    [Header("UI stuff")]
+    public Sprite playerIcon;
+    public Sprite playerAppearance;
+    [Header("Skills")]
+    public List<SkillsSO> allSkills;
+    [Header("Friendship panel")]
+    public Sprite friendshipFrame;
+    [TextAreaAttribute]
+    public string lore;
+    public Sprite objectOfFaith;
+    public string objectOfFaithName;
+    [TextAreaAttribute]
+    public string objectOfFaithDescription;
+    
     void Awake() {
         CalculateExpNeededForNextLevel(currentExp);
         CalculateExpNeededForNextRelationshipLevel(currentExp);
@@ -57,6 +71,7 @@ public class PlayerSO : ScriptableObject
             level += 1;
             CalculateExpNeededForNextLevel(currentExp);
         }
+        EditorUtility.SetDirty(this);
     }
 
     public void LevelUpRelationship() {
@@ -65,6 +80,7 @@ public class PlayerSO : ScriptableObject
             relationshipLevel += 1;
             CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
         }
+        EditorUtility.SetDirty(this);
     }
 
     public void EquipWeapon(WeaponSO weaponSO) {
@@ -74,6 +90,7 @@ public class PlayerSO : ScriptableObject
         defence += weaponEquipped.defenceChange;
         speed += weaponEquipped.speedChange;
         weaponSO.owner = this;
+        EditorUtility.SetDirty(this);
     }
 
     public void UnequipWeapon() {
@@ -83,6 +100,7 @@ public class PlayerSO : ScriptableObject
         speed -= weaponEquipped.speedChange;
         weaponEquipped.owner = null;
         weaponEquipped = null;
+        EditorUtility.SetDirty(this);
     }
 
     public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {
@@ -100,10 +118,26 @@ public class PlayerSO : ScriptableObject
         icon.sprite = playerIcon;
         nameText.text = name;
     }
+
+    public void SetFrameInfo(Image frame, Image objectOfFaithImage, Image playerIconImage, TextMeshProUGUI loreText, Button oofButton) {
+        frame.sprite = friendshipFrame;
+        objectOfFaithImage.sprite = objectOfFaith; 
+        playerIconImage.sprite = playerIcon;
+        loreText.text = lore;
+        if (relationshipLevel < 5) {
+            oofButton.enabled = false;
+            objectOfFaithImage.color = new Color(0f,0f,0f,.2f);
+        } else {
+            oofButton.enabled = true;
+            objectOfFaithImage.color = new Color(255f,256f,256f,1f);
+        }
+    }
+
+    public void SetOOFInfo(Image enlargedImage, TextMeshProUGUI OOFName, TextMeshProUGUI OOFDescription) {
+        enlargedImage.sprite = objectOfFaith;
+        OOFName.text = objectOfFaithName;
+        OOFDescription.text = objectOfFaithDescription;
+    }
     
-    [Header("UI stuff")]
-    public Sprite playerIcon;
-    public Sprite playerAppearance;
-    [Header("Skills")]
-    public List<SkillsSO> allSkills;
+    
 }

@@ -8,8 +8,7 @@ using TMPro;
 public class WeaponSO : ScriptableObject
 {
     [Header("Information")]
-    public Sprite weaponIconWithFrame;
-    public Sprite weaponIconWithoutFrame;
+    public Sprite weaponIcon;
     public string weaponName;
     [TextAreaAttribute]
     public string weaponDescription;
@@ -25,16 +24,11 @@ public class WeaponSO : ScriptableObject
     public string effectsDescription;
 
     public void SetInfo(Image icon) {
-        icon.sprite = weaponIconWithoutFrame;
+        icon.sprite = weaponIcon;
     }
 
-    public void SetUIInfoWithFrame(Image icon, TextMeshProUGUI text) {
-        icon.sprite = weaponIconWithFrame;
-        text.text = weaponName;
-    }
-
-    public void SetUIInfoWithoutFrame(Image icon, TextMeshProUGUI text) {
-        icon.sprite = weaponIconWithoutFrame;
+    public void SetUIInfo(Image icon, TextMeshProUGUI text) {
+        icon.sprite = weaponIcon;
         text.text = weaponName;
     }
 

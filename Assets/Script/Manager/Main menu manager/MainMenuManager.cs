@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 
 public class MainMenuManager : MonoBehaviour
 {
     public PlayerUnlokedCollectiblesSO unlockedCollectibleSO;
+    public PlayerPartySO playerPartySO;
     [Header("Books")]
     public Transform booksContent;
     public GameObject booksPanel;
@@ -17,6 +19,10 @@ public class MainMenuManager : MonoBehaviour
     public Transform achievementContent;
     public GameObject achievementPanel;
     private List<GameObject> allInstantiatedAchievementPanel = new List<GameObject>();
+    [Header("Friendship")]
+    public Transform friendshipContent;
+    public GameObject friendshipFrame;
+    private List<GameObject> allInstantiatedFriendshipPanel = new List<GameObject>();
 
     public void PopulateBooksUI() {
         foreach (GameObject instantiatedBookPanel in allInstantiatedBooksPanel)
@@ -53,12 +59,23 @@ public class MainMenuManager : MonoBehaviour
     }
 
     public void PopulateFriendshipUI() {
-        
+        foreach (GameObject instantiatedFriendshipPanel in allInstantiatedFriendshipPanel)
+        {
+            Destroy(instantiatedFriendshipPanel);
+        }
+        allInstantiatedFriendshipPanel.Clear();
+        foreach (PlayerSO playerSO in playerPartySO.allPartyMembers)
+        {
+            GameObject instantiatedFriendshipPanel = Instantiate(friendshipFrame, friendshipContent);
+            instantiatedFriendshipPanel.GetComponent<FriendshipPanel>().SetInfo(playerSO);
+            allInstantiatedFriendshipPanel.Add(instantiatedFriendshipPanel);
+        }
     }
 
     public void UnlockedAchievement(Component component, object obj) {
         object[] temp = (Object[]) obj;
         AchievementSO achievementSO = (AchievementSO) temp[0];
         achievementSO.UnlockAchievement();
+        EditorUtility.SetDirty(achievementSO);
     }
 }

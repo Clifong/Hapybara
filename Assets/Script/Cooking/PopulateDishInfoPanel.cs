@@ -18,7 +18,7 @@ public class PopulateDishInfoPanel : MonoBehaviour
     public void ReceivedFoodSOFromBroadcast(Component component, object obj) {
         object[] temp = (object[]) obj;
         foodSO = (FoodSO) temp[0];
-        foodIcon.sprite = foodSO.foodIconWithoutFrame;
+        foodIcon.sprite = foodSO.foodIcon;
         foodName.text = foodSO.foodName;
         foodDescription.text = foodSO.foodDescription;
         effectDescriptiontext.text = foodSO.effectsDescription;

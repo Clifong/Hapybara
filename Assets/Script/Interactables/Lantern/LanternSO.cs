@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using AYellowpaper.SerializedCollections;
+using UnityEditor;
 
 [CreateAssetMenu(fileName = "LanternSO", menuName = "Lantern SO", order = 1)]
 public class LanternSO : ScriptableObject
@@ -28,6 +29,7 @@ public class LanternSO : ScriptableObject
         if (counter == levelCost.Count) {
             maxLevel = true;
         }
+        EditorUtility.SetDirty(this);
     } 
 
     public void PopulateUI(TextMeshProUGUI levelText, TextMeshProUGUI costLevel) {
