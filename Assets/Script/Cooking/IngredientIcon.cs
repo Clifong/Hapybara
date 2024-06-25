@@ -17,9 +17,9 @@ public class IngredientIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void PopulateFoodIconInfo(IngredientSO ingredientSO, int quantityNeeded) {
         this.ingredientSO = ingredientSO;
-        ingredientIcon.sprite = ingredientSO.ingredientIconWithFrame;
+        ingredientIcon.sprite = ingredientSO.ingredientIcon;
         this.quantityNeeded.text = "X " + quantityNeeded.ToString();
-        enlargedIngredientIcon.sprite = ingredientSO.ingredientIconWithoutFrame;
+        enlargedIngredientIcon.sprite = ingredientSO.ingredientIcon;
         ingredientName.text = ingredientSO.ingredientName;
     }
 

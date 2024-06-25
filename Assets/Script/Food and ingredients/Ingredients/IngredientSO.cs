@@ -7,15 +7,14 @@ using UnityEngine.UI;
 public class IngredientSO : ScriptableObject
 {
     [Header("Information")]
-    public Sprite ingredientIconWithFrame;
-    public Sprite ingredientIconWithoutFrame;
+    public Sprite ingredientIcon;
     public GameObject ingredientObject;
     public string ingredientName;
     [TextAreaAttribute]
     public string ingredientDescription;
 
     public void SetInfo(Image icon) {
-        icon.sprite = ingredientIconWithoutFrame;
+        icon.sprite = ingredientIcon;
     }
 }
 
