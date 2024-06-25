@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+// other code, class definition blah blah
+
 
 public abstract class OneTimeObject : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public abstract class OneTimeObject : MonoBehaviour
 
     protected virtual void SetComplete() {
         onetimeObjectSO.SetComplete();
-        EditorUtility.SetDirty(onetimeObjectSO);
+        // EditorUtility.SetDirty(onetimeObjectSO);
         Destroy(this.gameObject);
     }
 }

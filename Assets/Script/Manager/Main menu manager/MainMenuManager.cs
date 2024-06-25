@@ -76,6 +76,6 @@ public class MainMenuManager : MonoBehaviour
         object[] temp = (Object[]) obj;
         AchievementSO achievementSO = (AchievementSO) temp[0];
         achievementSO.UnlockAchievement();
-        EditorUtility.SetDirty(achievementSO);
+        // EditorUtility.SetDirty(achievementSO);
     }
 }

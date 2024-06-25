@@ -17,7 +17,7 @@ public class Bartender : InteractableNPC
     public void RemoveRecruittedPlayer(Component component, object obj) {
         object[] temp = (object[])obj;
         PlayerSO selectedPlayer = (PlayerSO) temp[0];
-        bartenderSO.allRecruitablePlayer.Remove(selectedPlayer);
+        bartenderSO.RemovePlayer(selectedPlayer);
     }
 
 }

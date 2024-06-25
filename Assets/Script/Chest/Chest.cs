@@ -24,7 +24,7 @@ public class Chest : OneTimeObject, Interactables
 
     protected override void SetComplete() {
         chestSO.SetComplete();
-        EditorUtility.SetDirty(chestSO);
+        // EditorUtility.SetDirty(chestSO);
     }
 
     void OnTriggerEnter2D(Collider2D other) {

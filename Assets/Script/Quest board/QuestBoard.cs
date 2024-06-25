@@ -45,7 +45,7 @@ public class QuestBoard : MonoBehaviour, Interactables
     public void RemoveQuest() {
         questBoardSO.RemoveQuest(currentQuestSO);
         currentQuestSO = null;
-        EditorUtility.SetDirty(questBoardSO);
+        // EditorUtility.SetDirty(questBoardSO);
     }
 
 

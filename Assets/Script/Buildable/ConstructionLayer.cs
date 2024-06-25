@@ -29,7 +29,7 @@ public class ConstructionLayer : TilemapLayer
         {
             houseStateSO.buildables[coord] = buildables[coord].buildableType;
         }
-        EditorUtility.SetDirty(houseStateSO);
+        // EditorUtility.SetDirty(houseStateSO);
     }
 
     public void Build(Vector3 worldCoord, BuildableSO furniture) {
