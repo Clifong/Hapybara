@@ -27,9 +27,9 @@ https://docs.google.com/document/d/1_J2m_wP_D14Fp7sngfHn4mr47cQcqZIzV7qUDQOZbwk/
 ## Installation Instructions
 
 ### Windows, macOS, and Linux
-1. Download the ZIP file from [this link](https://drive.google.com/file/d/1tqCiefuCOIAp0g793QYZqFtqVaKJMFeC/view?usp=drive_link).
-2. Unzip the file to your desired location.
-3. Launch `Hapybara.exe`.
+1. Download the ZIP file from [this link](https://github.com/Clifong/Hapybara/releases).
+2. Unzip the folder to your desired location.
+3. Launch `Hapybara.exe` inside the unzipped folder.
 
 ## Gameplay Instructions
 
