@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1617084434016570465}
   - component: {fileID: 1617084434016570466}
   - component: {fileID: 6721590774444335961}
+  - component: {fileID: 1610536372}
   m_Layer: 0
   m_Name: Dungeon buff manager
   m_TagString: Untagged
@@ -65,6 +66,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1617084434016570466}
         m_TargetAssemblyTypeName: DungeonBuffManager, Assembly-CSharp
         m_MethodName: AddBuff
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1610536372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617084434016570464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: e5e82b42d16889d4b82d9eb0dd5ca1fe, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1617084434016570466}
+        m_TargetAssemblyTypeName: DungeonBuffManager, Assembly-CSharp
+        m_MethodName: CheckInstaKill
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

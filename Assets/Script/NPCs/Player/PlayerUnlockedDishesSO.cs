@@ -6,4 +6,10 @@ using UnityEngine;
 public class PlayerUnlockedDishesSO : ScriptableObject
 {
     public List<FoodSO> unlockedDishes;
+
+    public void AddRecipe(List<RecipeSO> allRecipe) {
+        foreach (RecipeSO recipeSO in allRecipe) {
+            unlockedDishes.Add(recipeSO.foodSO);
+        }
+    }
 }

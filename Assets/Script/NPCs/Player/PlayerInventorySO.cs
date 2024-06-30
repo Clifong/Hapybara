@@ -23,6 +23,8 @@ public class PlayerInventorySO : ScriptableObject
     public int money;
     [Header("Memory")]
     public int memory;
+    [Header("Matchstick")]
+    public int matchstick;
 
     public void AddWeapon(WeaponSO weaponSO) {
         if (allWeapons.ContainsKey(weaponSO)) {
@@ -146,6 +148,10 @@ public class PlayerInventorySO : ScriptableObject
 
     public void MinusMemory(int memory) {
         this.memory -= memory;
+    }
+
+    public void MinusMatchstick(int matchstick) {
+        this.matchstick -= matchstick;
     }
 
     public bool CanCook(FoodSO foodSO) {

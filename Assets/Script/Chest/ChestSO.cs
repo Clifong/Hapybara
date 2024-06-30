@@ -16,6 +16,8 @@ public class ChestSO : OneTimeObjectSO
     public SerializedDictionary<MaterialSO, int> allMaterials = new SerializedDictionary<MaterialSO, int>();
     [SerializedDictionary("All furniture", "quantity")]
     public SerializedDictionary<BuildableSO, int> allFurniture = new SerializedDictionary<BuildableSO, int>();
+    [SerializedDictionary("All recipe", "quantity")]
+    public SerializedDictionary<RecipeSO, int> allRecipe = new SerializedDictionary<RecipeSO, int>();
     public int money;
 
     public void AddChestItem(PlayerInventorySO playerInventorySO) {
@@ -46,5 +48,9 @@ public class ChestSO : OneTimeObjectSO
         {
             playerInventorySO.AddFurniture(furnitureSO, allFurniture[furnitureSO]);
         }
+    }
+
+    public void AddChestItemRecipe(PlayerUnlockedDishesSO playerUnlockedDishesSO) {
+        playerUnlockedDishesSO.AddRecipe(allRecipe.ReturnKeys());
     }
 }

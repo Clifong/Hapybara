@@ -10,6 +10,8 @@ public class ShopkeeperSO : ScriptableObject
     public SerializedDictionary<WeaponSO, SerializedDictionary<int, int>> allWeaponsSold;
     [SerializedDictionary("All Food", "quantity/cost")]
     public SerializedDictionary<FoodSO, SerializedDictionary<int, int>> allFoodSold;
+    [SerializedDictionary("All special item", "quantity/cost")]
+    public SerializedDictionary<RecipeSO, SerializedDictionary<int, int>> allSpecialItem;
 
     public void BuyWeapon(WeaponSO weaponSO, int quantity) {
         int quantityCurrently = allWeaponsSold[weaponSO].ReturnKeys()[0];
@@ -32,6 +34,18 @@ public class ShopkeeperSO : ScriptableObject
             allFoodSold.Remove(foodSO);
         } else {
             allFoodSold[foodSO][quantityCurrently] = cost;
+        }
+    }
+
+    public void BuySpecialItem(RecipeSO recipeSO, int quantity) {
+        int quantityCurrently = allSpecialItem[recipeSO].ReturnKeys()[0];
+        int cost = allSpecialItem[recipeSO][quantityCurrently];
+        allSpecialItem[recipeSO].Remove(quantityCurrently);
+        quantityCurrently -= quantity;
+        if (quantityCurrently <= 0) {
+            allSpecialItem.Remove(recipeSO);
+        } else {
+            allSpecialItem[recipeSO][quantityCurrently] = cost;
         }
     }
 }

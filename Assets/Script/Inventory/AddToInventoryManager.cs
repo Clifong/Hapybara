@@ -5,9 +5,11 @@ using UnityEngine;
 public class AddToInventoryManager : MonoBehaviour
 {
     public PlayerInventorySO playerInventorySO;
+    public PlayerUnlockedDishesSO playerUnlockedDishesSO;
     
     public CrossObjectEventWithData broadcastMoney;
     public CrossObjectEventWithData broadcastMemory;
+    public CrossObjectEventWithData broadcastMatchstick;
     [Header("Checker")]
     public CrossObjectEventWithData checkIfCanCraft;
 
@@ -29,6 +31,7 @@ public class AddToInventoryManager : MonoBehaviour
         object[] temp = (object[]) obj;
         ChestSO chestSO = (ChestSO) temp[0];
         chestSO.AddChestItem(playerInventorySO);
+        chestSO.AddChestItemRecipe(playerUnlockedDishesSO);
     }
     
     public void AddWeaponOnlyToInventory(Component component, object obj) {
@@ -47,6 +50,12 @@ public class AddToInventoryManager : MonoBehaviour
         {
             playerInventorySO.AddFood(foodSO);
         }
+    }
+
+    public void AddRecipeOnlyToInventory(Component component, object obj) {
+        object[] temp = (object[])obj;
+        List<RecipeSO> allRecipeToAdd = (List<RecipeSO>)temp[0];
+        playerUnlockedDishesSO.AddRecipe(allRecipeToAdd);
     }
 
     public void ReduceFoodOnlyInInventory(Component component, object obj) {
@@ -90,6 +99,10 @@ public class AddToInventoryManager : MonoBehaviour
         broadcastMoney.TriggerEvent(this, playerInventorySO.money);
     }
 
+    public void BroadcastMatchstick() {
+        broadcastMatchstick.TriggerEvent(this, playerInventorySO.matchstick);
+    }
+
     public void MinusMoney(Component component, object obj) {
         object[] temp = (object[])obj;
         playerInventorySO.MinusMoney((int)temp[0]);
@@ -98,6 +111,22 @@ public class AddToInventoryManager : MonoBehaviour
     public void MinusMemory() {
         broadcastMemory.TriggerEvent(this, playerInventorySO.memory);
         playerInventorySO.MinusMemory(playerInventorySO.memory);
+    }
+
+    public void AddMatchstick(Component component, object obj){
+        object[] temp = (object[])obj;
+        playerInventorySO.MinusMatchstick(-(int) temp[0]);
+    }
+
+    public void MinusMatchstick(Component component, object obj){
+        object[] temp = (object[])obj;
+        playerInventorySO.MinusMatchstick((int) temp[0]);
+    }
+
+    public void CheckIfEnoughMatchstick(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        int cost = (int) temp[0];
+        ((Ice) component).CheckIfEnough(cost);
     }
 
     public void CheckIfCanCraft(Component component, object obj) {

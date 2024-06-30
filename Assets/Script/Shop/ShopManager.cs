@@ -10,13 +10,16 @@ public class ShopManager : MonoBehaviour
     public TextMeshProUGUI moneyIHave;
     public GameObject foodPanelDisplay;
     public GameObject weaponPanelDisplay;
+    public GameObject specialItemDisplay;
     public Transform content;
     public Button buyButton;
     private ShopkeeperSO shopkeeperSO;
     private List<GameObject> allInstantiatedWeaponPanel = new List<GameObject>();
     private List<GameObject> allInstantiatedFoodPanel = new List<GameObject>();
+    private List<GameObject> allInstantiatedSpecialItemPanel = new List<GameObject>();
     public CrossObjectEventWithData addWeaponToInventory;
     public CrossObjectEventWithData addFoodToInventory;
+    public CrossObjectEventWithData addSpecialItemToInventory;
     private object currentSO;
     public CrossObjectEvent askPlayerFoMoney;
     private int playerMoney;
@@ -76,6 +79,18 @@ int quantityOfWeapon = shopkeeperSO.allWeaponsSold[weaponSO].ReturnKeys()[0];
         }
     }
 
+    public void DisplayAllSpecialItemOnSale() {
+        WipeoutAllIcon();
+        foreach (RecipeSO recipeSO in shopkeeperSO.allSpecialItem.ReturnKeys())
+        {
+            GameObject instantiatedSpecialPanel = Instantiate(specialItemDisplay, content);
+            int quantityOfItem = shopkeeperSO.allSpecialItem[recipeSO].ReturnKeys()[0];
+            int costOfItem = shopkeeperSO.allSpecialItem[recipeSO][quantityOfItem];
+            instantiatedSpecialPanel.GetComponent<SpecialItemOnSalePanel>().SetRecipeSO(recipeSO, quantityOfItem, costOfItem);
+            allInstantiatedSpecialItemPanel.Add(instantiatedSpecialPanel);
+        }
+    }
+
     public void WipeoutAllIcon() {
         askPlayerFoMoney.TriggerEvent();
         buyButton.gameObject.SetActive(false);
@@ -87,8 +102,13 @@ int quantityOfWeapon = shopkeeperSO.allWeaponsSold[weaponSO].ReturnKeys()[0];
         {
             Destroy(instantiatedFoodPanel);
         }
+        foreach (GameObject instantiatedSpecialItemPanel in allInstantiatedSpecialItemPanel)
+        {
+            Destroy(instantiatedSpecialItemPanel);
+        }
         allInstantiatedWeaponPanel.Clear();
         allInstantiatedFoodPanel.Clear();
+        allInstantiatedSpecialItemPanel.Clear();
     }
 
     public void SetSOCurrentlyLookingAt(Component component, object obj) {
@@ -106,7 +126,7 @@ int quantityOfWeapon = shopkeeperSO.allWeaponsSold[weaponSO].ReturnKeys()[0];
             }
             addWeaponToInventory.TriggerEvent(this, weaponToAdd);
             GoToWeaponOnSale();
-        } else {
+        } else if (currentSO is FoodSO) {
             shopkeeperSO.BuyFood((FoodSO) currentSO, amount);
             List<FoodSO> foodToAdd = new List<FoodSO>();
             for (int i = 0; i < amount; i++)
@@ -115,6 +135,15 @@ int quantityOfWeapon = shopkeeperSO.allWeaponsSold[weaponSO].ReturnKeys()[0];
             }
             addFoodToInventory.TriggerEvent(this, foodToAdd);
             DisplayAllFoodOnSale();
+        } else if (currentSO is RecipeSO) {
+            shopkeeperSO.BuySpecialItem((RecipeSO) currentSO, amount);
+            List<RecipeSO> recipeToAdd = new List<RecipeSO>();
+            for (int i = 0; i < amount; i++)
+            {
+                recipeToAdd.Add((RecipeSO) currentSO);
+            }
+            addSpecialItemToInventory.TriggerEvent(this, recipeToAdd);
+            DisplayAllSpecialItemOnSale();
         }
         askPlayerFoMoney.TriggerEvent();
     }
