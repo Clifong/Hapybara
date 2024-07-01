@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 677645082901262162}
   - component: {fileID: 677645082901262163}
   - component: {fileID: 1666175898}
+  - component: {fileID: 6002077062105891768}
   m_Layer: 0
   m_Name: Chest parent
   m_TagString: Untagged
@@ -200,16 +201,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3209a527aa62c394db9a8c8da5af9a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWeapons:
-    _serializedList:
-    - Key: {fileID: 11400000, guid: b1e27a3561673d140a1b58a16bfcba2d, type: 2}
-      Value: 1
-  allFood:
-    _serializedList:
-    - Key: {fileID: 11400000, guid: 296c5f31db7db7e44b1d3cc3c7da1680, type: 2}
-      Value: 1
+  onetimeObjectSO: {fileID: 0}
+  associatedObject: []
+  chestSO: {fileID: 0}
   interactPrompt: {fileID: 5917889198162524653}
   addChestItemToInventory: {fileID: 11400000, guid: a181ca8c257f9774a86d0315f77688d0, type: 2}
+--- !u!50 &6002077062105891768
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677645082901262173}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &677645082295337440
 PrefabInstance:
   m_ObjectHideFlags: 0
