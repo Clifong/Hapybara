@@ -14,6 +14,7 @@ public class Ice : OneTimeObject, Interactables
     public CrossObjectEvent hideMatchstick;
     public CrossObjectEventWithData useMatchstick;
     public TextMeshProUGUI matchstickNeeded;
+    public CircleCollider2D circleCollider2D;
 
     void Start() {
         IceSO matchstickSO = (IceSO) onetimeObjectSO;
@@ -30,9 +31,10 @@ public class Ice : OneTimeObject, Interactables
 
     public void Interact() {
         if (canInteract) {
+            anime.SetTrigger("melt");
+            circleCollider2D.enabled = false;
             useMatchstick.TriggerEvent(this, ((IceSO) onetimeObjectSO).matchstickNeeded);
         }
-        // anime.SetTrigger("Open");
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -45,13 +47,11 @@ public class Ice : OneTimeObject, Interactables
         interactPrompt.SetActive(false);
     } 
 
-    public void CheckIfEnough(int amt) {
+    public void CheckIfEnoughMatchstick(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        int currentlyHave = (int) temp[0];
         IceSO matchstickSO = (IceSO) onetimeObjectSO;
-        if (matchstickSO.CheckIfEnough(amt)) {
-            canInteract = true;
-        } else {
-            canInteract = false;
-        }
+        canInteract = matchstickSO.CheckIfEnough(currentlyHave);
     }
 
     public void Spawn() {

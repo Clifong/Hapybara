@@ -227,6 +227,8 @@ GameObject:
   - component: {fileID: 3423800932211548275}
   - component: {fileID: 3423800932211548286}
   - component: {fileID: 3423800932211548287}
+  - component: {fileID: 1923213665}
+  - component: {fileID: 7924582967031377202}
   m_Layer: 0
   m_Name: Ice
   m_TagString: Untagged
@@ -344,6 +346,7 @@ MonoBehaviour:
   hideMatchstick: {fileID: 11400000, guid: 9a15c856fb516034f99944da08a0a48e, type: 2}
   useMatchstick: {fileID: 11400000, guid: de871219d7d012c4ea5c55afba4e4818, type: 2}
   matchstickNeeded: {fileID: 460752457}
+  circleCollider2D: {fileID: 3423800932211548287}
 --- !u!58 &3423800932211548287
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -359,7 +362,56 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.15043789, y: -0.7314845}
   serializedVersion: 2
-  m_Radius: 1.1688057
+  m_Radius: 1.08
+--- !u!114 &1923213665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3423800932211548274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 6905cc162ff4cc848aba251a87b1223c, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3423800932211548286}
+        m_TargetAssemblyTypeName: Ice, Assembly-CSharp
+        m_MethodName: CheckIfEnoughMatchstick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!50 &7924582967031377202
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3423800932211548274}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &3423800932002331193
 PrefabInstance:
   m_ObjectHideFlags: 0

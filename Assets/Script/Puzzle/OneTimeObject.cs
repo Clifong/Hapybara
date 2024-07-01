@@ -8,7 +8,7 @@ using UnityEditor;
 public abstract class OneTimeObject : MonoBehaviour
 {
     public OneTimeObjectSO onetimeObjectSO;
-    public List<GameObject> associatedObject;
+    public List<GameObject> associatedObject = new List<GameObject>();
 
     protected void Start() {
         onetimeObjectSO.CheckIfComplete(this, associatedObject);

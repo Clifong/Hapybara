@@ -59,7 +59,7 @@ public class Enemy : Npc
 
     public override void Attack(List<Npc> opponentList) {
         int randomNumber = Random.Range(0, 2);
-        if (randomNumber == 0) {
+        if (randomNumber == 0 || enemySO.allSkills.Count == 0) {
             broadCastActionEvent.TriggerEvent(this, enemySO.name + " attacked player");
             base.Attack(opponentList);
         } else {

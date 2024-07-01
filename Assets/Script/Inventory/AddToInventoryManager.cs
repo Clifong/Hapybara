@@ -121,12 +121,7 @@ public class AddToInventoryManager : MonoBehaviour
     public void MinusMatchstick(Component component, object obj){
         object[] temp = (object[])obj;
         playerInventorySO.MinusMatchstick((int) temp[0]);
-    }
-
-    public void CheckIfEnoughMatchstick(Component component, object obj) {
-        object[] temp = (object[]) obj;
-        int cost = (int) temp[0];
-        ((Ice) component).CheckIfEnough(cost);
+        BroadcastMatchstick();
     }
 
     public void CheckIfCanCraft(Component component, object obj) {
