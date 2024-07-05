@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-52159
+57635
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18204] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 3327545988 [EditorId] 3327545988 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14820] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 1702079702 [EditorId] 1702079702 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18204] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 3327545988 [EditorId] 3327545988 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14820] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 1702079702 [EditorId] 1702079702 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 97.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 199.61 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003860 seconds.
+Registered in 0.006315 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 90.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 159.68 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.519 seconds
+- Completed reload, in  1.196 seconds
 Domain Reload Profiling:
-	ReloadAssembly (519ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (1196ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (374ms)
-			LoadAssemblies (75ms)
+		EndReloadAssembly (840ms)
+			LoadAssemblies (198ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (253ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (223ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (447ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (160ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (89ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003589 seconds.
+Registered in 0.007912 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 107.74 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 145.17 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.150 seconds
+- Completed reload, in  2.168 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1152ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (2169ms)
+		BeginReloadAssembly (178ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (942ms)
-			LoadAssemblies (110ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1883ms)
+			LoadAssemblies (192ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
+			SetupTypeCache (596ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (510ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (957ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (108ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (237ms)
-				ProcessInitializeOnLoadMethodAttributes (78ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (145ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (520ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5975 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (452.8 KB). Loaded Objects now: 6456.
-Memory consumption went from 255.0 MB to 254.6 MB.
-Total: 4.487200 ms (FindLiveObjects: 0.451500 ms CreateObjectMapping: 0.183800 ms MarkObjects: 3.570700 ms  DeleteObjects: 0.280100 ms)
+Unloading 5977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (460.6 KB). Loaded Objects now: 6458.
+Memory consumption went from 255.1 MB to 254.6 MB.
+Total: 4.341500 ms (FindLiveObjects: 0.399600 ms CreateObjectMapping: 0.185600 ms MarkObjects: 3.455100 ms  DeleteObjects: 0.299800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,356 +167,143 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 257323.754823 seconds.
-  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
-  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cca3a2423c52e53e8479431427f5e0e') in 0.125964 seconds 
+  Time since last request: 266597.086155 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon
+  artifactKey: Guid(5d99aea0785ed3548869a78101fd61e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon using Guid(5d99aea0785ed3548869a78101fd61e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb9e4d18cb9e0e63fb851b6d114b28b') in 0.034620 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.730866 seconds.
-  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 table.png
-  artifactKey: Guid(70fcfc8de95e36442bb8c57e0fb568c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 table.png using Guid(70fcfc8de95e36442bb8c57e0fb568c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310f8c75144cb1ea6054697a8aef31ce') in 0.028570 seconds 
+  Time since last request: 2.671835 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Deungeon 1
+  artifactKey: Guid(a34812226f4d0784eb3d2a870c896e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Deungeon 1 using Guid(a34812226f4d0784eb3d2a870c896e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ddf6c591a9561d172a4092e021e636c') in 0.019273 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 183.651925 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_0.asset
-  artifactKey: Guid(86c8b3dcafbfebb41bc211be71a79ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_0.asset using Guid(86c8b3dcafbfebb41bc211be71a79ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ee9d9e00bec6112c39a3f92c988425') in 0.031814 seconds 
+  Time since last request: 3.399464 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 1
+  artifactKey: Guid(a34812226f4d0784eb3d2a870c896e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 1 using Guid(a34812226f4d0784eb3d2a870c896e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76aba3f7393245bbfdcc76fe07c25d91') in 0.020251 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_3.asset
-  artifactKey: Guid(c20da65219b47c14482c77a4ad6df0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_3.asset using Guid(c20da65219b47c14482c77a4ad6df0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8228090d96a4f7de73e6d3fdfe0b2bea') in 0.021431 seconds 
+  Time since last request: 4.251458 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2
+  artifactKey: Guid(adeaaefd9276fad4383d3c4a418853f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2 using Guid(adeaaefd9276fad4383d3c4a418853f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68aa611f0dc18c49cb642cc6b310cbc') in 0.018075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.446815 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 ground.png
+  artifactKey: Guid(4d6e01c9ec2aad048945a15255589585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 ground.png using Guid(4d6e01c9ec2aad048945a15255589585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47179e81b0e9271d5e547fdd61d55b9c') in 0.246840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.092608 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png
+  artifactKey: Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png using Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad1cd303df781d13c7f84fe172b094a') in 0.026725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.379513 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png
+  artifactKey: Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png using Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123fa818dbf412eb86a28a57089e8f85') in 0.050521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.031009 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_0.asset
+  artifactKey: Guid(0313ecdde7181714cbbe1ba40cf900d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_0.asset using Guid(0313ecdde7181714cbbe1ba40cf900d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a12bffa0a4c4878850509af0380429') in 0.063182 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_4.asset
-  artifactKey: Guid(9edf9cb97c6799140a1a6abcf0a4e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_4.asset using Guid(9edf9cb97c6799140a1a6abcf0a4e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d817cbff8dacb928ce86441f658635') in 0.018042 seconds 
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_3.asset
+  artifactKey: Guid(f5949292b796c0c42834ed5231f14745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_3.asset using Guid(f5949292b796c0c42834ed5231f14745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b582f53aa326dc7a6175627282a739') in 0.025068 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_8.asset
-  artifactKey: Guid(40d413832f052e14db7f09656f1a940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_8.asset using Guid(40d413832f052e14db7f09656f1a940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c19763d5333e1ff316f423f9864d49') in 0.017677 seconds 
+  Time since last request: 91.280379 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png
+  artifactKey: Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall.png using Guid(16049da5dee610d45b138c354f8aae1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19845a444da85e27af696f246559537f') in 0.128159 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_4.asset
-  artifactKey: Guid(c5c7dc1859f51c848a6493eadec5c0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_4.asset using Guid(c5c7dc1859f51c848a6493eadec5c0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3628a66874d86d0e1cbbd9e2e186a92') in 0.020183 seconds 
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_1.asset
+  artifactKey: Guid(ec10caddd5ec3a743807bb862f321400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/dungeon 2 wall_1.asset using Guid(ec10caddd5ec3a743807bb862f321400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198ed8e420a124631221dff1a60dfff6') in 0.018236 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_0.asset
-  artifactKey: Guid(097bfe90ebb6119469d075283f476666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_0.asset using Guid(097bfe90ebb6119469d075283f476666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f375866019d461f48e2112911ad20c') in 0.015131 seconds 
+  Time since last request: 56.941167 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3
+  artifactKey: Guid(ea456467cb59d2344b8c0428169c2448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3 using Guid(ea456467cb59d2344b8c0428169c2448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f43b4b814db4fe8112f0416463e219') in 0.023102 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_7.asset
-  artifactKey: Guid(66b6f476f5d3e9349a5c31a09f724328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_7.asset using Guid(66b6f476f5d3e9349a5c31a09f724328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b737f7e8d10f03548c70917ff76343') in 0.016604 seconds 
+  Time since last request: 167.720763 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 ground.png
+  artifactKey: Guid(ab1b0414420491047a81a30636d84a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 ground.png using Guid(ab1b0414420491047a81a30636d84a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06531c602fae32ac7eb21e8df9e4f18') in 0.126005 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_2.asset
-  artifactKey: Guid(e1b23cc787d8e8e40b6e42d91c250b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_2.asset using Guid(e1b23cc787d8e8e40b6e42d91c250b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f622fc6c25ea54d822ead55136fcce34') in 0.015206 seconds 
+  Time since last request: 27.904513 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 wall.png
+  artifactKey: Guid(15dd16772013bbf4bb0f7068f332c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 wall.png using Guid(15dd16772013bbf4bb0f7068f332c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8d5bcfc6c18c5d6f688ea3345cedf6') in 0.029188 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_2.asset
-  artifactKey: Guid(f6df6fd56c0ee754890404be53bdca3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_2.asset using Guid(f6df6fd56c0ee754890404be53bdca3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b56ecd35aea1f947712a388a5392c44') in 0.015360 seconds 
+  Time since last request: 19.314568 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 wall.png
+  artifactKey: Guid(15dd16772013bbf4bb0f7068f332c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 3/Dungeon 3 wall.png using Guid(15dd16772013bbf4bb0f7068f332c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a03c36c6ee9c3806b9720e989c3e10') in 0.053887 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.238111 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5
-  artifactKey: Guid(7f6bc23eef420fc458984bad4391ff47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5 using Guid(7f6bc23eef420fc458984bad4391ff47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d134448f367b4ef83c61b2c46fe8f6') in 0.013295 seconds 
+  Time since last request: 81.088726 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4
+  artifactKey: Guid(f053d0add0315104e802016a8a2d23ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4 using Guid(f053d0add0315104e802016a8a2d23ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b8ae52fdc79eb66a0a57818950f118') in 0.019240 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.434471 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.png
-  artifactKey: Guid(d882194e36724ae4aa5ea9e7ce8234ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.png using Guid(d882194e36724ae4aa5ea9e7ce8234ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3db5f71ac9d561414eca3e3cdaae90') in 0.027963 seconds 
+  Time since last request: 276.314498 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 ground.png
+  artifactKey: Guid(8f73ede3bf98aa7419d3989f1c53d5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 ground.png using Guid(8f73ede3bf98aa7419d3989f1c53d5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6f01f08af35e32bcee8e6b86de25c5') in 0.044885 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.893536 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.prefab
-  artifactKey: Guid(df8fb6faf6f2db24fae7d9534e4f47b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.prefab using Guid(df8fb6faf6f2db24fae7d9534e4f47b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518d02eb340fb5523ff3f40a03f56683') in 0.159727 seconds 
+  Time since last request: 11.857986 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 wall.png
+  artifactKey: Guid(2b7b85b4e2d77ee4f85da031e693d36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 wall.png using Guid(2b7b85b4e2d77ee4f85da031e693d36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf46bdabb967d763db14a38d9bda825d') in 0.035667 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.314867 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.prefab
-  artifactKey: Guid(df8fb6faf6f2db24fae7d9534e4f47b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 ground.prefab using Guid(df8fb6faf6f2db24fae7d9534e4f47b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01838d8fa5dc5ac880b466b081a9b79b') in 0.019903 seconds 
+  Time since last request: 3.891995 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 wall.png
+  artifactKey: Guid(2b7b85b4e2d77ee4f85da031e693d36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 4/Dungeon 4 wall.png using Guid(2b7b85b4e2d77ee4f85da031e693d36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31ef38c96e6877c71148373508a90a0') in 0.041992 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.070050 seconds.
-  path: Assets/Script/Quest board/Tavern 1/Tavern1 quest board.asset
-  artifactKey: Guid(627a80457d7b4a64ab475463d3c32a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Quest board/Tavern 1/Tavern1 quest board.asset using Guid(627a80457d7b4a64ab475463d3c32a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8ead65750c8cb6e5a5245abda82654') in 0.046999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.615417 seconds.
-  path: Assets/Sprites/Decoration/Town 5/Tavern 5 building.png
-  artifactKey: Guid(8ffbc36129b30a447942c1c5e74b7c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Decoration/Town 5/Tavern 5 building.png using Guid(8ffbc36129b30a447942c1c5e74b7c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82b01dfba1d3a6481c01c16335b8819') in 0.108543 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.406732 seconds.
-  path: Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity
-  artifactKey: Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity using Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c9e68163a727f06330bd9770ff15c8') in 0.003803 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.185173 seconds.
-  path: Assets/Scenes/Tavern/Tavern 5/Tavern 4.unity
-  artifactKey: Guid(dcbb9a9953f34004c9932f6ca4fa3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tavern/Tavern 5/Tavern 4.unity using Guid(dcbb9a9953f34004c9932f6ca4fa3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7469172a08566ceeb386a4cb9d9dbf6b') in 0.003086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.006547 seconds.
-  path: Assets/Scenes/Tavern/Tavern 5/Tavern 5.unity
-  artifactKey: Guid(dcbb9a9953f34004c9932f6ca4fa3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tavern/Tavern 5/Tavern 5.unity using Guid(dcbb9a9953f34004c9932f6ca4fa3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77d16e44c73211f5df12bd575a804b2') in 0.017632 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003659 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.025 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1026ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (834ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (222ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (394ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (239ms)
-				ProcessInitializeOnLoadMethodAttributes (80ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.13 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5837 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (445.7 KB). Loaded Objects now: 6531.
-Memory consumption went from 250.9 MB to 250.5 MB.
-Total: 4.326500 ms (FindLiveObjects: 0.408700 ms CreateObjectMapping: 0.181700 ms MarkObjects: 3.491800 ms  DeleteObjects: 0.242700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 475.513500 seconds.
-  path: Assets/Scenes/Tavern/Tavern 5
-  artifactKey: Guid(503c818a0386ef748850497936dd9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tavern/Tavern 5 using Guid(503c818a0386ef748850497936dd9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c03cb02cfcf067057b07d605317f94a') in 0.026433 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.327509 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png
-  artifactKey: Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png using Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58120e63880746b7d417a8c32dfe9d1a') in 0.072392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.397441 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png
-  artifactKey: Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png using Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bf209d445f30d27e6da5d0a5f84dc6') in 0.017483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.318076 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png
-  artifactKey: Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png using Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a73d16b623b829cb2743927f1d9b893') in 0.070054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 121.671912 seconds.
-  path: Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png
-  artifactKey: Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Tavern/Tavern 5/Tavern 5 animated ground.png using Guid(50edf307fc9ff264b8d262804c52017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117e4ed5c143d8160ee14057d6b60696') in 0.057822 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 130.897014 seconds.
-  path: Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 chair.prefab
-  artifactKey: Guid(8160397eba459154c9390757e67dc31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 chair.prefab using Guid(8160397eba459154c9390757e67dc31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742fe73b8228f74533dd6e85bb3eafd2') in 0.131834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.675033 seconds.
-  path: Assets/Prefab/Decorations/Tavern/Tavern 5/Tavern 5 ripples.prefab
-  artifactKey: Guid(fa4fd6f38ab6eac49a33f6ac047e50d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Decorations/Tavern/Tavern 5/Tavern 5 ripples.prefab using Guid(fa4fd6f38ab6eac49a33f6ac047e50d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f05570757ceeb525218dbee736de3e') in 0.029241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 117.365935 seconds.
-  path: Assets/Script/Special ground effect
-  artifactKey: Guid(116a08043a9b25e4e956bd302a9ed7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Special ground effect using Guid(116a08043a9b25e4e956bd302a9ed7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2ae1240a6096ccdfbb18594df0cba6') in 0.016156 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.692727 seconds.
-  path: Assets/Script/Special ground effect/Tavern5GroundManager.cs
-  artifactKey: Guid(93268ded1c98e474d8f45631363b7997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Special ground effect/Tavern5GroundManager.cs using Guid(93268ded1c98e474d8f45631363b7997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4d9f16f83506aecec15cb4aeed4368') in 0.035305 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012309 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.129 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1130ms)
-		BeginReloadAssembly (143ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (907ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (228ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (439ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (246ms)
-				ProcessInitializeOnLoadMethodAttributes (80ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.36 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5838 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (445.6 KB). Loaded Objects now: 6588.
-Memory consumption went from 251.0 MB to 250.5 MB.
-Total: 3.895500 ms (FindLiveObjects: 0.361400 ms CreateObjectMapping: 0.177100 ms MarkObjects: 3.116600 ms  DeleteObjects: 0.239300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21.135825 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal.png
-  artifactKey: Guid(07c997de1b6b9be46a9902f5e6cbb6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal.png using Guid(07c997de1b6b9be46a9902f5e6cbb6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016f569d709a28843884e823dec7a184') in 0.147622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_0.asset
-  artifactKey: Guid(72295ae8c47c8c149b137e95c6560395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_0.asset using Guid(72295ae8c47c8c149b137e95c6560395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc6933de4aef5dc2960aaf829bf6fa8') in 0.049410 seconds 
+  Time since last request: 112.067305 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_0.asset
+  artifactKey: Guid(90f9a5daa1a4bb04b813a63d8d760cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_0.asset using Guid(90f9a5daa1a4bb04b813a63d8d760cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2fba49fb0210d13ebfcacdbbd7015b6') in 0.048209 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_1.asset
-  artifactKey: Guid(f73a75bec2655614fa181307d0c95a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_1.asset using Guid(f73a75bec2655614fa181307d0c95a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb375b6fac60ec99307dd19467ee588') in 0.027166 seconds 
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 4 wall_2.asset
+  artifactKey: Guid(e829457d90beed447b2fe28fa04ad5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 4 wall_2.asset using Guid(e829457d90beed447b2fe28fa04ad5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619a1f53b3cc4e62474229c1ec0d7e9e') in 0.024899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_6.asset
-  artifactKey: Guid(b64e5daddc1b06445a602873b4c52498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_6.asset using Guid(b64e5daddc1b06445a602873b4c52498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b48526cf0c0412c372214e56fea160') in 0.027093 seconds 
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_3.asset
+  artifactKey: Guid(c5b93e0e1aded9c4d97c5d3c2ad80f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_3.asset using Guid(c5b93e0e1aded9c4d97c5d3c2ad80f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a7a6321ba97a5a0d9879098b2f1ae4') in 0.026140 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_1.asset
-  artifactKey: Guid(fcb92b73c1377224b927590a3ee3b57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_1.asset using Guid(fcb92b73c1377224b927590a3ee3b57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce21ba7892d14705895d36365a0213b1') in 0.029306 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_4.asset
-  artifactKey: Guid(669b48ef9fcd9094c8d5f3a811c36422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_4.asset using Guid(669b48ef9fcd9094c8d5f3a811c36422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180a2d8ae6b40d3e8ca299a8cef8407d') in 0.023967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_6.asset
-  artifactKey: Guid(9edadd92c64e89f46b278cd29c1c58d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_6.asset using Guid(9edadd92c64e89f46b278cd29c1c58d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25cc8b87bd9b62347dd42d9b4901e508') in 0.023843 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_7.asset
-  artifactKey: Guid(e5b6ee4f1edb2ab44a1c03d25cc78d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_7.asset using Guid(e5b6ee4f1edb2ab44a1c03d25cc78d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4caa0a6059a12404c014d2a7d895e96') in 0.025327 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Lava canal.prefab
-  artifactKey: Guid(f22c1a17624f1214dbcf89edf2147cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Lava canal.prefab using Guid(f22c1a17624f1214dbcf89edf2147cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87229e83995d950308c32407669fea67') in 0.183225 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.343355 seconds.
-  path: Assets/Script/Puzzle/Dungeon 3/CanalManager.cs
-  artifactKey: Guid(d735f9f6ce2cb894a8d811d1c709626e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Puzzle/Dungeon 3/CanalManager.cs using Guid(d735f9f6ce2cb894a8d811d1c709626e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7b24a745d40dbe222e5ce94e685ca7') in 0.015539 seconds 
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_2.asset
+  artifactKey: Guid(72b36b23ec7535047bc75415ae2e0637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cooking/Background/Dungeon/Dungeon 2/Dungeon 3 wall_2.asset using Guid(72b36b23ec7535047bc75415ae2e0637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903fa4402f00cd50875ce3354314640a') in 0.025229 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
