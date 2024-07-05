@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-59847
+50086
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22312] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2452431544 [EditorId] 2452431544 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26900] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2936174121 [EditorId] 2936174121 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22312] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2452431544 [EditorId] 2452431544 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26900] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2936174121 [EditorId] 2936174121 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 107.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 214.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007622 seconds.
+Registered in 0.005371 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 119.18 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 134.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.635 seconds
+- Completed reload, in  0.835 seconds
 Domain Reload Profiling:
-	ReloadAssembly (636ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (836ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (445ms)
-			LoadAssemblies (102ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (94ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (281ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (341ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (119ms)
+				RefreshPlugins (135ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (109ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003900 seconds.
+Registered in 0.007751 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 117.35 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 148.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.410 seconds
+- Completed reload, in  1.685 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1411ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (1686ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1203ms)
-			LoadAssemblies (167ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1416ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
+			SetupTypeCache (358ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (665ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (812ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (347ms)
-				ProcessInitializeOnLoadMethodAttributes (89ms)
+				RefreshPlugins (149ms)
+				BeforeProcessingInitializeOnLoad (156ms)
+				ProcessInitializeOnLoadAttributes (398ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5975 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (452.8 KB). Loaded Objects now: 6456.
-Memory consumption went from 255.1 MB to 254.6 MB.
-Total: 3.507700 ms (FindLiveObjects: 0.378400 ms CreateObjectMapping: 0.176800 ms MarkObjects: 2.723000 ms  DeleteObjects: 0.228500 ms)
+Memory consumption went from 255.0 MB to 254.6 MB.
+Total: 4.144600 ms (FindLiveObjects: 0.433600 ms CreateObjectMapping: 0.210000 ms MarkObjects: 3.244600 ms  DeleteObjects: 0.255100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,142 +167,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 175200.173411 seconds.
-  path: Assets/Script/Buildable/InputInHome.inputactions
-  artifactKey: Guid(6c0f217d038be0d4abf95f2c8b68f251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Buildable/InputInHome.inputactions using Guid(6c0f217d038be0d4abf95f2c8b68f251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7e52de647a4f4f015b2af39290c88f') in 0.235034 seconds 
+  Time since last request: 229029.490030 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5
+  artifactKey: Guid(d3ecf97796201324bbbc04611f864c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5 using Guid(d3ecf97796201324bbbc04611f864c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708511e067be49f1d24bb4b172afcec4') in 0.027626 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.357419 seconds.
-  path: Assets/Script/NPCs/Interactable NPC/InteractableNPC.cs
-  artifactKey: Guid(143af2620a53a1647a7e94171b5a9f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Interactable NPC/InteractableNPC.cs using Guid(143af2620a53a1647a7e94171b5a9f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b995b8959f1fba25e389c0e78e86ca') in 0.033918 seconds 
+  Time since last request: 14.864257 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png
+  artifactKey: Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png using Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6042e742b845d0adc06b8fa5268e0c74') in 0.217821 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.219690 seconds.
-  path: Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCSO.cs
-  artifactKey: Guid(955f7fb77e9bd084cb05cebbc61aecaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCSO.cs using Guid(955f7fb77e9bd084cb05cebbc61aecaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a417a4a44371bf2a6f2d67628f8f65d') in 0.014075 seconds 
+  Time since last request: 5.348382 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png
+  artifactKey: Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png using Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785f1440f9a1bd4009edbe1715b930f1') in 0.021081 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.185940 seconds.
-  path: Assets/Script/NPCs/Player/PlayerInteract.cs
-  artifactKey: Guid(e3e45a358bc3f3e48972dbc4bbb64416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/PlayerInteract.cs using Guid(e3e45a358bc3f3e48972dbc4bbb64416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf82626ed0fb04728861d1fbf14b800') in 0.013184 seconds 
+  Time since last request: 8.709389 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png
+  artifactKey: Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground.png using Guid(4d7af9e1b267fd041ae081982e59d8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa26e47112115151361275cbfc5f4c4') in 0.062776 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.693654 seconds.
-  path: Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCWithRequestThatWillJoinParty.cs
-  artifactKey: Guid(e0d7175ef28ba554ca3e651ee03321c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCWithRequestThatWillJoinParty.cs using Guid(e0d7175ef28ba554ca3e651ee03321c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03519e02eaa237537462a30a0ae289b7') in 0.014381 seconds 
+  Time since last request: 18.021381 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground.prefab
+  artifactKey: Guid(5ff85159b5897484a8981b5d287dfbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground.prefab using Guid(5ff85159b5897484a8981b5d287dfbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd339fecd6fe9709f1200f9e7af2c50b3') in 0.242559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.345140 seconds.
-  path: Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCWithRequest.cs
-  artifactKey: Guid(5c3e469a8f33ac84f8ab4a596ae5de39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Interactable NPC/NPC that need requirements/InteractableNPCWithRequest.cs using Guid(5c3e469a8f33ac84f8ab4a596ae5de39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b91792e9c3f1646d8fb82fbc47301f0') in 0.013120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.478862 seconds.
-  path: Assets/Prefab/NPC/Player/Home version/(Home) Player parent .prefab
-  artifactKey: Guid(a199a7255c382fc4d893c5e5531b3dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/NPC/Player/Home version/(Home) Player parent .prefab using Guid(a199a7255c382fc4d893c5e5531b3dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a2f7b48ec8b1e78d27ac1f37429d7b') in 0.363927 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Shop/Food shop display.png
-  artifactKey: Guid(fb58e4297e32cbc49868abf9c9b15ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Shop/Food shop display.png using Guid(fb58e4297e32cbc49868abf9c9b15ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b8ecf23cf0296ed77c927b66844380') in 0.054965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Prefab/Manager and their assets/Player UI/Player UI.prefab
-  artifactKey: Guid(002936cf311bbc74d8c78ee4f7838861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Manager and their assets/Player UI/Player UI.prefab using Guid(002936cf311bbc74d8c78ee4f7838861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d665654dfeb1881da8285ecc5a1ade') in 0.041891 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Sprites/Battle icons/Player arrow head.png
-  artifactKey: Guid(2a314cefa3bdc2342a8677b0718bebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Battle icons/Player arrow head.png using Guid(2a314cefa3bdc2342a8677b0718bebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae1d118515fdb3ddcd44022b5e1e098') in 0.038769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Script/NPCs/Player/All players/Player2.asset
-  artifactKey: Guid(ce57fbf3f9e7a5c49b2687d6e6aa2fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/All players/Player2.asset using Guid(ce57fbf3f9e7a5c49b2687d6e6aa2fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741b43b9721a918215bf140106a968bc') in 0.097708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprites/Cooking/Background icons/Panel display.png
-  artifactKey: Guid(276ecaa1000f0c9409ea61996de0735e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cooking/Background icons/Panel display.png using Guid(276ecaa1000f0c9409ea61996de0735e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cadaae1e81ba2a864cb720c0c4bea01') in 0.041470 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Events/House editing/Invite player.asset
-  artifactKey: Guid(852c87860999d0848ace219032fdef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Events/House editing/Invite player.asset using Guid(852c87860999d0848ace219032fdef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d04cec52b208c3b00cb4458480842b') in 0.020813 seconds 
+  Time since last request: 2.619348 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground.prefab
+  artifactKey: Guid(5ff85159b5897484a8981b5d287dfbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground.prefab using Guid(5ff85159b5897484a8981b5d287dfbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b35422c980d270704769ae66879504d') in 0.098191 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000042 seconds.
-  path: Assets/Prefab/NPC/Player/Home version/(Home) Player3 parent  .prefab
-  artifactKey: Guid(3e765168460e60f4586d1935bf71615e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/NPC/Player/Home version/(Home) Player3 parent  .prefab using Guid(3e765168460e60f4586d1935bf71615e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4d447c2e30ab2dd306b5def37b3243') in 0.021768 seconds 
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground_7.asset
+  artifactKey: Guid(d084930586a521346ad94bf75c230a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground_7.asset using Guid(d084930586a521346ad94bf75c230a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53138a9b27ad4439910003600701960') in 0.033143 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Script/NPCs/Player/All players/Player3.asset
-  artifactKey: Guid(05ba7973d8f92ba448e8717dc0544bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/All players/Player3.asset using Guid(05ba7973d8f92ba448e8717dc0544bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5acbc63f0b48f0088de7b9fc1a43bfb') in 0.042725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Prefab/NPC/Player/Player parent.prefab
-  artifactKey: Guid(80173fba8bf5f34438d0f2f609b93eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/NPC/Player/Player parent.prefab using Guid(80173fba8bf5f34438d0f2f609b93eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ffcb4037bbcff92059aa440c662238') in 0.104851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Sprites/Battle icons/Player turn.png
-  artifactKey: Guid(0a0c76fb51eee9447bb4415a8eba2a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Battle icons/Player turn.png using Guid(0a0c76fb51eee9447bb4415a8eba2a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8302b575f8966092cf1be1c74b0a41e5') in 0.022712 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Script/NPCs/Player/Player unlocked collectible.asset
-  artifactKey: Guid(2620300e5af530d41bcdbb02744a9b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/Player unlocked collectible.asset using Guid(2620300e5af530d41bcdbb02744a9b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e24618aea1baf1994d21a749731e1b') in 0.019135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Script/NPCs/Player/Player inventory and money.asset
-  artifactKey: Guid(f07f48d17493ace478e5559a932540ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/Player inventory and money.asset using Guid(f07f48d17493ace478e5559a932540ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da23e63919681382e94bed7204e1d4f3') in 0.055804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Script/NPCs/Player/Player unlocked furnitures.asset
-  artifactKey: Guid(6957240e192637045afe623eb082168a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/Player unlocked furnitures.asset using Guid(6957240e192637045afe623eb082168a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3074ec669e6d62fc2aeabc423353f0') in 0.117517 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Script/NPCs/Player/Player quest SO.asset
-  artifactKey: Guid(37b5889db8fa59a4fb8d7d59acfdc629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/NPCs/Player/Player quest SO.asset using Guid(37b5889db8fa59a4fb8d7d59acfdc629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7a68bba292f0cbb3d230ad62c09fea') in 0.013950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.233346 seconds.
-  path: Assets/Sprites/Interactables/Bonfire/Bonfire.png
-  artifactKey: Guid(d80b76a399ed1a74eb704012978da832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Interactables/Bonfire/Bonfire.png using Guid(d80b76a399ed1a74eb704012978da832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6291e77f88510ae1f6efb2d57be2acbe') in 0.043463 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.999481 seconds.
-  path: Assets/Events/Quest related/Check if quest can be completed.asset
-  artifactKey: Guid(dd8ff463d2728f74fa3da920a643fd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Events/Quest related/Check if quest can be completed.asset using Guid(dd8ff463d2728f74fa3da920a643fd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd963f5f29ce7dd8dc9b806b9f83febde') in 0.016376 seconds 
+  Time since last request: 0.000055 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Town 5 ground_3.asset
+  artifactKey: Guid(ee9637a737996054093435d78d6d9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Town 5 ground_3.asset using Guid(ee9637a737996054093435d78d6d9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e718c442f0649cb88c0f1faa4d5f09f7') in 0.021851 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
