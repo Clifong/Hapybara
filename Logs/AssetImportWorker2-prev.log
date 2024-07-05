@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-61681
+52159
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12936] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2091623756 [EditorId] 2091623756 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [29416] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 1528711540 [EditorId] 1528711540 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12936] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 2091623756 [EditorId] 2091623756 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [29416] Host "[IP] 192.168.1.249 [Port] 0 [Flags] 2 [Guid] 1528711540 [EditorId] 1528711540 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 90.51 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 109.61 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,44 +67,507 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56008
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003063 seconds.
+Registered in 0.005613 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 90.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 122.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.480 seconds
+- Completed reload, in  0.634 seconds
 Domain Reload Profiling:
-	ReloadAssembly (480ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (635ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (357ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (474ms)
+			LoadAssemblies (70ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (73ms)
+			SetupTypeCache (92ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (226ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
+				RefreshPlugins (123ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (87ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003263 seconds.
+Registered in 0.004657 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 111.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.230 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1231ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1040ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5975 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (452.8 KB). Loaded Objects now: 6456.
+Memory consumption went from 255.2 MB to 254.7 MB.
+Total: 4.356700 ms (FindLiveObjects: 0.396600 ms CreateObjectMapping: 0.179100 ms MarkObjects: 3.530100 ms  DeleteObjects: 0.249500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 251212.425040 seconds.
+  path: Assets/Sprites/Puzzle/Dungeon 4/Empty lantern.png
+  artifactKey: Guid(fb9a063d513e1f240977ff4f7fe7a24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Puzzle/Dungeon 4/Empty lantern.png using Guid(fb9a063d513e1f240977ff4f7fe7a24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9031a5c3c7415b742e677e5f781861') in 0.166226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.107426 seconds.
+  path: Assets/Sprites/Ground/Town/Town 3/Town 3 ground 1.png
+  artifactKey: Guid(60620c20324d2314498aecd1c408383d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 3/Town 3 ground 1.png using Guid(60620c20324d2314498aecd1c408383d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55b2d0732161b10e8de0869d7a07ced') in 0.062428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Ground/Town/Town 3/Town 3 ground 1_8.asset
+  artifactKey: Guid(8a993861e83d0bd4d902e964abdd8484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 3/Town 3 ground 1_8.asset using Guid(8a993861e83d0bd4d902e964abdd8484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2715a00af826e5181558a0d39cb7714') in 0.036910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.032199 seconds.
+  path: Assets/Sprites/Ground/Town/Town 4/Town 4 ground.png
+  artifactKey: Guid(4896409ba6ea12a4eb643e9382e9364d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 ground.png using Guid(4896409ba6ea12a4eb643e9382e9364d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb504df48fba5fb7f2ca86c8b327b1cd') in 0.061091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Ground/Town/Town 4/Town 4 ground_2.asset
+  artifactKey: Guid(01822d0a819187a41a79e7fdc2dc6159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 ground_2.asset using Guid(01822d0a819187a41a79e7fdc2dc6159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000ad7625b09fa45134f8152953ae1cd') in 0.015491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Ground/Town/Town 4/Town 4 ground_8.asset
+  artifactKey: Guid(2789003d05a943d438ed72181d981652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 ground_8.asset using Guid(2789003d05a943d438ed72181d981652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2220a374fd8d19a03b38a794954a7b36') in 0.017469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.118115 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3
+  artifactKey: Guid(7cf50b047ae162d4f8bb4eff29231748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3 using Guid(7cf50b047ae162d4f8bb4eff29231748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3225f2d96e07860e16cbf964a3875c') in 0.002610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.688248 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png
+  artifactKey: Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png using Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90d37ed5857427bde0de7ae27b7883e') in 0.046994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.727641 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png
+  artifactKey: Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png using Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa00867e793f7d13426a281d464d080a') in 0.018197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.780766 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png
+  artifactKey: Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png using Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12f429e20800dec98cb90dcd9f8bc15') in 0.048459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.652418 seconds.
+  path: Assets/Events/House editing/Broadcast furniture SO for crafting.asset
+  artifactKey: Guid(9ed6a4acf973f2f42863c7207d26eb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/House editing/Broadcast furniture SO for crafting.asset using Guid(9ed6a4acf973f2f42863c7207d26eb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5009b39db6054c2e5abd469eedb6a7a') in 0.015083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Events/House editing/Invite player.asset
+  artifactKey: Guid(852c87860999d0848ace219032fdef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/House editing/Invite player.asset using Guid(852c87860999d0848ace219032fdef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d04cec52b208c3b00cb4458480842b') in 0.020093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Events/House editing/Craft furniture.asset
+  artifactKey: Guid(8f4f23ac8cbf7ee489141d692705d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/House editing/Craft furniture.asset using Guid(8f4f23ac8cbf7ee489141d692705d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7acc62fbfefc58d1f916e75e684d6f') in 0.020907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.374158 seconds.
+  path: Assets/Events/Player/Broadcast matchstick.asset
+  artifactKey: Guid(6905cc162ff4cc848aba251a87b1223c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/Player/Broadcast matchstick.asset using Guid(6905cc162ff4cc848aba251a87b1223c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c42b66d2aeb9f2d70a28bae4c1b735') in 0.014834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.873111 seconds.
+  path: Assets/Events/Quest related/Accept quest.asset
+  artifactKey: Guid(876bd9fde45770c40aa87dfdad5b042d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/Quest related/Accept quest.asset using Guid(876bd9fde45770c40aa87dfdad5b042d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca3c62a865782298cfd69ed1eed7abf') in 0.015746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.603615 seconds.
+  path: Assets/Prefab/Cooking/Ingredients/Bushy leaves.prefab
+  artifactKey: Guid(a967eb8fe8c4b6445b6a7776007ea3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cooking/Ingredients/Bushy leaves.prefab using Guid(a967eb8fe8c4b6445b6a7776007ea3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae6100a84870eba0b877a52291cefb0') in 0.031570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.741496 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 chair.prefab
+  artifactKey: Guid(6cc15d436b1558647903cf97fc1ce6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 chair.prefab using Guid(6cc15d436b1558647903cf97fc1ce6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55110e25eb2351ec563a62a2c9200e0f') in 0.152588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.257141 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 2/Tavern 2 child.png
+  artifactKey: Guid(d53d66b8314167a4990958b2debaa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 2/Tavern 2 child.png using Guid(d53d66b8314167a4990958b2debaa98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2ea97564f3933c7051b3ff29c1a0e7') in 0.086505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.692236 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 table.prefab
+  artifactKey: Guid(9374e754aa141e144b4a8caee84d0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 table.prefab using Guid(9374e754aa141e144b4a8caee84d0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b3448a2b1a1703b8a3f99e3a8a2918') in 0.024907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 chair.prefab
+  artifactKey: Guid(8299339e198abcd4fab25b8ec41c5f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 chair.prefab using Guid(8299339e198abcd4fab25b8ec41c5f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34730d4dcf3599b220957968ffe26056') in 0.027309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2065.809931 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png
+  artifactKey: Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png using Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a2aff645672b1831cc0a73a9540b76') in 0.074737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.662235 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png
+  artifactKey: Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png using Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e2616319af856326d7bb4cece6e41a') in 0.022653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.291928 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png
+  artifactKey: Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png using Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877fcfe2fe699003a585f6905a5e2762') in 0.066026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.770934 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png
+  artifactKey: Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 full bar.png using Guid(830b9627e0c70e8479a7b025ef71dafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70419096d6af96316520ecb31f28bc01') in 0.040190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 615.477352 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png
+  artifactKey: Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png using Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b728d60636070c6ebf681a8ab21bc73f') in 0.095099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.024320 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4
+  artifactKey: Guid(803311dfe8624854f9ccb78609234468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4 using Guid(803311dfe8624854f9ccb78609234468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225339ad68a617e5431375c0c0b29cbc') in 0.024191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.818451 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png
+  artifactKey: Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png using Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357d6cc0e6a54b0915d7336a09c5082a') in 0.055913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.730483 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png
+  artifactKey: Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png using Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef699cbdee85766aff20131c7a80ded7') in 0.024714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png
+  artifactKey: Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png using Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2eb84dba6868a6f2cc31af25589a2ff') in 0.024498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.536153 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png
+  artifactKey: Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1.png using Guid(07fa5f292900e63489426e77af11222b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3073b2a491e434e737b1a92e7d4897e0') in 0.064784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.867931 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png
+  artifactKey: Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png using Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef412018a10d0bce1af956d0d9afe404') in 0.059803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.874881 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab
+  artifactKey: Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab using Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8e675f02dc1cace3786b0f36f9d539') in 0.034631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.724709 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab
+  artifactKey: Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab using Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c95af71cff0b57dc0815acbe28e6d2') in 0.033337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.794214 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab
+  artifactKey: Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab using Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b880de705ef651e47b0f3608584f244') in 0.027885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.839394 seconds.
+  path: Assets/Scenes/Tavern/Tavern 3/Tavern 3.unity
+  artifactKey: Guid(f495b512b3a337f4eb0d7e0ef9a1524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 3/Tavern 3.unity using Guid(f495b512b3a337f4eb0d7e0ef9a1524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e58c4045d409d6b19f858ab95cc22b6') in 0.016936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.252846 seconds.
+  path: Assets/Scenes/Tavern/Tavern 4/Tavern 3.unity
+  artifactKey: Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 4/Tavern 3.unity using Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3994680384aa73e5c03aab499414b4e8') in 0.003515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.541662 seconds.
+  path: Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity
+  artifactKey: Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity using Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bf7dcf42d5fd7396d32727dc540287') in 0.019378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.747906 seconds.
+  path: Assets/Scenes/Tavern/Tavern 3/Tavern 3.unity
+  artifactKey: Guid(f495b512b3a337f4eb0d7e0ef9a1524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 3/Tavern 3.unity using Guid(f495b512b3a337f4eb0d7e0ef9a1524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291d5406cfc3a89674213e5f19fdda22') in 0.003954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.407865 seconds.
+  path: Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity
+  artifactKey: Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity using Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7aa870e66e150a6b12e22109c5404d5') in 0.003537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.202567 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 full bar_0.prefab
+  artifactKey: Guid(3cee5c4cac124794fb70f502e70653d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 full bar_0.prefab using Guid(3cee5c4cac124794fb70f502e70653d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd635e6d94bd1f5958d86a02288f367bc') in 0.047126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.366573 seconds.
+  path: Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity
+  artifactKey: Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 4/Tavern 4.unity using Guid(419e05a370d9f7248a1b8bf7c708bae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc127b3005d484b090ea2ad6d78c5d9') in 0.004348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1627.220159 seconds.
+  path: Assets/Scenes/Tavern/Tavern 4
+  artifactKey: Guid(ceefa9e498ff15b47ba788217ac2ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 4 using Guid(ceefa9e498ff15b47ba788217ac2ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770c43998d34ffae11a5ffb7c0e231e3') in 0.017963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.142421 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4
+  artifactKey: Guid(3c6f1cbd4bfe78a4c94ce28144c52a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4 using Guid(3c6f1cbd4bfe78a4c94ce28144c52a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464166de77422e9176b6321bd76bad34') in 0.003497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.634735 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd8a00f0b0188bdad31035f9e58d028') in 0.030914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 table.png
+  artifactKey: Guid(70fcfc8de95e36442bb8c57e0fb568c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 table.png using Guid(70fcfc8de95e36442bb8c57e0fb568c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786d9863da55a11d39632fb682321d9f') in 0.029763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.313065 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698cd3bde21a519d380cde51badd0318') in 0.019695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.986689 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b845d9d5b2ad3e110dcc10d19ce358dd') in 0.049422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.386019 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 table.prefab
+  artifactKey: Guid(238c7921149b7af409f771aa45cb9979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 table.prefab using Guid(238c7921149b7af409f771aa45cb9979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2096217d77de1ec233bd13a2e0464d15') in 0.023732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 chair.prefab
+  artifactKey: Guid(8160397eba459154c9390757e67dc31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 4/Tavern 4 chair.prefab using Guid(8160397eba459154c9390757e67dc31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db605e8c566ad54c0c01395671e5730') in 0.021631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1207.892336 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png
+  artifactKey: Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png using Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892ea934ae4e638452bf469e0e8a0dce') in 0.038650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.061713 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png
+  artifactKey: Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png using Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a43d6ad5ca4df1420f8596cbec6916') in 0.023950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.222266 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png
+  artifactKey: Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png using Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e84bdd6062ccc211657335b3ebc56d') in 0.060616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.555391 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png
+  artifactKey: Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 full bar.png using Guid(b070b8c96e0f2a147b8b1ed96bd081c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2948fb96e2944708bf53b7eaf1dadec2') in 0.061195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.843299 seconds.
+  path: Assets/Sprites/Inventory/Capybara inventory.png
+  artifactKey: Guid(109516e60c1d6624ab42a3d74bb5a8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Capybara inventory.png using Guid(109516e60c1d6624ab42a3d74bb5a8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efae70421c151ae72ffe8988d4d99121') in 0.070833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Player/Capybara3.png
+  artifactKey: Guid(6ff85fff82e2ff9479db5b779421114e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/Capybara3.png using Guid(6ff85fff82e2ff9479db5b779421114e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad4e424e8eeda6b6b0f5adb809030a3') in 0.029475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Sprites/Player/Capybara2.png
+  artifactKey: Guid(a1ca2192aa2e95e488753d199e4c9474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/Capybara2.png using Guid(a1ca2192aa2e95e488753d199e4c9474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3258e149f96f4c7212f3ef444cc5e9d') in 0.033910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.013475 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 questboard.png
+  artifactKey: Guid(dbbe7a9ae377e334db6dd3bfb12fe5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 questboard.png using Guid(dbbe7a9ae377e334db6dd3bfb12fe5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0b1f73532b7602108017a446ddd4e3') in 0.027515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.834636 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ceaba0a09e8626b375b6f1992152d0') in 0.038265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 183.611721 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_1.asset
+  artifactKey: Guid(c14c96a78b6156941b16e04be15ba7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_1.asset using Guid(c14c96a78b6156941b16e04be15ba7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c9a98bb20b0a64ef40722159a2a3ba') in 0.028992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_7.asset
+  artifactKey: Guid(5a7ea33ac0026344b99c0d0bc4f66909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_7.asset using Guid(5a7ea33ac0026344b99c0d0bc4f66909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e578706bb23ae89dab6162ee179244b6') in 0.025135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_8.asset
+  artifactKey: Guid(fbcb75fe24e2a0b48aa018039a8c9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_8.asset using Guid(fbcb75fe24e2a0b48aa018039a8c9824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e382a53327df9e226746e2b2af1e500') in 0.015890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_5.asset
+  artifactKey: Guid(ec5487d37b4806240ad4a21ca4148ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_5.asset using Guid(ec5487d37b4806240ad4a21ca4148ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba77c81ed240f477a7ce4339537ae27') in 0.017368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_3.asset
+  artifactKey: Guid(e794fd978fa7ffe42a7c3cfe32f52d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_3.asset using Guid(e794fd978fa7ffe42a7c3cfe32f52d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaaae19fcf1830fd788c9f3fc301ddb1') in 0.020771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_5.asset
+  artifactKey: Guid(b76280a2c9d3bbc438892ce1069919a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_5.asset using Guid(b76280a2c9d3bbc438892ce1069919a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b59d262383d698b577368ba41ce139') in 0.017076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_6.asset
+  artifactKey: Guid(cb7417ceeda961241996d7890953ad19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_6.asset using Guid(cb7417ceeda961241996d7890953ad19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbafdd472d0136889798c1902511365d') in 0.020670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_6.asset
+  artifactKey: Guid(d83f70cd4c61ad1448982942309e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 1_6.asset using Guid(d83f70cd4c61ad1448982942309e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b24342df430898f3bd3728815a6e84') in 0.015814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_1.asset
+  artifactKey: Guid(2462fc3b5c5c40b4ba1640ce4a4de960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 4 ground 2_1.asset using Guid(2462fc3b5c5c40b4ba1640ce4a4de960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae4e84dc63411988c39c227bd09e37c') in 0.016332 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
