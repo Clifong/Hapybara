@@ -177,7 +177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9050218393781459154, guid: 6983051189a63644ebf53ef53edb5342, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9050218393781459154, guid: 6983051189a63644ebf53ef53edb5342, type: 3}
       propertyPath: m_LocalPosition.x
@@ -419,7 +419,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.78, y: 0.78, z: 0}
+  m_ChunkCullingBounds: {x: 1.5, y: 1.5, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -8198,7 +8198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590074024462830092, guid: fa197372f8b805b46b6b1be3d5e2820f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6590074024462830092, guid: fa197372f8b805b46b6b1be3d5e2820f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8632,7 +8632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5442873613758232999, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5442873613758232999, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8943,6 +8943,7 @@ GameObject:
   - component: {fileID: 1266501539}
   - component: {fileID: 1266501540}
   - component: {fileID: 1266501541}
+  - component: {fileID: 1266501542}
   m_Layer: 0
   m_Name: Tavern 5 exit
   m_TagString: Untagged
@@ -9072,6 +9073,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Town 5
+--- !u!50 &1266501542
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266501536}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!4 &1272861188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9050218393781459154, guid: 6983051189a63644ebf53ef53edb5342, type: 3}
