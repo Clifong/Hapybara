@@ -8,7 +8,6 @@ public class TutorialCanvas : MonoBehaviour
 {
     public Button nextButton;
     public Button prevButton;
-    public Button quitButton;
     public List<TutorialAssetSO> tutorialAsset;
     private int counter = 0;
     [Header("UI")]
@@ -16,9 +15,8 @@ public class TutorialCanvas : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
     
-    void Start() {
+    void OnEnable() {
         prevButton.gameObject.SetActive(false);
-        quitButton.gameObject.SetActive(false);
         nextButton.gameObject.SetActive(true);
         SetUIInfo();
     }
@@ -26,11 +24,9 @@ public class TutorialCanvas : MonoBehaviour
     public void Next() {
         counter += 1;
         if (counter == tutorialAsset.Count - 1) {
-            quitButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(false);
             prevButton.gameObject.SetActive(true);
         } else {
-            quitButton.gameObject.SetActive(false);
             prevButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
         }
@@ -40,11 +36,9 @@ public class TutorialCanvas : MonoBehaviour
     public void Back() {
         counter -= 1;
         if (counter == 0) {
-            quitButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
             prevButton.gameObject.SetActive(false);
         } else {
-            quitButton.gameObject.SetActive(false);
             prevButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
         }
@@ -53,7 +47,6 @@ public class TutorialCanvas : MonoBehaviour
 
     private void SetUIInfo() {
         if (tutorialAsset.Count == 1) {
-            quitButton.gameObject.SetActive(true);
             prevButton.gameObject.SetActive(false);
             nextButton.gameObject.SetActive(false);
         }
