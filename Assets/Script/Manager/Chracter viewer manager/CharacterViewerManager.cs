@@ -18,6 +18,7 @@ public class CharacterViewerManager : MonoBehaviour
     public TextMeshProUGUI defenceText;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI levelText;
+    public Image characterImage;
     public Slider expSlider;
     public TextMeshProUGUI expneededText;
     public TextMeshProUGUI relationshipLevelText;
@@ -56,6 +57,7 @@ public class CharacterViewerManager : MonoBehaviour
         attackText.text = playerSO.attack.ToString();
         defenceText.text = playerSO.defence.ToString();
         speedText.text = playerSO.speed.ToString();
+        characterImage.sprite = playerSO.playerAppearance;
         
         levelText.text = playerSO.level.ToString();
         expSlider.value = (float)playerSO.currentExp/(float)(playerSO.currentExp + playerSO.expNeededForNextLevel);

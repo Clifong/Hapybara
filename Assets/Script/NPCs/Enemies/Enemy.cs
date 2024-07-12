@@ -7,7 +7,7 @@ public class Enemy : Npc
     public CrossObjectEvent exitBattle;
     public CrossObjectEventWithData enterBattle;
     public EnemySO enemySO;
-    private UpdateHealthBar updateHealthBar;
+    protected UpdateHealthBar updateHealthBar;
     public CrossObjectEventWithData dropLoot;
     public GameObject battleZone;
 
