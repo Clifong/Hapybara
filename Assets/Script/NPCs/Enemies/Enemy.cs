@@ -22,7 +22,6 @@ public class Enemy : Npc
         Destroy(this.gameObject);
     }
 
-
     public void AlertHealthChange() {
         updateHealthBar.UpdateHealthBarInfo(GetHealthInfo()[0], GetHealthInfo()[1]);
     }
@@ -71,7 +70,7 @@ public class Enemy : Npc
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collider2D) {
+    protected void OnTriggerEnter2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {
             PlayerQueue playerQueue = player.GetComponentInParent<PlayerQueue>();
@@ -87,7 +86,7 @@ public class Enemy : Npc
         }
     }
 
-    void OnTriggerExit2D(Collider2D collider2D) {
+    protected void OnTriggerExit2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {   
             battleZone.SetActive(false);

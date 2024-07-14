@@ -4,17 +4,17 @@ using UnityEngine;
 
 public abstract class Npc : MonoBehaviour
 {
-    private int currHealth;
-    private int currAttack;
-    private int currDefence;
-    private int currSpeed;
-    private int maxHealth;
-    private int attack;
-    private int defence;
-    private int speed;
+    protected int currHealth;
+    protected int currAttack;
+    protected int currDefence;
+    protected int currSpeed;
+    protected int maxHealth;
+    protected int attack;
+    protected int defence;
+    protected int speed;
     public CrossObjectEventWithData broadCastActionEvent;
     public CrossObjectEventWithData characterDied;
-    private SpawnDamageText spawnDamageTextScript;
+    protected SpawnDamageText spawnDamageTextScript;
     protected int poisonForHowLong = 0;
     protected int burnForHowLong = 0;
     protected UpdateStatusAlinmentIcon updateStatusAlinmentIcon;
@@ -95,6 +95,13 @@ public abstract class Npc : MonoBehaviour
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
         if (target != null) {
             target.GetAttacked(attack);
+        }
+    }
+
+    public virtual void AttackAllEnemyWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
+        foreach (Npc person in opponentList)
+        {
+            person.GetAttacked(attack + skillSO.damage, skillSO);
         }
     }
 

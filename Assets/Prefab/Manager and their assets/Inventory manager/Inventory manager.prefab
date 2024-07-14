@@ -9077,7 +9077,6 @@ GameObject:
   - component: {fileID: 70232134}
   - component: {fileID: 70232135}
   - component: {fileID: 391877471}
-  - component: {fileID: 893116640}
   - component: {fileID: 1164364930}
   - component: {fileID: 6185053818664043286}
   - component: {fileID: 8910880939513070964}
@@ -9672,7 +9671,7 @@ MonoBehaviour:
   responseOnTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 70232135}
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: AddLootFromEnemy
         m_Mode: 0
@@ -9951,34 +9950,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: MinusMemory
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &893116640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6348062765242484767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: b390c1704b2c0cb4ebb4151c1ab72f70, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 70232135}
-        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
-        m_MethodName: AddLootFromEnemy
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

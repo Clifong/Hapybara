@@ -70,8 +70,10 @@ public class AddToInventoryManager : MonoBehaviour
 
     public void AddLootFromEnemy(Component component, object obj) {
         object[] temp = (object[])obj;
-        EnemySO enemySO = (EnemySO) temp[0];
-        enemySO.AddLoot(playerInventorySO);
+        if (temp.Length == 2) {
+            EnemySO enemySO = (EnemySO) temp[1];
+            enemySO.AddLoot(playerInventorySO);
+        }
     }
 
     public void ChangeBuildableQty(Component component, object obj) {

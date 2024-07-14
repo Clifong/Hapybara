@@ -76,15 +76,16 @@ public class TurnManager : MonoBehaviour
         showItIsPlayerTurn.TriggerEvent();
     }
 
-    // public void RemoveCharacterFromList(Component component, object obj) {
-    //     object[] temp = (object[]) obj;
-    //     Npc npc = (Npc) temp[0];
-    //     if (npc.GetComponent<Enemy>() != null) {
-    //         allEnemies.Remove(npc);
-    //     } else {
-    //         allPlayers.Remove(npc);
-    //     }
-    // }
+    public void RemoveCharacterFromList(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        Debug.Log(temp[0].GetType());
+        Npc npc = (Npc) temp[0];
+        if (npc.GetComponent<Enemy>() != null) {
+            allEnemies.Remove(npc);
+        } else {
+            allPlayers.Remove(npc);
+        }
+    }
 
     public void PlayerSelectedAction(Component component, object obj) {
         object[] temp = (object[]) obj;
