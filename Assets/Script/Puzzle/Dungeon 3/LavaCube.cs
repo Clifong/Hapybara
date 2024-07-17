@@ -58,11 +58,15 @@ public class LavaCube : OneTimeObject, Interactables
 
     public void Spawn() {
         SetComplete();
-        Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
+        if (whateverIsToBeSpawned != null) {
+            Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
+        }
     }
 
     protected override void SetComplete() {
-        onetimeObjectSO.SetComplete();
+        if (onetimeObjectSO != null) {
+            onetimeObjectSO.SetComplete();
         // EditorUtility.SetDirty(onetimeObjectSO);
+        }
     }
 }

@@ -52,8 +52,28 @@ public class PlayerQueue : MonoBehaviour
         List<Player> allPlayers = new List<Player>();
         foreach (GameObject player in spawnedPlayers)
         {
-            allPlayers.Add(player.GetComponent<Player>());
+            if (player != null) {
+                allPlayers.Add(player.GetComponent<Player>());
+            }
         }
         return allPlayers;
+    }
+
+    public void DisableAttack() {
+        foreach (GameObject player in spawnedPlayers)
+        {
+            if (player != null) {
+                player.GetComponent<PlayerAttack>().enabled = false;
+            }
+        }
+    }
+
+    public void EnableAttack() {
+        foreach (GameObject player in spawnedPlayers)
+        {
+            if (player != null) {
+                player.GetComponent<PlayerAttack>().enabled = true;
+            }
+        }
     }
 }

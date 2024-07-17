@@ -4,9 +4,13 @@ using UnityEngine;
 
 public abstract class Npc : MonoBehaviour
 {
+    [SerializeField]
     protected int currHealth;
+    [SerializeField]
     protected int currAttack;
+    [SerializeField]
     protected int currDefence;
+    [SerializeField]
     protected int currSpeed;
     protected int maxHealth;
     protected int attack;
@@ -94,21 +98,22 @@ public abstract class Npc : MonoBehaviour
     public virtual void Attack(List<Npc> opponentList) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
         if (target != null) {
-            target.GetAttacked(attack);
+            target.GetAttacked(currAttack);
         }
     }
 
     public virtual void AttackAllEnemyWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
-        foreach (Npc person in opponentList)
+        List<Npc> copiedOpponentList = new List<Npc>(opponentList);
+        foreach (Npc person in copiedOpponentList)
         {
-            person.GetAttacked(attack + skillSO.damage, skillSO);
+            person.GetAttacked(currAttack + skillSO.damage, skillSO);
         }
     }
 
     public void AttackWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
         if (target != null) {
-            target.GetAttacked(attack + skillSO.damage, skillSO);
+            target.GetAttacked(currAttack + skillSO.damage, skillSO);
         }
     }
 

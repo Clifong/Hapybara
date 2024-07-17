@@ -361,12 +361,36 @@ MonoBehaviour:
   responseOnTrigger:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 25c69b92bb00e6546bd7e0d252207cc6, type: 2}
+        m_TargetAssemblyTypeName: CrossObjectEvent, Assembly-CSharp
+        m_MethodName: TriggerEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 14470931857a06847b3815410317f909, type: 2}
+        m_TargetAssemblyTypeName: CrossObjectEvent, Assembly-CSharp
+        m_MethodName: TriggerEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 381269351}
         m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCamera, Cinemachine
         m_MethodName: set_Follow
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 468166832}
+          m_ObjectArgument: {fileID: 699818113}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -401,11 +425,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!4 &468166832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7720113711208991751, guid: e1d81ed1ca1284b4a9c05d2edb36c750, type: 3}
-  m_PrefabInstance: {fileID: 1229589185}
-  m_PrefabAsset: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: b319a12bd56d9454890903d077ca9635, type: 2}
+        m_TargetAssemblyTypeName: CrossObjectEvent, Assembly-CSharp
+        m_MethodName: TriggerEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 50caa04e84c2c0b44a0576fcfb786728, type: 2}
+        m_TargetAssemblyTypeName: CrossObjectEvent, Assembly-CSharp
+        m_MethodName: TriggerEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &552167905
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,6 +7797,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &699818113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2149142307092033579, guid: e1d81ed1ca1284b4a9c05d2edb36c750, type: 3}
+  m_PrefabInstance: {fileID: 1229589185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &726071892
 GameObject:
   m_ObjectHideFlags: 0
@@ -7942,6 +7990,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -56.108154
       objectReference: {fileID: 0}
+    - target: {fileID: 356918339455015482, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2495117
+      objectReference: {fileID: 0}
     - target: {fileID: 513291896503274157, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -7974,6 +8026,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3860242760423595411, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2495117
+      objectReference: {fileID: 0}
     - target: {fileID: 3893233046448957169, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -8001,6 +8057,10 @@ PrefabInstance:
     - target: {fileID: 4985313950466370154, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 6.4716797
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408848243128004076, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2495117
       objectReference: {fileID: 0}
     - target: {fileID: 5442873613758232996, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_Name
@@ -8094,9 +8154,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8060620019993820010, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2495117
+      objectReference: {fileID: 0}
     - target: {fileID: 8255427497725241354, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 84.15674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356039023130139036, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -77.28662
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356039023130139036, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -61.85205
       objectReference: {fileID: 0}
     - target: {fileID: 9029794141639786471, guid: 4f4f37168015c514294e5666e34e1cc4, type: 3}
       propertyPath: m_AnchoredPosition.y

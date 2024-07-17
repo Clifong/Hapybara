@@ -36,18 +36,19 @@ public class Iceless : Boss
             }
             Destroy(this.gameObject);
         } else {
-            enemySO = bossPhaseSO[phase];
+            enemySO = bossPhaseSO[phase]; 
+            SetStats(enemySO.health, enemySO.attack, enemySO.defence, enemySO.speed);   
             if (phase == 1) {
                 foreach (Transform position in icelessSpielSpawnpoint)
                 {
                   GameObject spawnedIceSpiel = Instantiate(icelessSpiel, position);
                   spawnedIceSpeils.Add(spawnedIceSpiel);
+                  currAttack += 5;
                 }
                 broadcastMessage.TriggerEvent(this, "Ice spiels spawned will buff Iceless temporarily!");
             } else if (phase == 2) {
                 broadcastMessage.TriggerEvent(this, "Iceless is resting...");
-            }
-            SetStats(enemySO.health, enemySO.attack, enemySO.defence, enemySO.speed);    
+            }   
             AlertHealthChange();    
         }
     }
@@ -94,5 +95,9 @@ public class Iceless : Boss
 
     public void GreatFlareEndThenAttack() {
         base.AttackAllEnemyWithSkill(tempOpponentList, enemySO.ReturnASkill(100));
+    }
+
+    public void RemoveBuff() {
+        currAttack -= 5;
     }
 }
