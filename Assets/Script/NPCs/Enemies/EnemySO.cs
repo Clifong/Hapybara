@@ -57,6 +57,10 @@ public class EnemySO : ScriptableObject
         return temp[key][randomNumber];
     }
 
+    public SkillsSO ReturnASkillDefinite(int choice) {
+        return allSkills.ReturnKeys()[choice];
+    }
+
     public void AddLoot(PlayerInventorySO playerInventorySO) {
         playerInventorySO.AddMoney(Random.Range(moneyDroppedMin, moneyDroppedMax));
         playerInventorySO.AddMemory(Random.Range(memoryDroppedMin, memoryDroppedMax));

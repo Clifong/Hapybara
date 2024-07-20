@@ -1,5 +1,111 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &286440585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286440587}
+  - component: {fileID: 286440586}
+  - component: {fileID: 286440588}
+  m_Layer: 0
+  m_Name: Dungeon 4 corrupted ground_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &286440587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286440585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.82, y: -1.64, z: -0.0066932854}
+  m_LocalScale: {x: 6.1940928, y: 6.1940928, z: 6.1940928}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6582615694638167899}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &286440586
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286440585}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2070864704, guid: 30235435e70d05947a58e293de5fe7e5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &286440588
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286440585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90cde4cdd499626469e0d269fec42cfc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6582615694230093921
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,6 +224,7 @@ GameObject:
   - component: {fileID: 6582615694638167898}
   - component: {fileID: 8917818348753473233}
   - component: {fileID: 8917818348753473238}
+  - component: {fileID: 1026599540}
   m_Layer: 0
   m_Name: Forgotten spire parent
   m_TagString: Untagged
@@ -140,6 +247,7 @@ Transform:
   - {fileID: 6582615694230093927}
   - {fileID: 4380731185961596491}
   - {fileID: 3949763539381213847}
+  - {fileID: 286440587}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -194,6 +302,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageText: {fileID: 735815415513158350, guid: af6d086151f9f6946a02b55a019e7f33, type: 3}
   spawnZone: {fileID: 6582615694638167899}
+--- !u!114 &1026599540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6582615694638167844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02fe1d0ce386884d91173d45138705d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currHealth: 0
+  currAttack: 0
+  currDefence: 0
+  currSpeed: 0
+  broadCastActionEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
+  characterDied: {fileID: 11400000, guid: f8f46971cdb205d478d58d51871cab86, type: 2}
+  exitBattle: {fileID: 11400000, guid: b575677f31c898d41a219f818d425f59, type: 2}
+  enterBattle: {fileID: 11400000, guid: 6ef7578bbd1e93340a3ef097074c90e6, type: 2}
+  enemySO: {fileID: 0}
+  dropLoot: {fileID: 11400000, guid: 064fde2fd66b1944cb02c0cff726d099, type: 2}
+  battleZone: {fileID: 5549651406751128616}
+  bossPhaseSO:
+  - {fileID: 11400000, guid: da2eb5800caceb64ca8d7f4907f626a4, type: 2}
+  - {fileID: 11400000, guid: 496d3391a77c0484d81f8c7b6086d603, type: 2}
+  healthBar: {fileID: 6369835146254488690}
+  broadcastMessage: {fileID: 11400000, guid: fd15deb11152e0d4f8bedd7f0207aa07, type: 2}
+  rainSpawn: {fileID: 3930051380170322665, guid: b6ee37179478ba24dab239fba5dd229c, type: 3}
+  rainSpawnPosition:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  corruptedGround: {fileID: 286440585}
+  spawnTimer: 2
+  forgottenSpielChangePhase: {fileID: 11400000, guid: aa12d78d630a39744adeb956baa0ae5c, type: 2}
+  forgottenSpielResumeSecondPhase: {fileID: 11400000, guid: dc7dc391e0c2eeb4a863c18b8f834b9a, type: 2}
 --- !u!1001 &2791243202117094161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,6 +419,11 @@ PrefabInstance:
 --- !u!4 &4380731185961596491 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1907000848016129370, guid: e6f656a63ccd3684581bda923d5a089d, type: 3}
+  m_PrefabInstance: {fileID: 2791243202117094161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5549651406751128616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7762004991669966649, guid: e6f656a63ccd3684581bda923d5a089d, type: 3}
   m_PrefabInstance: {fileID: 2791243202117094161}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7815842122795634147
@@ -378,3 +536,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6532209588658214772, guid: 71c5e7cfffd64bc42a35c09bcdd58928, type: 3}
   m_PrefabInstance: {fileID: 7815842122795634147}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6369835146254488690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3751850682144577937, guid: 71c5e7cfffd64bc42a35c09bcdd58928, type: 3}
+  m_PrefabInstance: {fileID: 7815842122795634147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df032f8a69ea6a34a992782dcc4dcd26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

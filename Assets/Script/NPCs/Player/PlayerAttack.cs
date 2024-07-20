@@ -6,15 +6,24 @@ using UnityEngine.InputSystem;
 public class PlayerAttack : MonoBehaviour
 {
     public CrossObjectEventWithData typeOfAttack;
+    private bool canAttack = false;
 
     void Start() {
-        this.enabled = false;
+        DisableAttack();
     }
 
     void OnAttack(InputValue value) {
-        if (this.enabled) {
+        if (canAttack) {
             typeOfAttack.TriggerEvent(this, value.Get<float>());
         }
+    }
+
+    public void EnableAttack() {
+        canAttack = true;
+    }
+
+    public void DisableAttack() {
+        canAttack = false;
     }
 
     void OnSwitch(InputValue value) {

@@ -63,7 +63,7 @@ public class PlayerQueue : MonoBehaviour
         foreach (GameObject player in spawnedPlayers)
         {
             if (player != null) {
-                player.GetComponent<PlayerAttack>().enabled = false;
+                player.GetComponent<PlayerAttack>().DisableAttack();
             }
         }
     }
@@ -72,7 +72,7 @@ public class PlayerQueue : MonoBehaviour
         foreach (GameObject player in spawnedPlayers)
         {
             if (player != null) {
-                player.GetComponent<PlayerAttack>().enabled = true;
+                player.GetComponent<PlayerAttack>().EnableAttack();
             }
         }
     }

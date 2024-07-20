@@ -33,7 +33,7 @@ public abstract class Npc : MonoBehaviour
         this.currHealth = maxHealth;
         this.currAttack = attack;
         this.currDefence = defence;
-        this.currSpeed = -speed;
+        this.currSpeed = 100 + speed;
         spawnDamageTextScript = GetComponent<SpawnDamageText>();
         updateStatusAlinmentIcon = GetComponentInChildren<UpdateStatusAlinmentIcon>();
     }
@@ -74,14 +74,18 @@ public abstract class Npc : MonoBehaviour
     }
 
     public virtual void EnqueueIntoSpeedQueue(Utils.PriorityQueue<Npc, float> pq) {
-        pq.Enqueue(this, currSpeed);
+        pq.Enqueue(this, -currSpeed);
     }
 
     public virtual void DecreaseSpeed() {
-        currSpeed = currSpeed + Random.Range(0, 3);
-        if (currSpeed >= 0) {
-            currSpeed = currSpeed - speed;
+        currSpeed -= Random.Range(1, 5);
+        if (currSpeed <= 0) {
+           ResetSpeed();
         }
+    }
+
+    public void ResetSpeed() {
+        currSpeed = 100 + speed;
     }
 
     public virtual void UpdateStats(Component component, object obj) {
@@ -113,7 +117,7 @@ public abstract class Npc : MonoBehaviour
     public void AttackWithSkill(List<Npc> opponentList, SkillsSO skillSO) {
         Npc target = opponentList[Random.Range(0, opponentList.Count)];
         if (target != null) {
-            target.GetAttacked(currAttack + skillSO.damage, skillSO);
+            target.GetAttacked(skillSO.damage, skillSO);
         }
     }
 

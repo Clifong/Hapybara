@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 1780717612}
   - component: {fileID: 5135192030379870913}
   - component: {fileID: 3375884124567697273}
+  - component: {fileID: 8960682542100381059}
   m_Layer: 0
   m_Name: TurnManager
   m_TagString: Untagged
@@ -447,6 +448,34 @@ MonoBehaviour:
       - m_Target: {fileID: 6239568945516658253}
         m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: RemoveCharacterFromList
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8960682542100381059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239568945516658255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6239568945516658253}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
+        m_MethodName: ChangeTurn
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

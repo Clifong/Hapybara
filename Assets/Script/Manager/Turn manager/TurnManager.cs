@@ -28,7 +28,6 @@ public class TurnManager : MonoBehaviour
     public void InsertIntoQueue(Component component, object obj) {
         object[] temp = (object[]) obj;
         List<Npc> allNpc = (List<Npc>) temp[0];
-        turnQueue.Clear();
         foreach (Npc npc in allNpc)
         {
             if (npc.GetComponent<Player>() != null) {
@@ -39,23 +38,29 @@ public class TurnManager : MonoBehaviour
             npc.EnqueueIntoSpeedQueue(turnQueue);
         }
         checkDungeonBuffs.TriggerEvent(this, allPlayers, allEnemies);
-        ChangeTurn();
+
+        ChangeTurn(this, null);
     }
 
     public void ExitBattle() {
         foreach (Npc npc in allPlayers)
         {
             npc.ResetAlinment();
+            npc.ResetSpeed();
+            ((Player) npc).DisableAttack();
         }
         foreach (Npc npc in allEnemies)
         {
             npc.ResetAlinment();
+            npc.ResetSpeed();
         }
         allEnemies.Clear();
         allPlayers.Clear();
+        turnQueue.Clear();
     }
 
-    public void ChangeTurn() {
+    public void ChangeTurn(Component component, object obj) {
+        Debug.Log(turnQueue.Count);
         if (allEnemies.Count == 0) {
             playerWon.TriggerEvent(this, new List<int>());
             return;
@@ -63,22 +68,12 @@ public class TurnManager : MonoBehaviour
             playerLoss.TriggerEvent();
             return;
         }
-        currentActionTaker = turnQueue.Dequeue();
-        while (currentActionTaker.GetComponent<Enemy>() != null) {
-            showItIsEnemyTurn.TriggerEvent();
-            turn = Turn.EnemyTurn;
-            currentActionTaker.Attack(allPlayers);
-            currentActionTaker.DecreaseSpeed();
-            currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
-            currentActionTaker = turnQueue.Dequeue();
-        }
-        turn = Turn.PlayerTurn;
-        showItIsPlayerTurn.TriggerEvent();
+
+        StartCoroutine(Delay());
     }
 
     public void RemoveCharacterFromList(Component component, object obj) {
         object[] temp = (object[]) obj;
-        Debug.Log(temp[0].GetType());
         Npc npc = (Npc) temp[0];
         if (npc.GetComponent<Enemy>() != null) {
             allEnemies.Remove(npc);
@@ -90,9 +85,31 @@ public class TurnManager : MonoBehaviour
     public void PlayerSelectedAction(Component component, object obj) {
         object[] temp = (object[]) obj;
         int attackType = (int)Mathf.Round((float) temp[0]);
+        ((Player) currentActionTaker).DisableAttack();
         currentActionTaker.Attack(allEnemies, attackType);
         currentActionTaker.DecreaseSpeed();
         currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
-        ChangeTurn();
+    }
+
+    IEnumerator Delay() {
+        currentActionTaker = turnQueue.Dequeue();
+        
+        if (currentActionTaker is Player) {
+            turn = Turn.PlayerTurn;
+            showItIsPlayerTurn.TriggerEvent();
+        } else {
+            showItIsEnemyTurn.TriggerEvent();
+            turn = Turn.EnemyTurn;  
+        }
+        yield return new WaitForSeconds(0.1f);
+        
+        if (currentActionTaker is Player) {
+            ((Player) currentActionTaker).EnableAttack();
+        } else {
+            ((Enemy) currentActionTaker).Attack(allPlayers);
+        }
+        
+        currentActionTaker.DecreaseSpeed();
+        currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
     }
 }

@@ -6,11 +6,22 @@ public class Player : Npc
 {
     public PlayerSO playerSO;
     private UpdateHealthBar updateHealthBar;
+    private PlayerAttack playerAttack;
 
     void Awake() {
         updateHealthBar = GetComponentInChildren<UpdateHealthBar>();
         SetStats(playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);  
+        playerAttack = GetComponent<PlayerAttack>();
+        playerAttack.enabled = false;
         AlertHealthChange();  
+    }
+
+    public void EnableAttack() {
+        playerAttack.EnableAttack();
+    }
+
+    public void DisableAttack() {
+        playerAttack.DisableAttack();
     }
 
     public void AlertHealthChange() {
@@ -48,10 +59,8 @@ public class Player : Npc
 
     public override void Attack(List<Npc> opponentList, int attackType) {
         if (attackType == -1 || playerSO.allSkills.Count == 0) {
-            // Debug.Log("Basic attack");
             Attack(opponentList);
         } else if (attackType == 1) {
-            // Debug.Log("Special attack! (To implement)");
             int randomNumber = Random.Range(0, playerSO.allSkills.Count);
             broadCastActionEvent.TriggerEvent(this, playerSO.name + " used " + playerSO.allSkills[randomNumber].name);
             AttackWithSkill(opponentList, playerSO.allSkills[randomNumber]);
