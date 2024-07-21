@@ -19,9 +19,16 @@ public abstract class Npc : MonoBehaviour
     public CrossObjectEventWithData broadCastActionEvent;
     public CrossObjectEventWithData characterDied;
     protected SpawnDamageText spawnDamageTextScript;
+    [SerializeField]
     protected int poisonForHowLong = 0;
+    [SerializeField]
     protected int burnForHowLong = 0;
+    [SerializeField]
+    protected int blindForHowLong = 0;
+    [SerializeField]
+    protected int frozenForHowLong = 0;
     protected UpdateStatusAlinmentIcon updateStatusAlinmentIcon;
+    protected SpriteRenderer spriteRenderer;
 
 
     protected void SetStats(int health, int attack, int defence, int speed) {
@@ -35,6 +42,7 @@ public abstract class Npc : MonoBehaviour
         this.currDefence = defence;
         this.currSpeed = 100 + speed;
         spawnDamageTextScript = GetComponent<SpawnDamageText>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         updateStatusAlinmentIcon = GetComponentInChildren<UpdateStatusAlinmentIcon>();
     }
 
@@ -50,7 +58,35 @@ public abstract class Npc : MonoBehaviour
     public virtual void ResetAlinment() {
         poisonForHowLong = 0;
         burnForHowLong = 0;
+        frozenForHowLong = 0;
+        blindForHowLong = 0;
         updateStatusAlinmentIcon.Reset();
+    }
+
+    public bool IsFrozen() {
+        return frozenForHowLong > 0;
+    }
+
+    public bool IsBurn() {
+        return burnForHowLong > 0;
+    }
+
+    public bool IsBlind() {
+        return blindForHowLong > 0;
+    }
+
+    public bool BlindAttack() {
+        return Random.Range(0, 1) == 0;
+    }
+
+    public virtual void Frozen() {
+        frozenForHowLong -= 1;
+        if (IsFrozen()) {
+            spriteRenderer.color = new Color(0, 192, 255);
+            return;
+        } else {
+            spriteRenderer.color = new Color(255, 255, 255);
+        }
     }
 
     public virtual void GetAttacked(int damage, SkillsSO skillSO) {
@@ -61,11 +97,36 @@ public abstract class Npc : MonoBehaviour
             }
         }
         if (skillSO is BurningSkillsSO) {
-            burnForHowLong = ((BurningSkillsSO) skillSO).GetBurnt();
-            if (burnForHowLong > 0) {
+            int burnTime = ((BurningSkillsSO) skillSO).GetBurnt();
+
+            if (!IsBurn() && burnTime > 0) {
+                currDefence -= 10;
                 updateStatusAlinmentIcon.SpawnSomeIcon((BurningSkillsSO) skillSO);
+            } 
+            
+            if (burnTime > 0) {
+                burnForHowLong = burnTime;
             }
-        }     
+ 
+        }    
+        if (skillSO is FrozenSkillsSO) {
+            int frozenTime = ((FrozenSkillsSO) skillSO).GetFrozen();
+
+            if (!IsFrozen() && frozenTime > 0) {
+                frozenForHowLong = frozenTime;
+                spriteRenderer.color = new Color(0, 192, 255);
+                updateStatusAlinmentIcon.SpawnSomeIcon((FrozenSkillsSO) skillSO);
+            }
+        }  
+        if (skillSO is BlindingSkillsSO) {
+            int tempBlindTime = ((BlindingSkillsSO) skillSO).GetBlind();
+
+            if (!IsBlind() && tempBlindTime > 0) {
+                blindForHowLong = tempBlindTime; 
+                updateStatusAlinmentIcon.SpawnSomeIcon((BlindingSkillsSO) skillSO);
+            } 
+            
+        }   
         GetAttacked(damage);
     }
 

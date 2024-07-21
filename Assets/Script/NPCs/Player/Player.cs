@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utils;
 
 public class Player : Npc
 {
@@ -33,26 +34,42 @@ public class Player : Npc
         AlertHealthChange();
     }
 
+    public override void Frozen() {
+        broadCastActionEvent.TriggerEvent(this, playerSO.name + " is frozen stiffed!");
+        base.Frozen();
+    }
+
     public override void UpdateStats(Component component, object obj) {
         base.UpdateStats(component, obj);
         AlertHealthChange();
     }
 
     public override void Attack(List<Npc> opponentList) {
-        broadCastActionEvent.TriggerEvent(this, playerSO.name + " attacked enemy");
+        if (opponentList[0] is Player) {
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " blindly attacked its allies");
+        } else {
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " attacked enemy");
+        }
         base.Attack(opponentList);
     }
 
-    public override void EnqueueIntoSpeedQueue(Utils.PriorityQueue<Npc, float> pq) {
+    public override void EnqueueIntoSpeedQueue(PriorityQueue<Npc, float> pq) {
         if (poisonForHowLong > 0) {
             GetAttacked(1);
             broadCastActionEvent.TriggerEvent(this, playerSO.name + " was hurt by poison");
             poisonForHowLong -= 1;
+            if (poisonForHowLong == 0) {
+                updateStatusAlinmentIcon.NoMorePoison();
+            }
         } 
         if (burnForHowLong > 0) {
             GetAttacked(1);
-            broadCastActionEvent.TriggerEvent(this, playerSO.name + " was hurt by burn");
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " was hurt by melting");
             burnForHowLong -= 1;
+            if (burnForHowLong == 0) {
+                currDefence += 10;
+                updateStatusAlinmentIcon.NoMoreBurn();
+            }
         }
         base.EnqueueIntoSpeedQueue(pq);
     }

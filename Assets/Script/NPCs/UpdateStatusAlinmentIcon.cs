@@ -12,6 +12,8 @@ public class UpdateStatusAlinmentIcon : MonoBehaviour
     [Header("All icons")]
     public Sprite poisonedIcon;
     public Sprite burntIcon;
+    public Sprite blindIcon;
+    public Sprite frozenIcon;
 
     public void SpawnSomeIcon(SkillsSO skillsSO) {
         if (skillsSO is PoisonSkillsSO) {
@@ -26,7 +28,19 @@ public class UpdateStatusAlinmentIcon : MonoBehaviour
                 spawnedIcons[burntIcon] = spawnedBurntnIcon;
                 spawnedBurntnIcon.GetComponent<AlinmentIcon>().SetInfo(burntIcon);
             }
-        }
+        } else if (skillsSO is FrozenSkillsSO) {
+            if (!spawnedIcons.ContainsKey(burntIcon) || spawnedIcons[burntIcon] == null) {
+                GameObject spawnedFrozenIcon = Instantiate(allinmentIcons, content);
+                spawnedIcons[frozenIcon] = spawnedFrozenIcon;
+                spawnedFrozenIcon.GetComponent<AlinmentIcon>().SetInfo(burntIcon);
+            }
+        } else if (skillsSO is BlindingSkillsSO) {
+            if (!spawnedIcons.ContainsKey(burntIcon) || spawnedIcons[burntIcon] == null) {
+                GameObject spawnedBlindtnIcon = Instantiate(allinmentIcons, content);
+                spawnedIcons[blindIcon] = spawnedBlindtnIcon;
+                spawnedBlindtnIcon.GetComponent<AlinmentIcon>().SetInfo(burntIcon);
+            }
+        } 
     }
 
     public void NoMorePoison() {
@@ -35,6 +49,14 @@ public class UpdateStatusAlinmentIcon : MonoBehaviour
 
     public void NoMoreBurn() {
         DestroyIcon(burntIcon);
+    }
+
+    public void NoMoreFrozen() {
+        DestroyIcon(frozenIcon);
+    }
+
+    public void NoMoreBlind() {
+        DestroyIcon(blindIcon);
     }
     
     public void DestroyIcon(Sprite icon) {

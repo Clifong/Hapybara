@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utils;
 
 public class Enemy : Npc
 {
@@ -36,7 +37,12 @@ public class Enemy : Npc
         AlertHealthChange();
     }
 
-    public override void EnqueueIntoSpeedQueue(Utils.PriorityQueue<Npc, float> pq) {
+    public override void Frozen() {
+        broadCastActionEvent.TriggerEvent(this, enemySO.name + " is frozen stiffed!");
+        base.Frozen();
+    }
+
+    public override void EnqueueIntoSpeedQueue(PriorityQueue<Npc, float> pq) {
         if (poisonForHowLong > 0) {
             GetAttacked(1);
             broadCastActionEvent.TriggerEvent(this, enemySO.name + " was hurt by poison");
@@ -50,22 +56,31 @@ public class Enemy : Npc
             broadCastActionEvent.TriggerEvent(this, enemySO.name + " was hurt by burn");
             burnForHowLong -= 1;
             if (burnForHowLong == 0) {
+                currDefence += 10;
                 updateStatusAlinmentIcon.NoMoreBurn();
             }
         }
         base.EnqueueIntoSpeedQueue(pq);
     }
 
-    public override void Attack(List<Npc> opponentList) {
+    public virtual void Attack(List<Npc> opponentList) {
         int randomNumber = Random.Range(0, 2);
         if (randomNumber == 0 || enemySO.allSkills.Count == 0) {
-            broadCastActionEvent.TriggerEvent(this, enemySO.name + " attacked player");
+            if (opponentList[0] is Enemy) {
+                broadCastActionEvent.TriggerEvent(this, enemySO.name + " blindly attacked its allies");
+            } else {
+                broadCastActionEvent.TriggerEvent(this, enemySO.name + " attacked player");
+            }
             base.Attack(opponentList);
         } else {
             int randomNumberForSkills = Random.Range(0, enemySO.allSkills.Count - 1);
             float chance = Random.Range(0, 100f);
             SkillsSO rngSkill = enemySO.ReturnASkill(chance);
-            broadCastActionEvent.TriggerEvent(this, enemySO.name + " used " + rngSkill.name);
+            if (opponentList[0] is Enemy) {
+                broadCastActionEvent.TriggerEvent(this, enemySO.name + " blindly used " + rngSkill.name + " On allies");
+            } else {
+                broadCastActionEvent.TriggerEvent(this, enemySO.name + " used " + rngSkill.name);
+            }
             AttackWithSkill(opponentList, rngSkill);
         }
     }
