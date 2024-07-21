@@ -60,7 +60,6 @@ public class TurnManager : MonoBehaviour
     }
 
     public void ChangeTurn(Component component, object obj) {
-        Debug.Log(turnQueue.Count);
         if (allEnemies.Count == 0) {
             playerWon.TriggerEvent(this, new List<int>());
             return;
@@ -86,13 +85,22 @@ public class TurnManager : MonoBehaviour
         object[] temp = (object[]) obj;
         int attackType = (int)Mathf.Round((float) temp[0]);
         ((Player) currentActionTaker).DisableAttack();
-        currentActionTaker.Attack(allEnemies, attackType);
-        currentActionTaker.DecreaseSpeed();
-        currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
+        if (currentActionTaker.IsBlind()) {
+            if (currentActionTaker.BlindAttack()) {
+                currentActionTaker.Attack(allPlayers, attackType);
+            } else {
+                currentActionTaker.Attack(allEnemies, attackType);   
+            }
+        } else {
+            currentActionTaker.Attack(allEnemies, attackType);   
+        }
     }
 
     IEnumerator Delay() {
+        Debug.Log(turnQueue.Count);
         currentActionTaker = turnQueue.Dequeue();
+        currentActionTaker.DecreaseSpeed();
+        currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
         
         if (currentActionTaker is Player) {
             turn = Turn.PlayerTurn;
@@ -103,13 +111,26 @@ public class TurnManager : MonoBehaviour
         }
         yield return new WaitForSeconds(0.1f);
         
+        if (currentActionTaker.IsFrozen()) {
+            currentActionTaker.DecreaseSpeed();
+            currentActionTaker.EnqueueIntoSpeedQueue(turnQueue); 
+            currentActionTaker.Frozen();
+            yield break;  
+        }
+
         if (currentActionTaker is Player) {
             ((Player) currentActionTaker).EnableAttack();
         } else {
-            ((Enemy) currentActionTaker).Attack(allPlayers);
+            if (currentActionTaker.IsBlind()) {
+                if (currentActionTaker.BlindAttack()) {
+                    ((Enemy) currentActionTaker).Attack(allEnemies);
+                }   
+                else {
+                    ((Enemy) currentActionTaker).Attack(allPlayers);
+                }
+            } else {
+                ((Enemy) currentActionTaker).Attack(allPlayers);
+            }
         }
-        
-        currentActionTaker.DecreaseSpeed();
-        currentActionTaker.EnqueueIntoSpeedQueue(turnQueue);
     }
 }
