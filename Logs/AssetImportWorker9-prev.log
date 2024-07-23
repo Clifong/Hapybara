@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-64024
+54939
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [39700] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 4041235842 [EditorId] 4041235842 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [36896] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 1798778364 [EditorId] 1798778364 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [39700] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 4041235842 [EditorId] 4041235842 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [36896] Host "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 1798778364 [EditorId] 1798778364 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 143.36 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 123.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006206 seconds.
+Registered in 0.004582 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 156.00 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 96.16 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.649 seconds
+- Completed reload, in  0.497 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1650ms)
-		BeginReloadAssembly (154ms)
+	ReloadAssembly (497ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1042ms)
-			LoadAssemblies (153ms)
+		EndReloadAssembly (367ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (535ms)
+			SetupTypeCache (76ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (413ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (156ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (150ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (94ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007995 seconds.
+Registered in 0.003469 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 176.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 93.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.927 seconds
+- Completed reload, in  1.053 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1928ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (86ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1669ms)
-			LoadAssemblies (124ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (891ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (399ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (98ms)
-			SetupLoadedEditorAssemblies (1009ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (500ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (177ms)
-				BeforeProcessingInitializeOnLoad (147ms)
-				ProcessInitializeOnLoadAttributes (561ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (249ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5998 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (452.5 KB). Loaded Objects now: 6479.
-Memory consumption went from 260.2 MB to 259.8 MB.
-Total: 5.076200 ms (FindLiveObjects: 0.511400 ms CreateObjectMapping: 0.257600 ms MarkObjects: 3.946300 ms  DeleteObjects: 0.359400 ms)
+Memory consumption went from 260.2 MB to 259.7 MB.
+Total: 3.613500 ms (FindLiveObjects: 0.457900 ms CreateObjectMapping: 0.174500 ms MarkObjects: 2.753600 ms  DeleteObjects: 0.226400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,113 +167,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 710926.563899 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_0.asset
-  artifactKey: Guid(f1a6637bd05565542b4d3eac9f79f88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_0.asset using Guid(f1a6637bd05565542b4d3eac9f79f88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9234859a93debd28dacd9156166fce7f') in 0.242285 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_5.asset
-  artifactKey: Guid(1e86c9c2838ddc54696fac0ec29e02a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_5.asset using Guid(1e86c9c2838ddc54696fac0ec29e02a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba71c4822fd6ad2c9d190699c3b3965') in 0.020083 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset
-  artifactKey: Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset using Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24982697ddbede1ca62d09986361ff5') in 0.017431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_2.asset
-  artifactKey: Guid(adac5b3f98f754f4cb319fb19992e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_2.asset using Guid(adac5b3f98f754f4cb319fb19992e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1409fd54f2d13296384ead3f9ef7e511') in 0.019312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset
-  artifactKey: Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset using Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd101ef279e4ec6cf6ec03015a07b204') in 0.021423 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset
-  artifactKey: Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset using Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fac756406016ce89260aebc03c89048') in 0.019197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_4.asset
-  artifactKey: Guid(44fefb1940390c5428efebf706131bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_4.asset using Guid(44fefb1940390c5428efebf706131bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dd4ec20614285c6a9970ad8e4b1b45') in 0.019269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_8.asset
-  artifactKey: Guid(e0a94103fbff79544b733ef5ecb5d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_8.asset using Guid(e0a94103fbff79544b733ef5ecb5d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba4c10c3af87ebe9d4b4701b6d7e63e') in 0.021623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.312503 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset
-  artifactKey: Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset using Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f4ec5cd0e61e12e7c23ac67569b2a1') in 0.054784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset
-  artifactKey: Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset using Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50daa2b2c50a9495ebc46d2e61932cab') in 0.016124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset
-  artifactKey: Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset using Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a25df326a58db2c66191ad24960ef92') in 0.022616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_3.asset
-  artifactKey: Guid(9a3ecb244c3c44146b76af4a52781d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_3.asset using Guid(9a3ecb244c3c44146b76af4a52781d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63f878ee36b1a70e638659fb08a945e') in 0.021206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.854807 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset
-  artifactKey: Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset using Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce873ef19a95d480a7cd8b7c0334caf6') in 0.026216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_5.asset
-  artifactKey: Guid(1e86c9c2838ddc54696fac0ec29e02a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_5.asset using Guid(1e86c9c2838ddc54696fac0ec29e02a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872d2f80c3a26d036ecf2c36b4c507bb') in 0.023389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset
-  artifactKey: Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_6.asset using Guid(615535cfa6934c440bb521237fc04fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b2570db44648e3b3cdf7c44dc16372') in 0.014247 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.143169 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset
-  artifactKey: Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_1.asset using Guid(054760c9a9494b24e8223b44e1f4e19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82832a2fac4e2204cbc1d315fe815a8f') in 0.046209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset
-  artifactKey: Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_7.asset using Guid(68dd687469d690b41bac5d1da0b8aa3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f3bc5990180d8490321f23bb83727a') in 0.027638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_4.asset
-  artifactKey: Guid(44fefb1940390c5428efebf706131bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 4/Town 4 seagrass ground_4.asset using Guid(44fefb1940390c5428efebf706131bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b637f93bc81d1d36cf4bba2f78f7b5e1') in 0.021240 seconds 
+  Time since last request: 94893.829439 seconds.
+  path: Assets/Events/Battle-related/Special battle outcome for bosses/Forgotten spire/Forgotten spire died.asset
+  artifactKey: Guid(f8f46971cdb205d478d58d51871cab86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Events/Battle-related/Special battle outcome for bosses/Forgotten spire/Forgotten spire died.asset using Guid(f8f46971cdb205d478d58d51871cab86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43c7c945bf93c29a4c3d8c4e5fb1661') in 0.064561 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

@@ -34,6 +34,7 @@ public class Iceless : Boss
             {
                 Destroy(spawnedIceSpiel);
             }
+            broadcastAchievementGained.TriggerEvent(this, allAchievementObtainable);
             Destroy(this.gameObject);
         } else {
             enemySO = bossPhaseSO[phase]; 

@@ -73,9 +73,12 @@ public class MainMenuManager : MonoBehaviour
     }
 
     public void UnlockedAchievement(Component component, object obj) {
-        object[] temp = (Object[]) obj;
-        AchievementSO achievementSO = (AchievementSO) temp[0];
-        achievementSO.UnlockAchievement();
+        object[] temp = (object[]) obj;
+        List<AchievementSO> allAchievement = (List<AchievementSO>) temp[0];
+        foreach (AchievementSO achievement in allAchievement)
+        {
+            achievement.UnlockAchievement();
+        }
         // EditorUtility.SetDirty(achievementSO);
     }
 }

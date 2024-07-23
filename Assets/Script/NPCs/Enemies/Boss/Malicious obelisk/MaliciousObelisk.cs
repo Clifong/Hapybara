@@ -26,6 +26,7 @@ public class MaliciousObelisk : Boss
         if (phase == bossPhaseSO.Count) {
             characterDied.TriggerEvent(this, this);
             dropLoot.TriggerEvent(this, enemySO);
+            broadcastAchievementGained.TriggerEvent(this, allAchievementObtainable);
             Destroy(this.gameObject);
         } else {
             enemySO = bossPhaseSO[phase];

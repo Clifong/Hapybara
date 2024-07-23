@@ -7,6 +7,9 @@ public class Boss : Enemy
     protected int phase = 0;
     public List<EnemySO> bossPhaseSO;
     public UpdateHealthBar healthBar;
+    public List<AchievementSO> allAchievementObtainable = new List<AchievementSO>();
+    public CrossObjectEventWithData broadcastAchievementGained;
+
     void Awake() {
         updateHealthBar = healthBar;
         phase = 0;
@@ -19,6 +22,7 @@ public class Boss : Enemy
         if (phase == bossPhaseSO.Count) {
             characterDied.TriggerEvent(this, this);
             dropLoot.TriggerEvent(this, enemySO);
+            broadcastAchievementGained.TriggerEvent(this, allAchievementObtainable);
             Destroy(this.gameObject);
         } else {
             enemySO = bossPhaseSO[phase];

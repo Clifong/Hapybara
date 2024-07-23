@@ -73,8 +73,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dcfaaea89c9c3c489137a93e3d7a418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currHealth: 0
+  currAttack: 0
+  currDefence: 0
+  currSpeed: 0
   broadCastActionEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
   characterDied: {fileID: 11400000, guid: b390c1704b2c0cb4ebb4151c1ab72f70, type: 2}
+  poisonForHowLong: 0
+  burnForHowLong: 0
+  blindForHowLong: 0
+  frozenForHowLong: 0
   exitBattle: {fileID: 11400000, guid: b575677f31c898d41a219f818d425f59, type: 2}
   enterBattle: {fileID: 11400000, guid: 6ef7578bbd1e93340a3ef097074c90e6, type: 2}
   enemySO: {fileID: 0}
@@ -84,6 +92,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6969a76f5225a6d4ab4e3481a6de3d25, type: 2}
   - {fileID: 11400000, guid: 596ca572e0611e14c808c30cce0d5c6f, type: 2}
   healthBar: {fileID: 9179254515825017072}
+  allAchievementObtainable:
+  - {fileID: 11400000, guid: cdf37b39fe8ff1342a3547d8a6c9b64f, type: 2}
+  broadcastAchievementGained: {fileID: 11400000, guid: e979d32a9fe70044983c9257dc6c4d16, type: 2}
   defomedObeliskSpawnpoint:
   - {fileID: 0}
   - {fileID: 0}

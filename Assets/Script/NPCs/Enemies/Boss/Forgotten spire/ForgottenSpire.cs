@@ -35,6 +35,7 @@ public class ForgottenSpire : Boss
             }
             characterDied.TriggerEvent(this, this);
             dropLoot.TriggerEvent(this, enemySO);
+            broadcastAchievementGained.TriggerEvent(this, allAchievementObtainable);
             Destroy(this.gameObject);
         } else {
             circleCollider2D.enabled = false;
