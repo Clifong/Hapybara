@@ -7,6 +7,7 @@ using TMPro;
 public class InvitePanel : MonoBehaviour
 {
     public Image icon;
+    [SerializeField]
     private PlayerSO playerSO;
     public TextMeshProUGUI nameText;
     public CrossObjectEventWithData invitePlayer;
