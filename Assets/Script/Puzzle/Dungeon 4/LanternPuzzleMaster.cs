@@ -6,6 +6,7 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
 {
     public List<LanternPuzzle> lanternSequence;
     public List<LanternPuzzle> allLantern;
+    public ChestSO chestContents;
     public GameObject whateverIsToBeSpawned;
     public Transform spawnPoint;
     public GameObject interactPrompt;
@@ -14,6 +15,7 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
     private int presentCounter = 0;
     private int gameCounter = 0;
     public float timer;
+    
 
     void Start() {
         base.Start();
@@ -37,7 +39,14 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
 
     public void Spawn() {
         SetComplete();
-        Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
+        GameObject spawnedObject = Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
+        Chest chest = spawnedObject.GetComponent<Chest>();
+        if (chest != null) {
+            chest.SetContent(chestContents);
+        }
+        spawnedObject.transform.SetParent(null);
+        spawnedObject.transform.position = spawnPoint.transform.position;
+        spawnedObject.transform.localScale = new Vector3(1f, 1f, 1f);
         Destroy(this.gameObject);
     }
 
@@ -76,6 +85,7 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
                 lanternSequence[gameCounter - 2].UnFill();
             }
             if (gameCounter >= lanternSequence.Count) {
+                Spawn();
                 DisableLantern();
             }
         }

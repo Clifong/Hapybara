@@ -57,7 +57,6 @@ public class Iceless : Boss
     public override void Attack(List<Npc> opponentList) {
         tempOpponentList = opponentList;
         if (phase == 2) {
-            Debug.Log("?");
             switch (attackCounter) {
                 case 0:
                     broadcastMessage.TriggerEvent(this, "Iceless is preparing...");

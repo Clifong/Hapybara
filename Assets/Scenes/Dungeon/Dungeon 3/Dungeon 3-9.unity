@@ -587,6 +587,67 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &534858389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534858391}
+  - component: {fileID: 534858390}
+  m_Layer: 0
+  m_Name: Stairs go back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &534858390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534858389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b390c1704b2c0cb4ebb4151c1ab72f70, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1478694049}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!4 &534858391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534858389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.09, y: -2.01, z: -0.017837463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1478694050}
+  m_Father: {fileID: 0}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541261952
 GameObject:
   m_ObjectHideFlags: 0
@@ -14381,6 +14442,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128565a556575e343a36eb31c6bd4356, type: 3}
+--- !u!1001 &1478694048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 534858391}
+    m_Modifications:
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6598842
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.017837463
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187649, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ecdf64f43ce6a1c4eb9327e85b0ce09c, type: 3}
+    - target: {fileID: 994862335683187651, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: sceneName
+      value: Dungeon 3-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187655, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_Name
+      value: Stairs1
+      objectReference: {fileID: 0}
+    - target: {fileID: 994862335683187655, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+--- !u!1 &1478694049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 994862335683187655, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+  m_PrefabInstance: {fileID: 1478694048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478694050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 994862335683187648, guid: e613a5812e33b2646b7d25b9d33d4d63, type: 3}
+  m_PrefabInstance: {fileID: 1478694048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486754016
 GameObject:
   m_ObjectHideFlags: 0

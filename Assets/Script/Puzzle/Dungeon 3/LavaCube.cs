@@ -6,7 +6,7 @@ public class LavaCube : OneTimeObject, Interactables
 {
     public GameObject whateverIsToBeSpawned;
     public Transform spawnPoint;
-
+    public ChestSO chestContents;
     public CrossObjectEventWithData fillCanal;
     public Vector3Int startingPoint;
     public Vector3Int endPoint;
@@ -59,6 +59,14 @@ public class LavaCube : OneTimeObject, Interactables
     public void Spawn() {
         SetComplete();
         if (whateverIsToBeSpawned != null) {
+            GameObject spawnedObject = Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
+            Chest chest = spawnedObject.GetComponent<Chest>();
+            if (chest != null) {
+                chest.SetContent(chestContents);
+            }
+            spawnedObject.transform.SetParent(null);
+            spawnedObject.transform.position = spawnPoint.transform.position;
+            spawnedObject.transform.localScale = new Vector3(1f, 1f, 1f);
             Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
         }
     }

@@ -15,6 +15,10 @@ public class Chest : OneTimeObject, Interactables
         chestSO.CheckIfComplete(this, associatedObject);
     }
 
+    public void SetContent(ChestSO chestSO) {
+        this.chestSO = chestSO;
+    }
+
     public void Interact() {
         SetComplete();
         anime = GetComponentInChildren<Animator>();
