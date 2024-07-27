@@ -29,7 +29,7 @@ public class LanternSO : ScriptableObject
         if (counter == levelCost.Count) {
             maxLevel = true;
         }
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     } 
 
     public void PopulateUI(TextMeshProUGUI levelText, TextMeshProUGUI costLevel) {

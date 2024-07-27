@@ -150,8 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2d9b3eded63cc4e969d4d6df303bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currHealth: 0
+  currAttack: 0
+  currDefence: 0
+  currSpeed: 0
   broadCastActionEvent: {fileID: 11400000, guid: b8c99e3c8b67ca440879a93f5a3d3ffc, type: 2}
   characterDied: {fileID: 11400000, guid: 6be4ce6d473fd5248a7d9d935a622fee, type: 2}
+  poisonForHowLong: 0
+  burnForHowLong: 0
+  blindForHowLong: 0
+  frozenForHowLong: 0
   playerSO: {fileID: 11400000, guid: 9fe1b09bece61d94897e19c542611000, type: 2}
 --- !u!114 &1237877634
 MonoBehaviour:
@@ -290,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8157412165055322698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.017945224}
+  m_LocalPosition: {x: 0, y: -1.129, z: 0.017945224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

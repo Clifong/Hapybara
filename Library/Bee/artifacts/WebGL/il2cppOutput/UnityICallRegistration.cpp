@@ -426,9 +426,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_GetAnimatorStateInfo();
 		Register_UnityEngine_Animator_GetAnimatorStateInfo();
 
+		//System.Void UnityEngine.Animator::Rebind(System.Boolean)
+		void Register_UnityEngine_Animator_Rebind();
+		Register_UnityEngine_Animator_Rebind();
+
 		//System.Void UnityEngine.Animator::ResetTriggerString(System.String)
 		void Register_UnityEngine_Animator_ResetTriggerString();
 		Register_UnityEngine_Animator_ResetTriggerString();
+
+		//System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+		void Register_UnityEngine_Animator_SetBoolString();
+		Register_UnityEngine_Animator_SetBoolString();
 
 		//System.Void UnityEngine.Animator::SetTriggerID(System.Int32)
 		void Register_UnityEngine_Animator_SetTriggerID();
@@ -437,6 +445,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
 		void Register_UnityEngine_Animator_SetTriggerString();
 		Register_UnityEngine_Animator_SetTriggerString();
+
+		//System.Void UnityEngine.Animator::Update(System.Single)
+		void Register_UnityEngine_Animator_Update();
+		Register_UnityEngine_Animator_Update();
 
 		//UnityEngine.Avatar UnityEngine.Animator::get_avatar()
 		void Register_UnityEngine_Animator_get_avatar();
@@ -1661,6 +1673,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Component UnityEngine.GameObject::TryGetComponentInternal(System.Type)
 		void Register_UnityEngine_GameObject_TryGetComponentInternal();
 		Register_UnityEngine_GameObject_TryGetComponentInternal();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
 
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
@@ -4390,6 +4406,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_ScriptableObject_CreateScriptableObject();
 		Register_UnityEngine_ScriptableObject_CreateScriptableObject();
 
+		//System.Void UnityEngine.ScriptableObject::SetDirty()
+		void Register_UnityEngine_ScriptableObject_SetDirty();
+		Register_UnityEngine_ScriptableObject_SetDirty();
+
 		//UnityEngine.ScriptableObject UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType(System.Type,System.Boolean)
 		void Register_UnityEngine_ScriptableObject_CreateScriptableObjectInstanceFromType();
 		Register_UnityEngine_ScriptableObject_CreateScriptableObjectInstanceFromType();
@@ -4565,6 +4585,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.SpriteRenderer::set_sprite(UnityEngine.Sprite)
 		void Register_UnityEngine_SpriteRenderer_set_sprite();
 		Register_UnityEngine_SpriteRenderer_set_sprite();
+
+		//UnityEngine.Sprite UnityEngine.SpriteRenderer::get_sprite()
+		void Register_UnityEngine_SpriteRenderer_get_sprite();
+		Register_UnityEngine_SpriteRenderer_get_sprite();
 
 	//End Registrations for type : UnityEngine.SpriteRenderer
 
@@ -5049,6 +5073,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Tilemaps.Tilemap::SetTile_Injected(UnityEngine.Tilemaps.TileChangeData&,System.Boolean)
 		void Register_UnityEngine_Tilemaps_Tilemap_SetTile_Injected();
 		Register_UnityEngine_Tilemaps_Tilemap_SetTile_Injected();
+
+		//System.Void UnityEngine.Tilemaps.Tilemap::get_origin_Injected(UnityEngine.Vector3Int&)
+		void Register_UnityEngine_Tilemaps_Tilemap_get_origin_Injected();
+		Register_UnityEngine_Tilemaps_Tilemap_get_origin_Injected();
+
+		//System.Void UnityEngine.Tilemaps.Tilemap::get_size_Injected(UnityEngine.Vector3Int&)
+		void Register_UnityEngine_Tilemaps_Tilemap_get_size_Injected();
+		Register_UnityEngine_Tilemaps_Tilemap_get_size_Injected();
 
 		//UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset_Injected(UnityEngine.Vector3Int&)
 		void Register_UnityEngine_Tilemaps_Tilemap_GetTileAsset_Injected();

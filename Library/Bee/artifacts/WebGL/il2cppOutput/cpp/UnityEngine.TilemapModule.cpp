@@ -287,6 +287,15 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 
+// UnityEngine.BoundsInt
+struct BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 
+{
+	// UnityEngine.Vector3Int UnityEngine.BoundsInt::m_Position
+	Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___m_Position_0;
+	// UnityEngine.Vector3Int UnityEngine.BoundsInt::m_Size
+	Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___m_Size_1;
+};
+
 // System.Delegate
 struct Delegate_t  : public RuntimeObject
 {
@@ -621,6 +630,10 @@ struct Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_StaticFields
 
 // System.Void
 
+// UnityEngine.BoundsInt
+
+// UnityEngine.BoundsInt
+
 // UnityEngine.Tilemaps.ITilemap
 struct ITilemap_tCD8B9C2D6A80DB1DFE9C934D91EACE6B8A018164_StaticFields
 {
@@ -819,6 +832,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileBase__ctor_mBFD0A0ACF9DB1F08783B9F3F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ITilemap_RefreshTile_m4C4B0A062A13E986BD20AA87F056982D67FAF69D (ITilemap_tCD8B9C2D6A80DB1DFE9C934D91EACE6B8A018164* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___0_position, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3Int UnityEngine.Tilemaps.Tilemap::get_origin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 Tilemap_get_origin_mB5E10582CFAA76144BB44DECAADB84E904D02E55 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3Int UnityEngine.Tilemaps.Tilemap::get_size()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 Tilemap_get_size_m8B9F0C2CC3CD37626AE921047DA5DC239B3F00EA (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.BoundsInt::.ctor(UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoundsInt__ctor_m93F7EDF326B3BA01465FA229F6CEED0ED48D32FF (BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___0_position, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___1_size, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Tilemaps.Tilemap::get_origin_Injected(UnityEngine.Vector3Int&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_ret, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Tilemaps.Tilemap::get_size_Injected(UnityEngine.Vector3Int&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_ret, const RuntimeMethod* method) ;
 // UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset_Injected(UnityEngine.Vector3Int&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Tilemap_GetTileAsset_Injected_m541A1F618DB6621D2ADCD4247D5127DEDDFA3B30 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_position, const RuntimeMethod* method) ;
 // UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset(UnityEngine.Vector3Int)
@@ -1650,6 +1673,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileBase__ctor_mBFD0A0ACF9DB1F08783B9F3F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.BoundsInt UnityEngine.Tilemaps.Tilemap::get_cellBounds()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 Tilemap_get_cellBounds_m2C1EDCFFD145175A83457B4F7A88CEA037DF8EB9 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, const RuntimeMethod* method) 
+{
+	BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_0;
+		L_0 = Tilemap_get_origin_mB5E10582CFAA76144BB44DECAADB84E904D02E55(__this, NULL);
+		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_1;
+		L_1 = Tilemap_get_size_m8B9F0C2CC3CD37626AE921047DA5DC239B3F00EA(__this, NULL);
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		BoundsInt__ctor_m93F7EDF326B3BA01465FA229F6CEED0ED48D32FF((&L_2), L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.Vector3Int UnityEngine.Tilemaps.Tilemap::get_origin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 Tilemap_get_origin_mB5E10582CFAA76144BB44DECAADB84E904D02E55 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, const RuntimeMethod* method) 
+{
+	Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB(__this, (&V_0), NULL);
+		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_0 = V_0;
+		return L_0;
+	}
+}
+// UnityEngine.Vector3Int UnityEngine.Tilemaps.Tilemap::get_size()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 Tilemap_get_size_m8B9F0C2CC3CD37626AE921047DA5DC239B3F00EA (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, const RuntimeMethod* method) 
+{
+	Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17(__this, (&V_0), NULL);
+		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_0 = V_0;
+		return L_0;
+	}
+}
 // UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset(UnityEngine.Vector3Int)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Tilemap_GetTileAsset_m3B9C96C2E2488141C4F6EBD52C6D807C801C6922 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___0_position, const RuntimeMethod* method) 
 {
@@ -1727,6 +1795,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_RefreshTilesNative_mD73E77DFD7C8
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Tilemap_RefreshTilesNative_mD73E77DFD7C808A3665CA8389F728CBC08A52232_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Tilemaps.Tilemap::RefreshTilesNative(System.Void*,System.Int32)");
 	_il2cpp_icall_func(__this, ___0_positions, ___1_count);
+}
+// System.Void UnityEngine.Tilemaps.Tilemap::get_origin_Injected(UnityEngine.Vector3Int&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_ret, const RuntimeMethod* method) 
+{
+	typedef void (*Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB_ftn) (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376*);
+	static Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Tilemap_get_origin_Injected_m151021A1FFF979A4AC9CC2C33CC34AB60CA11ADB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Tilemaps.Tilemap::get_origin_Injected(UnityEngine.Vector3Int&)");
+	_il2cpp_icall_func(__this, ___0_ret);
+}
+// System.Void UnityEngine.Tilemaps.Tilemap::get_size_Injected(UnityEngine.Vector3Int&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_ret, const RuntimeMethod* method) 
+{
+	typedef void (*Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17_ftn) (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376*);
+	static Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Tilemap_get_size_Injected_m493367797FDFDAA59CC626261CE2F3D310BD3B17_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Tilemaps.Tilemap::get_size_Injected(UnityEngine.Vector3Int&)");
+	_il2cpp_icall_func(__this, ___0_ret);
 }
 // UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset_Injected(UnityEngine.Vector3Int&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Tilemap_GetTileAsset_Injected_m541A1F618DB6621D2ADCD4247D5127DEDDFA3B30 (Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* ___0_position, const RuntimeMethod* method) 

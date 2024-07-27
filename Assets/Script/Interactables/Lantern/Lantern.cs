@@ -78,11 +78,15 @@ public class Lantern : MonoBehaviour, Interactables
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        interactPrompt.SetActive(true);
+        if (other.GetComponent<PlayerInteract>() != null) {
+            interactPrompt.SetActive(true);
+        }
     } 
 
     void OnTriggerExit2D(Collider2D other) {
-        interactPrompt.SetActive(false);
+        if (other.GetComponent<PlayerInteract>() != null) {
+            interactPrompt.SetActive(false);
+        }
     } 
 
     public void CloseLanternMenu() {

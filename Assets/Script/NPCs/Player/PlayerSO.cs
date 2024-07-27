@@ -71,7 +71,7 @@ public class PlayerSO : ScriptableObject
             level += 1;
             CalculateExpNeededForNextLevel(currentExp);
         }
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     }
 
     public void LevelUpRelationship() {
@@ -80,7 +80,7 @@ public class PlayerSO : ScriptableObject
             relationshipLevel += 1;
             CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
         }
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     }
 
     public void EquipWeapon(WeaponSO weaponSO) {
@@ -90,7 +90,7 @@ public class PlayerSO : ScriptableObject
         defence += weaponEquipped.defenceChange;
         speed += weaponEquipped.speedChange;
         weaponSO.owner = this;
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     }
 
     public void UnequipWeapon() {
@@ -100,7 +100,7 @@ public class PlayerSO : ScriptableObject
         speed -= weaponEquipped.speedChange;
         weaponEquipped.owner = null;
         weaponEquipped = null;
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     }
 
     public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {

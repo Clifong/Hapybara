@@ -10,6 +10,6 @@ public class QuestBoardSO : ScriptableObject
 
     public void RemoveQuest(QuestSO questSO) {
         allQuests.Remove(questSO);
-        // EditorUtility.SetDirty(this);
+        this.SetDirty();
     }
 }

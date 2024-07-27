@@ -1003,9 +1003,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1280}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7994,10 +7994,10 @@ RectTransform:
   m_Father: {fileID: 1381420528916325551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -429.106, y: 72.110504}
-  m_SizeDelta: {x: 1389.3999, y: 920.859}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -436.09, y: 70.33688}
+  m_SizeDelta: {x: -872.18, y: -355.5918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5418696584105203492
 CanvasRenderer:
@@ -10368,9 +10368,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2971726549652276932}
     m_Modifications:
+    - target: {fileID: 4398110152476252349, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.249634
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398110152797087796, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4398110153056178440, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
       propertyPath: m_Name
       value: Character guide
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398110153056178440, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398110153056178442, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4398110153056178452, guid: cf73962378c60f244860d24adbfcfcc4, type: 3}
       propertyPath: m_Pivot.x

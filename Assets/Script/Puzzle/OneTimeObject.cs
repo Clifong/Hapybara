@@ -16,7 +16,7 @@ public abstract class OneTimeObject : MonoBehaviour
 
     protected virtual void SetComplete() {
         onetimeObjectSO.SetComplete();
-        // EditorUtility.SetDirty(onetimeObjectSO);
+        onetimeObjectSO.SetDirty();
         Destroy(this.gameObject);
     }
 }

@@ -266,9 +266,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -10.8971, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &350201553
 CanvasRenderer:
@@ -1664,7 +1664,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1742,7 +1742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -368.1757, y: -376.44}
+  m_AnchoredPosition: {x: -330, y: -376.44}
   m_SizeDelta: {x: 183.8379, y: -752.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1180833133
@@ -3737,7 +3737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00003322959}
+  m_AnchoredPosition: {x: 0, y: -0.00003783405}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1961097285
@@ -4209,7 +4209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1177, y: -50.4766}
+  m_AnchoredPosition: {x: 1134.6, y: -50.4766}
   m_SizeDelta: {x: 102.4594, y: 100.9532}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6300582621576155954
@@ -8235,7 +8235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -174.84805, y: -372.18}
+  m_AnchoredPosition: {x: -87, y: -372.18}
   m_SizeDelta: {x: 176.3677, y: -761.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &32786426814516690
@@ -10310,7 +10310,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -12863,9 +12863,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6348062765242484764}
     m_Modifications:
+    - target: {fileID: 4571025837996034293, guid: 367bd985b0b705e46af1140d0deb93e7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2495117
+      objectReference: {fileID: 0}
     - target: {fileID: 4571025839632924992, guid: 367bd985b0b705e46af1140d0deb93e7, type: 3}
       propertyPath: m_Name
       value: 'Inventory tutorial '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571025839632924994, guid: 367bd985b0b705e46af1140d0deb93e7, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4571025839632925020, guid: 367bd985b0b705e46af1140d0deb93e7, type: 3}
       propertyPath: m_Pivot.x

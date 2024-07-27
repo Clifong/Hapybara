@@ -32,6 +32,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allWeapons[weaponSO] = 1;
         }
+        this.SetDirty();
     }
 
     public void AddWeapon(WeaponSO weaponSO, int qty) {
@@ -40,6 +41,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allWeapons[weaponSO] = qty;
         }
+        this.SetDirty();
     }
 
     public void AddFood(FoodSO foodSO) {
@@ -48,6 +50,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allFood[foodSO] = 1;
         }
+        this.SetDirty();
     }
 
     public void AddFood(FoodSO foodSO, int quantity) {
@@ -56,6 +59,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allFood[foodSO] = quantity;
         }
+        this.SetDirty();
     }
 
     public void AddIngredient(IngredientSO ingredientSO) {
@@ -64,6 +68,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allIngredints[ingredientSO] = 1;
         }
+        this.SetDirty();
     }
 
     public void AddIngredient(IngredientSO ingredientSO, int quantity) {
@@ -72,6 +77,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allIngredints[ingredientSO] = quantity;
         }
+        this.SetDirty();
     }
 
 
@@ -82,6 +88,7 @@ public class PlayerInventorySO : ScriptableObject
                 allFood.Remove(foodSO);
             }
         }
+        this.SetDirty();
     }
 
     public void ReduceIngredient(IngredientSO ingredientSO, int quantity) {
@@ -91,6 +98,7 @@ public class PlayerInventorySO : ScriptableObject
                 allIngredints.Remove(ingredientSO);
             }
         }
+        this.SetDirty();
     }
 
     public void AddFurniture(BuildableSO furniture, int qty) {
@@ -99,6 +107,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allFurniture[furniture] = qty;
         }
+        this.SetDirty();
     }
 
     public void ReduceFurniture(BuildableSO furniture, int qty) {
@@ -108,6 +117,7 @@ public class PlayerInventorySO : ScriptableObject
                 allFurniture.Remove(furniture);
             }
         }
+        this.SetDirty();
     }
 
     public void AddMaterial(MaterialSO materialSO, int qty) {
@@ -116,6 +126,7 @@ public class PlayerInventorySO : ScriptableObject
         } else {
             allMaterials[materialSO] = qty;
         }
+        this.SetDirty();
     }
 
     public void ReduceMaterial(MaterialSO materialSO, int quantity) {
@@ -125,6 +136,7 @@ public class PlayerInventorySO : ScriptableObject
                 allMaterials.Remove(materialSO);
             }
         }
+        this.SetDirty();
     }
 
     public int GetFoodQty(FoodSO foodSO) {
@@ -136,22 +148,27 @@ public class PlayerInventorySO : ScriptableObject
 
     public void AddMoney(int money) {
         this.money += money;
+        this.SetDirty();
     }
 
     public void MinusMoney(int money) {
         this.money -= money;
+        this.SetDirty();
     }
 
     public void AddMemory(int memory) {
         this.memory += memory;
+        this.SetDirty();
     }
 
     public void MinusMemory(int memory) {
         this.memory -= memory;
+        this.SetDirty();
     }
 
     public void MinusMatchstick(int matchstick) {
         this.matchstick -= matchstick;
+        this.SetDirty();
     }
 
     public bool CanCook(FoodSO foodSO) {
