@@ -67,7 +67,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.12200159}
@@ -95,8 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e656e636f9673ce43b86c13b4d3dc2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currHealth: 0
+  currAttack: 0
+  currDefence: 0
+  currSpeed: 0
   broadCastActionEvent: {fileID: 0}
   characterDied: {fileID: 0}
+  poisonForHowLong: 0
+  burnForHowLong: 0
+  blindForHowLong: 0
+  frozenForHowLong: 0
   interactPrompt: {fileID: 6577483356637172344}
   allRequest:
   - {fileID: 11400000, guid: f20a3aaf4d7ec0548a210ffcc53317e2, type: 2}

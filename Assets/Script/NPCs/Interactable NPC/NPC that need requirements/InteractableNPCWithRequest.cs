@@ -17,7 +17,7 @@ public class InteractableNPCWithRequest : InteractableNPC
     public override void Interact() {
         if (counter >= allRequest.Count) {
             interactableNPCSO.Fulfill();
-            // EditorUtility.SetDirty(interactableNPCSO);
+            interactableNPCSO.SetDirty();
             Destroy(this.gameObject);
             return;
         }
