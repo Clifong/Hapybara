@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-52491
+50359
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33144] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3094301694 [EditorId] 3094301694 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11712] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 2121992166 [EditorId] 2121992166 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [33144] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3094301694 [EditorId] 3094301694 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11712] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 2121992166 [EditorId] 2121992166 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 170.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 269.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -59,100 +59,100 @@ Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2050 (ID=0x25a9)
-    Vendor:   NVIDIA
-    VRAM:     3965 MB
-    Driver:   32.0.15.5599
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0xa7a0)
+    Vendor:   Intel
+    VRAM:     8034 MB
+    Driver:   31.0.101.5186
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005800 seconds.
+Registered in 0.009143 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 178.30 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 227.00 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.788 seconds
+- Completed reload, in  1.064 seconds
 Domain Reload Profiling:
-	ReloadAssembly (789ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (1065ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (590ms)
-			LoadAssemblies (97ms)
+		EndReloadAssembly (785ms)
+			LoadAssemblies (134ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (146ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (389ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (534ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (178ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
+				RefreshPlugins (227ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007582 seconds.
+Registered in 0.009637 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 156.86 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 163.90 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.901 seconds
+- Completed reload, in  1.936 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1902ms)
-		BeginReloadAssembly (194ms)
+	ReloadAssembly (1937ms)
+		BeginReloadAssembly (176ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1580ms)
-			LoadAssemblies (216ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1609ms)
+			LoadAssemblies (150ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (343ms)
+			SetupTypeCache (399ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (107ms)
-			SetupLoadedEditorAssemblies (850ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (901ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (422ms)
-				ProcessInitializeOnLoadMethodAttributes (121ms)
+				RefreshPlugins (164ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (466ms)
+				ProcessInitializeOnLoadMethodAttributes (113ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.22 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6003 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (460.2 KB). Loaded Objects now: 6484.
-Memory consumption went from 260.6 MB to 260.2 MB.
-Total: 4.665800 ms (FindLiveObjects: 0.577200 ms CreateObjectMapping: 0.260000 ms MarkObjects: 3.552900 ms  DeleteObjects: 0.271700 ms)
+Unloading 6005 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (452.9 KB). Loaded Objects now: 6486.
+Memory consumption went from 260.5 MB to 260.1 MB.
+Total: 4.233600 ms (FindLiveObjects: 0.427600 ms CreateObjectMapping: 0.291100 ms MarkObjects: 3.268800 ms  DeleteObjects: 0.244700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,28 +167,134 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 496713.584745 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground.png
-  artifactKey: Guid(ae98c543a5a66ec43bec81ad127fb362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground.png using Guid(ae98c543a5a66ec43bec81ad127fb362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dd5702b0c0daaf515c789f40880e17') in 0.323606 seconds 
+  Time since last request: 963.614583 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 full bar_0.prefab
+  artifactKey: Guid(e0d79deddc5fdd641bcbf2fb89f8ce47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 full bar_0.prefab using Guid(e0d79deddc5fdd641bcbf2fb89f8ce47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3ab7db8430dab26b87d71f68a97501') in 0.439905 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.151952 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_6.asset
-  artifactKey: Guid(52c89f098cc39e143b48c3efd3c1618c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_6.asset using Guid(52c89f098cc39e143b48c3efd3c1618c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c5a78edc825645b87b63dc2d48ef25') in 0.092733 seconds 
+  Time since last request: 21.114405 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 chair.prefab
+  artifactKey: Guid(8299339e198abcd4fab25b8ec41c5f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 chair.prefab using Guid(8299339e198abcd4fab25b8ec41c5f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b327192aa317b2f48bd6b9c41cd8cc') in 0.045033 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground_2.asset
-  artifactKey: Guid(d7e29d0d34ae22b4582c9c58013e29d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground_2.asset using Guid(d7e29d0d34ae22b4582c9c58013e29d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f54943a71d6e8b5ed51b3e93f3f26a') in 0.040762 seconds 
+  Time since last request: 0.000203 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 full bar_0.prefab
+  artifactKey: Guid(3cee5c4cac124794fb70f502e70653d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 3/Tavern 3 full bar_0.prefab using Guid(3cee5c4cac124794fb70f502e70653d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0f94e4cfaaf6ee3de044fc7ecfbbd2') in 0.090549 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_8.asset
-  artifactKey: Guid(d08d7c557ef2e7f40a4dc3a7783f22fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_8.asset using Guid(d08d7c557ef2e7f40a4dc3a7783f22fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea5815f7fb3de706855efc338f16e98') in 0.027410 seconds 
+  Time since last request: 0.000102 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground.prefab
+  artifactKey: Guid(e446e47c9cf183d4fb5e78d12cd1092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground.prefab using Guid(e446e47c9cf183d4fb5e78d12cd1092b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dda03282a34fea1b7c840b139153196') in 0.119222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358814 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_2.asset
+  artifactKey: Guid(ec7d6e82d51077243bf13cbd5f43189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_2.asset using Guid(ec7d6e82d51077243bf13cbd5f43189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6fa132c965c18ab55de2015dcc28f8') in 0.054409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_3.asset
+  artifactKey: Guid(1b5695bf1f09a7b4fa47d05854b8a46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_3.asset using Guid(1b5695bf1f09a7b4fa47d05854b8a46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667f37d99424b317d16e750e06dcfb39') in 0.018755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.188080 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_6.asset
+  artifactKey: Guid(ae5afc87ad02acf488b023a2bb838e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_6.asset using Guid(ae5afc87ad02acf488b023a2bb838e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b607716382fd4e8ad936f8904aeb885d') in 0.031518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 table.png
+  artifactKey: Guid(10d8dedc1cdad5e43a3a5e3ce3cc5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 table.png using Guid(10d8dedc1cdad5e43a3a5e3ce3cc5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef473eed9d4e0983e1c35f5193ab6d6') in 0.097559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_7.asset
+  artifactKey: Guid(20dc3840119295c4eae9bf899ddacd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 3/Tavern 3 ground_7.asset using Guid(20dc3840119295c4eae9bf899ddacd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d842bbb3ac91e5533fae11e7a7b7570') in 0.021425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.203776 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1c6c5041771c8ffd2a4b4fd18458ff') in 0.083085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab
+  artifactKey: Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground.prefab using Guid(9f99c593a54e7ab46bfaae2edb3687eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cfcad70c4b4639c8134fcbb67c5da2') in 0.241400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.958219 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png
+  artifactKey: Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 2.png using Guid(039e2f3144da7764f86c7a341f1e2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c43cf7ba65ef51e34afa3b796f12a3d') in 0.100849 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011002 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.001 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2002ms)
+		BeginReloadAssembly (246ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (80ms)
+		EndReloadAssembly (1597ms)
+			LoadAssemblies (174ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (506ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (701ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (422ms)
+				ProcessInitializeOnLoadMethodAttributes (132ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5867 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (453.7 KB). Loaded Objects now: 6559.
+Memory consumption went from 255.9 MB to 255.4 MB.
+Total: 5.130700 ms (FindLiveObjects: 0.486400 ms CreateObjectMapping: 0.306200 ms MarkObjects: 4.060100 ms  DeleteObjects: 0.276200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

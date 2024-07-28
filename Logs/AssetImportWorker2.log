@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-52491
+50359
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12172] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3633924014 [EditorId] 3633924014 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25716] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 2947042028 [EditorId] 2947042028 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12172] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3633924014 [EditorId] 3633924014 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25716] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 2947042028 [EditorId] 2947042028 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 161.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 146.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006435 seconds.
+Registered in 0.005077 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 149.53 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 145.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.647 seconds
+- Completed reload, in  0.756 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1648ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (757ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1080ms)
-			LoadAssemblies (121ms)
+		EndReloadAssembly (564ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (533ms)
+			SetupTypeCache (114ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (447ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (150ms)
+				RefreshPlugins (146ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005509 seconds.
+Registered in 0.005908 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 139.97 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 153.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.027 seconds
+- Completed reload, in  1.514 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2028ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (1514ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1758ms)
-			LoadAssemblies (140ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (1277ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (325ms)
+			SetupTypeCache (322ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (93ms)
-			SetupLoadedEditorAssemblies (1150ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (702ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (140ms)
-				BeforeProcessingInitializeOnLoad (127ms)
-				ProcessInitializeOnLoadAttributes (759ms)
-				ProcessInitializeOnLoadMethodAttributes (110ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (154ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6003 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (460.2 KB). Loaded Objects now: 6484.
+Unloading 6005 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (452.6 KB). Loaded Objects now: 6486.
 Memory consumption went from 260.6 MB to 260.1 MB.
-Total: 4.453200 ms (FindLiveObjects: 0.446100 ms CreateObjectMapping: 0.338200 ms MarkObjects: 3.287600 ms  DeleteObjects: 0.380000 ms)
+Total: 4.386500 ms (FindLiveObjects: 0.336400 ms CreateObjectMapping: 0.187800 ms MarkObjects: 3.553400 ms  DeleteObjects: 0.307400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,822 +167,68 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 492158.626307 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Weapon frame.png
-  artifactKey: Guid(ce1bdd7b586077d46a0c471832fb084d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Weapon frame.png using Guid(ce1bdd7b586077d46a0c471832fb084d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63657820e9a2691e745f934ee84302c') in 0.215549 seconds 
+  Time since last request: 552.998980 seconds.
+  path: Assets/Script/Food and ingredients/Ingredients/Abyssal scallops/Abyssal scallops.png
+  artifactKey: Guid(c4b55b18b8c14d94d9bbf3d9d4956131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Food and ingredients/Ingredients/Abyssal scallops/Abyssal scallops.png using Guid(c4b55b18b8c14d94d9bbf3d9d4956131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a1f79d966ec33c0f3376104260365b') in 0.239508 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.601104 seconds.
-  path: Assets/Sprites/Inventory/Weapons
-  artifactKey: Guid(8ed458b01832f5e4dbbc7b480e1e1b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons using Guid(8ed458b01832f5e4dbbc7b480e1e1b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f93976d5655e3c6cf2cfdb4f59c0d5') in 0.028234 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Script/Tutorial/Party manager/Screenshot 2024-07-09 213610.png
+  artifactKey: Guid(aaa4f542c11662b47a48f561f3a74dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Tutorial/Party manager/Screenshot 2024-07-09 213610.png using Guid(aaa4f542c11662b47a48f561f3a74dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06ef2ae3f5053dc4b7fb4538afaed44') in 0.066631 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.436709 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sword
-  artifactKey: Guid(4bf6c91adcd40734ea30082be24f7db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sword using Guid(4bf6c91adcd40734ea30082be24f7db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439cdb6abaeb5baeb3189fdf04b5f535') in 0.016979 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.138903 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden sword
-  artifactKey: Guid(046b4e92abf1f40469c221526f225f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden sword using Guid(046b4e92abf1f40469c221526f225f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2c1de909b3aafa3a1c9532f3a8166a') in 0.018747 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.249324 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Gold sword
-  artifactKey: Guid(53773f8225106d94a9de61ea57da98ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Gold sword using Guid(53773f8225106d94a9de61ea57da98ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f005587d0f7ec0c44fcb07f940b9a67') in 0.020851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.246484 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden sword/Wooden sword.png
-  artifactKey: Guid(0cc1bb47d7a501a479db9cb2ebd18a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden sword/Wooden sword.png using Guid(0cc1bb47d7a501a479db9cb2ebd18a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f241c165de745d12015cd81923b123') in 0.042884 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.930274 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sword/Stone sword.png
-  artifactKey: Guid(9c797494c97274d4b80d834f704e0da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sword/Stone sword.png using Guid(9c797494c97274d4b80d834f704e0da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39180f9802cff2e96fbcf96afa7dee6c') in 0.032009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.955354 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Gold sword/Gold sword.png
-  artifactKey: Guid(fdabadfc34ab98741b1a0b7434ecfd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Gold sword/Gold sword.png using Guid(fdabadfc34ab98741b1a0b7434ecfd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab4a8fb606b2a4484bed18b360e25fe') in 0.026967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 883.454633 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden polearm
-  artifactKey: Guid(43dbd63ad731f0c449995c0adca34145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden polearm using Guid(43dbd63ad731f0c449995c0adca34145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e1b86ecb3bd513a63ab19dbb395d91') in 0.015610 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.501353 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden polearm/Wooden polearm.png
-  artifactKey: Guid(a7aa571db7f830748bb2cee25465eb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden polearm/Wooden polearm.png using Guid(a7aa571db7f830748bb2cee25465eb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8197d69cf0823fb906e7eaa90a37eb66') in 0.061783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.767458 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone polearm
-  artifactKey: Guid(2199fb71bbf0ea6499b5c412b3a4232d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone polearm using Guid(2199fb71bbf0ea6499b5c412b3a4232d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e979137e4654ed2ff5a5a6c5ae9e8d6e') in 0.017977 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.652388 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone polearm/Stone polearm.png
-  artifactKey: Guid(5d72d17a95d2ef449a7bb735c9e4d9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone polearm/Stone polearm.png using Guid(5d72d17a95d2ef449a7bb735c9e4d9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f27185a3752b10ca051e013b9c0ee55') in 0.031723 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.827213 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden sphere
-  artifactKey: Guid(2161bf3ef27e52341959beab8b4eb7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden sphere using Guid(2161bf3ef27e52341959beab8b4eb7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3497a362b3a908a26b840b0320ea68ad') in 0.013679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.642371 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Wooden sphere/Wooden spheres.png
-  artifactKey: Guid(d02c2603019b42743b3376866f239ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Wooden sphere/Wooden spheres.png using Guid(d02c2603019b42743b3376866f239ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d40e837ca194f6a0a4358c0a2c90cb3') in 0.058320 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.254795 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sphere
-  artifactKey: Guid(f45f35a2bee8d89438db49fa0bf95d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sphere using Guid(f45f35a2bee8d89438db49fa0bf95d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d653e11babe935732af7659d8e090f') in 0.013921 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.061569 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sphere/Stone polearm.png
-  artifactKey: Guid(c7b45f54539ab1e42829979b9d889aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sphere/Stone polearm.png using Guid(c7b45f54539ab1e42829979b9d889aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5faf698450a595ef287de9636c95c3f') in 0.025496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.256764 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sphere/Stone sphere.png
-  artifactKey: Guid(0690c61f7a60f494aa061c9b73815ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sphere/Stone sphere.png using Guid(0690c61f7a60f494aa061c9b73815ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a81eebb8396755f7d12385c8555fed') in 0.034028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 582.980328 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Stone sphere/Stone sphere.png
-  artifactKey: Guid(0690c61f7a60f494aa061c9b73815ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Stone sphere/Stone sphere.png using Guid(0690c61f7a60f494aa061c9b73815ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfee760929edf88890360d56e914c929') in 0.123631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.023243 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Golden sphere
-  artifactKey: Guid(8e03c6aebcd96984082ae6c410cef29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Golden sphere using Guid(8e03c6aebcd96984082ae6c410cef29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5e5486856484d28cadafb2d91b143b5') in 0.009923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.408463 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Golden sphere/Gold sphere.png
-  artifactKey: Guid(3540f8e38560cc04881d32b29f034abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Golden sphere/Gold sphere.png using Guid(3540f8e38560cc04881d32b29f034abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a7b2f99cdfd694dd4598c06ba5dde0') in 0.039492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 692.431662 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Void sphere
-  artifactKey: Guid(15d0fca2be4483944b19605d529099c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Void sphere using Guid(15d0fca2be4483944b19605d529099c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c4c6d32719ea0dbf93bdf060c43b6f') in 0.012608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.055437 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Void sphere/Void sphere.png
-  artifactKey: Guid(d4afeaf8c7cabc840bfa5ed6733e8226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Void sphere/Void sphere.png using Guid(d4afeaf8c7cabc840bfa5ed6733e8226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6afc324f48c2e9afcbcbea7d19c67e4') in 0.044149 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.024794 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Magma sphee
-  artifactKey: Guid(0e9e051065d5bab4f86da5387e3a6045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Magma sphee using Guid(0e9e051065d5bab4f86da5387e3a6045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5186a252db898d0e7da0657e1cfdfb9') in 0.015525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.936134 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Magma sphee/Magma spheres.png
-  artifactKey: Guid(aaeb1493b8c084343a709430f5acc1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Magma sphee/Magma spheres.png using Guid(aaeb1493b8c084343a709430f5acc1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a1d429e7a81c3780698d2e4250026d4') in 0.037280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.725344 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Ice sphere
-  artifactKey: Guid(b2898b4117e8a8a47a1683b4971cf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Ice sphere using Guid(b2898b4117e8a8a47a1683b4971cf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801dcb1a1e11d556a26b31a27fd29de7') in 0.015635 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.673478 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Ice sphere/Ice spheres.png
-  artifactKey: Guid(352c68eeae0074e449091632ff45bd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Ice sphere/Ice spheres.png using Guid(352c68eeae0074e449091632ff45bd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd960ceec8307dc5dbbb648d81d7215') in 0.031380 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.508020 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Water sphere
-  artifactKey: Guid(a116849d1c8186c4a8f5dc7258aad955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Water sphere using Guid(a116849d1c8186c4a8f5dc7258aad955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a608697e04e533a48dec7066a7daa7f8') in 0.011275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.353257 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Water sphere/Water spheres.png
-  artifactKey: Guid(4849b824e75045c47b3a77c0f0649e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Water sphere/Water spheres.png using Guid(4849b824e75045c47b3a77c0f0649e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c732178a72ec12e5322c73585e44a3') in 0.037264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.752363 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres
-  artifactKey: Guid(ab6ad7146a5d6f445a846ecd02cd0276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres using Guid(ab6ad7146a5d6f445a846ecd02cd0276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1ca6016c6459b06bfc4c55e5a4dfc0') in 0.019256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.158503 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm
-  artifactKey: Guid(924a5490866f9e54a91a5e84595b5080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm using Guid(924a5490866f9e54a91a5e84595b5080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76fd727b2654bde4edd39b490bf2cc53') in 0.016734 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.146197 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword
-  artifactKey: Guid(da9d529b562ca694dbc955ce0899273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword using Guid(da9d529b562ca694dbc955ce0899273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b164f7efb4dde39132cfb24a7412ac') in 0.014204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 828.825246 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm
-  artifactKey: Guid(e53f51e92cdf23c4caa677ff7d933512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm using Guid(e53f51e92cdf23c4caa677ff7d933512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea97d38c762f34b8e14a9a4771d15225') in 0.088224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.093864 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.png
-  artifactKey: Guid(0183c5f65829f6d4baba0cf0cdcf2165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.png using Guid(0183c5f65829f6d4baba0cf0cdcf2165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876e80529649356147306ecd969e2ea2') in 0.042744 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.894703 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Void polearm
-  artifactKey: Guid(b2802b8d38c5e8c4690b34cb52d72599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Void polearm using Guid(b2802b8d38c5e8c4690b34cb52d72599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3aa8b2f52b2b3382679f016f714820b') in 0.011958 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.890762 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.png
-  artifactKey: Guid(24a859d7ba1859d45adfe62b765c0671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.png using Guid(24a859d7ba1859d45adfe62b765c0671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe22bb2ecadb8764a29ed900e14a8c38') in 0.027333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.369218 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Water polearm
-  artifactKey: Guid(34607706d8ebc154cbb619067755b4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Water polearm using Guid(34607706d8ebc154cbb619067755b4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fb94eecca13f299677bb199317e6c9') in 0.016720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.543849 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.png
-  artifactKey: Guid(bad80af570d575049b4cd2660a4dabd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.png using Guid(bad80af570d575049b4cd2660a4dabd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e6a9d38ea23e440457c8a1a52735e4') in 0.038314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.255218 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm
-  artifactKey: Guid(c6a64a0ca9f01d8429188eb45f2bd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm using Guid(c6a64a0ca9f01d8429188eb45f2bd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111848efa47feef43fd3a73be5487ef5') in 0.023762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.079106 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.png
-  artifactKey: Guid(3a9f949c24a6baf438fe7c6b3a192eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.png using Guid(3a9f949c24a6baf438fe7c6b3a192eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef5143eef59563958f1e0942c6c5ab0') in 0.035406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 64.817962 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset
-  artifactKey: Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset using Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86131210c703f2be1e040f0bbad6ada') in 0.048743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.571952 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset
-  artifactKey: Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset using Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771d266b7be85b3888acd979f4c23dad') in 0.005709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.759162 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset
-  artifactKey: Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Ice polaearm/Ice polearm.asset using Guid(8e1cf2e6de38df04f8f54813ccb1076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a983efc5f740839953ad1124da5b8b7') in 0.005576 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.639166 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Ice polearm.asset
-  artifactKey: Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Ice polearm.asset using Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f8e3790003e911b634eb54ba720a3d') in 0.008403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.458194 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.asset
-  artifactKey: Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.asset using Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbf6dfe46f4a24d0788c4d126da2e9f') in 0.010704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.559854 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.asset
-  artifactKey: Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Magma polearm/Magma polearm.asset using Guid(ece0cb8ca8273c4449727b86c6813a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a92bb9948dabc9d3c39f8fa4bf9518') in 0.003682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.693004 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset
-  artifactKey: Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset using Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca785d56466f31b11641d755351553c') in 0.006157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.555961 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset
-  artifactKey: Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset using Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0583d4e6ffd4e709a0efce491bc191a3') in 0.004117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.269507 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset
-  artifactKey: Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Stone polearm/Stone polearm.asset using Guid(7337d888508631d48b8d75f7f8459554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67df6949eb63c6be98f87b7c673dfa48') in 0.008090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.054954 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset
-  artifactKey: Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset using Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de70d7b8e4e7e1b692d3c5a00324e49') in 0.016727 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.300722 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset
-  artifactKey: Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset using Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6eb8272e5a4fbbee8ed67f64cc43a3') in 0.003711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.350767 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset
-  artifactKey: Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Void polearm/Void polearm.asset using Guid(38edf153168fc914cb2bc9eab54193ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523867c8c8dedd1c3ae3fceabbe60850') in 0.011007 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.367441 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset
-  artifactKey: Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset using Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9001dcd8b3873edc73e078c25b14ed5') in 0.029267 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.801414 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset
-  artifactKey: Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset using Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584f890e593a62c6b11544f92e4411f3') in 0.004316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.151963 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset
-  artifactKey: Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Water polearm/Water polearm.asset using Guid(2b3936f047896d4459be1fee86467edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907ef95b223b1511d7829f5d9bef7257') in 0.003982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.222962 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset
-  artifactKey: Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset using Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b423b08d52b5168879fab9c6217a5e80') in 0.016353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.484753 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset
-  artifactKey: Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset using Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3063ec89b2a2bea8026c5d65df1791') in 0.004005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.315630 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset
-  artifactKey: Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Polearm/Wooden polearm/Wooden polaearm.asset using Guid(53769ce5380c9ab49a1cd3b0661c090c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf08298c0c29553d590028bc89e7ad54') in 0.004168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.073904 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere
-  artifactKey: Guid(8e03c6aebcd96984082ae6c410cef29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere using Guid(8e03c6aebcd96984082ae6c410cef29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee31cf68334b8492e5d32c6ab4fb612') in 0.020383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.141207 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset
-  artifactKey: Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset using Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678a9c705fcf6a957cea16286c2ab4f0') in 0.004511 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.390183 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset
-  artifactKey: Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset using Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a05d44eeecd03298aa63633dc5a998') in 0.004525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.222767 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset
-  artifactKey: Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Gold sphere/Gold sphere.asset using Guid(3dd5eab900dddcd40b688a412f59af45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa0b02848a6c41f6de6f2b90bf3f4ae') in 0.012431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.479822 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset
-  artifactKey: Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset using Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825e86ade0f805957c783750b8425fab') in 0.016234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.250607 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset
-  artifactKey: Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset using Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791a14efb30a3f7f5d1930654465e02c') in 0.005218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.381321 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset
-  artifactKey: Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Ice sphere/Ice sphere.asset using Guid(3195d74b86811d148904f7f15e2223f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98eb77bc6796cedbd1b086876e1b42f') in 0.004794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.813257 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Magma sphee/Magma sphere.asset
-  artifactKey: Guid(bd857db4fe1bf914f8fb6dad7aba45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Magma sphee/Magma sphere.asset using Guid(bd857db4fe1bf914f8fb6dad7aba45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e125e826e3bacad51b1d645a3be440ee') in 0.020760 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.287616 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Magma sphee/Magma sphere.asset
-  artifactKey: Guid(bd857db4fe1bf914f8fb6dad7aba45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Magma sphee/Magma sphere.asset using Guid(bd857db4fe1bf914f8fb6dad7aba45fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbcf7943e36b667f85c14ff6265cbe2') in 0.005357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.025521 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Stone sphere/Stone sphere.asset
-  artifactKey: Guid(bc8c173ad8a9302429e2165fe4e8144e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Stone sphere/Stone sphere.asset using Guid(bc8c173ad8a9302429e2165fe4e8144e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2c1fcab0e5f1b37ad6fd22e658d1f3') in 0.014707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.617887 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Stone sphere/Stone sphere.asset
-  artifactKey: Guid(bc8c173ad8a9302429e2165fe4e8144e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Stone sphere/Stone sphere.asset using Guid(bc8c173ad8a9302429e2165fe4e8144e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668c338559a7826cd6f77656201b13c0') in 0.007274 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.042622 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset
-  artifactKey: Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset using Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3ff0fb43c8bc91efde9285496a638b') in 0.025230 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.733914 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset
-  artifactKey: Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset using Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0492edef8b3e008e155f1e9890cd1723') in 0.004477 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.341890 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset
-  artifactKey: Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Void sphere/Void sphere.asset using Guid(8cb1ecb2f46b2984fb74cf93cc04e865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbfa22a0d82255b79c2d46cb2de7a5e') in 0.004159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.301263 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset
-  artifactKey: Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset using Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91d57489a6a525d76d0633265a301af') in 0.015607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.773120 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset
-  artifactKey: Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset using Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0192e35af94fb2b2b164e4fdba1c6c23') in 0.007159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.598932 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset
-  artifactKey: Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Water sphere/Water sphere.asset using Guid(455d4c0d498efe041b6ef46e84892c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a821fcef0870c051b0cd82d406574d28') in 0.005319 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.851420 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset
-  artifactKey: Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset using Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9942f4b0ffb723c88f5b9d8499465f62') in 0.016451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.366040 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset
-  artifactKey: Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset using Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2b64764166cdec8a1010cafcb38fce') in 0.006195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.118275 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset
-  artifactKey: Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Spheres/Wooden sphere/Wooden sphere.asset using Guid(bf711415fa5ebdc45adb8d2c8eadd7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d69a59ba1a396dc9cbe779af58a1af') in 0.005766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.390375 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset
-  artifactKey: Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset using Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af4224290e638a374ff554fb737d527') in 0.016933 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.308376 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset
-  artifactKey: Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset using Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5408070200bad4a4d5bc446fe3654ec') in 0.008124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.424156 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset
-  artifactKey: Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Gold sword/Gold sword.asset using Guid(a9d88ad85c6d6a74396e79aa726f9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3135d18935cf6fcb20e18ab9270055') in 0.004261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.110664 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset
-  artifactKey: Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset using Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4e2f79735a1a34016f0d9e3fd3432f') in 0.016097 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.309026 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset
-  artifactKey: Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset using Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bdda3a6fda94d4705d8b663a56c66e8') in 0.003863 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.178575 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset
-  artifactKey: Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Stone sword/Stone sword.asset using Guid(1c68decde3110d341b5774087ad88382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a78df76947f2be301173b8a9bec536') in 0.010022 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.615009 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset
-  artifactKey: Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset using Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333364d5b0fbe917c2d9b8da0a642f98') in 0.022092 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.345449 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset
-  artifactKey: Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset using Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438f201fe49e269b43926cc6d976f585') in 0.003839 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.336275 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset
-  artifactKey: Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Wooden sword/Wooden sword.asset using Guid(4dc198cfc9ff6bb4187ea299fdbc21db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196bf64d8af5da44dc8817e87b88751e') in 0.003718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 577.634721 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Ice sword
-  artifactKey: Guid(7cda78002953f9c45a76cc879d8b6eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Ice sword using Guid(7cda78002953f9c45a76cc879d8b6eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da0a710bf85ada33eec7a0dad265b6a') in 0.015356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.746834 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.png
-  artifactKey: Guid(18bf140f0a264544a839f986fa43064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.png using Guid(18bf140f0a264544a839f986fa43064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e188d91314590b5298c38f51b51ac4c') in 0.064060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.692474 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.asset
-  artifactKey: Guid(26a85e55ca5cf9e4d84d9ac5dfcc8a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.asset using Guid(26a85e55ca5cf9e4d84d9ac5dfcc8a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87c182aea8a088677d96305b94e6d3b') in 0.006134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.090220 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.asset
-  artifactKey: Guid(26a85e55ca5cf9e4d84d9ac5dfcc8a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Ice sword/Ice sword.asset using Guid(26a85e55ca5cf9e4d84d9ac5dfcc8a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2312f64d4bdbaed8dd41667ed17070c5') in 0.004102 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.633636 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Magma sword
-  artifactKey: Guid(a719ed8b2bf29f84f92a04b1462ff6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Magma sword using Guid(a719ed8b2bf29f84f92a04b1462ff6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46d62eec236c1b4172c0426a3830493') in 0.015092 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.988265 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.png
-  artifactKey: Guid(bb120169084ebd241a6c826c38c63f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.png using Guid(bb120169084ebd241a6c826c38c63f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f9987a8280d85bfafe09bf79f73af6') in 0.044202 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.710276 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset
-  artifactKey: Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset using Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753732f41210ff0ef4ca84f39fb22229') in 0.005323 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.994335 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset
-  artifactKey: Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset using Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ac653c9f4433ec660510ac179f43ae') in 0.006467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.946504 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset
-  artifactKey: Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Magma sword/Magma sword.asset using Guid(57682abe972b43549bee5efcce5050cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4848e39539db65ef086a947e7cf2492') in 0.005754 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.462573 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Void sword
-  artifactKey: Guid(2cf856c868c08af4cbbc7e2d385ad98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Void sword using Guid(2cf856c868c08af4cbbc7e2d385ad98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c03d50e8b7afe79b49393b07481b08') in 0.020566 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.092730 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.asset
-  artifactKey: Guid(589e9b513f2229c479152d47313d94c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.asset using Guid(589e9b513f2229c479152d47313d94c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc7f17180f33f952ef20948a8891c12') in 0.007698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.731311 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.asset
-  artifactKey: Guid(589e9b513f2229c479152d47313d94c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.asset using Guid(589e9b513f2229c479152d47313d94c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a971a007b35571bcd54b25ffc9a1ad69') in 0.005666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 328.636355 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.png
-  artifactKey: Guid(848a0769868af1b458d74bfc1183c686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Void sword/Void sword.png using Guid(848a0769868af1b458d74bfc1183c686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2815eb0c89bde10cea0588ef0aa27535') in 0.046453 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.049982 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Water sword
-  artifactKey: Guid(0bb0ccd2b771a4741b9daf2b66962ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Water sword using Guid(0bb0ccd2b771a4741b9daf2b66962ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8b36ff0b3e7ac71909aa927b9145a6') in 0.018475 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.165570 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.png
-  artifactKey: Guid(ec4c944797f694a47b0ba8d461a98ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.png using Guid(ec4c944797f694a47b0ba8d461a98ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd508589feafe4e3f55e8b1dcb18f889') in 0.027918 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.373394 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.asset
-  artifactKey: Guid(1755c253b16e9e243bc4314887a0c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.asset using Guid(1755c253b16e9e243bc4314887a0c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e18393d2016c66d95cbbde1a65787d') in 0.005135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.111711 seconds.
-  path: Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.asset
-  artifactKey: Guid(1755c253b16e9e243bc4314887a0c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Inventory/Weapons/Sword/Water sword/Water sword.asset using Guid(1755c253b16e9e243bc4314887a0c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695684fd237b75b93b52cf1cda03e601') in 0.003506 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.780957 seconds.
-  path: Assets/Script/Food and ingredients/Food/A legendary catch/A legendary catch.png
-  artifactKey: Guid(9e6150e51ee064c4da300d69070515eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Food and ingredients/Food/A legendary catch/A legendary catch.png using Guid(9e6150e51ee064c4da300d69070515eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba1afa84027aa2ab5110a0597764624') in 0.069974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Player/Adventurer.png
-  artifactKey: Guid(6ff85fff82e2ff9479db5b779421114e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/Adventurer.png using Guid(6ff85fff82e2ff9479db5b779421114e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db88f9f321955877b5de09146a4b0ab') in 0.030553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Sprites/Party member icon/Adventurer icon.png
-  artifactKey: Guid(1c11632d6827d46449d8ab0975f9295d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Party member icon/Adventurer icon.png using Guid(1c11632d6827d46449d8ab0975f9295d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c069aaa578f56bf56f5e98b3a3427a') in 0.032497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Sprites/Player/Friendship frame/Adventurer frame.png
-  artifactKey: Guid(3b26227b4ad342343aeb9ab21636f0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/Friendship frame/Adventurer frame.png using Guid(3b26227b4ad342343aeb9ab21636f0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e54915b4a04cf5f784aadf9a443169') in 0.029687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Player/Object f faith/Adventurer object of faith.png
-  artifactKey: Guid(39aa7f6bb3695f645952b068d57b7d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/Object f faith/Adventurer object of faith.png using Guid(39aa7f6bb3695f645952b068d57b7d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd79dabbe447c4620a025b93d9b6a2b') in 0.024807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/Collectibles/Achievement/Achievement panel.png
-  artifactKey: Guid(7dda0f7547f651c4f82b29216a6eceec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Collectibles/Achievement/Achievement panel.png using Guid(7dda0f7547f651c4f82b29216a6eceec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18993f143cdbc933a8dca4c396116fb3') in 0.038247 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Main menu icon/Achievement icons.png
-  artifactKey: Guid(eebaabd8cd6fbcd49a1a949ddbd2f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Main menu icon/Achievement icons.png using Guid(eebaabd8cd6fbcd49a1a949ddbd2f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4cb9f6e9db532132bde9e0cae32e7e') in 0.070486 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/NPC/Adventurer.png
-  artifactKey: Guid(8964460c54d34a8409fddefc4080e91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/NPC/Adventurer.png using Guid(8964460c54d34a8409fddefc4080e91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0988607ab5c7a78f168785ee7c56a8a1') in 0.059914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 59.282941 seconds.
-  path: Assets/Sprites/Collectibles/Books/Town 1 book.png
-  artifactKey: Guid(7d825cf758855f7449fb4865899bb319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Collectibles/Books/Town 1 book.png using Guid(7d825cf758855f7449fb4865899bb319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90ddff4be5223579d82f135090aad93') in 0.070458 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2.png
-  artifactKey: Guid(19d07fdacb160c048929b52eb5b0789f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2.png using Guid(19d07fdacb160c048929b52eb5b0789f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d26f206cdc392765de154bb00f70a4') in 0.082120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_2.asset
-  artifactKey: Guid(2b66764be78dacc4a8107df0a7a2586e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_2.asset using Guid(2b66764be78dacc4a8107df0a7a2586e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18957ba6e245391c13935615586836a4') in 0.179588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.149279 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_5.asset
-  artifactKey: Guid(330deaca20dfa9a44b735aecb8440431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_5.asset using Guid(330deaca20dfa9a44b735aecb8440431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2291dcccfecbff645b29ddac0470b64e') in 0.039750 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground_0.asset
-  artifactKey: Guid(a194bb6016855654da86074d27132652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground_0.asset using Guid(a194bb6016855654da86074d27132652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b7b500584315ee4e063b1d8f64499f') in 0.036589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_7.asset
-  artifactKey: Guid(00c72ceb882c361408ac6ef583b918c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground 2_7.asset using Guid(00c72ceb882c361408ac6ef583b918c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec8efd9fcfeeb898b966e91fa90dd8c') in 0.044010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/Ground/Town/Town 1/Town 1 ground_4.asset
-  artifactKey: Guid(8a390fef59ad2d74593b0873fe265da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ground/Town/Town 1/Town 1 ground_4.asset using Guid(8a390fef59ad2d74593b0873fe265da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10bc18106fa2b4a757eee62da730f4df') in 0.033577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.183678 seconds.
-  path: Assets/Prefab/Manager and their assets/Home general manager.prefab
-  artifactKey: Guid(582300bce3ffe9343a255b16bb4f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Manager and their assets/Home general manager.prefab using Guid(582300bce3ffe9343a255b16bb4f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a1f8c801fefc8b1b2aba7dc307a42a') in 1.348712 seconds 
+  Time since last request: 0.000056 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
+  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c93a2aad4d29b00121a5441d17eda5') in 0.283458 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006830 seconds.
+Registered in 0.006255 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.395 seconds
+- Completed reload, in  1.448 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2398ms)
-		BeginReloadAssembly (511ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (57ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (239ms)
-		EndReloadAssembly (1728ms)
-			LoadAssemblies (171ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (571ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (98ms)
-			SetupLoadedEditorAssemblies (811ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (162ms)
-				ProcessInitializeOnLoadAttributes (462ms)
-				ProcessInitializeOnLoadMethodAttributes (162ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.39 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5858 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (448.1 KB). Loaded Objects now: 6521.
-Memory consumption went from 253.2 MB to 252.7 MB.
-Total: 6.549200 ms (FindLiveObjects: 0.521700 ms CreateObjectMapping: 0.398800 ms MarkObjects: 5.109800 ms  DeleteObjects: 0.516900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006642 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.613 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1614ms)
-		BeginReloadAssembly (202ms)
+	ReloadAssembly (1449ms)
+		BeginReloadAssembly (162ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1217ms)
-			LoadAssemblies (149ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1193ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (412ms)
+			SetupTypeCache (349ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (513ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (555ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (307ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (123ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.17 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5858 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (453.4 KB). Loaded Objects now: 6536.
-Memory consumption went from 253.2 MB to 252.7 MB.
-Total: 5.008400 ms (FindLiveObjects: 0.479500 ms CreateObjectMapping: 0.259000 ms MarkObjects: 3.939100 ms  DeleteObjects: 0.329100 ms)
+Unloading 5867 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (445.7 KB). Loaded Objects now: 6590.
+Memory consumption went from 256.1 MB to 255.6 MB.
+Total: 4.215000 ms (FindLiveObjects: 0.457400 ms CreateObjectMapping: 0.203500 ms MarkObjects: 3.303600 ms  DeleteObjects: 0.249300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -998,49 +244,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005188 seconds.
+Registered in 0.010041 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.856 seconds
+- Completed reload, in  1.833 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1857ms)
-		BeginReloadAssembly (247ms)
+	ReloadAssembly (1835ms)
+		BeginReloadAssembly (186ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (1470ms)
-			LoadAssemblies (166ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1500ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (509ms)
-			ReleaseScriptCaches (3ms)
+			SetupTypeCache (451ms)
+			ReleaseScriptCaches (4ms)
 			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (639ms)
+			SetupLoadedEditorAssemblies (701ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (414ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (419ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5858 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (445.6 KB). Loaded Objects now: 6551.
-Memory consumption went from 253.2 MB to 252.8 MB.
-Total: 4.379200 ms (FindLiveObjects: 0.424500 ms CreateObjectMapping: 0.173500 ms MarkObjects: 3.512100 ms  DeleteObjects: 0.267700 ms)
+Unloading 5867 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (445.7 KB). Loaded Objects now: 6605.
+Memory consumption went from 256.0 MB to 255.6 MB.
+Total: 5.647900 ms (FindLiveObjects: 0.459100 ms CreateObjectMapping: 0.211700 ms MarkObjects: 4.298200 ms  DeleteObjects: 0.677000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1055,22 +301,88 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 380.656044 seconds.
-  path: Assets/Events/Specific NPC/Shopkeeper/Add recipe to inventory.asset
-  artifactKey: Guid(55b0a8d7724d1ae488e1a5b6f65cc2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Events/Specific NPC/Shopkeeper/Add recipe to inventory.asset using Guid(55b0a8d7724d1ae488e1a5b6f65cc2dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb1b50c21cdc3633b6382900f422b63') in 0.082045 seconds 
+  Time since last request: 294.606407 seconds.
+  path: Assets/Scenes/Town/Town 5/Town 5.unity
+  artifactKey: Guid(7edda58de263b5f4e97650d3026a6b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Town/Town 5/Town 5.unity using Guid(7edda58de263b5f4e97650d3026a6b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f76cc2555fa921993d9ed4b5185f4aa') in 0.064748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.639943 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 bar.prefab
+  artifactKey: Guid(ffea6856c0999c54b9a1dba6b90ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 bar.prefab using Guid(ffea6856c0999c54b9a1dba6b90ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ca7a4e4f8fe7b2e43ab2107453e230') in 0.340979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.715404 seconds.
+  path: Assets/Script/NPCs/Interactable NPC/Bartender/Tavern 1 Bartender.asset
+  artifactKey: Guid(e1083ef176c9fa44c974aaba2e5012a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/NPCs/Interactable NPC/Bartender/Tavern 1 Bartender.asset using Guid(e1083ef176c9fa44c974aaba2e5012a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27333f3abfd5cee1b13747282c304123') in 0.201224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_1.asset
+  artifactKey: Guid(4fc013c1dfd7094439e6a5b68ca27921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_1.asset using Guid(4fc013c1dfd7094439e6a5b68ca27921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eec7f22cbb822f92245b1e0656db022') in 0.079921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 2/Tavern 2 full bar.png
+  artifactKey: Guid(2a2e05d9b213c824c9c6f5e020420afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 2/Tavern 2 full bar.png using Guid(2a2e05d9b213c824c9c6f5e020420afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b86094060c3e237ec6361473c8a467c') in 0.127740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 exit.png
+  artifactKey: Guid(588e3722a17b5b1488d159d45e9c49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 exit.png using Guid(588e3722a17b5b1488d159d45e9c49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029029841f45dad3ab7ee53aa9da02f4') in 0.067476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Prefab/Decorations/Tavern 1 table.prefab
+  artifactKey: Guid(38f6122d2e3bea9448066d04929e7a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern 1 table.prefab using Guid(38f6122d2e3bea9448066d04929e7a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b3086b045da65cac1d6b2923488e08') in 0.049976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Sprites/Decoration/Town 2/Tavern 2 building.png
+  artifactKey: Guid(f856170239a161f448f25ba5dfd41dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Town 2/Tavern 2 building.png using Guid(f856170239a161f448f25ba5dfd41dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5888cd885247bd42d9dcc0484ef849cb') in 0.126800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png
+  artifactKey: Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png using Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b728d60636070c6ebf681a8ab21bc73f') in 0.079748 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000037 seconds.
-  path: Assets/Events/Main menu related/Broadcast book info.asset
-  artifactKey: Guid(f62557b490ec88b468b28a3b5700d0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Events/Main menu related/Broadcast book info.asset using Guid(f62557b490ec88b468b28a3b5700d0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6e4e4ccf3fde56b0f9512d22751f94') in 0.023446 seconds 
+  path: Assets/Scenes/Tavern/Tavern 1/Tavern 1.unity
+  artifactKey: Guid(d49fe0d4fa244cf4ab3fd5048e266427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tavern/Tavern 1/Tavern 1.unity using Guid(d49fe0d4fa244cf4ab3fd5048e266427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64584aabaee33cbf22bd9494ddef00b') in 0.020048 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000077 seconds.
-  path: Assets/Events/Quest related/Broadcast completed quest SO.asset
-  artifactKey: Guid(4784cbf7e62a1b64c90220f6a0885843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Events/Quest related/Broadcast completed quest SO.asset using Guid(4784cbf7e62a1b64c90220f6a0885843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054540014eec73d1f79db2636cfb2806') in 0.023824 seconds 
+  path: Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 chair.prefab
+  artifactKey: Guid(1e7740534fb44434bb0e1a0c8d7cfc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 chair.prefab using Guid(1e7740534fb44434bb0e1a0c8d7cfc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61724652a1d2624fb6055de1cf26e7f1') in 0.037829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 chair .png
+  artifactKey: Guid(e115b6810cbd7e34b949db66855b9809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 chair .png using Guid(e115b6810cbd7e34b949db66855b9809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba2d4c42190fbac30000726febed5a3') in 0.113761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 questboard.png
+  artifactKey: Guid(d8ed96f35153dad4fbd87a2af0734dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 questboard.png using Guid(d8ed96f35153dad4fbd87a2af0734dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eafcd40c6ee68468f5aaa3da2fa80c9') in 0.042533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Decoration/Town 3/Tavern 3 building.png
+  artifactKey: Guid(1aed2c27646d1db438095707bab77720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Town 3/Tavern 3 building.png using Guid(1aed2c27646d1db438095707bab77720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f188aa9e6e69f371790844d1adb29714') in 0.344664 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server

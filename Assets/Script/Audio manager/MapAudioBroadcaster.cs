@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class MapAudioBroadcaster : MonoBehaviour
 {
-    public AudioClip audioClip;
+    public List<AudioClip> allAudioToBePlayed;
     public CrossObjectEventWithData audioClipBroadcaster;
 
     void Start()
     {
-        audioClipBroadcaster.TriggerEvent(this, audioClip);
+        PlayRandomMapMusic();
+    }
+
+    public void PlayRandomMapMusic() {
+        audioClipBroadcaster.TriggerEvent(this, allAudioToBePlayed[Random.Range(0, allAudioToBePlayed.Count - 1)]);
     }
 
     
