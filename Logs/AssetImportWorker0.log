@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59889
+62148
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2364] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2214952803 [EditorId] 2214952803 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23532] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3546910564 [EditorId] 3546910564 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2364] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2214952803 [EditorId] 2214952803 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23532] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3546910564 [EditorId] 3546910564 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 94.68 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 179.94 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002982 seconds.
+Registered in 0.007847 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 95.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 188.98 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.466 seconds
+- Completed reload, in  0.978 seconds
 Domain Reload Profiling:
-	ReloadAssembly (467ms)
-		BeginReloadAssembly (55ms)
+	ReloadAssembly (979ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (351ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (723ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (70ms)
+			SetupTypeCache (174ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (220ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (442ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (95ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (85ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (189ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003917 seconds.
+Registered in 0.007538 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 89.23 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 162.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.008 seconds
+- Completed reload, in  1.965 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1008ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1966ms)
+		BeginReloadAssembly (154ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1672ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (480ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (1045ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (89ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (240ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (163ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (607ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 1.95 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6005 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (452.6 KB). Loaded Objects now: 6486.
 Memory consumption went from 260.5 MB to 260.0 MB.
-Total: 3.593800 ms (FindLiveObjects: 0.368400 ms CreateObjectMapping: 0.230600 ms MarkObjects: 2.768000 ms  DeleteObjects: 0.225800 ms)
+Total: 5.429000 ms (FindLiveObjects: 0.480000 ms CreateObjectMapping: 0.266200 ms MarkObjects: 4.300700 ms  DeleteObjects: 0.380500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,71 +167,236 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 46959.730475 seconds.
-  path: Assets/Scenes/Dungeon/Dungeon 3/Dungeon 3-4.unity
-  artifactKey: Guid(7b3919a85aa76e943920639b59ad52dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Dungeon/Dungeon 3/Dungeon 3-4.unity using Guid(7b3919a85aa76e943920639b59ad52dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca07422d07856eb5ba727b972b9fbba') in 0.009319 seconds 
+  Time since last request: 94289.796659 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5C.asset
+  artifactKey: Guid(f7bfa29e16fe2b24eb30067a228dec51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5C.asset using Guid(f7bfa29e16fe2b24eb30067a228dec51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5ef5cc7933adebe442b4cf78196cf7') in 0.085787 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.458807 seconds.
-  path: Assets/Script/Manager/Canal manager/Canal Manager.prefab
-  artifactKey: Guid(37f3ee841f9cc304b999f17eb637530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Manager/Canal manager/Canal Manager.prefab using Guid(37f3ee841f9cc304b999f17eb637530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0ea8936dc07ca98f47a3d0dc2e89e1') in 0.118369 seconds 
+  Time since last request: 0.250716 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5A 1.asset
+  artifactKey: Guid(93aeb6c706cf7334c86e28571cccf5ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5A 1.asset using Guid(93aeb6c706cf7334c86e28571cccf5ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79bb3250a10a7c9da95ed27a5e93f37') in 0.005697 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_0.asset
-  artifactKey: Guid(72295ae8c47c8c149b137e95c6560395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_0.asset using Guid(72295ae8c47c8c149b137e95c6560395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc6933de4aef5dc2960aaf829bf6fa8') in 0.038236 seconds 
+  Time since last request: 3.525080 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5D.asset
+  artifactKey: Guid(93aeb6c706cf7334c86e28571cccf5ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-5/Dungeon 4-5D.asset using Guid(93aeb6c706cf7334c86e28571cccf5ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8edcd278a9ee810e8a44213c1a593fc6') in 0.018319 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_0.asset
-  artifactKey: Guid(bb310937b1a750042af5e285f64a22f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_0.asset using Guid(bb310937b1a750042af5e285f64a22f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e42eeee2537ed7070c93332bfcb733') in 0.015491 seconds 
+  Time since last request: 27.467626 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6
+  artifactKey: Guid(b682d22ca5d8b154dacc4cd718beed86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6 using Guid(b682d22ca5d8b154dacc4cd718beed86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd930397912f5448a3e8a63899146108e') in 0.012932 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_6.asset
-  artifactKey: Guid(b64e5daddc1b06445a602873b4c52498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_6.asset using Guid(b64e5daddc1b06445a602873b4c52498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0ffe381f8b133f61e65d5b01a4dd3d') in 0.016729 seconds 
+  Time since last request: 1.486949 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-5A.asset
+  artifactKey: Guid(66c21b8342385a94781c991467a19da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-5A.asset using Guid(66c21b8342385a94781c991467a19da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ee8c49f4e3aec18ab3a2f9a11e09b2') in 0.008558 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_1.asset
-  artifactKey: Guid(fcb92b73c1377224b927590a3ee3b57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_1.asset using Guid(fcb92b73c1377224b927590a3ee3b57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce21ba7892d14705895d36365a0213b1') in 0.017629 seconds 
+  Time since last request: 3.296380 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A.asset
+  artifactKey: Guid(66c21b8342385a94781c991467a19da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A.asset using Guid(66c21b8342385a94781c991467a19da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a87d64d3633fd997e690a83a027018') in 0.011388 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_4.asset
-  artifactKey: Guid(79b5182b2aeb1b04bba75c05b72c247c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Filled lava canal_4.asset using Guid(79b5182b2aeb1b04bba75c05b72c247c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2770d5c5bfdfe1ae0a64d24449b22f8e') in 0.020930 seconds 
+  Time since last request: 0.647833 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset
+  artifactKey: Guid(d3bee99e4b867944bb5816ac81117a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset using Guid(d3bee99e4b867944bb5816ac81117a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8e93d20805a7b2c74e90108c880e48') in 0.015539 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Lava canal.prefab
-  artifactKey: Guid(f22c1a17624f1214dbcf89edf2147cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Lava canal.prefab using Guid(f22c1a17624f1214dbcf89edf2147cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb1f7393e6eeb6d7ee771b6662009f4') in 0.220829 seconds 
+  Time since last request: 3.476945 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6B.asset
+  artifactKey: Guid(d3bee99e4b867944bb5816ac81117a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6B.asset using Guid(d3bee99e4b867944bb5816ac81117a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5b06ac3de1862afe7f5271507253e1') in 0.011720 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.405811 seconds.
-  path: Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_5.asset
-  artifactKey: Guid(1b3432bbfd57fed49af61c619f2ae379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Puzzle/Dungeon 3/Unfilled lava canal_5.asset using Guid(1b3432bbfd57fed49af61c619f2ae379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2907143e8760dcb96e64f8276d6fdb21') in 0.020115 seconds 
+  Time since last request: 1.774929 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset
+  artifactKey: Guid(4e7e719e282222b468dc394d2412a752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset using Guid(4e7e719e282222b468dc394d2412a752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ca72fd1c11e05ecae448dbcb51bcb3') in 0.005619 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.859900 seconds.
-  path: Assets/Script/House editing/Material/Drop of lava.asset
-  artifactKey: Guid(69715d91b0b3f7c4286dfc78da6b9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/House editing/Material/Drop of lava.asset using Guid(69715d91b0b3f7c4286dfc78da6b9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f3f3ee765805b87af33fca2aeb79ec') in 0.018164 seconds 
+  Time since last request: 2.388245 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6C.asset
+  artifactKey: Guid(4e7e719e282222b468dc394d2412a752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6C.asset using Guid(4e7e719e282222b468dc394d2412a752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21748b432127acbf2c99997d1f75b8fa') in 0.016116 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Prefab/Puzzle/Lava cube/Lava cube.prefab
-  artifactKey: Guid(c41c13e319af9474486f3fbafa073655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Puzzle/Lava cube/Lava cube.prefab using Guid(c41c13e319af9474486f3fbafa073655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86052e8b9e0f1907cfb5a0ee07d1676') in 0.028963 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 0.591437 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset
+  artifactKey: Guid(435164dbb73737d438584dc305c00f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset using Guid(435164dbb73737d438584dc305c00f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578bb40361c2db14509f586a8785d9fa') in 0.005977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.030562 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6D.asset
+  artifactKey: Guid(435164dbb73737d438584dc305c00f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6D.asset using Guid(435164dbb73737d438584dc305c00f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1486f56938deaa3f80e86e2617d4c191') in 0.018186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.558698 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset
+  artifactKey: Guid(f23723af2a74916489c6efecdfba4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset using Guid(f23723af2a74916489c6efecdfba4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff9a94d652c1aa96bb71ed2b264e822') in 0.003916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.052329 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6E.asset
+  artifactKey: Guid(f23723af2a74916489c6efecdfba4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6E.asset using Guid(f23723af2a74916489c6efecdfba4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4034fe336ae3be8d141100a41503177d') in 0.010307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.969484 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset
+  artifactKey: Guid(00dc2a76371cd0e4e927ff3880e0d20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6A 1.asset using Guid(00dc2a76371cd0e4e927ff3880e0d20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048cf8d9a3ee88a295593cbf399305cb') in 0.008479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.144396 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6F.asset
+  artifactKey: Guid(00dc2a76371cd0e4e927ff3880e0d20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-6/Dungeon 4-6F.asset using Guid(00dc2a76371cd0e4e927ff3880e0d20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cb1d145a0471fa0e5e230b7ad06f43') in 0.038546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.484331 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7
+  artifactKey: Guid(9913c3198ffcd1d45a9019f5c5e24b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7 using Guid(9913c3198ffcd1d45a9019f5c5e24b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b982198097d73ca4d104de7f090d232') in 0.016229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.238869 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-6A.asset
+  artifactKey: Guid(733db0c75c956da4ab217dbf3344c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-6A.asset using Guid(733db0c75c956da4ab217dbf3344c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650fab68270d6014d237a0156ad93b33') in 0.007264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.065214 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A.asset
+  artifactKey: Guid(733db0c75c956da4ab217dbf3344c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A.asset using Guid(733db0c75c956da4ab217dbf3344c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217967265a330e46013bc0fae4acb115') in 0.027548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.510674 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset
+  artifactKey: Guid(20eb9f92deea8344da93547f14034a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset using Guid(20eb9f92deea8344da93547f14034a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b7110a3b7bfabf218759431e465c03') in 0.015754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.067712 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7B.asset
+  artifactKey: Guid(20eb9f92deea8344da93547f14034a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7B.asset using Guid(20eb9f92deea8344da93547f14034a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214021e7d94bf1f5539e05491a453432') in 0.019049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.056415 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset
+  artifactKey: Guid(f99f6102039ef1a4ca04a42c40ecf836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset using Guid(f99f6102039ef1a4ca04a42c40ecf836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aecb6b5fe67054075b827b08bac83e2') in 0.006429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.592707 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7C.asset
+  artifactKey: Guid(f99f6102039ef1a4ca04a42c40ecf836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7C.asset using Guid(f99f6102039ef1a4ca04a42c40ecf836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ed05f9a23efb9ff18f9adcd3945b8c') in 0.016311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.441948 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset
+  artifactKey: Guid(d49227eec2c1ae74cbcf5f07162732ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7A 1.asset using Guid(d49227eec2c1ae74cbcf5f07162732ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c605847e1dbc77dd7f0f9269e6d3324c') in 0.011469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.722754 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7D.asset
+  artifactKey: Guid(d49227eec2c1ae74cbcf5f07162732ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-7/Dungeon 4-7D.asset using Guid(d49227eec2c1ae74cbcf5f07162732ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35e16dad1b93f8088887bdd87c607e8') in 0.015023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.473077 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8
+  artifactKey: Guid(f83d612e31b47604582dfc087d3a60e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8 using Guid(f83d612e31b47604582dfc087d3a60e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294e0f840e77727d0ff4512ab0374480') in 0.016277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.028761 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-7A.asset
+  artifactKey: Guid(2e2b58fc831b6654786e0c6d7f8076d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-7A.asset using Guid(2e2b58fc831b6654786e0c6d7f8076d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1990bf7becb4a346ffb996cb55959e2') in 0.007929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.696307 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A.asset
+  artifactKey: Guid(2e2b58fc831b6654786e0c6d7f8076d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A.asset using Guid(2e2b58fc831b6654786e0c6d7f8076d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ee68618096b28a99b40ae123427972') in 0.018812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.517307 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset
+  artifactKey: Guid(dbd37c658510a37428f19dba0b740643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset using Guid(dbd37c658510a37428f19dba0b740643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4d172f01ef35fe4736c35a11bac55a') in 0.015465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.980054 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8B.asset
+  artifactKey: Guid(dbd37c658510a37428f19dba0b740643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8B.asset using Guid(dbd37c658510a37428f19dba0b740643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade04e6eb27628a2f432d5f24779e365') in 0.017879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.920489 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset
+  artifactKey: Guid(fa8a22ea595ed6e49bddc5c74b97e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset using Guid(fa8a22ea595ed6e49bddc5c74b97e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5b3d903390a3c139b3adb91814c9e7') in 0.006763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.436215 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8C.asset
+  artifactKey: Guid(fa8a22ea595ed6e49bddc5c74b97e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8C.asset using Guid(fa8a22ea595ed6e49bddc5c74b97e547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e299cbfe97cffb3b0b5366522f2c1a50') in 0.016058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.637988 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset
+  artifactKey: Guid(4eb0bebec83bf50438d2bc78e808da2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset using Guid(4eb0bebec83bf50438d2bc78e808da2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a41e2a7f5a1c2b25ce521d963f4395') in 0.007138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.320229 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8D.asset
+  artifactKey: Guid(4eb0bebec83bf50438d2bc78e808da2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8D.asset using Guid(4eb0bebec83bf50438d2bc78e808da2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801f46132d7bb3bde0b8bb864d8aa87c') in 0.015024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.544960 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset
+  artifactKey: Guid(cc89bdd13b3f1d247b1b14fa7481cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset using Guid(cc89bdd13b3f1d247b1b14fa7481cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4719f43cd433baf77739f5115f76da5f') in 0.005134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.758157 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8E.asset
+  artifactKey: Guid(cc89bdd13b3f1d247b1b14fa7481cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8E.asset using Guid(cc89bdd13b3f1d247b1b14fa7481cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30cb96a600c195ba3279e1c7eab71f93') in 0.017771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.559441 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset
+  artifactKey: Guid(dc14ec5e9e2ab194fad99c5ad1a95f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8A 1.asset using Guid(dc14ec5e9e2ab194fad99c5ad1a95f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944e5701ff2e88d0aec4f48a2ab21382') in 0.006264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.009117 seconds.
+  path: Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8F.asset
+  artifactKey: Guid(dc14ec5e9e2ab194fad99c5ad1a95f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Chest/Chest SO/Dungeon 4/Dungeon 4-8/Dungeon 4-8F.asset using Guid(dc14ec5e9e2ab194fad99c5ad1a95f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c57905aac961a2ed7a26d3cef466b66') in 0.016968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.284749 seconds.
+  path: Assets/Scenes/Dungeon/Dungeon 4/Dungeon 4-9.unity
+  artifactKey: Guid(1f32357d15c27314e8b9f2b7c30e593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dungeon/Dungeon 4/Dungeon 4-9.unity using Guid(1f32357d15c27314e8b9f2b7c30e593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a633939e30e587823ed72857f9e241') in 0.014107 seconds 
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.

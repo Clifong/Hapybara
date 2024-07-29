@@ -15,7 +15,7 @@ C:/Users/clifo/Hapybara
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59842
+61906
 Successfully changed project path to: C:/Users/clifo/Hapybara
 C:/Users/clifo/Hapybara
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/clifo/Hapybara
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30828] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3276491528 [EditorId] 3276491528 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22808] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3068868879 [EditorId] 3068868879 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [30828] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3276491528 [EditorId] 3276491528 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22808] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3068868879 [EditorId] 3068868879 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 110.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 161.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003846 seconds.
+Registered in 0.004675 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 105.04 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 147.20 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.552 seconds
+- Completed reload, in  0.920 seconds
 Domain Reload Profiling:
-	ReloadAssembly (553ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (402ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (667ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (158ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (253ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (415ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (105ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003827 seconds.
+Registered in 0.008250 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 101.36 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 159.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.081 seconds
+- Completed reload, in  1.961 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1082ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (1961ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (915ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1715ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (522ms)
+			SetupTypeCache (468ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (912ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (101ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (256ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (159ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (482ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6005 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (452.6 KB). Loaded Objects now: 6486.
-Memory consumption went from 260.5 MB to 260.0 MB.
-Total: 3.236100 ms (FindLiveObjects: 0.375200 ms CreateObjectMapping: 0.159600 ms MarkObjects: 2.487700 ms  DeleteObjects: 0.212500 ms)
+Memory consumption went from 260.5 MB to 260.1 MB.
+Total: 4.990200 ms (FindLiveObjects: 0.455000 ms CreateObjectMapping: 0.307100 ms MarkObjects: 3.837500 ms  DeleteObjects: 0.389100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,43 +167,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 46801.902057 seconds.
-  path: Assets/Script/Puzzle/Dungeon 3/Dungeon 3-2B OneTimeObjectSO.asset
-  artifactKey: Guid(253ac3f228a138e47966ff871ddfbf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Puzzle/Dungeon 3/Dungeon 3-2B OneTimeObjectSO.asset using Guid(253ac3f228a138e47966ff871ddfbf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cf493f2ebe486f0124f8784c695c40') in 0.056542 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.853630 seconds.
-  path: Assets/AudioClips/Dungeon 4/call-of-the-sea-emotional-piano-and-orchestral-music-194280.mp3
-  artifactKey: Guid(505ba9fc6fd54b24eb4e38e28bfa2a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AudioClips/Dungeon 4/call-of-the-sea-emotional-piano-and-orchestral-music-194280.mp3 using Guid(505ba9fc6fd54b24eb4e38e28bfa2a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ac756dcf9eb06bc536f8fbb98435bc') in 0.130585 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/AudioClips/Dungeon 4/frozen-sea-184613.mp3
-  artifactKey: Guid(e6bf05b03b9fa804fb2427cbeda291af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AudioClips/Dungeon 4/frozen-sea-184613.mp3 using Guid(e6bf05b03b9fa804fb2427cbeda291af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0651571af6399439ead6d3c5ed6fd92f') in 0.022794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/AudioClips/Dungeon 4/perfect-beauty-191271.mp3
-  artifactKey: Guid(bd0325adc5e38e94c96238db373f27e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AudioClips/Dungeon 4/perfect-beauty-191271.mp3 using Guid(bd0325adc5e38e94c96238db373f27e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd624fcb9c4d048d0e13871e3b59b92f') in 0.018922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.935221 seconds.
-  path: Assets/Script/Puzzle/Dungeon 3/Dungeon 3-4B OneTimeObjectSO 3.asset
-  artifactKey: Guid(c3e1502cfd8578e4186bcdca142d7b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Puzzle/Dungeon 3/Dungeon 3-4B OneTimeObjectSO 3.asset using Guid(c3e1502cfd8578e4186bcdca142d7b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f0316df5d6304e2cc1ff489b7f536e') in 0.011644 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.934614 seconds.
-  path: Assets/Script/Puzzle/Dungeon 3/Dungeon 3-6B OneTimeObjectSO.asset
-  artifactKey: Guid(95a665371a0d20445a74fa15e764bfba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Puzzle/Dungeon 3/Dungeon 3-6B OneTimeObjectSO.asset using Guid(95a665371a0d20445a74fa15e764bfba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad91e1a96b704c4a5b91b4296fd4601e') in 0.011846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Script/Puzzle/Dungeon 3/Dungeon 3-8A OneTimeObjectSO.asset
-  artifactKey: Guid(cdf04c7d102ccbd44af9b7e14025f39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Puzzle/Dungeon 3/Dungeon 3-8A OneTimeObjectSO.asset using Guid(cdf04c7d102ccbd44af9b7e14025f39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9d7f355438d78360aa07119b938297') in 0.011080 seconds 
+  Time since last request: 93731.399486 seconds.
+  path: Assets/Scenes/Dungeon/Dungeon 3/Dungeon 3-3.unity
+  artifactKey: Guid(b3d9e9f128bc8b8429f5c77b432b04bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dungeon/Dungeon 3/Dungeon 3-3.unity using Guid(b3d9e9f128bc8b8429f5c77b432b04bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de8fcf98039c10dd660cf853538ad69') in 0.021877 seconds 
