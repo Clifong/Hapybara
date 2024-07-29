@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d0dd78a6-27d8-40d6-baa1-e89c9795ec13)# Hapybara
+# Hapybara
 
 ## Introduction
 **Hapybara** is a Unity-run 2D top-down role-playing game (RPG). Inspired by the Pokemon Mystery Dungeon franchise, we want gamers to immerse themselves in a world where exploration, friendships, and cooking are bountiful.
