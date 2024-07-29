@@ -18,7 +18,12 @@ public class LavaCube : OneTimeObject, Interactables
     public List<LavaCube> cubesThatDependsOnMe = new List<LavaCube>();
 
     void Start() {
-        if (activeCube) {
+        if (onetimeObjectSO.complete) {
+            activeCube = true;
+            Activate();
+            Interact();
+        }
+        else if (activeCube) {
             Activate();
         }
     }
@@ -30,6 +35,7 @@ public class LavaCube : OneTimeObject, Interactables
     public void Interact() {
         if (spriteRenderer.sprite == active) {
             fillCanal.TriggerEvent(this, startingPoint, endPoint);
+            SetComplete();
         }
     }
 
@@ -74,7 +80,7 @@ public class LavaCube : OneTimeObject, Interactables
     protected override void SetComplete() {
         if (onetimeObjectSO != null) {
             onetimeObjectSO.SetComplete();
-        // EditorUtility.SetDirty(onetimeObjectSO);
+            onetimeObjectSO.SetDirty();
         }
     }
 }
