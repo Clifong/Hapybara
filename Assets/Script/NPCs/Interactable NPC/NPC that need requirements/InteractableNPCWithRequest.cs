@@ -10,15 +10,21 @@ public class InteractableNPCWithRequest : InteractableNPC
     protected int counter = 0;
     public InteractableNPCSO interactableNPCSO;
 
+    void Start() {
+        if (CheckIfFulfilled()) {
+            Destroy(gameObject);
+        }
+    }
+
     public bool CheckIfFulfilled() {
-        return !interactableNPCSO.fulfilled;
+        return interactableNPCSO.fulfilled;
     }
 
     public override void Interact() {
         if (counter >= allRequest.Count) {
             interactableNPCSO.Fulfill();
             interactableNPCSO.SetDirty();
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             return;
         }
         NPCRequestSO request = allRequest[counter];

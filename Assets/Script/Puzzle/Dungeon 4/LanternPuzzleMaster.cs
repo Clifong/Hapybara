@@ -18,8 +18,17 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
     
 
     void Start() {
+        Chest chest = whateverIsToBeSpawned.GetComponent<Chest>();
+        if (chest != null) {
+            chest.SetContent(chestContents);
+        }
         base.Start();
     }
+
+    void OnDestroy() {
+        Spawn();
+    }
+
 
     public void Interact() {
         circleCollider2D.enabled = false;
@@ -40,10 +49,6 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
     public void Spawn() {
         SetComplete();
         GameObject spawnedObject = Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
-        Chest chest = spawnedObject.GetComponent<Chest>();
-        if (chest != null) {
-            chest.SetContent(chestContents);
-        }
         spawnedObject.transform.SetParent(null);
         spawnedObject.transform.position = spawnPoint.transform.position;
         spawnedObject.transform.localScale = new Vector3(1f, 1f, 1f);
@@ -85,7 +90,7 @@ public class LanternPuzzleMaster : OneTimeObject, Interactables
                 lanternSequence[gameCounter - 2].UnFill();
             }
             if (gameCounter >= lanternSequence.Count) {
-                Spawn();
+                Destroy(this.gameObject);
                 DisableLantern();
             }
         }

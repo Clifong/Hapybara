@@ -9,23 +9,20 @@ public class PyramidBox : OneTimeObject
     public Transform spawnPoint;
 
     void Start() {
-        InteractableNPCWithRequest interactableNPC = whateverIsToBeSpawned.GetComponent<InteractableNPCWithRequest>();
-        if (interactableNPC != null) {
-            if (interactableNPC.CheckIfFulfilled()) {
-                Spawn();
-            }
+        Chest chest = whateverIsToBeSpawned.GetComponent<Chest>();
+        if (chest != null) {
+            chest.SetContent(chestContents);
         }
         base.Start();
     }
 
+    void OnDestroy() {
+        Spawn();
+    }
+
     public void Spawn() {
         SetComplete();
-        Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
         GameObject spawnedObject = Instantiate(whateverIsToBeSpawned, spawnPoint.position, spawnPoint.rotation);
-        Chest chest = spawnedObject.GetComponent<Chest>();
-        if (chest != null) {
-            chest.SetContent(chestContents);
-        }
         spawnedObject.transform.SetParent(null);
         spawnedObject.transform.position = spawnPoint.transform.position;
         spawnedObject.transform.localScale = new Vector3(1f, 1f, 1f);
