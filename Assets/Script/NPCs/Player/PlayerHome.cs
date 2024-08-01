@@ -8,15 +8,22 @@ public class PlayerHome : MonoBehaviour
     private float time = 5.0f;
     private float speed = 1.0f;
     private Vector2 newPosition = Vector2.zero;
+    private SpriteRenderer spriteRenderer;
 
 
     void Start() {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     void RandomPosition() {
         float randomOffset = Random.Range(-3.0f, 3.0f);
         float randomOffset2 = Random.Range(-3.0f, 3.0f);
+        if (randomOffset < 0) {
+            spriteRenderer.flipX = true;
+        } else if (randomOffset > 0) {
+            spriteRenderer.flipX = false;
+        }
         newPosition = rigidbody2D.position + new Vector2(randomOffset, randomOffset2);
     }
 

@@ -23,6 +23,17 @@ public class MainMenuManager : MonoBehaviour
     public Transform friendshipContent;
     public GameObject friendshipFrame;
     private List<GameObject> allInstantiatedFriendshipPanel = new List<GameObject>();
+    [Header("Audio settings")]
+    public Slider masterVolume;
+    public TextMeshProUGUI volumeLevelText;
+    public AudioSettingSO audioSettingSO;
+    public CrossObjectEventWithData changeAudioManagerVolumeLevel;
+
+    void Start() {
+        audioSettingSO.SetVolumeLevel(masterVolume);
+        audioSettingSO.SetVolumeLevelText(volumeLevelText);
+        changeAudioManagerVolumeLevel.TriggerEvent(this, masterVolume.value);
+    }
 
     public void PopulateBooksUI() {
         foreach (GameObject instantiatedBookPanel in allInstantiatedBooksPanel)
@@ -78,7 +89,14 @@ public class MainMenuManager : MonoBehaviour
         foreach (AchievementSO achievement in allAchievement)
         {
             achievement.UnlockAchievement();
-        }
-        // EditorUtility.SetDirty(achievementSO);
+            achievement.SetDirty();
+        }   
+    }
+
+    public void ChangeVolume() {
+        audioSettingSO.ChangeVolume((int) masterVolume.value);
+        audioSettingSO.SetVolumeLevelText(volumeLevelText);
+        audioSettingSO.SetDirty();
+        changeAudioManagerVolumeLevel.TriggerEvent(this, masterVolume.value);
     }
 }

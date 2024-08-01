@@ -33,9 +33,11 @@ public class InviteManager : MonoBehaviour
         inviteList.Clear();
         foreach (PlayerSO allPlayer in playerPartySO.allPartyMembers)
         {
-            GameObject instantiatedPanel = Instantiate(invitePanel, content);
-            instantiatedPanel.GetComponent<InvitePanel>().SetInfo(allPlayer);
-            inviteList.Add(instantiatedPanel);
+            if (allPlayer.isMainPlayer == false) {
+                GameObject instantiatedPanel = Instantiate(invitePanel, content);
+                instantiatedPanel.GetComponent<InvitePanel>().SetInfo(allPlayer);
+                inviteList.Add(instantiatedPanel);
+            }
         }
     }
 

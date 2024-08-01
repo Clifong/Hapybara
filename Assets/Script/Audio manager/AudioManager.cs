@@ -6,7 +6,6 @@ public class AudioManager : MonoBehaviour
 {
     private AudioSource mapAudioPlauer;
     public CrossObjectEvent audioEnded;
-    // Start is called before the first frame update
     void Awake()
     {
         mapAudioPlauer = GetComponent<AudioSource>();
@@ -24,5 +23,11 @@ public class AudioManager : MonoBehaviour
         if (!mapAudioPlauer.isPlaying) {
             audioEnded.TriggerEvent();
         }
+    }
+
+    public void ChangeVolumeLevel(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        float volumeLevel = (float) (temp[0]);
+        mapAudioPlauer.volume = volumeLevel/10.0f;
     }
 }

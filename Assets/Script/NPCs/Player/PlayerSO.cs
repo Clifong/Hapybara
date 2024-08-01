@@ -9,6 +9,7 @@ using UnityEditor;
 public class PlayerSO : ScriptableObject
 {
     public string name;
+    public bool isMainPlayer;
     [Header("Battle level")]
     public int level = 1;
     public int currentExp = 0;
@@ -23,6 +24,7 @@ public class PlayerSO : ScriptableObject
     public int defence;
     public int speed;
     public WeaponSO weaponEquipped;
+    [Header("Home")]
     public GameObject playerObject;
     public GameObject homePlayerObject;
     public bool invited;

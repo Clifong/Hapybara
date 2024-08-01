@@ -82,6 +82,15 @@ namespace GameInput
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""082aaa1e-a09e-43aa-a533-fa0e1e7d7030"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +203,17 @@ namespace GameInput
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7a7e73fb-9f7a-4423-ae66-c993d9198a8a"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -208,6 +228,7 @@ namespace GameInput
             m_Input_CancelAction = m_Input.FindAction("CancelAction", throwIfNotFound: true);
             m_Input_NextItem = m_Input.FindAction("NextItem", throwIfNotFound: true);
             m_Input_Interact = m_Input.FindAction("Interact", throwIfNotFound: true);
+            m_Input_Zoom = m_Input.FindAction("Zoom", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -275,6 +296,7 @@ namespace GameInput
         private readonly InputAction m_Input_CancelAction;
         private readonly InputAction m_Input_NextItem;
         private readonly InputAction m_Input_Interact;
+        private readonly InputAction m_Input_Zoom;
         public struct InputActions
         {
             private @InputInHome m_Wrapper;
@@ -285,6 +307,7 @@ namespace GameInput
             public InputAction @CancelAction => m_Wrapper.m_Input_CancelAction;
             public InputAction @NextItem => m_Wrapper.m_Input_NextItem;
             public InputAction @Interact => m_Wrapper.m_Input_Interact;
+            public InputAction @Zoom => m_Wrapper.m_Input_Zoom;
             public InputActionMap Get() { return m_Wrapper.m_Input; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -312,6 +335,9 @@ namespace GameInput
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Zoom.started += instance.OnZoom;
+                @Zoom.performed += instance.OnZoom;
+                @Zoom.canceled += instance.OnZoom;
             }
 
             private void UnregisterCallbacks(IInputActions instance)
@@ -334,6 +360,9 @@ namespace GameInput
                 @Interact.started -= instance.OnInteract;
                 @Interact.performed -= instance.OnInteract;
                 @Interact.canceled -= instance.OnInteract;
+                @Zoom.started -= instance.OnZoom;
+                @Zoom.performed -= instance.OnZoom;
+                @Zoom.canceled -= instance.OnZoom;
             }
 
             public void RemoveCallbacks(IInputActions instance)
@@ -359,6 +388,7 @@ namespace GameInput
             void OnCancelAction(InputAction.CallbackContext context);
             void OnNextItem(InputAction.CallbackContext context);
             void OnInteract(InputAction.CallbackContext context);
+            void OnZoom(InputAction.CallbackContext context);
         }
     }
 }
