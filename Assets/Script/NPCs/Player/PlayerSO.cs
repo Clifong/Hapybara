@@ -19,6 +19,7 @@ public class PlayerSO : ScriptableObject
     public int currentRelationshipExp = 0;
     public int expNeededForNextRelationshipLevel = 0;
     [Header("Battle stats")]
+    public int currentHealth;
     public int health;
     public int attack;
     public int defence;
@@ -41,6 +42,15 @@ public class PlayerSO : ScriptableObject
     public string objectOfFaithName;
     [TextAreaAttribute]
     public string objectOfFaithDescription;
+    [Header("Food")]
+    public int eatCounter;
+    public int currAttackBuff;
+    public int currAttackBuffDuration;
+    public int currDefenceBuff;
+    public int currDefenceBuffDuration;
+    public int maxSpeedBuff;
+    public int maxSpeedBuffDuration;
+
     
     void Awake() {
         CalculateExpNeededForNextLevel(currentExp);
@@ -112,10 +122,6 @@ public class PlayerSO : ScriptableObject
         speedText.text = speed.ToString();
     }
 
-    public void Feed(FoodSO foodSO) {
-        
-    }
-
     public void SetInfo(Image icon, TextMeshProUGUI nameText) {
         icon.sprite = playerIcon;
         nameText.text = name;
@@ -140,6 +146,41 @@ public class PlayerSO : ScriptableObject
         OOFName.text = objectOfFaithName;
         OOFDescription.text = objectOfFaithDescription;
     }
+
+    public void SetHungerValue(TextMeshProUGUI hungerValueText, Button okButton) {
+        hungerValueText.text = "Hunger value:" + eatCounter + "/3";
+        if (eatCounter == 3) {
+            okButton.gameObject.SetActive(false);
+        } else {
+            okButton.gameObject.SetActive(true);
+        }
+    }
+
+    public void Feed(FoodSO foodSO) {
+        eatCounter += 1;
+        foodSO.GainBuffFromEating(this);
+    }
     
+    public void CountDownBuffTimer() {
+        currAttackBuffDuration = Mathf.Max(0, currAttackBuffDuration - 1);
+        currDefenceBuffDuration = Mathf.Max(0, currDefenceBuffDuration - 1);
+        maxSpeedBuff = Mathf.Max(0, maxSpeedBuffDuration - 1);
+        if (currAttackBuffDuration == 0) {
+            attack -= currAttackBuff;
+            currAttackBuff = 0;
+        }
+        if (currDefenceBuffDuration == 0) {
+            defence -= currDefenceBuff;
+            currDefenceBuff = 0;
+        }
+        if (maxSpeedBuff == 0) {
+            speed -= maxSpeedBuff;
+            maxSpeedBuff = 0;
+        }
+    }
+
+    public void EmptyTummy() {
+        eatCounter = Mathf.Max(0, eatCounter - 1);
+    }
     
 }

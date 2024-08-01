@@ -25,10 +25,12 @@ public class FoodSO : ScriptableObject
     
     [Header("Stats change")]
     public int currentHealthChange;
-    public int maxHealthChange;
-    public int attackChange;
-    public int defenceChange;
-    public int speedChange;
+    public int currAttackChange;
+    public int attackChangeDuration;
+    public int currDefenceChange;
+    public int defenceChangeDuration;
+    public int maxSpeedChange;
+    public int speedChangeDuration;
 
     public void SetInfo(Image icon) {
         icon.sprite = foodIcon;
@@ -41,10 +43,9 @@ public class FoodSO : ScriptableObject
 
     public void FillUpDefaultInfo(TextMeshProUGUI currentHealthChangeText, TextMeshProUGUI maxHealthChangeText, TextMeshProUGUI attackChangeText, TextMeshProUGUI defenceChangeText, TextMeshProUGUI speedChangeText, TextMeshProUGUI effectsDescriptionText) {
         currentHealthChangeText.text = currentHealthChange.ToString();
-        maxHealthChangeText.text = maxHealthChange.ToString();
-        attackChangeText.text = attackChange.ToString();
-        defenceChangeText.text = defenceChange.ToString();
-        speedChangeText.text = speedChange.ToString();
+        attackChangeText.text = currAttackChange.ToString();
+        defenceChangeText.text = currDefenceChange.ToString();
+        speedChangeText.text = maxSpeedChange.ToString();
         effectsDescriptionText.text = effectsDescription;
     }
 
@@ -53,5 +54,19 @@ public class FoodSO : ScriptableObject
         {
             playerInventory.ReduceIngredient(ingredient, ingredientsNeeded[ingredient]);
         }
+    }
+
+    public void GainBuffFromEating(PlayerSO playerSO) {
+        playerSO.currentHealth += currentHealthChange; 
+        playerSO.currAttackBuff += currAttackChange;
+        playerSO.currAttackBuffDuration += attackChangeDuration;
+        playerSO.currDefenceBuff += currDefenceChange;
+        playerSO.currDefenceBuffDuration += defenceChangeDuration;
+        playerSO.maxSpeedBuff += maxSpeedChange;
+        playerSO.maxSpeedBuffDuration += speedChangeDuration;
+
+        playerSO.attack += currAttackChange;
+        playerSO.defence += currDefenceChange;
+        playerSO.speed += maxSpeedChange;
     }
 }

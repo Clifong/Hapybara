@@ -31,13 +31,28 @@ public abstract class Npc : MonoBehaviour
     protected SpriteRenderer spriteRenderer;
 
 
+    protected void SetStats(int currHealth, int health, int attack, int defence, int speed) {
+        this.maxHealth = health;
+        this.attack = attack;   
+        this.defence = defence; 
+        this.speed = speed;
+
+        this.currHealth = currHealth;
+        this.currAttack = attack;
+        this.currDefence = defence;
+        this.currSpeed = 100 + speed;
+        spawnDamageTextScript = GetComponent<SpawnDamageText>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        updateStatusAlinmentIcon = GetComponentInChildren<UpdateStatusAlinmentIcon>();
+    }
+
     protected void SetStats(int health, int attack, int defence, int speed) {
         this.maxHealth = health;
         this.attack = attack;   
         this.defence = defence; 
         this.speed = speed;
 
-        this.currHealth = maxHealth;
+        this.currHealth = health;
         this.currAttack = attack;
         this.currDefence = defence;
         this.currSpeed = 100 + speed;
@@ -180,10 +195,6 @@ public abstract class Npc : MonoBehaviour
         if (target != null) {
             target.GetAttacked(skillSO.damage, skillSO);
         }
-    }
-
-    protected List<int> GetHealthInfo() {
-        return new List<int>{currHealth, maxHealth};
     }
 
     public virtual void Attack(List<Npc> opponentList, int attackType) {}

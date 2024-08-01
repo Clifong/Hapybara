@@ -11,7 +11,7 @@ public class Player : Npc
 
     void Awake() {
         updateHealthBar = GetComponentInChildren<UpdateHealthBar>();
-        SetStats(playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);  
+        SetStats(playerSO.currentHealth, playerSO.health, playerSO.attack, playerSO.defence, playerSO.speed);  
         playerAttack = GetComponent<PlayerAttack>();
         playerAttack.enabled = false;
         AlertHealthChange();  
@@ -26,12 +26,13 @@ public class Player : Npc
     }
 
     public void AlertHealthChange() {
-        updateHealthBar.UpdateHealthBarInfo(GetHealthInfo()[0], GetHealthInfo()[1]);
+        updateHealthBar.UpdateHealthBarInfo(playerSO.currentHealth, playerSO.health);
     }
 
     public override void GetAttacked(int damage) {
         base.GetAttacked(damage);
-        AlertHealthChange();
+        playerSO.currentHealth = this.currHealth;
+        playerSO.SetDirty();
     }
 
     public override void Frozen() {
@@ -41,7 +42,6 @@ public class Player : Npc
 
     public override void UpdateStats(Component component, object obj) {
         base.UpdateStats(component, obj);
-        AlertHealthChange();
     }
 
     public override void Attack(List<Npc> opponentList) {
@@ -82,6 +82,24 @@ public class Player : Npc
             broadCastActionEvent.TriggerEvent(this, playerSO.name + " used " + playerSO.allSkills[randomNumber].name);
             AttackWithSkill(opponentList, playerSO.allSkills[randomNumber]);
         }
+    }
+
+    public void CountDownBuffTimer() {
+        playerSO.CountDownBuffTimer();
+        this.currHealth = Mathf.Min(currHealth, maxHealth);
+        this.attack = attack;   
+        this.defence = defence; 
+        this.speed = 100 + speed;
+        playerSO.SetDirty();
+    }
+
+    public void EmptyTummy() {
+        playerSO.EmptyTummy();
+        playerSO.SetDirty();
+    }
+
+    void Update() {
+        AlertHealthChange();
     }
 
 }

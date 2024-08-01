@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Girl
   m_EditorClassIdentifier: 
   name: Susan
-  level: 8
-  currentExp: 499
-  expNeededForNextLevel: 501
+  isMainPlayer: 0
+  level: 10
+  currentExp: 224
+  expNeededForNextLevel: 1026
   relationshipLevel: 3
-  currentRelationshipExp: 40
-  expNeededForNextRelationshipLevel: 260
-  health: 2147483647
-  attack: 100
+  currentRelationshipExp: 150
+  expNeededForNextRelationshipLevel: 150
+  currentHealth: 23
+  health: 100
+  attack: 102
   defence: 5
   speed: 2
   weaponEquipped: {fileID: 0}
@@ -41,3 +43,10 @@ MonoBehaviour:
     According to her, it is made from a flower that has now gone extinct. But on
     closer inspection, you can see tiny seeds floating about. \r\n\r\n\u201CI will
     bring them back.\u201D She smiles as you look up.\r\n"
+  eatCounter: 2
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

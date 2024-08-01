@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class FeedingManager : MonoBehaviour
 {
     private PlayerSO playerSO;
     public CrossObjectEventWithData reduceFood;
+    public TextMeshProUGUI hungerValue;
+    public Button okButton;
     private FoodSO foodSO;
 
     public void SetPlayerToFeed(Component component, object obj) {
         object[] temp = (object[])obj;
         playerSO = (PlayerSO)temp[0];
+        playerSO.SetHungerValue(hungerValue, okButton);
     }
 
     public void SetFoodToFeed(Component component, object obj) {
@@ -25,5 +30,6 @@ public class FeedingManager : MonoBehaviour
         num.Add(1);
         reduceFood.TriggerEvent(this, food, num);
         playerSO.Feed(foodSO);
+        playerSO.SetHungerValue(hungerValue, okButton);
     }
 }

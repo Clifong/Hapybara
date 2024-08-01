@@ -24,7 +24,7 @@ public class Enemy : Npc
     }
 
     public void AlertHealthChange() {
-        updateHealthBar.UpdateHealthBarInfo(GetHealthInfo()[0], GetHealthInfo()[1]);
+        updateHealthBar.UpdateHealthBarInfo(currHealth, maxHealth);
     }
 
     public override void GetAttacked(int damage) {

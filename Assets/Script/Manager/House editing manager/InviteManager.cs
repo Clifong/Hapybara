@@ -54,6 +54,7 @@ public class InviteManager : MonoBehaviour
     public void ActuallyInvite() {
         spawnInvitedPlayer.TriggerEvent(this, playerOfInterest, soToObject);
         playerOfInterest.invited = true;
+        playerOfInterest.SetDirty();
         InstantiateInvitePanel();
     }
 
@@ -61,6 +62,7 @@ public class InviteManager : MonoBehaviour
         Destroy(soToObject[playerOfInterest]);
         soToObject.Remove(playerOfInterest);
         playerOfInterest.invited = false;
+        playerOfInterest.SetDirty();
         InstantiateInvitePanel();
     }
 }

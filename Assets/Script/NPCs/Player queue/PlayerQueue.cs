@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerQueue : MonoBehaviour
 {
     private List<Transform> allPlayerSpawnPoint = new List<Transform>();
-    private List<GameObject> spawnedPlayers = new List<GameObject>();
+    private List<Player> spawnedPlayers = new List<Player>();
     public Transform spawnObject;
     public PlayerPartySO playerPartySO;
 
@@ -22,9 +22,9 @@ public class PlayerQueue : MonoBehaviour
     }
 
     public void InstantiatePlayer() {
-        foreach (GameObject spawnedPlayer in spawnedPlayers)
+        foreach (Player spawnedPlayer in spawnedPlayers)
         {
-            Destroy(spawnedPlayer);
+            Destroy(spawnedPlayer.gameObject);
         }
         spawnedPlayers.Clear();
         List<PlayerSO> filteredOutPlayer = new List<PlayerSO>();
@@ -43,37 +43,50 @@ public class PlayerQueue : MonoBehaviour
             else if (i > 0) {
                 spawnedPlayer.GetComponent<BoxCollider2D>().enabled = false;
             }
-            spawnedPlayers.Add(spawnedPlayer);
-            spawnedPlayer.transform.SetParent(allPlayerSpawnPoint[i]);
+            spawnedPlayers.Add(spawnedPlayer.GetComponent<Player>());
+            spawnedPlayer.gameObject.transform.SetParent(allPlayerSpawnPoint[i]);
         }
     }
 
     public List<Player> ReturnAllActivePlayer() {
-        List<Player> allPlayers = new List<Player>();
-        foreach (GameObject player in spawnedPlayers)
-        {
-            if (player != null) {
-                allPlayers.Add(player.GetComponent<Player>());
-            }
-        }
-        return allPlayers;
+        return spawnedPlayers;
     }
 
     public void DisableAttack() {
-        foreach (GameObject player in spawnedPlayers)
+        foreach (Player player in spawnedPlayers)
         {
             if (player != null) {
-                player.GetComponent<PlayerAttack>().DisableAttack();
+                player.gameObject.GetComponent<PlayerAttack>().DisableAttack();
             }
         }
     }
 
     public void EnableAttack() {
-        foreach (GameObject player in spawnedPlayers)
+        foreach (Player player in spawnedPlayers)
         {
             if (player != null) {
-                player.GetComponent<PlayerAttack>().EnableAttack();
+                player.gameObject.GetComponent<PlayerAttack>().EnableAttack();
             }
         }
     }
+
+    public void CountDownBuffTimer() {
+        foreach (Player player in spawnedPlayers)
+        {
+            if (player != null) {
+                player.CountDownBuffTimer();
+            }
+        }
+    }
+
+    public void EmptyTummy() {
+        foreach (Player player in spawnedPlayers)
+        {
+            if (player != null) {
+                player.EmptyTummy();
+            }
+        }
+    }
+
+
 }

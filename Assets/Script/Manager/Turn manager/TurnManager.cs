@@ -60,14 +60,6 @@ public class TurnManager : MonoBehaviour
     }
 
     public void ChangeTurn(Component component, object obj) {
-        if (allEnemies.Count == 0) {
-            playerWon.TriggerEvent(this, new List<int>());
-            return;
-        } else if (allPlayers.Count == 0) {
-            playerLoss.TriggerEvent();
-            return;
-        }
-
         StartCoroutine(Delay());
     }
 
@@ -76,8 +68,17 @@ public class TurnManager : MonoBehaviour
         Npc npc = (Npc) temp[0];
         if (npc.GetComponent<Enemy>() != null) {
             allEnemies.Remove(npc);
+            if (allEnemies.Count == 0) {
+                Debug.Log("I WON!");
+                playerWon.TriggerEvent(this, new List<int>());
+                return;
+            }
         } else {
             allPlayers.Remove(npc);
+            if (allPlayers.Count == 0) {
+                playerLoss.TriggerEvent();
+                return;
+            }
         }
     }
 

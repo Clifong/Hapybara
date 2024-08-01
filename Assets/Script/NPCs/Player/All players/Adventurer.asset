@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Adventurer
   m_EditorClassIdentifier: 
   name: Austin
-  level: 9
-  currentExp: 48
-  expNeededForNextLevel: 1077
-  relationshipLevel: 3
-  currentRelationshipExp: 55
-  expNeededForNextRelationshipLevel: 245
-  health: 2147483647
-  attack: 100
+  isMainPlayer: 0
+  level: 10
+  currentExp: 225
+  expNeededForNextLevel: 1025
+  relationshipLevel: 4
+  currentRelationshipExp: 20
+  expNeededForNextRelationshipLevel: 380
+  currentHealth: 3
+  health: 100
+  attack: 104
   defence: 5
   speed: 3
   weaponEquipped: {fileID: 11400000, guid: b1e27a3561673d140a1b58a16bfcba2d, type: 2}
@@ -45,3 +47,10 @@ MonoBehaviour:
     a reason to keep moving forward. We will pick up from where our seniors fall,
     and continue fulfilling their dreams for a better tomorrow as this is the will
     of an adventurer.\u201D\r\n"
+  eatCounter: 2
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0
