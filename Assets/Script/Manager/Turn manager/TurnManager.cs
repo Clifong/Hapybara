@@ -15,6 +15,7 @@ public class TurnManager : MonoBehaviour
     public CrossObjectEvent showItIsPlayerTurn;
     public CrossObjectEventWithData playerWon;
     public CrossObjectEventWithData checkDungeonBuffs;
+    public CrossObjectEventWithData broadcastPlayerInfo;
     public CrossObjectEvent playerLoss;
     private Npc currentActionTaker;
 
@@ -120,6 +121,7 @@ public class TurnManager : MonoBehaviour
         }
 
         if (currentActionTaker is Player) {
+            broadcastPlayerInfo.TriggerEvent(this, (Player) currentActionTaker);
             ((Player) currentActionTaker).EnableAttack();
         } else {
             if (currentActionTaker.IsBlind()) {

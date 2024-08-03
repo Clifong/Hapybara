@@ -6,8 +6,13 @@ using Utils;
 public class Player : Npc
 {
     public PlayerSO playerSO;
+    public CrossObjectEvent recoverSkillPoint;
+    public CrossObjectEventWithData consumeSkillPoint;
     private UpdateHealthBar updateHealthBar;
+    private bool cannotUseSkill;
     private PlayerAttack playerAttack;
+    private int playerSkillValue = 0;
+
 
     void Awake() {
         updateHealthBar = GetComponentInChildren<UpdateHealthBar>();
@@ -75,12 +80,23 @@ public class Player : Npc
     }
 
     public override void Attack(List<Npc> opponentList, int attackType) {
-        if (attackType == -1 || playerSO.allSkills.Count == 0) {
+        if (attackType == -1 || playerSO.activeSkills.Count == 0 || cannotUseSkill) {
+            recoverSkillPoint.TriggerEvent();
             Attack(opponentList);
         } else if (attackType == 1) {
-            int randomNumber = Random.Range(0, playerSO.allSkills.Count);
-            broadCastActionEvent.TriggerEvent(this, playerSO.name + " used " + playerSO.allSkills[randomNumber].name);
-            AttackWithSkill(opponentList, playerSO.allSkills[randomNumber]);
+            int randomNumber = Random.Range(0, playerSO.activeSkills.Count);
+            SkillsSO chosenSkill = playerSO.activeSkills[playerSkillValue];
+            broadCastActionEvent.TriggerEvent(this, playerSO.name + " used " + chosenSkill.name);
+            consumeSkillPoint.TriggerEvent(this, chosenSkill.skillCost);
+            AttackWithSkill(opponentList, chosenSkill);
+        }
+    }
+
+    public void SetSkill(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        playerSkillValue = (int) temp[0];
+        if (playerSkillValue >= playerSO.activeSkills.Count) {
+            playerSkillValue = playerSO.activeSkills.Count - 1;
         }
     }
 
@@ -96,6 +112,14 @@ public class Player : Npc
     public void EmptyTummy() {
         playerSO.EmptyTummy();
         playerSO.SetDirty();
+    }
+
+    public void CannotUseSkill() {
+        cannotUseSkill = true;
+    }
+
+    public void CanUseSkill() {
+        cannotUseSkill = false;
     }
 
     void Update() {

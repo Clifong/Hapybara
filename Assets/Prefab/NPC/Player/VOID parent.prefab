@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1056129710}
   - component: {fileID: 3144517938642162662}
   - component: {fileID: 7905936860203294423}
+  - component: {fileID: 4122408307914095818}
   m_Layer: 0
   m_Name: VOID parent
   m_TagString: Untagged
@@ -56,6 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfAttack: {fileID: 11400000, guid: 1a9ca7574be953346bc82f539a350f23, type: 2}
+  typeOfSkill: {fileID: 11400000, guid: 127826bd529bad548a56f52095d867d1, type: 2}
 --- !u!114 &8157412163679220464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +151,8 @@ MonoBehaviour:
   blindForHowLong: 0
   frozenForHowLong: 0
   playerSO: {fileID: 11400000, guid: cc9e22379d7334045a11bc68c186f8a9, type: 2}
+  recoverSkillPoint: {fileID: 11400000, guid: dec287b85c72a614faed4fb9191d3217, type: 2}
+  consumeSkillPoint: {fileID: 11400000, guid: 674c2d495e7d3644f8150a1c56c4ade8, type: 2}
 --- !u!114 &1237877634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +269,34 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4122408307914095818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8157412163679220467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 127826bd529bad548a56f52095d867d1, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1237877632}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetSkill
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

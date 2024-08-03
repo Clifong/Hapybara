@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Austin
   isMainPlayer: 0
-  level: 10
-  currentExp: 225
-  expNeededForNextLevel: 1025
+  level: 11
+  currentExp: 454
+  expNeededForNextLevel: 921
   relationshipLevel: 4
-  currentRelationshipExp: 20
-  expNeededForNextRelationshipLevel: 380
-  currentHealth: 3
+  currentRelationshipExp: 145
+  expNeededForNextRelationshipLevel: -54
+  currentHealth: 62
   health: 100
-  attack: 104
+  attack: 1
   defence: 5
   speed: 3
   weaponEquipped: {fileID: 11400000, guid: b1e27a3561673d140a1b58a16bfcba2d, type: 2}
@@ -33,6 +33,12 @@ MonoBehaviour:
   playerAppearance: {fileID: 1083002957, guid: 8964460c54d34a8409fddefc4080e91f, type: 3}
   allSkills:
   - {fileID: 11400000, guid: 88cce0be81ffae64ea580ae08161b98b, type: 2}
+  - {fileID: 11400000, guid: 5d497dcc2a800a54bae0afe96042eb77, type: 2}
+  - {fileID: 11400000, guid: b767ad3fe5c469e4ea509d4586cb94f1, type: 2}
+  activeSkills:
+  - {fileID: 11400000, guid: 88cce0be81ffae64ea580ae08161b98b, type: 2}
+  - {fileID: 11400000, guid: 5d497dcc2a800a54bae0afe96042eb77, type: 2}
+  - {fileID: 11400000, guid: b767ad3fe5c469e4ea509d4586cb94f1, type: 2}
   friendshipFrame: {fileID: 21300000, guid: 3b26227b4ad342343aeb9ab21636f0fc, type: 3}
   lore: The wandering adventurer seeks new adventure and new friends.
   objectOfFaith: {fileID: 21300000, guid: 39aa7f6bb3695f645952b068d57b7d00, type: 3}
@@ -47,7 +53,7 @@ MonoBehaviour:
     a reason to keep moving forward. We will pick up from where our seniors fall,
     and continue fulfilling their dreams for a better tomorrow as this is the will
     of an adventurer.\u201D\r\n"
-  eatCounter: 2
+  eatCounter: 0
   currAttackBuff: 0
   currAttackBuffDuration: 0
   currDefenceBuff: 0

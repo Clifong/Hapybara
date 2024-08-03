@@ -34,6 +34,7 @@ public class PlayerSO : ScriptableObject
     public Sprite playerAppearance;
     [Header("Skills")]
     public List<SkillsSO> allSkills;
+    public List<SkillsSO> activeSkills = new List<SkillsSO>();
     [Header("Friendship panel")]
     public Sprite friendshipFrame;
     [TextAreaAttribute]
@@ -181,6 +182,19 @@ public class PlayerSO : ScriptableObject
 
     public void EmptyTummy() {
         eatCounter = Mathf.Max(0, eatCounter - 1);
+    }
+
+    public void DisplayAllSKill(Transform content, GameObject skillIcon, List<GameObject> spawnedIcons, int numberOfSkillPoint) {
+        foreach (SkillsSO skillSO in activeSkills)
+        {
+            if (skillSO.skillCost > numberOfSkillPoint) {
+                continue;
+            }
+            GameObject spawnedSkillIcon = Instantiate(skillIcon, content);
+            SkillIconBattle skillIconBattle = spawnedSkillIcon.GetComponent<SkillIconBattle>();
+            skillIconBattle.DisplayIcon(skillSO);
+            spawnedIcons.Add(spawnedSkillIcon);
+        }
     }
     
 }

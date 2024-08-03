@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tom
   isMainPlayer: 1
-  level: 10
-  currentExp: 196
-  expNeededForNextLevel: 1054
+  level: 11
+  currentExp: 429
+  expNeededForNextLevel: 946
   relationshipLevel: 4
-  currentRelationshipExp: 20
-  expNeededForNextRelationshipLevel: 380
-  currentHealth: 24
+  currentRelationshipExp: 145
+  expNeededForNextRelationshipLevel: -29
+  currentHealth: 75
   health: 100
-  attack: 100
+  attack: 1
   defence: 1
   speed: 2
   weaponEquipped: {fileID: 11400000, guid: b1e27a3561673d140a1b58a16bfcba2d, type: 2}
@@ -33,13 +33,15 @@ MonoBehaviour:
   playerAppearance: {fileID: 21300000, guid: bce2f5046eb946a4e82f9786a26cd0a5, type: 3}
   allSkills:
   - {fileID: 11400000, guid: fbbce28a53c4d394aabc4f90dc1a2995, type: 2}
+  activeSkills:
+  - {fileID: 11400000, guid: fbbce28a53c4d394aabc4f90dc1a2995, type: 2}
   friendshipFrame: {fileID: 21300000, guid: 905947afd2e4116429924f0fc7586ab6, type: 3}
   lore: You came from another world and became a capybara.
   objectOfFaith: {fileID: 21300000, guid: fe04ab66232861341a623b4af84682b1, type: 3}
   objectOfFaithName: Picture of a hand
   objectOfFaithDescription: Your only memories of your previous life is that of someone's
     hand inside the sea. You'll never know who it belongs to.
-  eatCounter: 2
+  eatCounter: 0
   currAttackBuff: 0
   currAttackBuffDuration: 0
   currDefenceBuff: 0

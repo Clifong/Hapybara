@@ -28,7 +28,7 @@ public class RecruitmentManager : MonoBehaviour
         {
             GameObject instantiatedSkillPanel = Instantiate(skillPanel, content);
             instantiatedSkillPanels.Add(instantiatedSkillPanel);
-            instantiatedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillSO);
+            instantiatedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillSO, playerSO);
         }
     }
 }

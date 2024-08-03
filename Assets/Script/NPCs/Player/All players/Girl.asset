@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Susan
   isMainPlayer: 0
-  level: 10
-  currentExp: 224
-  expNeededForNextLevel: 1026
-  relationshipLevel: 3
-  currentRelationshipExp: 150
-  expNeededForNextRelationshipLevel: 150
-  currentHealth: 23
+  level: 11
+  currentExp: 452
+  expNeededForNextLevel: 923
+  relationshipLevel: 4
+  currentRelationshipExp: 130
+  expNeededForNextRelationshipLevel: -52
+  currentHealth: 67
   health: 100
-  attack: 102
+  attack: 1
   defence: 5
   speed: 2
   weaponEquipped: {fileID: 0}
@@ -32,6 +32,8 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: 9b0a36fa7b738954fab12c713e5dcc8a, type: 3}
   playerAppearance: {fileID: 21300000, guid: 7c2233a6165ae1c4087b48ef5bdf26a4, type: 3}
   allSkills:
+  - {fileID: 11400000, guid: fbbce28a53c4d394aabc4f90dc1a2995, type: 2}
+  activeSkills:
   - {fileID: 11400000, guid: fbbce28a53c4d394aabc4f90dc1a2995, type: 2}
   friendshipFrame: {fileID: 21300000, guid: 203c35da0e7fc9847bc88f3b59c8dfd4, type: 3}
   lore: 'A mysterious gril
@@ -43,7 +45,7 @@ MonoBehaviour:
     According to her, it is made from a flower that has now gone extinct. But on
     closer inspection, you can see tiny seeds floating about. \r\n\r\n\u201CI will
     bring them back.\u201D She smiles as you look up.\r\n"
-  eatCounter: 2
+  eatCounter: 0
   currAttackBuff: 0
   currAttackBuffDuration: 0
   currDefenceBuff: 0

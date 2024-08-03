@@ -81,7 +81,7 @@ public class CharacterViewerManager : MonoBehaviour
         {
             GameObject spawnedSkillPanel = Instantiate(skillPanel, skillContent);
             allSpawnedSkillsPanel.Add(spawnedSkillPanel);
-            spawnedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillsSO);
+            spawnedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillsSO, playerSO);
         }
     }
 
