@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using AYellowpaper.SerializedCollections;
 
 [CreateAssetMenu(fileName = "Enemy SO", menuName = "Scriptable objects/EnemySO", order = 1)]
@@ -28,6 +30,11 @@ public class EnemySO : ScriptableObject
     [Header("Skills")]
     [SerializedDictionary("Skill", "Chance")]
     public SerializedDictionary<SkillsSO, float> allSkills;
+    [Header("UI")]
+    public Sprite enemySprite;
+    [TextAreaAttribute]
+    public string lore;
+    public bool encountered = false;
 
     public SkillsSO ReturnASkill(float chance) {
         List<SkillsSO> skillList = allSkills.ReturnKeys();
@@ -59,6 +66,22 @@ public class EnemySO : ScriptableObject
 
     public SkillsSO ReturnASkillDefinite(int choice) {
         return allSkills.ReturnKeys()[choice];
+    }
+
+    public void FillBestiaryInfo(Image image, Button button) {
+        image.sprite = enemySprite;
+        if (!encountered) {
+            image.color = new Color(0, 0, 0, 100f);
+            button.enabled = false;
+        } else {
+            button.enabled = true;
+        }
+    }
+
+    public void FillBestiaryInfo(Image image, TextMeshProUGUI nameText, TextMeshProUGUI description) {
+        image.sprite = enemySprite;
+        nameText.text = name;
+        description.text = lore;
     }
 
     public void AddLoot(PlayerInventorySO playerInventorySO) {

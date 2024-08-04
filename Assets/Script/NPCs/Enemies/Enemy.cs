@@ -88,6 +88,8 @@ public class Enemy : Npc
     protected void OnTriggerEnter2D(Collider2D collider2D) {
         Player player = collider2D.GetComponent<Player>();
         if (player != null) {
+            enemySO.encountered = true;
+            enemySO.SetDirty();
             PlayerQueue playerQueue = player.GetComponentInParent<PlayerQueue>();
             battleZone.SetActive(true);
             List<Npc> list = new List<Npc>();

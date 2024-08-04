@@ -1,0 +1,1506 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.26f1 (a16dc32e0ff2) revision 10579395'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 16068 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/clifo/Hapybara
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57911
+Successfully changed project path to: C:/Users/clifo/Hapybara
+C:/Users/clifo/Hapybara
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7052] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 2594948798 [EditorId] 2594948798 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7052] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 2594948798 [EditorId] 2594948798 [Version] 1048832 [Id] WindowsEditor(7,Clif) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 98.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/clifo/Hapybara/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2050 (ID=0x25a9)
+    Vendor:   NVIDIA
+    VRAM:     3965 MB
+    Driver:   32.0.15.5599
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003275 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 98.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.505 seconds
+Domain Reload Profiling:
+	ReloadAssembly (505ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (374ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (74ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (233ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003239 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 98.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.034 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1034ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (863ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (511ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (263ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6013 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (460.2 KB). Loaded Objects now: 6494.
+Memory consumption went from 260.7 MB to 260.2 MB.
+Total: 3.451600 ms (FindLiveObjects: 0.548900 ms CreateObjectMapping: 0.169700 ms MarkObjects: 2.508000 ms  DeleteObjects: 0.223800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 570021.675702 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab59b42017bfd92b86a2d29299c2468b') in 0.139302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.198466 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bf6ea9b5948447f1afc3a5509347c5') in 0.047191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.533363 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502fb73150ca334a903c62753538dbb4') in 0.042021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.467406 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0903fed22eb706ef7015aa0bc154d385') in 0.048798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.550155 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c50ad964d73a88d863af80af22d61c') in 0.046294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.537311 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6ae069a240b6e7d7372aadacb2109f') in 0.038960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.817479 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994cdc7c86b794db8903f62c520de36c') in 0.040071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.528593 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e7b431a379b18fec37aec4b66f76eb') in 0.045271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.563670 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bd0ee03e99d461257657f839d4d869') in 0.045746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.108529 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017838907f48fc6fef5068ddca693545') in 0.048373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.863660 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86a591b00620fe62dce1a3b8b88c9eb') in 0.045838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.913214 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63925f6dd26b2108bf69909dce70301a') in 0.048556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.113033 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5899124bffae9165ac70ce7e5f7f29ce') in 0.046956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.725804 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fadfb9cefec729b54424f7fdf58bbe') in 0.041110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.303552 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e327160d63ec67fe9c88c4505c77fd4f') in 0.049945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.413804 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a1143348fa6158ce7edf59d3b7dfda') in 0.052897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.311076 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdb680141730887fbcb88bea63726c6') in 0.044954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.337475 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4331b2f3de1a8048c180f6a29c568b9') in 0.045676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.609079 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e063543ef7ef50fd20fec89e96c8ed5f') in 0.039214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.884281 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7102223862656079f9704a78dc65ba3') in 0.042586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.325496 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138404f3922db6b103343e43706ba508') in 0.047314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.725799 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34107298b8a77453937c9a030fd6866c') in 0.048827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.301457 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26406ae4b8a32216ff83d61fd0028f3') in 0.041355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.119336 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60145af29e215bf5faa5c10019492484') in 0.052141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.453001 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17616bc367c5b60a7bd71f562d25313f') in 0.045801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.703544 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c3541959b469ef6ea5ab47f4770be5') in 0.046697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.128407 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.045937 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:14.0070589Z' while content on disk has modification time of '2024-08-04T03:15:14.3907777Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:14.0070589Z' while content on disk has modification time of '2024-08-04T03:15:14.3907777Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.345018 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.042573 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:14.3907777Z' while content on disk has modification time of '2024-08-04T03:15:14.7855606Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:14.3907777Z' while content on disk has modification time of '2024-08-04T03:15:14.7855606Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.323104 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99626987121edb813c0a125f8f6581e') in 0.047309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.912362 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ccc17d0addce789ed70188d93ae0e0') in 0.047414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.306040 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf7216f31a068a4d5779938b6feb998') in 0.044324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.127555 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcebd5dc3488bd6da74d611a3eb95cf') in 0.051008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.340345 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.040145 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:16.7020722Z' while content on disk has modification time of '2024-08-04T03:15:17.0668802Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:15:16.7020722Z' while content on disk has modification time of '2024-08-04T03:15:17.0668802Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.320251 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d455bb9e163c1da77143c6d03dd984') in 0.044164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.127266 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc59d092cce04d7a6ca72631a0fedcd6') in 0.047921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.824148 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0899bd49145f328f5f24e2f6b4124da') in 0.044980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.307108 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1e6cce2b22b9e746a94be7f8506009') in 0.043683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.306257 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43eda7238e9b2b644cd2c2ffc234a30a') in 0.046626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.702857 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed32b9e31d1a7913e74e0d108be9a9e5') in 0.048326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.354936 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3469ea3632e2890dd13d87007809becc') in 0.049474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.297874 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91aca439655482c242b45f9d6778874') in 0.042625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.121742 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393fe387c8f50b4b6624fc2c29332ecb') in 0.043902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.238070 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7698c6056bccade3ac3d4f9b33763514') in 0.048215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.365689 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b22da664a849185dd55e80171586cf') in 0.043474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358572 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b572cf848a3b9db0f5c6719859d4e8') in 0.044042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.131264 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76019ffae0696336fa412142655e37a') in 0.047858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.393394 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab083c0d734e6fe7c9f73561fd3a090') in 0.044325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.937411 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d08bd97fa41e52103009124a75b6c2') in 0.042842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.272372 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034d905fd39083ab504302e9021af9b1') in 0.045675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.355528 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47263c4f67fdb60f5440f2fee867e9ef') in 0.048407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.377599 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc024118c29413e0d682895202b0342') in 0.054484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.312348 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052a826c1091b9b38d7e58c57b111ed0') in 0.040623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.131717 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2780c321b9f990589751a4d1bcf200') in 0.045968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.547211 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.045350 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:17:10.6322334Z' while content on disk has modification time of '2024-08-04T03:17:11.020101Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T03:17:10.6322334Z' while content on disk has modification time of '2024-08-04T03:17:11.020101Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.326585 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8d2a527515e04fd38bce41faf248e8') in 0.042567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.130780 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3659ad4248781b7129292deb4adfb592') in 0.047722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2684.564674 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579a7a613dd8248a3da71ba8226de8e3') in 0.093970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.762685 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64aac75fc69366b7afc7be42232722a') in 0.095773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.298576 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c0e689a1cc7682c38ad1e183e11530') in 0.082668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.578569 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2171fc19bdc9169a310a7248608ad177') in 0.097102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.418952 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1873b39e2bd443c6f40e864832918f43') in 0.084631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.472210 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4843141e373b42cf96607cd37b748b') in 0.085988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.494100 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7705cf1bc46982731514a79fcf1d0adb') in 0.113078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.367794 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.070316 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:02:15.1014262Z' while content on disk has modification time of '2024-08-04T04:02:15.3963092Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:02:15.1014262Z' while content on disk has modification time of '2024-08-04T04:02:15.3963092Z'
+========================================================================
+Received Import Request.
+  Time since last request: 34.843098 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b5ecd132c859255ac3de0ee04b494a') in 0.092094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.488479 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a878d879db7a6c69a7c52bda9c2e9b3') in 0.102936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.263904 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd017c82d36acd93a8bc294f4ba011028') in 0.117048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.575888 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc729eeda5dc4cd30dc608c13d7a58e') in 0.095854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.140987 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe63a314a6b3970534ce98b10c92365') in 0.093872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.385531 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6ea5958b0ae616ca3067442d1fba0f') in 0.127410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.502257 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced1a7b85ed1240533ecf87d7ff033e7') in 0.092236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.529650 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b89c8729aff00f44282deb412e4a1e') in 0.085211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.794241 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b06efa18d9b1f3bf9e8f564f3d2f60') in 0.088278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.581907 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2653949fc7d3dc6057c0499f5cf602') in 0.097603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.520293 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff72395eeed549acd4b459670392c33b') in 0.074787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.722122 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8600af5d124a65a08c18fe53652b658d') in 0.092939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.508142 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d20c1803223bbab226a1a089eac57e') in 0.076743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.695129 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a292af69d01877fbf02c6b9e7581b548') in 0.107375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.486259 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08bac6cdea1c093b5da0c05f7a119e7') in 0.096988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.205178 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8406d3c8861a9ea857368e208882fea4') in 0.077453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.585169 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eadd3879f7c1e79bdf0291cb7d90820a') in 0.108335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.187115 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493bdb3dd8f520059c911f6714a75a61') in 0.139536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.705175 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afedcb8ef1fca3a2813d5bd7caad84e8') in 0.076936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.752546 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc23aabf5097edc8500327eff13c8b6a') in 0.116294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.483932 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b09b62fcc153ceaa00c00e9d3b1c0c5') in 0.141205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.914609 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbdd4981765bf01dcf1de3cb7dfab42') in 0.115901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.493258 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ec6a58ebbd3e5eb7abaf6fb52b9f87') in 0.085388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.528917 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17febe61c33f890d99c765fcb5942c4') in 0.122193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.958555 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.082082 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:06:12.3556594Z' while content on disk has modification time of '2024-08-04T04:06:13.1550137Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:06:12.3556594Z' while content on disk has modification time of '2024-08-04T04:06:13.1550137Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.492902 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14bdcf25e9ccb945bd8d91b8baa821fe') in 0.065985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.311042 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0682cf6757c69e096ed33b57eac90fe9') in 0.109444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.613625 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d79fb64a0dae76ebb86a24388cab44d') in 0.080767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.086775 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809c5b1e6cd01af7435511dab4497be8') in 0.107462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.519233 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dddb6173c62c7d1cbccca3c47b3b988d') in 0.085753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.402182 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee3b0c162cee887a6e6db8b6c72fec9') in 0.101029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.512240 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e301c778dd09d70dd8643aa589b7b1') in 0.122885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.502718 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6924757178b281a0d6001d16fde4fb53') in 0.076183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.040858 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae47d1fdac3fdab16825d1d67c42057') in 0.100705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.170003 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba2daeca1e78109191c2527087e8595') in 0.092983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.105877 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22310975349ebbfe4a04adcb6c032258') in 0.099795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.480314 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0ed5ca22204910affa88d95de80bd6') in 0.095233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.983603 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea1c3a58fd98a1d024472f32cc00542') in 0.075246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.977121 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.077195 seconds  code(4) message(Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:06:39.2297732Z' while content on disk has modification time of '2024-08-04T04:06:39.8610363Z')
+  ERROR: Build asset version error: assets/prefab/manager and their assets/main menu manager/main menu manager.prefab in SourceAssetDB has modification time of '2024-08-04T04:06:39.2297732Z' while content on disk has modification time of '2024-08-04T04:06:39.8610363Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.533872 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345c0361e27da8c65b1276d6ed1a55b8') in 0.073757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.056674 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474cb6bbca5a3847f087018f5fcb5ed6') in 0.120538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.542436 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5256d5221f8d12ccde198f33495d616b') in 0.064057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.690654 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303a9a531db6197bffbb2cd423a378df') in 0.004380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.450200 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6d14ee3e89f23431fb2e7086554f9f') in 0.100537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.280915 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474cb6bbca5a3847f087018f5fcb5ed6') in 0.111007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.053529 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e976ac9d047294303a41c9e4ca8bb27') in 0.116477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.427113 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283c0a36099d05751d51d9664b063bb9') in 0.072192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.935458 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fde1510e3ab4a59417c5ed06e6cd9a1') in 0.085580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.680654 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd4039797e85f0c8cc89666c5332ea3') in 0.094449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.203227 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0262fa82a54ccca66a64a46b53e116') in 0.087593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.808156 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1659eaaf308703d9d168cf6fa9cf530') in 0.090354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.254462 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d5ef0fe4246f5423777d0648d3066c') in 0.098836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.403069 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30dc7603b4596189996a3d3c1e58b2e') in 0.084891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.230847 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32f68e49523b999efce31155989561b') in 0.111376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.887478 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d111b34c281a663685f514e2214b230') in 0.102709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.836930 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4306972831c8c41a1b22d2f155d4f2') in 0.088582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.944896 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afb01702de72e7e1cd3bf5e6da32a15') in 0.090845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.522342 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff6d9f1302d97c177bb8be853df38ad') in 0.071956 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007420 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.435 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1436ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1162ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (360ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (527ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (321ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5867 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (456.7 KB). Loaded Objects now: 6510.
+Memory consumption went from 248.9 MB to 248.5 MB.
+Total: 3.818000 ms (FindLiveObjects: 0.379500 ms CreateObjectMapping: 0.174500 ms MarkObjects: 2.993200 ms  DeleteObjects: 0.269500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.995122 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda3cc2ee164b96e05f0870d48e836a6') in 0.173969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.216461 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f471396993e3afe34fac7807788f80') in 0.072193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.005323 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f594b9cba45115590eb6556c91102c18') in 0.078388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.179772 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7188c799ebfd999e9b20645c3a6f347a') in 0.102067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.085059 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16ad68ac69a5b0ed9c0ebb5c78bd084') in 0.069808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.424033 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24460737fc2bdad2526500c5ba68fba8') in 0.088255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.026200 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56ca59f5d58aed43b3eddd68dd46b09') in 0.125962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.502382 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a182386648192e7aa09aa24a71da23d5') in 0.069268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.015842 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ddb757e3154a5f33daaec814ed0719') in 0.114047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.613154 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cfb1e033e6905e7f6aba266a808da93') in 0.073143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.197785 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14faa082bc76686ad701f401611dcba9') in 0.096966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.691127 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0536c788321f9005d694be679a5cc191') in 0.072331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.601652 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11355985ebc4468ed2f3429e6cb5e5da') in 0.095373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.274806 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12fde3be59a83bd0dc5a310aaf180890') in 0.136366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.654661 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776737aa1af540f0af3b39d28e31c4b4') in 0.063141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.807776 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075d37e55d334ce2bb4e81b6a1b07e1f') in 0.069040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.994138 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99ebff39c2abc44120af17e2348a8cc') in 0.111416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.528901 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd178c17831419db603460098ea44fa8f') in 0.080114 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006627 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\clifo\Hapybara\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.379 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1381ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1103ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (325ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (513ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (101ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5867 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (448.7 KB). Loaded Objects now: 6525.
+Memory consumption went from 249.0 MB to 248.5 MB.
+Total: 3.957800 ms (FindLiveObjects: 0.389100 ms CreateObjectMapping: 0.172100 ms MarkObjects: 3.113200 ms  DeleteObjects: 0.282100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 55.522778 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66110414b60891b1b163b25aa6f1fb18') in 0.170158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.517455 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c85c2bd0ad5481786439073096e843') in 0.079029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 485.404568 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac2e7e6ccb023ad08c7ecf6028f062d') in 0.187959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.205495 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349ea5fa37c14cda62c802870a2415f5') in 0.124191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.764640 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c76f54945336a032a4fd800b8ffdc7') in 0.117692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.572339 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69e08ceb9d5b9aebcb5c5e4ccd7a17c') in 0.067397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.389982 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0712b3e8acc5d802449dded273ec941') in 0.079056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.528812 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e604f422552d9f1de12ec3668834ce') in 0.085181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.205996 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85696f0e7cd50c5bf14ba9bd9d2f24e9') in 0.092675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.166154 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a094fc25b5e73571de20ba6bf441aca5') in 0.083332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.856209 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7a58c129fddbcffe3fd0fc6a8b6fc2') in 0.113294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.239822 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52fb1225e08eaa86a57555a83da8cf29') in 0.110870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.950681 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40984dcaaf9f55be2834074778ee9853') in 0.101778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.162505 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea13b0d81f43ae7258d604e34c4cb07') in 0.114968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.131641 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b125f0158b7211a768180b25f9c3acf2') in 0.084374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.429973 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf45d84203cca75e0ad66f8219e80a56') in 0.067771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.410947 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9862606b8055b51d2df4539c4310dac5') in 0.081125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.809876 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c7cdf72c7f365d783be6fc2244c90c') in 0.085339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.924241 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247269d1f83249b4a38d456b07b0c9a9') in 0.084387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.554246 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbea93f55dad5d5c8ce64cbe863f498') in 0.095637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.457747 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15d884e44dae8feae4a333e3ac31513') in 0.081683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.300003 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd420d7e7b679ee698cc8dd133a2cec') in 0.074758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.152672 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602eee51220fc7cd6375aef1ee9f8576') in 0.082434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.398882 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65b91712481c418085741a599c8eb23') in 0.074639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.372639 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b882986cae985a983659267a65a340a') in 0.099778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.061743 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafd299e0c59a6f03e9e90511ea09833') in 0.074748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.612930 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8719c83c297bebe9e0ace47b3e36fff8') in 0.080877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.000795 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a46a5dea0b78ee2e1268508efa3d93') in 0.097141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 175.768410 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cd5c47658523be44a0d2f7c679ca13') in 0.100780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.714452 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de24d0fb213744218de35872911cb20') in 0.094750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.108793 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85637f779f2e85ad358b1f5b809f128') in 0.082279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.439122 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a902f604003c04abe837ad9b3752b1c7') in 0.106871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.418562 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd322dfe6be349f9fbbb9625d7865af') in 0.108784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.533313 seconds.
+  path: Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab
+  artifactKey: Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Main menu manager/Main menu manager.prefab using Guid(07fb2299798483a4a97dc760256f26a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d68e61e2da70f02e93308a9208d504') in 0.100193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.130936 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 bar.png
+  artifactKey: Guid(345d45c54a1a31b46b32cb0fbe1c3b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 bar.png using Guid(345d45c54a1a31b46b32cb0fbe1c3b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c32ca1c52cad8358bfd2ad0cecc8ba3') in 0.335984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 exit.png
+  artifactKey: Guid(588e3722a17b5b1488d159d45e9c49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 exit.png using Guid(588e3722a17b5b1488d159d45e9c49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029029841f45dad3ab7ee53aa9da02f4') in 0.140141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 full bar_2.prefab
+  artifactKey: Guid(f0b4e3f71c541ba43b32e7937cb29c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 1/Tavern 1 full bar_2.prefab using Guid(f0b4e3f71c541ba43b32e7937cb29c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5bdf60d4f24a5d8b3123abfb12c6c0b') in 0.409749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Prefab/Quest board/Tavern 1 questboard.prefab
+  artifactKey: Guid(abcaf7c30906ee3438afe13233de65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Quest board/Tavern 1 questboard.prefab using Guid(abcaf7c30906ee3438afe13233de65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905e25f085f2baf8e07d1bf1a9587c2d') in 0.529065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png
+  artifactKey: Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 2/Tavern 2 ground.png using Guid(e672c73a95aff2d4e8369b6fa58e564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570fa1515c5cff4a65054eb4c0021939') in 0.082413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 questboard.png
+  artifactKey: Guid(d8ed96f35153dad4fbd87a2af0734dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 1/Tavern 1 questboard.png using Guid(d8ed96f35153dad4fbd87a2af0734dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eafcd40c6ee68468f5aaa3da2fa80c9') in 0.032655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Decoration/Town 3/Tavern 3 building.png
+  artifactKey: Guid(1aed2c27646d1db438095707bab77720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Town 3/Tavern 3 building.png using Guid(1aed2c27646d1db438095707bab77720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f188aa9e6e69f371790844d1adb29714') in 0.240707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png
+  artifactKey: Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 4/Tavern 4 chair.png using Guid(1af3da6b9174e4148a1c3c57c101e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a12fd23d2e986b8ba2a9dfde832e454') in 0.048502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_1.asset
+  artifactKey: Guid(c14c96a78b6156941b16e04be15ba7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_1.asset using Guid(c14c96a78b6156941b16e04be15ba7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc46270b5917e1027171fc339fe57b5') in 0.079464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_4.asset
+  artifactKey: Guid(9edf9cb97c6799140a1a6abcf0a4e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_4.asset using Guid(9edf9cb97c6799140a1a6abcf0a4e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcef8adc410a3aa69f13a056c55dd26') in 0.034865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_5.asset
+  artifactKey: Guid(ec5487d37b4806240ad4a21ca4148ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_5.asset using Guid(ec5487d37b4806240ad4a21ca4148ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab960709fb068efa34fbb7e8bed1423f') in 0.059329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_3.asset
+  artifactKey: Guid(e794fd978fa7ffe42a7c3cfe32f52d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_3.asset using Guid(e794fd978fa7ffe42a7c3cfe32f52d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e2f5e281187853b34a67e162ea19f1') in 0.125580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 walls_1.asset
+  artifactKey: Guid(791cca0480150174f8e50bb37f098ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 walls_1.asset using Guid(791cca0480150174f8e50bb37f098ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395c28082fc04c8394f63aa7e1159235') in 0.036584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 walls.png
+  artifactKey: Guid(64f3092106bad0944823fd4f8294f3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 walls.png using Guid(64f3092106bad0944823fd4f8294f3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1478a5b05e4728c7ea8aaa35e7a3d56') in 0.033040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_6.asset
+  artifactKey: Guid(d83f70cd4c61ad1448982942309e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_6.asset using Guid(d83f70cd4c61ad1448982942309e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5edf169f8e4f6b84c32339c437b408') in 0.029327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_0.asset
+  artifactKey: Guid(86c8b3dcafbfebb41bc211be71a79ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_0.asset using Guid(86c8b3dcafbfebb41bc211be71a79ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696b7bdd7ddb3ed72e7d81b08724dbde') in 0.031949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_2.asset
+  artifactKey: Guid(f6df6fd56c0ee754890404be53bdca3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Tavern/Tavern 4/Tavern 4 ground 1_2.asset using Guid(f6df6fd56c0ee754890404be53bdca3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f000e8bd66b19d81ec005fac11d17f0') in 0.026328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png
+  artifactKey: Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Tavern/Tavern 3/Tavern 3 chair.png using Guid(211c52252a9df1241a873860c41f1b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631a731d59a0260e92fd49a8777d9847') in 0.048503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Script/Quest board/Tavern 1/Tavern1 quest board.asset
+  artifactKey: Guid(627a80457d7b4a64ab475463d3c32a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Quest board/Tavern 1/Tavern1 quest board.asset using Guid(627a80457d7b4a64ab475463d3c32a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3aace6d0ed070295161da06c8668d0f') in 0.020429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/Decoration/Town 5/Tavern 5 building.png
+  artifactKey: Guid(8ffbc36129b30a447942c1c5e74b7c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Decoration/Town 5/Tavern 5 building.png using Guid(8ffbc36129b30a447942c1c5e74b7c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82b01dfba1d3a6481c01c16335b8819') in 0.143430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.790018 seconds.
+  path: Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 chair.prefab
+  artifactKey: Guid(6cc15d436b1558647903cf97fc1ce6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Decorations/Tavern/Tavern 2/Tavern 2 chair.prefab using Guid(6cc15d436b1558647903cf97fc1ce6f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55110e25eb2351ec563a62a2c9200e0f') in 0.029850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_0.asset
+  artifactKey: Guid(bc6dc20e7b63a9848b65ad62b6d32651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_0.asset using Guid(bc6dc20e7b63a9848b65ad62b6d32651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030b9eaf3fc6ff21f743fcf641950094') in 0.029320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_2.asset
+  artifactKey: Guid(10aa9d55958f8084cb9c090ce65003da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Town/Town 5/Tavern 2 ground_2.asset using Guid(10aa9d55958f8084cb9c090ce65003da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f1434ab13e6906f679609121310780') in 0.029604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.253698 seconds.
+  path: Assets/Prefab/Manager and their assets/Player UI/Town UI/Map icon/Map icon.prefab
+  artifactKey: Guid(9841a3a244dd9e8429e53b249aa87c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Manager and their assets/Player UI/Town UI/Map icon/Map icon.prefab using Guid(9841a3a244dd9e8429e53b249aa87c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4117077c5a1d96be1aebe2b46a1a6f8d') in 0.055571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Player UI/Map/Town 1 map icon.png
+  artifactKey: Guid(ffaf9b188d75e26468dd220bb7d36432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player UI/Map/Town 1 map icon.png using Guid(ffaf9b188d75e26468dd220bb7d36432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fffee0839d76235709db644a07d435b') in 0.037848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/Player UI/Map/Town 2 map icon.png
+  artifactKey: Guid(a8116a281adfa2046a1070458819c3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player UI/Map/Town 2 map icon.png using Guid(a8116a281adfa2046a1070458819c3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6769f05caf788d721cd6d059c3de5f50') in 0.042387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Sprites/Player UI/Map/Town 3 map icon.png
+  artifactKey: Guid(632d0a5ca6c0bfa48a81558c8ec8aaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player UI/Map/Town 3 map icon.png using Guid(632d0a5ca6c0bfa48a81558c8ec8aaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9237f1b140f374ecc8054c33f62a8303') in 0.045880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Player UI/Map/Map main page.png
+  artifactKey: Guid(97b235adaed249040943ac93b157c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player UI/Map/Map main page.png using Guid(97b235adaed249040943ac93b157c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55668045d79df229ab88775d92c098e0') in 0.052044 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
