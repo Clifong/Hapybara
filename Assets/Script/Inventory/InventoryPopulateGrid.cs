@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using AYellowpaper.SerializedCollections;
 public class InventoryPopulateGrid : MonoBehaviour
 {
     public PlayerInventorySO playerInventorySO;
@@ -26,11 +26,11 @@ public class InventoryPopulateGrid : MonoBehaviour
 
     public void PopulateWeaponUI() {
         ClearGridIcons();
-        List<WeaponSO> allWeapons = playerInventorySO.allWeapons.ReturnKeys();
-        foreach (WeaponSO weaponSO in allWeapons)
+        SerializedDictionary<WeaponSO, int> allWeapons = playerInventorySO.allWeapons;
+        foreach (WeaponSO weaponSO in allWeapons.ReturnKeys())
         {
             GameObject instantiatedWeaponIcon = Instantiate(weaponIcon, content);
-            instantiatedWeaponIcon.GetComponent<WeaponIcon>().SetInfo(weaponSO, playerInventorySO.allWeapons[weaponSO]);
+            instantiatedWeaponIcon.GetComponent<WeaponIcon>().SetInfo(weaponSO, allWeapons[weaponSO]);
             allSpawnedIcons.Add(instantiatedWeaponIcon);
         }
     }

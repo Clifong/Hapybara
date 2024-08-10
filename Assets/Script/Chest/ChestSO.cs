@@ -20,19 +20,29 @@ public class ChestSO : OneTimeObjectSO
     public SerializedDictionary<RecipeSO, int> allRecipe = new SerializedDictionary<RecipeSO, int>();
     public int money;
 
-    public void AddChestItem(PlayerInventorySO playerInventorySO) {
+    public void AddChestItem(PlayerInventorySO playerInventorySO, 
+    CrossObjectEventWithData broadcastNumberOfWeaponAdded,
+    CrossObjectEventWithData broadcastNumberOfFoodAdded,
+    CrossObjectEventWithData broadcastNumberOfFurnitureAdded,
+    AddToInventoryManager monoBehaviourObj) {
         playerInventorySO.AddMoney(money);
 
+        int weaponAdded = 0;
         List<WeaponSO> weapons = new List<WeaponSO>();
         foreach (WeaponSO weaponSO in allWeapons.ReturnKeys()) 
         {
             playerInventorySO.AddWeapon(weaponSO, allWeapons[weaponSO]);
+            weaponAdded += allWeapons[weaponSO];
         }
+        broadcastNumberOfWeaponAdded.TriggerEvent(monoBehaviourObj, weaponAdded);
         
+        int foodAdded = 0;
         foreach (FoodSO foodSO in allFood.ReturnKeys()) 
         {
             playerInventorySO.AddFood(foodSO, allFood[foodSO]);
+            foodAdded += allFood[foodSO];
         }
+        broadcastNumberOfWeaponAdded.TriggerEvent(monoBehaviourObj, foodAdded);
 
         foreach (IngredientSO ingredientSO in allIngredient.ReturnKeys()) 
         {
@@ -44,10 +54,13 @@ public class ChestSO : OneTimeObjectSO
             playerInventorySO.AddMaterial(materialSO, allMaterials[materialSO]);
         }
 
+        int furnitureAdded = 0;
         foreach (BuildableSO furnitureSO in allFurniture.ReturnKeys()) 
         {
             playerInventorySO.AddFurniture(furnitureSO, allFurniture[furnitureSO]);
+            furnitureAdded += allFurniture[furnitureSO];
         }
+        broadcastNumberOfFurnitureAdded.TriggerEvent(monoBehaviourObj, furnitureAdded);
     }
 
     public void AddChestItemRecipe(PlayerUnlockedDishesSO playerUnlockedDishesSO) {

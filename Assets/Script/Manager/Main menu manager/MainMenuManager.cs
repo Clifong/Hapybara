@@ -8,6 +8,7 @@ using UnityEditor;
 public class MainMenuManager : MonoBehaviour
 {
     public PlayerUnlokedCollectiblesSO unlockedCollectibleSO;
+    public StatsSO statsSO;
     public PlayerPartySO playerPartySO;
     [Header("Books")]
     public Transform booksContent;
@@ -17,6 +18,7 @@ public class MainMenuManager : MonoBehaviour
     private List<GameObject> allInstantiatedBooksPanel = new List<GameObject>();
     [Header("Achievements")]
     public Transform achievementContent;
+    public List<TextMeshProUGUI> allText;
     public GameObject achievementPanel;
     private List<GameObject> allInstantiatedAchievementPanel = new List<GameObject>();
     [Header("Friendship")]
@@ -67,6 +69,7 @@ public class MainMenuManager : MonoBehaviour
             instantiatedAchievementPanel.GetComponent<AchievementPanel>().SetInfo(achievementSO);
             allInstantiatedAchievementPanel.Add(instantiatedAchievementPanel);
         }
+        statsSO.SetTextInfo(allText);
     }
 
     public void PopulateFriendshipUI() {

@@ -4,6 +4,9 @@ using UnityEngine;
 public class WeaponPanelDescription : InventoryDescriptionPanels
 {
     private WeaponSO weaponSO;
+    public GameObject equippedByWhoIcon;
+    public Transform equippedByWhoContent;
+    private List<GameObject> spawnedEquippedByWhoIcon = new List<GameObject>();
 
     public override void PopulateUI(Component component, object obj) {
         object[] temp = (object[]) obj;
@@ -14,5 +17,16 @@ public class WeaponPanelDescription : InventoryDescriptionPanels
         quantityText.text = qty.ToString();
 
         weaponSO.FillUpDefaultInfo(maxHealthChange, attackChange, defenceChange, speedChange, effectsDescription);
+        foreach (GameObject icon in spawnedEquippedByWhoIcon)
+        {
+            Destroy(icon);
+        }
+        spawnedEquippedByWhoIcon.Clear();
+        foreach (PlayerSO owner in weaponSO.owner)
+        {
+            GameObject icon = Instantiate(equippedByWhoIcon, equippedByWhoContent);
+            icon.GetComponent<EquippedByWhoIcon>().SetInfo(owner);
+            spawnedEquippedByWhoIcon.Add(icon);
+        }
     }
 }

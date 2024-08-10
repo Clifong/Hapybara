@@ -113,7 +113,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -840,7 +840,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.000011920929, y: -0.00001059351}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &583274808
 MonoBehaviour:
@@ -4788,7 +4788,6 @@ GameObject:
   - component: {fileID: 2551980182844959787}
   - component: {fileID: 2931494288100572011}
   - component: {fileID: 8843260077747996545}
-  - component: {fileID: 694649763}
   - component: {fileID: 6663279070440228126}
   - component: {fileID: 715382886}
   m_Layer: 5
@@ -5175,35 +5174,8 @@ MonoBehaviour:
   addFurniture: {fileID: 11400000, guid: 4aedf2a2e43247f4ab5fe230da415de1, type: 2}
   craftButton: {fileID: 3657684270714325103}
   broadcastFurnitureSOToChangeButton: {fileID: 11400000, guid: 9ed6a4acf973f2f42863c7207d26eb79, type: 2}
+  checkIfCanCraftOrNot: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
   craftFurniture: {fileID: 11400000, guid: 8f4f23ac8cbf7ee489141d692705d3c6, type: 2}
---- !u!114 &694649763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5373936864158449317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
-  responseOnTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8843260077747996545}
-        m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
-        m_MethodName: EnableCraftButton
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6663279070440228126
 MonoBehaviour:
   m_ObjectHideFlags: 0

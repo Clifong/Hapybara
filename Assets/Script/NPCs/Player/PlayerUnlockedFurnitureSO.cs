@@ -6,4 +6,11 @@ using UnityEngine;
 public class PlayerUnlockedFurnitureSO : ScriptableObject
 {
     public List<BuildableSO> unlockedFurniture;
+
+    public void AddRecipe(List<FurnitureRecipeSO> recipeSO) {
+        foreach (FurnitureRecipeSO recipe in recipeSO)
+        {
+            unlockedFurniture.Add(recipe.furnitureSO);
+        }
+    }
 }

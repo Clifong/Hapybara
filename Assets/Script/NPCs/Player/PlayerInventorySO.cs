@@ -227,4 +227,12 @@ public class PlayerInventorySO : ScriptableObject
         return true;
     }
 
+     public void CheckIfEnoughToEquip(WeaponSO weapon, EquipButton equipButton) {
+        if (weapon.owner.Count + 1 > allWeapons[weapon]) {
+            equipButton.ExceedQuantity();
+        } else {
+            equipButton.EnoughQuantity();
+        }
+     }
+
 }

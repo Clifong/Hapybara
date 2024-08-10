@@ -31,6 +31,12 @@ public class CharacterViewerManager : MonoBehaviour
     public GameObject skillPanel;
     public Transform skillContent;
     private List<GameObject> allSpawnedSkillsPanel = new List<GameObject>();
+    [Header("Level up reward")]
+    public GameObject levelUpRewardPanel;
+    public Transform rewardContent;
+    public Slider levelUpReward;
+    public TextMeshProUGUI levelRewardText;
+    private List<GameObject> allSpawnedRewardPanel = new List<GameObject>();
 
     public void InstantiatePartyMemberIcons() {
         foreach (GameObject icon in allPlayerMemberInstantiatedIcons)
@@ -83,10 +89,18 @@ public class CharacterViewerManager : MonoBehaviour
             allSpawnedSkillsPanel.Add(spawnedSkillPanel);
             spawnedSkillPanel.GetComponent<SkillPanel>().SetSkillSO(skillsSO, playerSO);
         }
+        foreach (GameObject spawnedSkillPanel in allSpawnedRewardPanel)
+        {
+            Destroy(spawnedSkillPanel);
+        }
+        allSpawnedRewardPanel.Clear();
+        playerSO.AdjustLevelUpReward(levelUpReward, levelRewardText, rewardContent, levelUpRewardPanel, allSpawnedRewardPanel);
     }
 
     public void RefreshData() {
         SetStats(playerSO);
         updatePlayerStats.TriggerEvent(this, playerSO);
     }
+
+    
 }

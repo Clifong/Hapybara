@@ -15,6 +15,7 @@ public class RewardIcon : MonoBehaviour
     public Sprite ingredientGrid;
     public Sprite materialGrid;
     public Sprite furnitureGrid;
+    public Sprite recipeGrid;
 
     public void SetInfo(object someSO, int quantity) {
         qtyText.text = quantity.ToString();
@@ -38,6 +39,10 @@ public class RewardIcon : MonoBehaviour
             BuildableSO buildableSO = (BuildableSO) someSO;
             grid.sprite = materialGrid;
             buildableSO.SetInfo(sprite);
+        } else if (someSO is FurnitureRecipeSO) {
+            FurnitureRecipeSO furnitureRecipeSO = (FurnitureRecipeSO) someSO;
+            grid.sprite = recipeGrid;
+            furnitureRecipeSO.SetInfo(sprite);
         }
     }
 }

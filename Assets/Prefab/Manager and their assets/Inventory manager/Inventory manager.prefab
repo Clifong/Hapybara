@@ -1255,6 +1255,8 @@ MonoBehaviour:
   speedChange: {fileID: 1853113226}
   effectsDescription: {fileID: 1221255359}
   quantityText: {fileID: 2381461588301885578}
+  equippedByWhoIcon: {fileID: 0}
+  equippedByWhoContent: {fileID: 0}
 --- !u!1 &806092162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,7 +3763,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 256, y: 256}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 100, y: 100}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &1961097286
@@ -9007,6 +9009,8 @@ GameObject:
   - component: {fileID: 3780656437001719138}
   - component: {fileID: 5955181615028806266}
   - component: {fileID: 1281250063124801909}
+  - component: {fileID: 200697318147176358}
+  - component: {fileID: 6801210540467813011}
   m_Layer: 0
   m_Name: Inventory manager
   m_TagString: Untagged
@@ -9864,10 +9868,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventorySO: {fileID: 11400000, guid: f07f48d17493ace478e5559a932540ed, type: 2}
   playerUnlockedDishesSO: {fileID: 11400000, guid: 428064c9dd9f37247add4287e6c4ec34, type: 2}
+  playerUnlockedFurnitureSO: {fileID: 0}
   broadcastMoney: {fileID: 11400000, guid: 38c81304ce4bf94448e7f650af08e37a, type: 2}
   broadcastMemory: {fileID: 11400000, guid: c61c6c4e1f11cdf4a8de5b419d2d6e0b, type: 2}
   broadcastMatchstick: {fileID: 11400000, guid: 6905cc162ff4cc848aba251a87b1223c, type: 2}
-  checkIfCanCraft: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
+  broadcastNumberOfWeaponAdded: {fileID: 11400000, guid: b13c12be5f1e0bc4682d947a9e475dc0, type: 2}
+  broadcastNumberOfFoodAdded: {fileID: 11400000, guid: 8c1607600602dd549bda4c94e0822fc5, type: 2}
+  broadcastNumberOfFurnitureAdded: {fileID: 11400000, guid: 40ff33ba577baf64d8c81fc76e5190c8, type: 2}
 --- !u!114 &391877471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10055,6 +10062,62 @@ MonoBehaviour:
       - m_Target: {fileID: 70232135}
         m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
         m_MethodName: CheckIfQuestCanBeComplete
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &200697318147176358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348062765242484767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 2f63f2391075b484581b32e3d2a34933, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 70232135}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: CheckIfEnoughToEquip
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6801210540467813011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348062765242484767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c37940456e5d2340a58d114cd5c14df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: eb58ed550f61f9f469b566088aee6716, type: 2}
+  responseOnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 70232135}
+        m_TargetAssemblyTypeName: AddToInventoryManager, Assembly-CSharp
+        m_MethodName: CheckIfCanCraft
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

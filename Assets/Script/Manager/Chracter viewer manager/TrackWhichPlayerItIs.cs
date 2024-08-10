@@ -6,6 +6,7 @@ public class TrackWhichPlayerItIs : MonoBehaviour
 {
     private PlayerSO selectedPlayer;
     private WeaponSO weaponSO;
+    public CrossObjectEventWithData checkIfExceed;
 
     public void SetPlayerSO(Component component, object obj) {
         object[] temp = (object[]) obj;
@@ -15,6 +16,20 @@ public class TrackWhichPlayerItIs : MonoBehaviour
     public void SetWeaponLookingAt(Component component, object obj) {
         object[] temp = (object[]) obj;
         weaponSO = (WeaponSO) temp[0];
+    }
+
+    public void CheckIfEquipped(Component component, object obj) {
+        EquipButton equipButton = (EquipButton) component;
+        if (weaponSO.owner.Contains(selectedPlayer)) {
+            equipButton.IsEquipped();
+        } else {
+            equipButton.IsNotEquipped();
+        }
+    }
+
+    public void CheckIfExceed(Component component, object obj) {
+        EquipButton equipButton = (EquipButton) component;
+        checkIfExceed.TriggerEvent(this, weaponSO, equipButton);
     }
 
     public void EquipWeapon() {

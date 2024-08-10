@@ -27,6 +27,8 @@ public class EnemySO : ScriptableObject
     public SerializedDictionary<FoodSO, SerializedDictionary<int, float>> allFood;
     [SerializedDictionary("Ingredient", "Quantity/chance")]
     public SerializedDictionary<IngredientSO, SerializedDictionary<int, float>> allIngredients;
+    [SerializedDictionary("Material", "Quantity/chance")]
+    public SerializedDictionary<MaterialSO, SerializedDictionary<int, float>> allMaterials;
     [Header("Skills")]
     [SerializedDictionary("Skill", "Chance")]
     public SerializedDictionary<SkillsSO, float> allSkills;
@@ -147,6 +149,28 @@ public class EnemySO : ScriptableObject
                     for (int i = 0; i < quantity; i++)
                     {
                         playerInventorySO.AddIngredient(ingredientSO);
+                    }
+                    break;
+                } else {
+                    count -= 1;
+                }
+            }
+        }
+
+        randomNumber = 100f - Random.Range(0.01f, 100f);
+        List<MaterialSO> materials = new List<MaterialSO>();
+        foreach (MaterialSO materialSO in allMaterials.ReturnKeys()) 
+        {
+            List<int> quantityList = allMaterials[materialSO].ReturnKeys();
+            quantityList.Sort();
+            int count = quantityList.Count - 1;
+            while (true && count >= 0) {
+                int quantity = quantityList[count];
+                float chance = allMaterials[materialSO][quantity];
+                if (randomNumber <= chance) {
+                    for (int i = 0; i < quantity; i++)
+                    {
+                        playerInventorySO.AddMaterial(materialSO, quantity);
                     }
                     break;
                 } else {

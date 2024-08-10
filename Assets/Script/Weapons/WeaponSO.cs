@@ -18,7 +18,7 @@ public class WeaponSO : ScriptableObject
     public int defenceChange;
     
     public int speedChange;
-    public PlayerSO owner;
+    public List<PlayerSO> owner;
     [Header("Effects")]
     [TextAreaAttribute]
     public string effectsDescription;

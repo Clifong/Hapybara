@@ -14,9 +14,11 @@ public class RequestQuestSO : QuestSO
     [SerializedDictionary("Materials", "quantity")]
     public SerializedDictionary<MaterialSO, int> materialsNeeded = new SerializedDictionary<MaterialSO, int>();
     private PlayerInventorySO playerInventorySO;
+    private PlayerUnlockedFurnitureSO playerUnlockedFurnitureSO;
 
-    public void CheckIfCanComplete(PlayerInventorySO playerInventorySO) {
+    public void CheckIfCanComplete(PlayerInventorySO playerInventorySO, PlayerUnlockedFurnitureSO playerUnlockedFurnitureSO) {
         this.playerInventorySO = playerInventorySO;
+        this.playerUnlockedFurnitureSO = playerUnlockedFurnitureSO;
         canComplete = playerInventorySO.CheckIfCanComplete(foodNeeded, ingredientsNeeded, materialsNeeded);
     }
 
@@ -33,6 +35,6 @@ public class RequestQuestSO : QuestSO
         {
             playerInventorySO.ReduceMaterial(materialSO, materialsNeeded[materialSO]);
         }
-        base.CompleteQuest(playerInventorySO);
+        base.CompleteQuest(playerInventorySO, playerUnlockedFurnitureSO);
     }
 }

@@ -7,7 +7,6 @@ public class WeaponIcon : InventoryIcon
 {
     private WeaponSO weaponSO;
     private int quantity;
-    public Image playerEquippedIcon;
 
     public void PopulateUI() {
         broadcastInventorySO.TriggerEvent(this, weaponSO, quantity);
@@ -17,12 +16,6 @@ public class WeaponIcon : InventoryIcon
         this.weaponSO = weaponSO;
         icon.sprite = weaponSO.weaponIcon;
         this.quantity = quantity;
-        if (weaponSO.owner == null) {
-            playerEquippedIcon.gameObject.SetActive(false);
-        } else {
-            playerEquippedIcon.gameObject.SetActive(true);
-            playerEquippedIcon.sprite = weaponSO.owner.playerIcon;
-        }
     }
 
     public void ResetUIInfo() {

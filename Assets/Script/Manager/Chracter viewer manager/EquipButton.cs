@@ -13,21 +13,40 @@ public class EquipButton : MonoBehaviour
     private WeaponSO weaponSO;
     public CrossObjectEvent equipWeapon;
     public CrossObjectEvent unequipWeapon;
+    public CrossObjectEventWithData checkIfEquipped;
+    public CrossObjectEventWithData checkIfNotEnough;
+    private bool equipped = false;
 
     public void CheckIfEquipped(Component component, object obj) {
         object[] temp = (object[]) obj;
         weaponSO = (WeaponSO) temp[0];
-        if (weaponSO.owner != null) {
-            button.image.sprite = unequipWeaponImage;
-            text.text = "Unequip";
-        } else {
-            button.image.sprite = equipWeaponImage;
-            text.text = "Equip";
-        }
+        checkIfEquipped.TriggerEvent(this);
+    }
+
+    public void IsEquipped() {
+        button.image.sprite = unequipWeaponImage;
+        text.text = "Unequip";
+        equipped = false;
+    }
+
+    public void IsNotEquipped() {
+        button.image.sprite = equipWeaponImage;
+        text.text = "Equip";
+        equipped = true;
+    }
+
+    public void EnoughQuantity() {
+        button.gameObject.SetActive(true);
+        text.gameObject.SetActive(true);
+    }
+
+    public void ExceedQuantity() {
+        button.gameObject.SetActive(false);
+        text.gameObject.SetActive(false);
     }
 
     public void EquipOrUnequipWeapon() {
-        if (weaponSO.owner != null) {
+        if (!equipped) {
             unequipWeapon.TriggerEvent();
             button.image.sprite = equipWeaponImage;
             text.text = "Equip";

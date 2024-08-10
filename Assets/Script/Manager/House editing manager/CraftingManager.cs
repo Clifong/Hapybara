@@ -12,6 +12,7 @@ public class CraftingManager : MonoBehaviour
     public GameObject craftButton;
     private BuildableSO furnitureToBuilt;
     public CrossObjectEventWithData broadcastFurnitureSOToChangeButton;
+    public CrossObjectEventWithData checkIfCanCraftOrNot;
     public CrossObjectEventWithData craftFurniture;
 
     public void InstantiateFurnitureIcon() {
@@ -31,6 +32,7 @@ public class CraftingManager : MonoBehaviour
     public void SetFurnitureToBuild(Component component, object obj) {
         object[] temp = (object[])obj;
         furnitureToBuilt = (BuildableSO) temp[0];
+        checkIfCanCraftOrNot.TriggerEvent(this, furnitureToBuilt);
     }
 
     public void Craft() {
@@ -39,9 +41,7 @@ public class CraftingManager : MonoBehaviour
         broadcastFurnitureSOToChangeButton.TriggerEvent(this, furnitureToBuilt);
     }
 
-    public void EnableCraftButton(Component component, object obj) {
-        object[] temp = (object[]) obj;
-        bool canCraft = (bool) temp[0];
+    public void EnableCraftButton(bool canCraft) {
         craftButton.SetActive(canCraft);
     }
 }

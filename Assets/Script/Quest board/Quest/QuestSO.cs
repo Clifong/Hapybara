@@ -20,6 +20,8 @@ public class QuestSO : ScriptableObject
     public SerializedDictionary<BuildableSO, int> furnituresRewards = new SerializedDictionary<BuildableSO, int>();
     [SerializedDictionary("Materials", "quantity")]
     public SerializedDictionary<MaterialSO, int> materialsRewards = new SerializedDictionary<MaterialSO, int>();
+    [SerializedDictionary("Recipe", "quantity")]
+    public SerializedDictionary<FurnitureRecipeSO, int> recipeRewards = new SerializedDictionary<FurnitureRecipeSO, int>();
     public int money;
     public bool canComplete = false;
     
@@ -56,11 +58,17 @@ public class QuestSO : ScriptableObject
             rewardIcon.GetComponent<RewardIcon>().SetInfo(materialSO, materialsRewards[materialSO]);
             iconList.Add(instantiatedIcon);
         }
+        foreach (FurnitureRecipeSO recipeSO in recipeRewards.ReturnKeys())
+        {
+            GameObject instantiatedIcon = Instantiate(rewardIcon, rewardContent);
+            rewardIcon.GetComponent<RewardIcon>().SetInfo(recipeSO, recipeRewards[recipeSO]);
+            iconList.Add(instantiatedIcon);
+        }
     }
 
     public virtual void CompleteQuest() {}
 
-    public void CompleteQuest(PlayerInventorySO playerInventorySO) {
+    public void CompleteQuest(PlayerInventorySO playerInventorySO, PlayerUnlockedFurnitureSO playerUnlockedFurnitureSO) {
         foreach (WeaponSO weaponSO in weaponRewards.ReturnKeys())
         {
             playerInventorySO.AddWeapon(weaponSO, weaponRewards[weaponSO]);
@@ -81,6 +89,7 @@ public class QuestSO : ScriptableObject
         {
             playerInventorySO.AddMaterial(materialSO, materialsRewards[materialSO]);
         }
+        playerUnlockedFurnitureSO.AddRecipe((List<FurnitureRecipeSO>) recipeRewards.ReturnKeys());
         playerInventorySO.AddMoney(money);
     }
 

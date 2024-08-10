@@ -6,17 +6,22 @@ public class AddToInventoryManager : MonoBehaviour
 {
     public PlayerInventorySO playerInventorySO;
     public PlayerUnlockedDishesSO playerUnlockedDishesSO;
+    public PlayerUnlockedFurnitureSO playerUnlockedFurnitureSO;
     
     public CrossObjectEventWithData broadcastMoney;
     public CrossObjectEventWithData broadcastMemory;
     public CrossObjectEventWithData broadcastMatchstick;
-    [Header("Checker")]
-    public CrossObjectEventWithData checkIfCanCraft;
+
+    public CrossObjectEventWithData broadcastNumberOfWeaponAdded;
+    public CrossObjectEventWithData broadcastNumberOfFoodAdded;
+    public CrossObjectEventWithData broadcastNumberOfFurnitureAdded;
 
     public void AddToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
         List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)temp[0];
         List<FoodSO> allFoodToAdd = (List<FoodSO>)temp[1];
+        broadcastNumberOfWeaponAdded.TriggerEvent(this, allWeaponToAdd.Count);
+        broadcastNumberOfFoodAdded.TriggerEvent(this, allFoodToAdd.Count);
         foreach (WeaponSO weapon in allWeaponToAdd)
         {
             playerInventorySO.AddWeapon(weapon);
@@ -30,13 +35,14 @@ public class AddToInventoryManager : MonoBehaviour
     public void AddChestLootToInventory(Component component, object obj) {
         object[] temp = (object[]) obj;
         ChestSO chestSO = (ChestSO) temp[0];
-        chestSO.AddChestItem(playerInventorySO);
+        chestSO.AddChestItem(playerInventorySO, broadcastNumberOfWeaponAdded, broadcastNumberOfFoodAdded, broadcastNumberOfFurnitureAdded, this);
         chestSO.AddChestItemRecipe(playerUnlockedDishesSO);
     }
     
     public void AddWeaponOnlyToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
         List<WeaponSO> allWeaponToAdd = (List<WeaponSO>)temp[0];
+        broadcastNumberOfWeaponAdded.TriggerEvent(this, allWeaponToAdd.Count);
         foreach (WeaponSO weapon in allWeaponToAdd)
         {
             playerInventorySO.AddWeapon(weapon);
@@ -46,6 +52,7 @@ public class AddToInventoryManager : MonoBehaviour
     public void AddFoodOnlyToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
         List<FoodSO> allFoodToAdd = (List<FoodSO>)temp[0];
+        broadcastNumberOfFoodAdded.TriggerEvent(this, allFoodToAdd.Count);
         foreach (FoodSO foodSO in allFoodToAdd)
         {
             playerInventorySO.AddFood(foodSO);
@@ -55,7 +62,18 @@ public class AddToInventoryManager : MonoBehaviour
     public void AddRecipeOnlyToInventory(Component component, object obj) {
         object[] temp = (object[])obj;
         List<RecipeSO> allRecipeToAdd = (List<RecipeSO>)temp[0];
-        playerUnlockedDishesSO.AddRecipe(allRecipeToAdd);
+        List<RecipeSO> allFoodRecipe = new List<RecipeSO>();
+        List<FurnitureRecipeSO> allFurnitureRecipe = new List<FurnitureRecipeSO>();
+        foreach (RecipeSO recipe in allRecipeToAdd)
+        {
+            if (recipe is FurnitureRecipeSO) {
+                allFurnitureRecipe.Add((FurnitureRecipeSO) recipe);
+            } else {
+                allFoodRecipe.Add(recipe);
+            }
+        }
+        playerUnlockedDishesSO.AddRecipe(allFoodRecipe);
+        playerUnlockedFurnitureSO.AddRecipe(allFurnitureRecipe);
     }
 
     public void ReduceFoodOnlyInInventory(Component component, object obj) {
@@ -91,6 +109,7 @@ public class AddToInventoryManager : MonoBehaviour
         object[] temp = (object[])obj;
         BuildableSO furniture = (BuildableSO) temp[0];
         int qty = (int) temp[1];
+        broadcastNumberOfFurnitureAdded.TriggerEvent(this, qty);
         for (int i = 0; i < qty; i++)
         {
             furniture.ReduceMaterial(playerInventorySO);
@@ -128,14 +147,22 @@ public class AddToInventoryManager : MonoBehaviour
 
     public void CheckIfCanCraft(Component component, object obj) {
         object[] temp = (object[]) obj;
+        CraftingManager craftingManager = (CraftingManager) component;
         BuildableSO furniture = (BuildableSO) temp[0];
         bool canCraft = playerInventorySO.CanCraft(furniture);
-        checkIfCanCraft.TriggerEvent(this, canCraft);
+        craftingManager.EnableCraftButton(canCraft);
     }
 
     public void CheckIfQuestCanBeComplete(Component component, object obj) {
         object[] temp = (object[]) obj;
         RequestQuestSO requestQuestSO = (RequestQuestSO) temp[0];
-        requestQuestSO.CheckIfCanComplete(playerInventorySO);
+        requestQuestSO.CheckIfCanComplete(playerInventorySO, playerUnlockedFurnitureSO);
+    }
+
+    public void CheckIfEnoughToEquip(Component component, object obj) {
+        object[] temp = (object[]) obj;
+        WeaponSO weapon = (WeaponSO) temp[0];
+        EquipButton equipButton = (EquipButton) temp[1];
+        playerInventorySO.CheckIfEnoughToEquip(weapon, equipButton);
     }
 }

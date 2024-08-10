@@ -5,15 +5,16 @@ using UnityEngine.UI;
 using TMPro;
 
 [CreateAssetMenu(fileName = "FurnitureRecipeSO", menuName = "Furniture recipe SO", order = 1)]
-public class FurnitureRecipeSO : ScriptableObject
+public class FurnitureRecipeSO : RecipeSO
 {
     public BuildableSO furnitureSO;
-    public Sprite icon;
-    public string name;
-    public string description;
 
     public void SetUIInfo(Image image, TextMeshProUGUI text) {
         text.text = name;
+        image.sprite = icon;
+    }
+
+    public void SetInfo(Image image) {
         image.sprite = icon;
     }
 }

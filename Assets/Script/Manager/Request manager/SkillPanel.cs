@@ -9,7 +9,7 @@ public class SkillPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 {
     public Image skillIcon;
     public TextMeshProUGUI skillName;
-    private SkillsSO skillsSO;
+    protected SkillsSO skillsSO;
     public GameObject enlargedPopup;
     public TextMeshProUGUI enlargedPopupText;
     public Toggle toggle;
@@ -23,6 +23,13 @@ public class SkillPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         enlargedPopupText.text = skillsSO.skillDescription;
         toggle.isOn = playerSO.activeSkills.Contains(skillsSO);
         this.playerSO = playerSO;
+    }
+
+    public void SetSkillSO(SkillsSO skillsSO) {
+        this.skillsSO = skillsSO;
+        skillName.text = skillsSO.skillName;
+        skillIcon.sprite = skillsSO.skillIcon;
+        enlargedPopupText.text = skillsSO.skillDescription;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

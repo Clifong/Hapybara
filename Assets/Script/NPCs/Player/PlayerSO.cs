@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEditor;
+using AYellowpaper.SerializedCollections;
 
 [CreateAssetMenu(fileName = "Player SO", menuName = "All player SO/PlayerSO", order = 1)]
 public class PlayerSO : ScriptableObject
@@ -14,6 +15,9 @@ public class PlayerSO : ScriptableObject
     public int level = 1;
     public int currentExp = 0;
     public int expNeededForNextLevel = 0;
+    [SerializedDictionary("Level", "Level up reward/obtained")]
+    public SerializedDictionary<int, SkillsSO> levelUpReward = new SerializedDictionary<int, SkillsSO>();
+   
     [Header("Relationship level")]
     public int relationshipLevel = 1;
     public int currentRelationshipExp = 0;
@@ -88,7 +92,7 @@ public class PlayerSO : ScriptableObject
     }
 
     public void LevelUpRelationship() {
-        while (currentRelationshipExp > expNeededForNextRelationshipLevel) {
+        while (currentRelationshipExp >= expNeededForNextRelationshipLevel) {
             currentRelationshipExp = Mathf.Max(0, currentRelationshipExp - expNeededForNextRelationshipLevel);
             relationshipLevel += 1;
             CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
@@ -102,8 +106,9 @@ public class PlayerSO : ScriptableObject
         attack += weaponEquipped.attackChange;
         defence += weaponEquipped.defenceChange;
         speed += weaponEquipped.speedChange;
-        weaponSO.owner = this;
+        weaponSO.owner.Add(this);
         this.SetDirty();
+        weaponEquipped.SetDirty();
     }
 
     public void UnequipWeapon() {
@@ -111,9 +116,10 @@ public class PlayerSO : ScriptableObject
         attack -= weaponEquipped.attackChange;
         defence -= weaponEquipped.defenceChange;
         speed -= weaponEquipped.speedChange;
-        weaponEquipped.owner = null;
+        weaponEquipped.owner.Remove(this);
         weaponEquipped = null;
         this.SetDirty();
+        weaponEquipped.SetDirty();
     }
 
     public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {
@@ -126,6 +132,10 @@ public class PlayerSO : ScriptableObject
     public void SetInfo(Image icon, TextMeshProUGUI nameText) {
         icon.sprite = playerIcon;
         nameText.text = name;
+    }
+
+    public void SetInfo(Image icon) {
+        icon.sprite = playerIcon;
     }
 
     public void SetFrameInfo(Image frame, Image objectOfFaithImage, Image playerIconImage, TextMeshProUGUI loreText, Button oofButton) {
@@ -194,6 +204,24 @@ public class PlayerSO : ScriptableObject
             SkillIconBattle skillIconBattle = spawnedSkillIcon.GetComponent<SkillIconBattle>();
             skillIconBattle.DisplayIcon(skillSO);
             spawnedIcons.Add(spawnedSkillIcon);
+        }
+    }
+
+    public void LearnSkill(SkillsSO skill) {
+        if (!allSkills.Contains(skill)) {
+            allSkills.Add(skill);
+        }
+    }
+
+    public void AdjustLevelUpReward(Slider rewardSlider, TextMeshProUGUI levelText, Transform content, GameObject rewardPanel, List<GameObject> spawnedPanels) {
+        rewardSlider.value = level;
+        levelText.text = level.ToString();
+        List<int> allLevels = (List<int>) levelUpReward.ReturnKeys();
+        foreach (int number in allLevels)
+        {
+            GameObject spawnedPanel = Instantiate(rewardPanel, content);
+            spawnedPanel.GetComponent<LevelUpRewardSkillPanel>().SetSkillSO(levelUpReward[number], level >= number, number);
+            spawnedPanels.Add(spawnedPanel);
         }
     }
     
