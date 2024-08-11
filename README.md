@@ -59,6 +59,16 @@ Storage: 4 GB available space
 
 ## Installation Instructions
 
+### Try this if you don't see any data
+Reason: Due to scriptable objects being used for saving and updating data directly, they will not be updated in build time. As such, the only way to fix this is by playing inside the Unity Editor. Another weird issue is that the dictionary class I am using also does not know how to deserialize data in the build.
+
+This issue benefits me and my upcoming projects, writing to file as a saving system will be used.
+
+1. Might want to git pull the entire project
+2. Install Unity editor online
+3. Import the folder containing this project
+4. Play inside the editor
+
 ### Windows, macOS, and Linux
 1. Download the ZIP file from [this link](https://github.com/Clifong/Hapybara/releases).
 2. Unzip the folder to your desired location.
