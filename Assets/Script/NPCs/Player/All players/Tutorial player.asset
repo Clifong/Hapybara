@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Tutorial player
   m_EditorClassIdentifier: 
   name: 
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList: []
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
+  currentHealth: 100
   health: 100
   attack: 1
   defence: 1
@@ -30,8 +34,16 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: cc081c134dffe9146a24860e88905290, type: 3}
   playerAppearance: {fileID: 21300000, guid: 415c932c5e9189e4ab0aebaa68f5e2ae, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 0}
   lore: 
   objectOfFaith: {fileID: 0}
   objectOfFaithName: 
   objectOfFaithDescription: 
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

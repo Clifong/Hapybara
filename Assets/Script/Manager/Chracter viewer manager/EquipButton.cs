@@ -26,13 +26,13 @@ public class EquipButton : MonoBehaviour
     public void IsEquipped() {
         button.image.sprite = unequipWeaponImage;
         text.text = "Unequip";
-        equipped = false;
+        equipped = true;
     }
 
     public void IsNotEquipped() {
         button.image.sprite = equipWeaponImage;
         text.text = "Equip";
-        equipped = true;
+        equipped = false;
     }
 
     public void EnoughQuantity() {
@@ -46,7 +46,7 @@ public class EquipButton : MonoBehaviour
     }
 
     public void EquipOrUnequipWeapon() {
-        if (!equipped) {
+        if (equipped) {
             unequipWeapon.TriggerEvent();
             button.image.sprite = equipWeaponImage;
             text.text = "Equip";

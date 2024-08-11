@@ -54,5 +54,12 @@ public class PlayerPartySO : ScriptableObject
         }
     }
 
+    public void TownRecovery() {
+        foreach (PlayerSO playerSO in allActivePartyMembers)
+        {
+            playerSO.RecoverMaxHealth();
+        }
+    }
+
     
 }

@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Fater
   m_EditorClassIdentifier: 
   name: 
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 25
+      Value: {fileID: 11400000, guid: b7187fc0e2750a448a4d1ee10cf39209, type: 2}
+    - Key: 50
+      Value: {fileID: 11400000, guid: 89f3dd9380ec6e74cb01fc1560ae6f5c, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 500
-  attack: 20
+  currentHealth: 600
+  health: 600
+  attack: 60
   defence: 10
-  speed: 10
+  speed: 40
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: 0e438b6ec88d8664d8b7dffb082d68a6, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: e34252275f86ad445aa62a3354572846, type: 3}
@@ -30,8 +38,10 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: b87b5ea41e0929a45890d84ac1f75b6f, type: 3}
   playerAppearance: {fileID: 21300000, guid: c52d4ce052b5e8a4488c47add01bdafa, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: d8fd25ace296e8d47bd24fd6d0f7208f, type: 3}
-  lore: 
+  lore: A mysertious personnel from a secret organisation who can gaze at a person's
+    destiny
   objectOfFaith: {fileID: 21300000, guid: 59d3cf5853907d341ad4ddd5dd772ce2, type: 3}
   objectOfFaithName: Lantern of a world beyond
   objectOfFaithDescription: "The lantern itself reveals a world of what could have
@@ -51,3 +61,10 @@ MonoBehaviour:
     back. But before leaving, she smiled and said:\r\n\r\n\u201C... If it was in
     the hands of another fater, no doubt they'll feel the thrill of seeing me making
     decisions. And as for me, I look forward to what you'll do.\u201D\r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

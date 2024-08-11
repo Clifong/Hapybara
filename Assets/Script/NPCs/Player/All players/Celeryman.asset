@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Celeryman
   m_EditorClassIdentifier: 
   name: Celeryman
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 10
+      Value: {fileID: 11400000, guid: db9750122ee8c404fa16ac3cbe9e4e2d, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 0
-  attack: 0
-  defence: 0
-  speed: 0
+  currentHealth: 600
+  health: 600
+  attack: 35
+  defence: 25
+  speed: 20
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: 7d7c18edd04931a479b6e97a18874c5d, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: 8da8722352dee744d87f4056a547cb8b, type: 3}
@@ -30,8 +36,9 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: c132446513081ee43b3bab8e9dbf6adb, type: 3}
   playerAppearance: {fileID: 21300000, guid: 4e4f881c4b4645647bc6b79af47a4ce0, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: 457a6ec17350f314bb09db5e024b0261, type: 3}
-  lore: 
+  lore: A man cursed and forced to become a false hero
   objectOfFaith: {fileID: 21300000, guid: 48f1e3cc1ab37664e89e4ca3ec17294a, type: 3}
   objectOfFaithName: Celery keychain
   objectOfFaithDescription: "\u201CSo how did you end up as celeryman?\u201D\r\n\r\nSuch
@@ -53,3 +60,10 @@ MonoBehaviour:
     as a way to look for others who have the same fate as him.\r\n\r\nNot necessarily
     do they have to see a celery. But at the very least, maybe there's someone out
     there who can share his grief with. \r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0
