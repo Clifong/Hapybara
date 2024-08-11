@@ -62,7 +62,7 @@ Storage: 4 GB available space
 ### Try this if you don't see any data
 Reason: Due to scriptable objects being used for saving and updating data directly, they will not be updated in build time. As such, the only way to fix this is by playing inside the Unity Editor. Another weird issue is that the dictionary class I am using also does not know how to deserialize data in the build.
 
-This issue benefits me and my upcoming projects, writing to file as a saving system will be used.
+Important learning point for me and other devs: Using scriptable objects to save data and enable dynamic data changes purely will fail. Recommendation is to use scriptable objects + file system (E.g json) instead. Have the .json file store all the saved data and then write the data to the scriptable object.
 
 1. Might want to git pull the entire project
 2. Install Unity editor online
