@@ -542,6 +542,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_set_loop();
 		Register_UnityEngine_AudioSource_set_loop();
 
+		//System.Void UnityEngine.AudioSource::set_volume(System.Single)
+		void Register_UnityEngine_AudioSource_set_volume();
+		Register_UnityEngine_AudioSource_set_volume();
+
 	//End Registrations for type : UnityEngine.AudioSource
 
 	//Start Registrations for type : UnityEngine.Avatar
@@ -4601,6 +4605,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.SpriteRenderer::set_color_Injected(UnityEngine.Color&)
 		void Register_UnityEngine_SpriteRenderer_set_color_Injected();
 		Register_UnityEngine_SpriteRenderer_set_color_Injected();
+
+		//System.Void UnityEngine.SpriteRenderer::set_flipX(System.Boolean)
+		void Register_UnityEngine_SpriteRenderer_set_flipX();
+		Register_UnityEngine_SpriteRenderer_set_flipX();
 
 		//System.Void UnityEngine.SpriteRenderer::set_sprite(UnityEngine.Sprite)
 		void Register_UnityEngine_SpriteRenderer_set_sprite();

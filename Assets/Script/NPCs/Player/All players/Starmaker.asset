@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Starmaker
   m_EditorClassIdentifier: 
   name: Starmaker
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 10
+      Value: {fileID: 11400000, guid: 969e33aa764c94748bfd0474245da598, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 0
-  attack: 0
-  defence: 0
-  speed: 0
+  currentHealth: 1000
+  health: 1000
+  attack: 80
+  defence: 70
+  speed: 60
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: ac52bdaef40617947a82798c44f63f59, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: 498b8b8fc2026c04cbe833034a751013, type: 3}
@@ -30,8 +36,9 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: becf319a114c0de45abd951243243066, type: 3}
   playerAppearance: {fileID: 21300000, guid: 58c1fcfb2a953434aa6c98acec58ebb5, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: e4262d6a1cfc9a842a3cc7d2238cf432, type: 3}
-  lore: 
+  lore: An old man who seeks to complete his final journey
   objectOfFaith: {fileID: 21300000, guid: 5c3a02a265b708544acfb81005853fbd, type: 3}
   objectOfFaithName: Fading star
   objectOfFaithDescription: "Star-making is a profession open to a certain few. They
@@ -55,3 +62,10 @@ MonoBehaviour:
     destiny is like a star in the sky. There are times where we are the brightest,
     and there are times when we become dull. But as long as the light in us continues
     to flicker, we should not let the darkness of the sky consume us.\u201D\r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

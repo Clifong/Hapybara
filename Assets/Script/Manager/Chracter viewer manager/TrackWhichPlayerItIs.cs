@@ -29,7 +29,9 @@ public class TrackWhichPlayerItIs : MonoBehaviour
 
     public void CheckIfExceed(Component component, object obj) {
         EquipButton equipButton = (EquipButton) component;
-        checkIfExceed.TriggerEvent(this, weaponSO, equipButton);
+        if (!weaponSO.owner.Contains(selectedPlayer)) {
+            checkIfExceed.TriggerEvent(this, weaponSO, equipButton);
+        }
     }
 
     public void EquipWeapon() {

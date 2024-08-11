@@ -30813,153 +30813,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SelectObservable_2_Subscribe_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAA9943C162F6E05189ECB28763C8E992D261F12B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE39FA4728EDF1777A5CEBEEA4EF94BEEAC38ED93_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m1442C04611D65DE9B3A28F2D963A04C897EDE28B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD83117AB6E3F52C3E604761313455399CBFC1912_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAA988F383EFCFCD5F5D7D495A3AB2AF9861F3D7C_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA0C730B575C91940B4FA5F415D5303FBE19AD85B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mABCD6BF4DCE5960D04D027AF9010BC160A0633FF_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m16BE5A7678136FF825788C314DE5CF76F82EED78_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA06734F5E9A0A7214FDF0828BA227C8B02B26E4B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* SerializedDictionary_2_ReturnKeys_m8F7C7EB9484FD1282D30870A0EC3FC6E41DF7BC7_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, const RuntimeMethod* method) 
 {
@@ -30970,13 +30823,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_1 = __this->____serializedList_14;
 		Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 L_2;
-		L_2 = ((  Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -30985,7 +30838,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m918D1315BA8DC038F710434C3E44C59B2C66F056((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m918D1315BA8DC038F710434C3E44C59B2C66F056((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -30999,20 +30852,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t1EC28EC9CD9CE3D878C12FF394FEF100ED44E401 L_3;
-				L_3 = Enumerator_get_Current_m91A7F5EEDB4DA9A1B8D50E8556FA6F5B1EEC045D_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_m91A7F5EEDB4DA9A1B8D50E8556FA6F5B1EEC045D_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_4 = V_0;
 				SerializedKeyValuePair_2_t1EC28EC9CD9CE3D878C12FF394FEF100ED44E401 L_5 = V_2;
 				int32_t L_6 = L_5.___Key_0;
-				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mE827AA9D30408DC20A23F8E8F372F4A1CB4B40E8((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mE827AA9D30408DC20A23F8E8F372F4A1CB4B40E8((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -31042,8 +30895,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SerializedDictionary_2_GetValueAtKey_
 		// return base[key];
 		int32_t L_0 = ___0_key;
 		int32_t L_1;
-		L_1 = ((  int32_t (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  int32_t (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAA9943C162F6E05189ECB28763C8E992D261F12B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE39FA4728EDF1777A5CEBEEA4EF94BEEAC38ED93_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m1442C04611D65DE9B3A28F2D963A04C897EDE28B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD83117AB6E3F52C3E604761313455399CBFC1912_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAA988F383EFCFCD5F5D7D495A3AB2AF9861F3D7C_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA0C730B575C91940B4FA5F415D5303FBE19AD85B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mABCD6BF4DCE5960D04D027AF9010BC160A0633FF_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m16BE5A7678136FF825788C314DE5CF76F82EED78_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA06734F5E9A0A7214FDF0828BA227C8B02B26E4B_gshared (SerializedDictionary_2_tF3AC08C06FE699216F29066CC36E551B67F121AB* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Int32>::SyncDictionaryToBackingField_Editor()
@@ -31132,7 +31132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C* L_0 = __this->____serializedList_14;
 		Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 L_1;
-		L_1 = ((  Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_tB9D61E7EA7A3B96638AC4A5206A0697961D202F8 (*) (List_1_tB2692E6EC7BA48D04D0C1C541702DC4BA2B38D2C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -31141,7 +31141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m918D1315BA8DC038F710434C3E44C59B2C66F056((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m918D1315BA8DC038F710434C3E44C59B2C66F056((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -31155,7 +31155,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t1EC28EC9CD9CE3D878C12FF394FEF100ED44E401 L_2;
-				L_2 = Enumerator_get_Current_m91A7F5EEDB4DA9A1B8D50E8556FA6F5B1EEC045D_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_m91A7F5EEDB4DA9A1B8D50E8556FA6F5B1EEC045D_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t1EC28EC9CD9CE3D878C12FF394FEF100ED44E401 L_3 = V_1;
@@ -31169,7 +31169,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mE827AA9D30408DC20A23F8E8F372F4A1CB4B40E8((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mE827AA9D30408DC20A23F8E8F372F4A1CB4B40E8((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -31278,153 +31278,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA292B5045BB3998B24E23536C000B56DD305C9D4_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m58785EA2528E064275E4CC3999F92A32E802CB93_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD7DD492B1F722F14C6BAED6666BE0AB0ECEAABC0_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0963E388D2C971ADEA708A672E40F3500B1CAFB2_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAFB3AC4BF320271B86986DB763ECAA88AA467608_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m62B0FB0D1DF93E786E0A67B3687564193C299D05_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m164ADAC82D18482E1E8F3B8C6A7DBCF2C01F82AB_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF473760C2CA2B576B86C241F97D59CB3BB0A6D8E_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE4F9BF3105FC0AA0EA7216A663EF1DFA98D0963A_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* SerializedDictionary_2_ReturnKeys_mC883DC46DCDD002F32864E5D89C45BDC6FB53F2D_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, const RuntimeMethod* method) 
 {
@@ -31435,13 +31288,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_1 = __this->____serializedList_14;
 		Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C L_2;
-		L_2 = ((  Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -31450,7 +31303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mACB80E1238DA7A423031E3283CCDA88588783877((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mACB80E1238DA7A423031E3283CCDA88588783877((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -31464,20 +31317,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t83D5CB23504EB1E189606E501965711C2D0935C5 L_3;
-				L_3 = Enumerator_get_Current_m2426D413F26D744E3B6C6BCDF14220380685747F_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_m2426D413F26D744E3B6C6BCDF14220380685747F_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_4 = V_0;
 				SerializedKeyValuePair_2_t83D5CB23504EB1E189606E501965711C2D0935C5 L_5 = V_2;
 				int32_t L_6 = L_5.___Key_0;
-				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mD4B0F88AD549AB1C6147D6CD36B43AC76E58873E((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mD4B0F88AD549AB1C6147D6CD36B43AC76E58873E((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -31507,8 +31360,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializedDictionary_2_GetValu
 		// return base[key];
 		int32_t L_0 = ___0_key;
 		RuntimeObject* L_1;
-		L_1 = ((  RuntimeObject* (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  RuntimeObject* (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA292B5045BB3998B24E23536C000B56DD305C9D4_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m58785EA2528E064275E4CC3999F92A32E802CB93_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD7DD492B1F722F14C6BAED6666BE0AB0ECEAABC0_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0963E388D2C971ADEA708A672E40F3500B1CAFB2_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAFB3AC4BF320271B86986DB763ECAA88AA467608_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m62B0FB0D1DF93E786E0A67B3687564193C299D05_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m164ADAC82D18482E1E8F3B8C6A7DBCF2C01F82AB_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF473760C2CA2B576B86C241F97D59CB3BB0A6D8E_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE4F9BF3105FC0AA0EA7216A663EF1DFA98D0963A_gshared (SerializedDictionary_2_t848918F6E0B2CAFE733DC667A7646A88EE2D4062* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Object>::SyncDictionaryToBackingField_Editor()
@@ -31597,7 +31597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB* L_0 = __this->____serializedList_14;
 		Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C L_1;
-		L_1 = ((  Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t3B9353C8D361753B62C6B08BEE88B519134B716C (*) (List_1_t480254E20A3D399F4826AC4327138E4CF6FD11EB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -31606,7 +31606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mACB80E1238DA7A423031E3283CCDA88588783877((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mACB80E1238DA7A423031E3283CCDA88588783877((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -31620,7 +31620,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t83D5CB23504EB1E189606E501965711C2D0935C5 L_2;
-				L_2 = Enumerator_get_Current_m2426D413F26D744E3B6C6BCDF14220380685747F_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_m2426D413F26D744E3B6C6BCDF14220380685747F_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t83D5CB23504EB1E189606E501965711C2D0935C5 L_3 = V_1;
@@ -31634,7 +31634,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mD4B0F88AD549AB1C6147D6CD36B43AC76E58873E((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mD4B0F88AD549AB1C6147D6CD36B43AC76E58873E((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -31743,153 +31743,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m134424D596B656D73B1443E79D00EC91EA4B85EB_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2E0CEAEC2A40352C4517113D4F0E79E3E524EFBF_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8026FF67B4146BFD3E0F784FA7BD10ED50321F55_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m357C8ED10F5FE02163A0D5299ADC34861723EBB1_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m4CE411105811EBFDEE1C58EA1C9B95ADBE4F0FD6_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD3FD5FAF40CB739285DAA44BC3B65CBAA749F596_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB54641AFD992ECCF16D9EF703121489467FFA079_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m52FBB5428381D81B3D5908EB13EA558EB9A00F36_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m926108D4B01A41877E5A0AAD215B5E827F549E6A_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* SerializedDictionary_2_ReturnKeys_m998A649822B15BB258B9EDE1CD65AF147989118B_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, const RuntimeMethod* method) 
 {
@@ -31900,13 +31753,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_1 = __this->____serializedList_14;
 		Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D L_2;
-		L_2 = ((  Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -31915,7 +31768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m5D97E9924D81F251610996C2ACD7C5AD6D7A508C((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m5D97E9924D81F251610996C2ACD7C5AD6D7A508C((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -31929,20 +31782,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t15FB67E37D2DE6C22C05D13A0D5618EBF8530CA9 L_3;
-				L_3 = Enumerator_get_Current_mF65C5C105AE6B4CE1185BFAADF392BA787F162D0_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_mF65C5C105AE6B4CE1185BFAADF392BA787F162D0_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_4 = V_0;
 				SerializedKeyValuePair_2_t15FB67E37D2DE6C22C05D13A0D5618EBF8530CA9 L_5 = V_2;
 				int32_t L_6 = L_5.___Key_0;
-				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mF4003839A1F1FB185F551098D354A8F3685A08DD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mF4003839A1F1FB185F551098D354A8F3685A08DD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -31972,8 +31825,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SerializedDictionary_2_GetValueAtKey_m2
 		// return base[key];
 		int32_t L_0 = ___0_key;
 		float L_1;
-		L_1 = ((  float (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  float (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m134424D596B656D73B1443E79D00EC91EA4B85EB_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2E0CEAEC2A40352C4517113D4F0E79E3E524EFBF_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8026FF67B4146BFD3E0F784FA7BD10ED50321F55_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m357C8ED10F5FE02163A0D5299ADC34861723EBB1_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m4CE411105811EBFDEE1C58EA1C9B95ADBE4F0FD6_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD3FD5FAF40CB739285DAA44BC3B65CBAA749F596_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB54641AFD992ECCF16D9EF703121489467FFA079_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m52FBB5428381D81B3D5908EB13EA558EB9A00F36_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m926108D4B01A41877E5A0AAD215B5E827F549E6A_gshared (SerializedDictionary_2_t586950C767046F11560B2424FECB131E9F060AE9* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32,System.Single>::SyncDictionaryToBackingField_Editor()
@@ -32062,7 +32062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F* L_0 = __this->____serializedList_14;
 		Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D L_1;
-		L_1 = ((  Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t2A7FB43F30494322034B1F231FADECEC22DAE02D (*) (List_1_tFE5DE53CC2F27FA9F8762398DED891459611104F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -32071,7 +32071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m5D97E9924D81F251610996C2ACD7C5AD6D7A508C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m5D97E9924D81F251610996C2ACD7C5AD6D7A508C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -32085,7 +32085,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t15FB67E37D2DE6C22C05D13A0D5618EBF8530CA9 L_2;
-				L_2 = Enumerator_get_Current_mF65C5C105AE6B4CE1185BFAADF392BA787F162D0_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_mF65C5C105AE6B4CE1185BFAADF392BA787F162D0_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t15FB67E37D2DE6C22C05D13A0D5618EBF8530CA9 L_3 = V_1;
@@ -32099,7 +32099,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mF4003839A1F1FB185F551098D354A8F3685A08DD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mF4003839A1F1FB185F551098D354A8F3685A08DD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -32208,153 +32208,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0691A180224C2F3E2E1C1DB43FE4B09EB552C04B_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m268AB2ACFB43B19044AE80725263BC22734216C1_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m289B70789C017B4D08DE8769C9B220CD2549708A_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m769EEEDC158DC7D5DA6B6633032996CDB98DBBB1_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8B441E42175B16FBED8CDF5FC6251378E8B5BDB7_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2874D039BE3F8DBB4F7BF31B34CC4632797399EB_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8FF405CAEC2B1F0580D3ECB89BECA6045948A973_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF3EF0F1351895EC2F09845C99A8E4A00DA754136_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m3B3E107CFD9C8A46CC7127AFDC3AB5B1725A3FE8_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* SerializedDictionary_2_ReturnKeys_m0AF1323CD7C75C7243299826C47B568BEECE07B5_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, const RuntimeMethod* method) 
 {
@@ -32365,13 +32218,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_0 = (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_0 = (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_1 = __this->____serializedList_14;
 		Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 L_2;
-		L_2 = ((  Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -32380,7 +32233,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mB21B2DEEC89A22E787E7906CC84C0411AFFE0897((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mB21B2DEEC89A22E787E7906CC84C0411AFFE0897((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -32394,20 +32247,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t5AF74561FB17C380A2437163A9D46155D490CCBD L_3;
-				L_3 = Enumerator_get_Current_mC4D1DFCDE583749AAC27606BC5BC927612285EDB_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_mC4D1DFCDE583749AAC27606BC5BC927612285EDB_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_4 = V_0;
 				SerializedKeyValuePair_2_t5AF74561FB17C380A2437163A9D46155D490CCBD L_5 = V_2;
 				int32_t L_6 = L_5.___Key_0;
-				((  void (*) (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mE5413B7D59AAC4B7EFB21B5FD3EAB9EA02D1A5D7((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mE5413B7D59AAC4B7EFB21B5FD3EAB9EA02D1A5D7((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -32437,8 +32290,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializedDictionary_2_GetValu
 		// return base[key];
 		int32_t L_0 = ___0_key;
 		RuntimeObject* L_1;
-		L_1 = ((  RuntimeObject* (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  RuntimeObject* (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0691A180224C2F3E2E1C1DB43FE4B09EB552C04B_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m268AB2ACFB43B19044AE80725263BC22734216C1_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m289B70789C017B4D08DE8769C9B220CD2549708A_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m769EEEDC158DC7D5DA6B6633032996CDB98DBBB1_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8B441E42175B16FBED8CDF5FC6251378E8B5BDB7_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2874D039BE3F8DBB4F7BF31B34CC4632797399EB_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m8FF405CAEC2B1F0580D3ECB89BECA6045948A973_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF3EF0F1351895EC2F09845C99A8E4A00DA754136_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m3B3E107CFD9C8A46CC7127AFDC3AB5B1725A3FE8_gshared (SerializedDictionary_2_t3272DA47DF06159308EF64AEAE85FE36CDBD7253* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Int32Enum,System.Object>::SyncDictionaryToBackingField_Editor()
@@ -32527,7 +32527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979* L_0 = __this->____serializedList_14;
 		Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 L_1;
-		L_1 = ((  Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_tB18ADBDDF49498599AA2A5EAFF7A8A918CB58BC7 (*) (List_1_t44A7919CB714DC53C2AB07DC050FD231B77C7979*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -32536,7 +32536,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mB21B2DEEC89A22E787E7906CC84C0411AFFE0897((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mB21B2DEEC89A22E787E7906CC84C0411AFFE0897((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -32550,7 +32550,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t5AF74561FB17C380A2437163A9D46155D490CCBD L_2;
-				L_2 = Enumerator_get_Current_mC4D1DFCDE583749AAC27606BC5BC927612285EDB_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_mC4D1DFCDE583749AAC27606BC5BC927612285EDB_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t5AF74561FB17C380A2437163A9D46155D490CCBD L_3 = V_1;
@@ -32564,7 +32564,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mE5413B7D59AAC4B7EFB21B5FD3EAB9EA02D1A5D7((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mE5413B7D59AAC4B7EFB21B5FD3EAB9EA02D1A5D7((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -32673,153 +32673,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE0F5D40FEBE928DF24FFA36E72BBC711088143F6_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB9D5D5320D1B64396B4D48933A65DD4D8783068A_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC9F824B75C71439E75B4138F954BE0AB04FA13FF_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2A5F5CC2B14978B137EF545DD963FAA9831FF521_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6AADD1F8D4CE622EE528F76D1A6CF5181133360E_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE618DEC4E4602E3CE0A3A10F044B4BED3D2F17C5_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mEA81DF143A02BCA32953E37C25035AF3F844DB53_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC01F598F6CB6546A0C1ACC427F28BD9038D383F6_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m576F05D61029903474D60ED54D8116AC282637F9_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* SerializedDictionary_2_ReturnKeys_m3C9CFFF9C63CD9CD29E4CC67BFEB6AD4C2D365EC_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, const RuntimeMethod* method) 
 {
@@ -32830,13 +32683,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_1 = __this->____serializedList_14;
 		Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB L_2;
-		L_2 = ((  Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -32845,7 +32698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m23F0629739A296236412BA4B446D5499F12115D3((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m23F0629739A296236412BA4B446D5499F12115D3((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -32859,20 +32712,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t4024106635B64A930960161BC3349DD2073E4A74 L_3;
-				L_3 = Enumerator_get_Current_mE04732B538C31D142F783E9F830DF5F2D1E5F8EB_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_mE04732B538C31D142F783E9F830DF5F2D1E5F8EB_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = V_0;
 				SerializedKeyValuePair_2_t4024106635B64A930960161BC3349DD2073E4A74 L_5 = V_2;
 				RuntimeObject* L_6 = L_5.___Key_0;
-				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m121AE9ED25844B7601344919BC8BB8820B809E1A((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m121AE9ED25844B7601344919BC8BB8820B809E1A((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -32902,8 +32755,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SerializedDictionary_2_GetValueAtKey_
 		// return base[key];
 		RuntimeObject* L_0 = ___0_key;
 		int32_t L_1;
-		L_1 = ((  int32_t (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  int32_t (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE0F5D40FEBE928DF24FFA36E72BBC711088143F6_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB9D5D5320D1B64396B4D48933A65DD4D8783068A_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC9F824B75C71439E75B4138F954BE0AB04FA13FF_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2A5F5CC2B14978B137EF545DD963FAA9831FF521_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6AADD1F8D4CE622EE528F76D1A6CF5181133360E_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mE618DEC4E4602E3CE0A3A10F044B4BED3D2F17C5_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mEA81DF143A02BCA32953E37C25035AF3F844DB53_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC01F598F6CB6546A0C1ACC427F28BD9038D383F6_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m576F05D61029903474D60ED54D8116AC282637F9_gshared (SerializedDictionary_2_t255AFD42B92E08A2FAE2CC536F534E9CFC8347F3* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Int32>::SyncDictionaryToBackingField_Editor()
@@ -32992,7 +32992,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C* L_0 = __this->____serializedList_14;
 		Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB L_1;
-		L_1 = ((  Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t15245A3D48EEE82215DE83BDB89E66BA1A08D3FB (*) (List_1_tA09B9666601A3EAE6ECDAAE890275CCE8956659C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -33001,7 +33001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m23F0629739A296236412BA4B446D5499F12115D3((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m23F0629739A296236412BA4B446D5499F12115D3((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -33015,7 +33015,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t4024106635B64A930960161BC3349DD2073E4A74 L_2;
-				L_2 = Enumerator_get_Current_mE04732B538C31D142F783E9F830DF5F2D1E5F8EB_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_mE04732B538C31D142F783E9F830DF5F2D1E5F8EB_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t4024106635B64A930960161BC3349DD2073E4A74 L_3 = V_1;
@@ -33029,7 +33029,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m121AE9ED25844B7601344919BC8BB8820B809E1A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m121AE9ED25844B7601344919BC8BB8820B809E1A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -33138,153 +33138,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m7F854F3A7A2E3CB06E0FF1A72FD66F06E49C0B52_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA2F335C4381CC2FDE251A60D352C28E5F0FC02B0_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m022315B6190F8D6D4DDD079D70DC36BDE1879639_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6714914D862EC25C961A98DEDDE9305C9339ADD1_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m895141B9A41047888174467EAFAE7AFB3DEEBB8F_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m5CB06FD7B13BB2513524E110CB8F6198092CECCA_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m52EF65771942DA242E209B87B9C2279555A3FCFC_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m9AA8A8BA3D3F4DA3E97B167CFEC0238DC8278F05_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0296E1468DCF36A73D2BE3308E3FB84CFFB16747_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* SerializedDictionary_2_ReturnKeys_mB668FFC5BE8EB431676F283AEAFF30072967ADE3_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, const RuntimeMethod* method) 
 {
@@ -33295,13 +33148,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_1 = __this->____serializedList_14;
 		Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 L_2;
-		L_2 = ((  Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -33310,7 +33163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mC3F43C29D2F2B7658D33D95B2506690FA0A330CD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mC3F43C29D2F2B7658D33D95B2506690FA0A330CD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -33324,20 +33177,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_tF167516168B9E1E97F3161E484F9F7E66E6D8CF4 L_3;
-				L_3 = Enumerator_get_Current_m060D96952050FD20FB3E40A057E2379FFFF332D3_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_m060D96952050FD20FB3E40A057E2379FFFF332D3_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = V_0;
 				SerializedKeyValuePair_2_tF167516168B9E1E97F3161E484F9F7E66E6D8CF4 L_5 = V_2;
 				RuntimeObject* L_6 = L_5.___Key_0;
-				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m0F62269133736434C896A6D88654EC75D0960E35((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m0F62269133736434C896A6D88654EC75D0960E35((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -33367,8 +33220,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializedDictionary_2_GetValu
 		// return base[key];
 		RuntimeObject* L_0 = ___0_key;
 		RuntimeObject* L_1;
-		L_1 = ((  RuntimeObject* (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  RuntimeObject* (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m7F854F3A7A2E3CB06E0FF1A72FD66F06E49C0B52_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mA2F335C4381CC2FDE251A60D352C28E5F0FC02B0_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m022315B6190F8D6D4DDD079D70DC36BDE1879639_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6714914D862EC25C961A98DEDDE9305C9339ADD1_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m895141B9A41047888174467EAFAE7AFB3DEEBB8F_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m5CB06FD7B13BB2513524E110CB8F6198092CECCA_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m52EF65771942DA242E209B87B9C2279555A3FCFC_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m9AA8A8BA3D3F4DA3E97B167CFEC0238DC8278F05_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0296E1468DCF36A73D2BE3308E3FB84CFFB16747_gshared (SerializedDictionary_2_t97A692A41A48361262DCBC1C0EFF1B7A92FD677A* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Object>::SyncDictionaryToBackingField_Editor()
@@ -33457,7 +33457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F* L_0 = __this->____serializedList_14;
 		Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 L_1;
-		L_1 = ((  Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t83E0A6F388670ED0F66B872ABE77CD201F59FFE4 (*) (List_1_t3B2C94A5D15A555355396BBB16013D68C8C0EE5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -33466,7 +33466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_mC3F43C29D2F2B7658D33D95B2506690FA0A330CD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_mC3F43C29D2F2B7658D33D95B2506690FA0A330CD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -33480,7 +33480,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_tF167516168B9E1E97F3161E484F9F7E66E6D8CF4 L_2;
-				L_2 = Enumerator_get_Current_m060D96952050FD20FB3E40A057E2379FFFF332D3_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_m060D96952050FD20FB3E40A057E2379FFFF332D3_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_tF167516168B9E1E97F3161E484F9F7E66E6D8CF4 L_3 = V_1;
@@ -33494,7 +33494,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m0F62269133736434C896A6D88654EC75D0960E35((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m0F62269133736434C896A6D88654EC75D0960E35((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -33603,153 +33603,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0F6F6CABB15F9DA041A1A61B8D5683AAF7CC439F_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC0352751D5CCDAAB1B9B9CD3B25C4D64DC22CB4F_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m7083468857AAE004E7ED9D9ABC52001A65EA21F4_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m80167313FEF773FD7925DA54279E6B405EBE9FA4_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mCF412F8D6AC8EC3576E03859518D7F9D976394AB_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m3F80EC19A0AFA135B038A99CE5B4318750739ED5_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC9BB5C3F4F3BA29C4D8D4B5F26666FAA9CA56673_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m165D51E158F25853FF124CADC57F663B23F4DD62_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m1B225E2D176B69665BB3831D9F4C0038D7EBB440_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* SerializedDictionary_2_ReturnKeys_mBE38A5DCF9E3D49CE4FAF6FB1EBD09ADF739D1DA_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, const RuntimeMethod* method) 
 {
@@ -33760,13 +33613,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_1 = __this->____serializedList_14;
 		Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 L_2;
-		L_2 = ((  Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -33775,7 +33628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m1DB16EDE44D24C58F815833B11F5018038D51547((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m1DB16EDE44D24C58F815833B11F5018038D51547((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -33789,20 +33642,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t5B2F76CCA14D907F0FCB52FDEC82A0B712D16BB4 L_3;
-				L_3 = Enumerator_get_Current_mEDE0B3D95C642EE3F8E86E24B39F41B71510C3B4_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_mEDE0B3D95C642EE3F8E86E24B39F41B71510C3B4_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = V_0;
 				SerializedKeyValuePair_2_t5B2F76CCA14D907F0FCB52FDEC82A0B712D16BB4 L_5 = V_2;
 				RuntimeObject* L_6 = L_5.___Key_0;
-				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mDFB7B21F2E2CBB48CF7646249414FB41D94B2EFD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mDFB7B21F2E2CBB48CF7646249414FB41D94B2EFD((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -33832,8 +33685,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SerializedDictionary_2_GetValueAtKey_m9
 		// return base[key];
 		RuntimeObject* L_0 = ___0_key;
 		float L_1;
-		L_1 = ((  float (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  float (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m0F6F6CABB15F9DA041A1A61B8D5683AAF7CC439F_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC0352751D5CCDAAB1B9B9CD3B25C4D64DC22CB4F_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m7083468857AAE004E7ED9D9ABC52001A65EA21F4_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m80167313FEF773FD7925DA54279E6B405EBE9FA4_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mCF412F8D6AC8EC3576E03859518D7F9D976394AB_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m3F80EC19A0AFA135B038A99CE5B4318750739ED5_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mC9BB5C3F4F3BA29C4D8D4B5F26666FAA9CA56673_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m165D51E158F25853FF124CADC57F663B23F4DD62_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m1B225E2D176B69665BB3831D9F4C0038D7EBB440_gshared (SerializedDictionary_2_t6C7F83A0940A114857026B4F769DE9579B50E3A8* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<System.Object,System.Single>::SyncDictionaryToBackingField_Editor()
@@ -33922,7 +33922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D* L_0 = __this->____serializedList_14;
 		Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 L_1;
-		L_1 = ((  Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t668C6D574F747FB6A2CDB80BC858079251FF16D3 (*) (List_1_t23C7EDD6A52B92F86719057E4F2EFC01EEB6A82D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -33931,7 +33931,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m1DB16EDE44D24C58F815833B11F5018038D51547((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m1DB16EDE44D24C58F815833B11F5018038D51547((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -33945,7 +33945,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t5B2F76CCA14D907F0FCB52FDEC82A0B712D16BB4 L_2;
-				L_2 = Enumerator_get_Current_mEDE0B3D95C642EE3F8E86E24B39F41B71510C3B4_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_mEDE0B3D95C642EE3F8E86E24B39F41B71510C3B4_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t5B2F76CCA14D907F0FCB52FDEC82A0B712D16BB4 L_3 = V_1;
@@ -33959,7 +33959,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_mDFB7B21F2E2CBB48CF7646249414FB41D94B2EFD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_mDFB7B21F2E2CBB48CF7646249414FB41D94B2EFD((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -34068,153 +34068,6 @@ IL_0053:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2A27486F7DF537DA41C7E9DA684D3516EEC2ADB8_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary() : base() {}
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// public SerializedDictionary() : base() {}
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m4F226A705A6D3A39AA8914B8CFF91698BA00F9DB_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* ___0_serializedDictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
-		SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* L_1 = ___0_serializedDictionary;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAF859D01ABD53F1E36AC5BDD08B2CAFE40242BDB_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
-		RuntimeObject* L_1 = ___0_dictionary;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB8690583504B9F825404ED3E30CED6212E2D7A04_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
-		//     dictionary, comparer)
-		RuntimeObject* L_1 = ___0_dictionary;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF7ED06D303197258201FC1F7614D836DD598A1FC_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
-		RuntimeObject* L_1 = ___0_collection;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD1C00E3A2A69947D3DD3C7DDB3C2AC784BA1FCB0_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
-		RuntimeObject* L_1 = ___0_collection;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		// }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD7F485E35597C2A2EE9518F850165BADDF6F55D7_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		RuntimeObject* L_1 = ___0_comparer;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD859D80C9E4751254D1FE521BA39869DEDC761E6_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		int32_t L_1 = ___0_capacity;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		// public SerializedDictionary(int capacity) : base(capacity) { }
-		return;
-	}
-}
-// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6BA834E07F0DD10D7E7EBFC3AA5479EEF75677DE_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
-{
-	{
-		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
-		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
-		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		__this->____serializedList_14 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		int32_t L_1 = ___0_capacity;
-		RuntimeObject* L_2 = ___1_comparer;
-		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
-		return;
-	}
-}
 // System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::ReturnKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25* SerializedDictionary_2_ReturnKeys_m4DC3622D652D821AF1528F13FEC638D3DB7E38FF_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, const RuntimeMethod* method) 
 {
@@ -34225,13 +34078,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2D
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// List<TKey> allKey = new List<TKey>();
-		List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25* L_0 = (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 11));
-		((  void (*) (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25* L_0 = (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		V_0 = L_0;
 		// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_1 = __this->____serializedList_14;
 		Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 L_2;
-		L_2 = ((  Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_2 = ((  Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_1 = L_2;
 	}
 	{
@@ -34240,7 +34093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2D
 
 FINALLY_0033:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m94C4FDC6E4F682718E4A131E4A7DC2CE5982093B((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m94C4FDC6E4F682718E4A131E4A7DC2CE5982093B((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -34254,20 +34107,20 @@ IL_0014_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				SerializedKeyValuePair_2_t36FFD3559F6EB0D5EA763C4B0F6CEA856293CC72 L_3;
-				L_3 = Enumerator_get_Current_mF62DF7FB0CD316301D62A77C134CD4BEB499F66D_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_3 = Enumerator_get_Current_mF62DF7FB0CD316301D62A77C134CD4BEB499F66D_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_2 = L_3;
 				// allKey.Add(pair.Key);
 				List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25* L_4 = V_0;
 				SerializedKeyValuePair_2_t36FFD3559F6EB0D5EA763C4B0F6CEA856293CC72 L_5 = V_2;
 				Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_6 = L_5.___Key_0;
-				((  void (*) (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+				((  void (*) (List_1_tD4E195AE3BDA50173FFDB1123B913E149DC2DE25*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 			}
 
 IL_0028_1:
 			{
 				// foreach (SerializedKeyValuePair<TKey, TValue> pair in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m089962B0BD803EAF87CFFB9620D942530DAB3B45((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m089962B0BD803EAF87CFFB9620D942530DAB3B45((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;
@@ -34297,8 +34150,155 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializedDictionary_2_GetValu
 		// return base[key];
 		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_0 = ___0_key;
 		RuntimeObject* L_1;
-		L_1 = ((  RuntimeObject* (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		L_1 = ((  RuntimeObject* (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_1;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m2A27486F7DF537DA41C7E9DA684D3516EEC2ADB8_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary() : base() {}
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// public SerializedDictionary() : base() {}
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m4F226A705A6D3A39AA8914B8CFF91698BA00F9DB_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* ___0_serializedDictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(SerializedDictionary<TKey, TValue> serializedDictionary) : base(serializedDictionary)
+		SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* L_1 = ___0_serializedDictionary;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, (RuntimeObject*)L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mAF859D01ABD53F1E36AC5BDD08B2CAFE40242BDB_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_dictionary, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary)
+		RuntimeObject* L_1 = ___0_dictionary;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mB8690583504B9F825404ED3E30CED6212E2D7A04_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_dictionary, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IDictionary<TKey, TValue> dictionary, IEqualityComparer<TKey> comparer) : base(
+		//     dictionary, comparer)
+		RuntimeObject* L_1 = ___0_dictionary;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mF7ED06D303197258201FC1F7614D836DD598A1FC_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEnumerable<KeyValuePair<TKey, TValue>> collection) : base(collection)
+		RuntimeObject* L_1 = ___0_collection;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD1C00E3A2A69947D3DD3C7DDB3C2AC784BA1FCB0_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// IEqualityComparer<TKey> comparer) : base(collection, comparer)
+		RuntimeObject* L_1 = ___0_collection;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		// }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD7F485E35597C2A2EE9518F850165BADDF6F55D7_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		RuntimeObject* L_1 = ___0_comparer;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
+		// public SerializedDictionary(IEqualityComparer<TKey> comparer) : base(comparer) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_mD859D80C9E4751254D1FE521BA39869DEDC761E6_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		int32_t L_1 = ___0_capacity;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		// public SerializedDictionary(int capacity) : base(capacity) { }
+		return;
+	}
+}
+// System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2__ctor_m6BA834E07F0DD10D7E7EBFC3AA5479EEF75677DE_gshared (SerializedDictionary_2_t76CFCC7EBE82042D411500ED76C971C45CA7AF3D* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
+{
+	{
+		// internal List<SerializedKeyValuePair<TKey, TValue>> _serializedList = new List<SerializedKeyValuePair<TKey, TValue>>();
+		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 2));
+		((  void (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		__this->____serializedList_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____serializedList_14), (void*)L_0);
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		int32_t L_1 = ___0_capacity;
+		RuntimeObject* L_2 = ___1_comparer;
+		((  void (*) (Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*, int32_t, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((Dictionary_2_tBB4036DDC0B6D94C9A83A1CFCCB8113DBA189B5F*)__this, L_1, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		// public SerializedDictionary(int capacity, IEqualityComparer<TKey> comparer) : base(capacity, comparer) { }
+		return;
 	}
 }
 // System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2<UnityEngine.Vector3Int,System.Object>::SyncDictionaryToBackingField_Editor()
@@ -34387,7 +34387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 		// foreach (var kvp in _serializedList)
 		List_1_t23043CDD497E6C5700990675503D952E4B2E0E37* L_0 = __this->____serializedList_14;
 		Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 L_1;
-		L_1 = ((  Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		L_1 = ((  Enumerator_t37EA529138419A568CA22C7484DB3D427E923382 (*) (List_1_t23043CDD497E6C5700990675503D952E4B2E0E37*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
 		V_0 = L_1;
 	}
 	{
@@ -34396,7 +34396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializedDictionary_2_OnAfterDeserializ
 
 FINALLY_0039:
 			{// begin finally (depth: 1)
-				Enumerator_Dispose_m94C4FDC6E4F682718E4A131E4A7DC2CE5982093B((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+				Enumerator_Dispose_m94C4FDC6E4F682718E4A131E4A7DC2CE5982093B((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 				return;
 			}// end finally (depth: 1)
 		});
@@ -34410,7 +34410,7 @@ IL_0014_1:
 			{
 				// foreach (var kvp in _serializedList)
 				SerializedKeyValuePair_2_t36FFD3559F6EB0D5EA763C4B0F6CEA856293CC72 L_2;
-				L_2 = Enumerator_get_Current_mF62DF7FB0CD316301D62A77C134CD4BEB499F66D_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+				L_2 = Enumerator_get_Current_mF62DF7FB0CD316301D62A77C134CD4BEB499F66D_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 				V_1 = L_2;
 				// Add(kvp.Key, kvp.Value);
 				SerializedKeyValuePair_2_t36FFD3559F6EB0D5EA763C4B0F6CEA856293CC72 L_3 = V_1;
@@ -34424,7 +34424,7 @@ IL_002e_1:
 			{
 				// foreach (var kvp in _serializedList)
 				bool L_7;
-				L_7 = Enumerator_MoveNext_m089962B0BD803EAF87CFFB9620D942530DAB3B45((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+				L_7 = Enumerator_MoveNext_m089962B0BD803EAF87CFFB9620D942530DAB3B45((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 				if (L_7)
 				{
 					goto IL_0014_1;

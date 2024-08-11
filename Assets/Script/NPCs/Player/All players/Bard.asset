@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Bard
   m_EditorClassIdentifier: 
   name: Bard
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 10
+      Value: {fileID: 11400000, guid: 5d497dcc2a800a54bae0afe96042eb77, type: 2}
+    - Key: 20
+      Value: {fileID: 11400000, guid: d5920664b7bbb0a479036b74fc2e1c77, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 0
-  attack: 0
-  defence: 0
-  speed: 0
+  currentHealth: 400
+  health: 400
+  attack: 15
+  defence: 10
+  speed: 20
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: 7031c093345e1e74b8f822e08cabddfa, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: d466f85f8d02e8845aa1b06b228a6ed4, type: 3}
@@ -30,8 +38,9 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: a50d719114c41284f824351b8015d894, type: 3}
   playerAppearance: {fileID: 21300000, guid: 64e3b22f6e9b13247855d6fff75a6389, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: 51193cd85799b8043a0c4dea3c86bdc0, type: 3}
-  lore: 
+  lore: A wnadering musician who wishes to save others
   objectOfFaith: {fileID: 21300000, guid: 606e6f50e6ebfbb46a68537d4809758e, type: 3}
   objectOfFaithName: "\u201CTo a brighter tomorrow\u201D"
   objectOfFaithDescription: "A piece of parchment with the lyrics of a song on it.\r\n\r\nThis
@@ -45,3 +54,10 @@ MonoBehaviour:
     and another with renewed hope. We shall go to a brighter tomorrow.\u201D\r\n\r\nFor
     him, that song will always remind him to move forward and to lift those who have
     fallen.\r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

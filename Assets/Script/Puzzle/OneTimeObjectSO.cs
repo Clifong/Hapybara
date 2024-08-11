@@ -19,5 +19,6 @@ public class OneTimeObjectSO : ScriptableObject
 
     public void SetComplete() {
         complete = true;
+        this.SetDirty();
     }
 }

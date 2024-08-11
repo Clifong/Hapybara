@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Professor
   m_EditorClassIdentifier: 
   name: Professor
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 40
+      Value: {fileID: 11400000, guid: 848464302b9893b47b6899458b01a646, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 0
-  attack: 0
-  defence: 0
-  speed: 0
+  currentHealth: 540
+  health: 543
+  attack: 21
+  defence: 12
+  speed: 47
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: 18704e5acb166c7479f3361b3bf65df9, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: 1dbf9e657f042e74182c14ff86f8b520, type: 3}
@@ -30,8 +36,9 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: 96d35334fa86e9f48a84025af752b18c, type: 3}
   playerAppearance: {fileID: 21300000, guid: e68b5a8cb45f6884dba199693a8a1c04, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: 1084763ba99fbaf46858987931ddb1b1, type: 3}
-  lore: 
+  lore: A man who rekinled his desire to teach
   objectOfFaith: {fileID: 21300000, guid: 3358f3d07ffc23f49be9b53430bebbd1, type: 3}
   objectOfFaithName: Journal
   objectOfFaithDescription: "A piece of book filled with the wisdom of this world,
@@ -52,3 +59,10 @@ MonoBehaviour:
     on knowledge that grew dull would brighten up once more.\r\n\r\nThough it wasn't
     enough to fill up the void that his passion left behind, at least it gave him
     a push to rekindle what he had lost.\r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0

@@ -13,6 +13,7 @@ public class PlayerSO : ScriptableObject
     public bool isMainPlayer;
     [Header("Battle level")]
     public int level = 1;
+    private int maxLevel = 100;
     public int currentExp = 0;
     public int expNeededForNextLevel = 0;
     [SerializedDictionary("Level", "Level up reward/obtained")]
@@ -22,6 +23,7 @@ public class PlayerSO : ScriptableObject
     public int relationshipLevel = 1;
     public int currentRelationshipExp = 0;
     public int expNeededForNextRelationshipLevel = 0;
+    private int maxRelationshipLevel = 10;
     [Header("Battle stats")]
     public int currentHealth;
     public int health;
@@ -83,18 +85,22 @@ public class PlayerSO : ScriptableObject
     }
 
     public void LevelUp() {
-        while (currentExp > expNeededForNextLevel) {
+        while (currentExp >= expNeededForNextLevel && level < maxLevel) {
             currentExp = Mathf.Max(0, currentExp - expNeededForNextLevel);
-            level += 1;
+            level = Mathf.Min(level + 1, maxLevel);
+            health = (int) (health * 1.1);
+            attack = Mathf.Max((int) (attack * 1.1), attack + 1);
+            defence = Mathf.Max((int) (defence * 1.1), defence + 1);
+            speed = Mathf.Max((int) (speed * 1.1), speed + 1);
             CalculateExpNeededForNextLevel(currentExp);
         }
         this.SetDirty();
     }
 
     public void LevelUpRelationship() {
-        while (currentRelationshipExp >= expNeededForNextRelationshipLevel) {
+        while (currentRelationshipExp >= expNeededForNextRelationshipLevel && relationshipLevel < maxRelationshipLevel) {
             currentRelationshipExp = Mathf.Max(0, currentRelationshipExp - expNeededForNextRelationshipLevel);
-            relationshipLevel += 1;
+            relationshipLevel = Mathf.Min(relationshipLevel + 1, maxRelationshipLevel);
             CalculateExpNeededForNextRelationshipLevel(currentRelationshipExp);
         }
         this.SetDirty();
@@ -117,9 +123,10 @@ public class PlayerSO : ScriptableObject
         defence -= weaponEquipped.defenceChange;
         speed -= weaponEquipped.speedChange;
         weaponEquipped.owner.Remove(this);
+        weaponEquipped.SetDirty();
         weaponEquipped = null;
         this.SetDirty();
-        weaponEquipped.SetDirty();
+        
     }
 
     public void PopulateStatText(TextMeshProUGUI healthText, TextMeshProUGUI attackText, TextMeshProUGUI defenceText, TextMeshProUGUI speedText) {
@@ -223,6 +230,10 @@ public class PlayerSO : ScriptableObject
             spawnedPanel.GetComponent<LevelUpRewardSkillPanel>().SetSkillSO(levelUpReward[number], level >= number, number);
             spawnedPanels.Add(spawnedPanel);
         }
+    }
+
+    public void RecoverMaxHealth() {
+        currentHealth = health;
     }
     
 }

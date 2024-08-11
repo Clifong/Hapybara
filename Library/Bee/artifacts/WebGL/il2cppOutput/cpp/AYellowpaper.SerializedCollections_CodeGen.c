@@ -40,17 +40,17 @@
 // 0x0000001A System.Boolean AYellowpaper.SerializedCollections.SerializedCollectionsUtility::IsValidKey(System.Object)
 extern void SerializedCollectionsUtility_IsValidKey_mCD13AE41EA67D1B5479BB71A3646AAF375888E6A (void);
 // 0x0000001B System.Boolean AYellowpaper.SerializedCollections.SerializedCollectionsUtility::KeysAreEqual(T,System.Object)
-// 0x0000001C System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor()
-// 0x0000001D System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
-// 0x0000001E System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-// 0x0000001F System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-// 0x00000020 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
-// 0x00000021 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-// 0x00000022 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-// 0x00000023 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Int32)
-// 0x00000024 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-// 0x00000025 System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2::ReturnKeys()
-// 0x00000026 TValue AYellowpaper.SerializedCollections.SerializedDictionary`2::GetValueAtKey(TKey)
+// 0x0000001C System.Collections.Generic.List`1<TKey> AYellowpaper.SerializedCollections.SerializedDictionary`2::ReturnKeys()
+// 0x0000001D TValue AYellowpaper.SerializedCollections.SerializedDictionary`2::GetValueAtKey(TKey)
+// 0x0000001E System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor()
+// 0x0000001F System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(AYellowpaper.SerializedCollections.SerializedDictionary`2<TKey,TValue>)
+// 0x00000020 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+// 0x00000021 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+// 0x00000022 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>)
+// 0x00000023 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>,System.Collections.Generic.IEqualityComparer`1<TKey>)
+// 0x00000024 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
+// 0x00000025 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Int32)
+// 0x00000026 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
 // 0x00000027 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::SyncDictionaryToBackingField_Editor()
 // 0x00000028 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::OnAfterDeserialize()
 // 0x00000029 System.Void AYellowpaper.SerializedCollections.SerializedDictionary`2::OnBeforeSerialize()
@@ -197,7 +197,16 @@ extern const uint32_t g_rgctx_TKey_t80B7393E94E22E500BC260E260779AB2308C193F;
 extern const uint32_t g_rgctx_Enumerable_First_TisSerializedKeyValuePair_2_tF4529F0ACEBA63086DC3B34F52EFF4C58C62D598_m176D6C11CF1255974DD98E1723663ADA8F4A75AE;
 extern const uint32_t g_rgctx_T_t32E7918618D70B5251418AE927473351F57D3A06;
 extern const Il2CppRGCTXConstrainedData g_rgctx_T_t32E7918618D70B5251418AE927473351F57D3A06_Object_Equals_m07105C4585D3FE204F2A80D58523D001DC43F63B;
+extern const uint32_t g_rgctx_List_1_t1FCB40EDF4A86F4E9A3567B4CE49E7FCF19A82AD;
+extern const uint32_t g_rgctx_List_1__ctor_mDE457482997524163024D1234D886D398004A1AC;
 extern const uint32_t g_rgctx_List_1_tAD6213F55A8206CC57120ED4C55A5F76505A8484;
+extern const uint32_t g_rgctx_List_1_GetEnumerator_mC6ABE745EE6FD5B2727ED2237E1E36A222ABF2CA;
+extern const uint32_t g_rgctx_Enumerator_get_Current_m724F0E80917E2D6B43579332AB4362246A4C6C42;
+extern const uint32_t g_rgctx_List_1_Add_mCDD682F2C10C0394D6641C392F384E671AADC8AA;
+extern const uint32_t g_rgctx_Enumerator_MoveNext_m13139214B82B8A9D6712B342D655EC36BCD02B94;
+extern const uint32_t g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D;
+extern const Il2CppRGCTXConstrainedData g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7;
+extern const uint32_t g_rgctx_Dictionary_2_get_Item_m4685F3F608417A7F55E8D4B50A14ED6BCAC4B546;
 extern const uint32_t g_rgctx_List_1__ctor_m27646A72143F173C680ED5B08DA2F4EB60215F97;
 extern const uint32_t g_rgctx_Dictionary_2__ctor_m4C76C30F282DBC0F06A6B354DE3C364964917829;
 extern const uint32_t g_rgctx_Dictionary_2_tFD4A430084E75639DBA14A2BCAAE4E78CF4A1F35;
@@ -208,15 +217,6 @@ extern const uint32_t g_rgctx_Dictionary_2__ctor_mC8594AD722E3C6F91B9952B2EC8C27
 extern const uint32_t g_rgctx_Dictionary_2__ctor_m68B9F7E53312F1EEB896A9CC1C57FAFF77D3E320;
 extern const uint32_t g_rgctx_Dictionary_2__ctor_mCD765B37A202B8D3CDAE5237F8FB622FB2BD04A3;
 extern const uint32_t g_rgctx_Dictionary_2__ctor_mA3531F2924B41262E7839ACAAFCF49A97121474C;
-extern const uint32_t g_rgctx_List_1_t1FCB40EDF4A86F4E9A3567B4CE49E7FCF19A82AD;
-extern const uint32_t g_rgctx_List_1__ctor_mDE457482997524163024D1234D886D398004A1AC;
-extern const uint32_t g_rgctx_List_1_GetEnumerator_mC6ABE745EE6FD5B2727ED2237E1E36A222ABF2CA;
-extern const uint32_t g_rgctx_Enumerator_get_Current_m724F0E80917E2D6B43579332AB4362246A4C6C42;
-extern const uint32_t g_rgctx_List_1_Add_mCDD682F2C10C0394D6641C392F384E671AADC8AA;
-extern const uint32_t g_rgctx_Enumerator_MoveNext_m13139214B82B8A9D6712B342D655EC36BCD02B94;
-extern const uint32_t g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D;
-extern const Il2CppRGCTXConstrainedData g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7;
-extern const uint32_t g_rgctx_Dictionary_2_get_Item_m4685F3F608417A7F55E8D4B50A14ED6BCAC4B546;
 extern const uint32_t g_rgctx_Dictionary_2_GetEnumerator_mB483F565563CDADA4BD5EFD311AD2974C4A9E2D4;
 extern const uint32_t g_rgctx_Enumerator_get_Current_m2F98CDA89AEE1EA951F397C39E7745F9C2C1C796;
 extern const uint32_t g_rgctx_KeyValuePair_2_get_Key_mFB87343681F6B9A97FCD5E015608923B8C052E3D;
@@ -273,7 +273,16 @@ static const Il2CppRGCTXDefinition s_rgctxValues[74] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerable_First_TisSerializedKeyValuePair_2_tF4529F0ACEBA63086DC3B34F52EFF4C58C62D598_m176D6C11CF1255974DD98E1723663ADA8F4A75AE },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t32E7918618D70B5251418AE927473351F57D3A06 },
 	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_T_t32E7918618D70B5251418AE927473351F57D3A06_Object_Equals_m07105C4585D3FE204F2A80D58523D001DC43F63B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t1FCB40EDF4A86F4E9A3567B4CE49E7FCF19A82AD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1__ctor_mDE457482997524163024D1234D886D398004A1AC },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_tAD6213F55A8206CC57120ED4C55A5F76505A8484 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_GetEnumerator_mC6ABE745EE6FD5B2727ED2237E1E36A222ABF2CA },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_m724F0E80917E2D6B43579332AB4362246A4C6C42 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_mCDD682F2C10C0394D6641C392F384E671AADC8AA },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_MoveNext_m13139214B82B8A9D6712B342D655EC36BCD02B94 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_get_Item_m4685F3F608417A7F55E8D4B50A14ED6BCAC4B546 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1__ctor_m27646A72143F173C680ED5B08DA2F4EB60215F97 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2__ctor_m4C76C30F282DBC0F06A6B354DE3C364964917829 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Dictionary_2_tFD4A430084E75639DBA14A2BCAAE4E78CF4A1F35 },
@@ -284,15 +293,6 @@ static const Il2CppRGCTXDefinition s_rgctxValues[74] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2__ctor_m68B9F7E53312F1EEB896A9CC1C57FAFF77D3E320 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2__ctor_mCD765B37A202B8D3CDAE5237F8FB622FB2BD04A3 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2__ctor_mA3531F2924B41262E7839ACAAFCF49A97121474C },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t1FCB40EDF4A86F4E9A3567B4CE49E7FCF19A82AD },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1__ctor_mDE457482997524163024D1234D886D398004A1AC },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_GetEnumerator_mC6ABE745EE6FD5B2727ED2237E1E36A222ABF2CA },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_m724F0E80917E2D6B43579332AB4362246A4C6C42 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_mCDD682F2C10C0394D6641C392F384E671AADC8AA },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_MoveNext_m13139214B82B8A9D6712B342D655EC36BCD02B94 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D },
-	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_Enumerator_t62818AB6CB34BA2FD442D2B213A9C508F38E068D_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_get_Item_m4685F3F608417A7F55E8D4B50A14ED6BCAC4B546 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_GetEnumerator_mB483F565563CDADA4BD5EFD311AD2974C4A9E2D4 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_m2F98CDA89AEE1EA951F397C39E7745F9C2C1C796 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_KeyValuePair_2_get_Key_mFB87343681F6B9A97FCD5E015608923B8C052E3D },

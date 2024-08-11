@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Conductor
   m_EditorClassIdentifier: 
   name: 'Conductor '
+  isMainPlayer: 0
   level: 1
   currentExp: 0
   expNeededForNextLevel: 125
+  levelUpReward:
+    _serializedList:
+    - Key: 20
+      Value: {fileID: 11400000, guid: ee32e536402bf484595f88949b626cbd, type: 2}
   relationshipLevel: 1
   currentRelationshipExp: 0
   expNeededForNextRelationshipLevel: 100
-  health: 0
-  attack: 0
-  defence: 0
-  speed: 0
+  currentHealth: 600
+  health: 600
+  attack: 20
+  defence: 31
+  speed: 25
   weaponEquipped: {fileID: 0}
   playerObject: {fileID: 8157412163679220467, guid: 1cb5bf911e6fef54280adc27fd0c21bf, type: 3}
   homePlayerObject: {fileID: 8157412163679220467, guid: da6292e475fea864c924c45265035870, type: 3}
@@ -30,8 +36,9 @@ MonoBehaviour:
   playerIcon: {fileID: 21300000, guid: 233f65f4ee8ed544db80225db55406fa, type: 3}
   playerAppearance: {fileID: 21300000, guid: 87278ea846450a245aa50a6236264f29, type: 3}
   allSkills: []
+  activeSkills: []
   friendshipFrame: {fileID: 21300000, guid: 1ccea84019656304db73738e83747e0c, type: 3}
-  lore: 
+  lore: A man who seeks to connect the world
   objectOfFaith: {fileID: 21300000, guid: 1ee076a774f4be64dbb8c81072ea0027, type: 3}
   objectOfFaithName: Choo choo train
   objectOfFaithDescription: "There was once a kingdom that sought to connect with
@@ -43,3 +50,10 @@ MonoBehaviour:
     by a group of villagers. As a thank you to them, he decided to lay a train track
     to connect them to the world.\r\n\r\nEver since then, he has been expanding the
     track system day by day, until he reach his initial destination.\r\n"
+  eatCounter: 0
+  currAttackBuff: 0
+  currAttackBuffDuration: 0
+  currDefenceBuff: 0
+  currDefenceBuffDuration: 0
+  maxSpeedBuff: 0
+  maxSpeedBuffDuration: 0
